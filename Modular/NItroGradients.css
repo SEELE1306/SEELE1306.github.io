@@ -85,12 +85,10 @@
 /* Scrollbars */
 .auto-2TJ1RH::-webkit-scrollbar-thumb,
 .thin-RnSY0a::-webkit-scrollbar-thumb {
-    background-size: 200vh;
-    background-image: -webkit-gradient(linear,left top,left bottom,from(rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-4))),to(rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-4)))),var(--custom-theme-background);
+    background-size: 300vh;
     background-image: linear-gradient(rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-4)),rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-4))),var(--custom-theme-background);
 }
 .auto-2TJ1RH::-webkit-scrollbar-track {
-    background-size: 200vh;
-    background-image: -webkit-gradient(linear,left top,left bottom,from(rgb(var(--bg-overlay-color)/.4)),to(rgb(var(--bg-overlay-color)/.4))),var(--custom-theme-background);
+    background-size: 300vh;
     background-image: linear-gradient(rgb(var(--bg-overlay-color)/.4),rgb(var(--bg-overlay-color)/.4)),var(--custom-theme-background);
 }
