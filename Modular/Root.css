@@ -149,7 +149,6 @@
   --background-modifier-hover:        hsl(var(--primary-300-hsl)/0.8);
 }
 
-/* PUT IN IMPORT FILE */
 .theme-light {
   --header-primary:                         hsl(var(--primary-700-hsl)/1);
   --header-secondary:                       hsl(var(--primary-600-hsl)/0.75);
@@ -161,4 +160,40 @@
   --text-muted:                             hsl(var(--primary-600-hsl)/0.6);
 }
 
+  /* --- CUSTOMIZABLE --- */
+  :root, .theme-dark, .theme-light {
+
+    /* Change to none to use solid color theme 
+     * or use one of the premade Nitro gradients
+     * or make your own gradient or even add a background */
+    --modular-background: var(--sunset) !important;
+  
+    /* Overall accent */
+    /* note: 223 7% 17% for Discord Default Grey */
+    --modular-hue: 240;   
+    --modular-saturation: 30%;    
+    --modular-luminosity: 15%;
+  
+    --modular-shadow-distance: 5px; /* in px */
+    --modular-stroke-distance: 1px; /* in px */
+  
+    /* Border radius */
+    --modular-border-radius: 8px;
+    --modular-client-spacing: 8px;
+    --modular-client-radius:  4px;
+  
+    /* Font change */
+    --font-main: "" ;
+    --font-code: Iosevka, monospace, Consolas;
+  
+    /* Quotes */
+    --quote-vertical-spacing: 4px;
+    --quote-horizontal-spacing: 10px;
+    --quote-background-color: #a6da9525;
+    --quote-text-color: #a6da95;
+    --quote-border-radius: 6px;
+  
+    /* Menu UI Blur */
+    --modular-background-blur-strength: 10px;
+  }
 
