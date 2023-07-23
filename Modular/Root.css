@@ -127,4 +127,38 @@
   --scrollbar-thin-track:                   none;
   --profile-body-background-color:          none !important;
   --profile-role-pill-background-color:     none;
+
+  --modular-shadow: var(--modular-shadow-distance) var(--modular-shadow-distance) 0 0 hsl(var(--primary-700-hsl)/0.25), 0 0 var(--modular-stroke-distance) var(--modular-stroke-distance) hsl(var(--primary-700-hsl)/0.5);
+  --font-primary: var(--font-main), var(--font-fallback);
+  --font-display: var(--font-main), var(--font-fallback); 
+  --font-header:  var(--font-main), var(--font-fallback);
+  --font-fallback: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
+.theme-dark {
+  --header-primary:                   hsl(var(--primary-160-hsl)/1);
+  --header-secondary:                 hsl(var(--primary-200-hsl)/1);
+  --interactive-active:               hsl(var(--primary-160-hsl)/1);
+  --interactive-normal:               hsl(var(--primary-160-hsl)/1);
+  --text-link:                        hsl(var(--primary-200-hsl)/1);
+  --text-normal:                      hsl(var(--primary-130-hsl)/1);
+  --text-muted:                       hsl(var(--primary-200-hsl)/0.75);
+  --interactive-hover:                hsl(var(--primary-130-hsl)/1);
+  --background-modifier-accent:       hsl(var(--primary-300-hsl)/0.2);
+  --background-modifier-selected:     hsl(var(--primary-300-hsl)/0.5);
+  --background-modifier-hover:        hsl(var(--primary-300-hsl)/0.8);
+}
+
+/* PUT IN IMPORT FILE */
+.theme-light {
+  --header-primary:                         hsl(var(--primary-700-hsl)/1);
+  --header-secondary:                       hsl(var(--primary-600-hsl)/0.75);
+  --interactive-active:                     hsl(var(--primary-500-hsl)/1);
+  --text-link:                              hsl(var(--primary-500-hsl)/1);
+  --interactive-normal:                     hsl(var(--primary-330-hsl)/1);
+  --text-normal:                            hsl(var(--primary-700-hsl)/1);
+  --interactive-hover:                      hsl(var(--primary-600-hsl)/1);
+  --text-muted:                             hsl(var(--primary-600-hsl)/0.6);
+}
+
+
