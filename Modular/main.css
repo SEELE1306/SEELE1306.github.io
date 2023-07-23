@@ -4,16 +4,16 @@
 /* --- CUSTOMIZABLE --- */
 :root, .theme-dark, .theme-light {
 
-	--modular-background: var(--sunset) !important;
-	--modular-hue: 240;
-	--modular-saturation: 40%;
+	--modular-background: var(--neon-nights) !important;
+	--modular-hue: 290;
+	--modular-saturation: 30%;
 	--modular-luminosity: 20%;
 	--modular-shadow-distance: 5px;
 	--modular-stroke-distance: 1px;
-	--modular-border-radius: 8px;
+	--modular-border-radius: 12px;
 	--modular-client-spacing: 8px;
 	--modular-client-radius: 4px;
-	--font-main: "" ;
+	--font-main: "Segoe UI Variable Static Display" ;
 	--font-code: Iosevka, monospace, Consolas;
 	--quote-vertical-spacing: 4px;
 	--quote-horizontal-spacing: 10px;
@@ -21,6 +21,7 @@
 	--quote-text-color: #a6da95;
 	--quote-border-radius: 6px;
 	--modular-background-blur-strength: 10px;
+	--sidebar-orientation: column; /* column-reverse for user panel on top */
 
 	--info-positive-foreground: hsl(var(--primary-200-hsl)/1);
 	--status-positive-background: hsl(var(--primary-200-hsl)/1);
@@ -539,8 +540,8 @@ span[class*=dot-][class*=maskSecondary-] {
 	min-height: 49px;
 	padding-top: 4px;
 	margin: -12px 0 16px 0;
-	background: var(--background-floating);
-	border-radius: var(--modular-border-radius)
+	background: hsl(var(--primary-600-hsl)/0.25);
+	border-radius: calc(var(--modular-border-radius) * 2)
 }
 .channelTextArea-1VQBuV > [class*=channelTextAreaInner-][class*=scrollableContainer-]{
 	background: hsl(var(--primary-600-hsl)/0.6);
@@ -551,7 +552,7 @@ span[class*=dot-][class*=maskSecondary-] {
 	color: var(--interactive-hover) !important 
 }
 :is(main,section)[class^=chatContent] > form > :first-child > :hover,:is(main,section)[class^=chatContent] > form > :first-child > :focus-within {
-	background: hsl(var(--primary-400-hsl)/1) 
+	background: hsl(var(--primary-600-hsl)/0.5)
 }
 /* slowmode/typing indicator */
 :is(main,section)[class^=chatContent] > form > *:last-child[class^=typing] {
@@ -770,7 +771,7 @@ code:not(code.inline) {
 }
 /* -------------------------------------------------------------- */
 /* Hide Things */
-[class^="threadSuggestionBar"], .item-2LIpTv, .newMessagesBar-1hF-9G, .unreadMentionsBar-ZXXoOH {
+[class^="threadSuggestionBar"], .newMessagesBar-1hF-9G, .unreadMentionsBar-ZXXoOH {
 	display: none !important 
 }
 /* -------------------------------------------------------------- */
@@ -930,7 +931,7 @@ svg[class*=addButtonIcon-] {
 .container-1eFtFS {
 	backdrop-filter: blur(var(--modular-background-blur-strength));
 	background: hsl(var(--primary-500-hsl)/0.25);
-	margin: calc(var(--modular-client-spacing) * 2) calc(var(--modular-client-spacing) * 2) 0 calc(var(--modular-client-spacing) * 2);
+	margin: calc(var(--modular-client-spacing) * 2);
 	width: calc(100vw - calc(var(--modular-client-spacing) * 4));
 	height: calc(100vh - calc(var(--modular-client-spacing) * 4));
 	border-radius: calc(var(--modular-client-radius) * 4);
@@ -1033,18 +1034,6 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 .navButtonActive-1EqC5l, .navButtonActive-1EqC5l:hover {
 	color: hsl(var(--primary-200-hsl)/1);
 	background-color: var(--background-modifier-selected)
-}
-.theme-dark .categoryFade-3RRG67 {
-	background-color: hsl(var(--primary-600-hsl)/0.75) 
-}
-.theme-dark .categoryFade-3RRG67:hover {
-	background-color: hsl(var(--primary-500-hsl)/0.75) 
-}
-.theme-dark .categoryFadeBlurple-1l49_Q {
-	background-color: hsl(var(--primary-400-hsl)/0.75) 
-}
-.theme-dark .categoryFadeBlurple-1l49_Q:hover {
-	background-color: hsl(var(--primary-300-hsl)/0.75) 
 }
 .popoutContainer-1x4DR4 {
 	background-color: var(--background-primary) 
@@ -1394,7 +1383,7 @@ div[class*=nameAndDecorators-] {
 }
 .sidebar-1tnWFu {
 	display: flex;
-	flex-direction: column-reverse;
+	flex-direction: var(--sidebar-orientation);
 	resize: horizontal;
 	max-width: 240px
 }
@@ -1554,11 +1543,12 @@ span[class*=username-][class*=desaturateUserColors-][class*=clickable] {
 	border-radius: var(--modular-border-radius) !important 
 }
 .bannerSVGWrapper-2CLfzN {
-	border-radius: var(--modular-border-radius) var(--modular-border-radius) 0 0 
+	border-radius: var(--modular-border-radius) var(--modular-border-radius) 0 0;
+	overflow: hidden; 
 }
 /* -------------------------------------------------------------- */
 [class*=userPanelOuter-] {
-	max-height: 97%;
+	max-height: 92.33%;
 	padding: 0;
 	margin: 0.75em 0;
 	border-radius: var(--modular-border-radius);
@@ -2228,4 +2218,14 @@ div[class|="message"] div[class|="markup"] ol {
     line-height: 1;
     font-weight: 700;
     font-size: 1.125rem;
+}
+.toolbar-37BrJ5 {
+	background: var(--background-tertiary);
+	border-radius: var(--modular-border-radius);
+}
+.toolbar-37BrJ5:before {
+	border-top-color: var(--background-tertiary);
+}
+.button-lA2rvH:hover {
+	background: var(--background-modifier-hover);
 }
