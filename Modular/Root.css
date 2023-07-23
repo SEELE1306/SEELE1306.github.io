@@ -1,6 +1,6 @@
 /* Import Catppuchin Colors and Nitro Gradients */
-@import (https://seele1306.github.io/Modular/CatppuchinColors.css);
-@import (https://seele1306.github.io/Modular/NitroGradients.css);
+@import url(https://seele1306.github.io/Modular/CatppuchinColors.css);
+@import url(https://seele1306.github.io/Modular/NitroGradients.css);
 
 :root, .theme-dark, .theme-light
 {
