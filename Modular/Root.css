@@ -2,9 +2,43 @@
 @import url(https://seele1306.github.io/Modular/CatppuchinColors.css);
 @import url(https://seele1306.github.io/Modular/NitroGradients.css);
 
-:root, .theme-dark, .theme-light
-{
-      /* PUT IN IMPORT FILE */
+ /* --- CUSTOMIZABLE --- */
+ :root, .theme-dark, .theme-light {
+
+  /* Change to none to use solid color theme 
+   * or use one of the premade Nitro gradients
+   * or make your own gradient or even add a background */
+  --modular-background: var(--sunset) !important;
+
+  /* Overall accent */
+  /* note: 223 7% 17% for Discord Default Grey */
+  --modular-hue: 240;   
+  --modular-saturation: 30%;    
+  --modular-luminosity: 15%;
+
+  --modular-shadow-distance: 5px; /* in px */
+  --modular-stroke-distance: 1px; /* in px */
+
+  /* Border radius */
+  --modular-border-radius: 8px;
+  --modular-client-spacing: 8px;
+  --modular-client-radius:  4px;
+
+  /* Font change */
+  --font-main: "" ;
+  --font-code: Iosevka, monospace, Consolas;
+
+  /* Quotes */
+  --quote-vertical-spacing: 4px;
+  --quote-horizontal-spacing: 10px;
+  --quote-background-color: #a6da9525;
+  --quote-text-color: #a6da95;
+  --quote-border-radius: 6px;
+
+  /* Menu UI Blur */
+  --modular-background-blur-strength: 10px;
+
+  /* PUT IN IMPORT FILE */
   --primary-100-hsl: var(--modular-hue) var(--modular-saturation) calc(var(--modular-luminosity) + 96.00%);
   --primary-130-hsl: var(--modular-hue) var(--modular-saturation) calc(var(--modular-luminosity) + 84.00%);
   --primary-160-hsl: var(--modular-hue) var(--modular-saturation) calc(var(--modular-luminosity) + 72.00%);
@@ -89,7 +123,6 @@
   --brand-experiment-860: var(--brand-860-hsl);
   --brand-experiment-900: var(--brand-900-hsl);
 
-  /* PUT IN IMPORT FILE */
   --text-positive:                          hsl(var(--green)/1);
   --text-warning:                           hsl(var(--yellow)/1);
   --text-danger:                            hsl(var(--red)/1);
@@ -160,40 +193,4 @@
   --text-muted:                             hsl(var(--primary-600-hsl)/0.6);
 }
 
-  /* --- CUSTOMIZABLE --- */
-  :root, .theme-dark, .theme-light {
-
-    /* Change to none to use solid color theme 
-     * or use one of the premade Nitro gradients
-     * or make your own gradient or even add a background */
-    --modular-background: var(--sunset) !important;
-  
-    /* Overall accent */
-    /* note: 223 7% 17% for Discord Default Grey */
-    --modular-hue: 240;   
-    --modular-saturation: 30%;    
-    --modular-luminosity: 15%;
-  
-    --modular-shadow-distance: 5px; /* in px */
-    --modular-stroke-distance: 1px; /* in px */
-  
-    /* Border radius */
-    --modular-border-radius: 8px;
-    --modular-client-spacing: 8px;
-    --modular-client-radius:  4px;
-  
-    /* Font change */
-    --font-main: "" ;
-    --font-code: Iosevka, monospace, Consolas;
-  
-    /* Quotes */
-    --quote-vertical-spacing: 4px;
-    --quote-horizontal-spacing: 10px;
-    --quote-background-color: #a6da9525;
-    --quote-text-color: #a6da95;
-    --quote-border-radius: 6px;
-  
-    /* Menu UI Blur */
-    --modular-background-blur-strength: 10px;
-  }
-
+ 
