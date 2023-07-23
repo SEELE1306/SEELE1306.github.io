@@ -7,7 +7,7 @@
 
 /* --- CUSTOMIZABLE --- */
 :root, .theme-dark, .theme-light {
-    
+
 	--modular-background: var(--sunset) !important;
 	--modular-hue: 240;
 	--modular-saturation: 40%;
@@ -64,7 +64,7 @@
 }
 .theme-dark {
 	--header-primary: hsl(var(--primary-160-hsl)/1);
-	--header-secondary: hsl(var(--primary-200-hsl)/1);
+	--header-secondary: hsl(var(--primary-200-hsl)/1); 
 	--interactive-active: hsl(var(--primary-160-hsl)/1);
 	--interactive-normal: hsl(var(--primary-160-hsl)/1);
 	--text-link: hsl(var(--primary-200-hsl)/1);
