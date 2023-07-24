@@ -542,7 +542,18 @@ span[class*=dot-][class*=maskSecondary-] {
 	padding-top: 4px;
 	margin: -12px 0 16px 0;
 	background: var(--background-modifier-accent);
-	border-radius: calc(var(--modular-border-radius) * 2)
+	border-radius: calc(var(--modular-border-radius) * 2);
+}
+:is(main,section)[class^=chatContent] > form > :first-child > div:nth-child(2) {
+	background: var(--background-tertiary);
+}
+.base-2v-uc0 {
+	border-radius: var(--modular-border-radius);
+}
+.contentTitle-3CylD3 {
+	padding: 0.25em 0.5em;
+	text-transform: none;
+	font-size: 14px;
 }
 .channelTextArea-1VQBuV > [class*=channelTextAreaInner-][class*=scrollableContainer-]{
 	background: hsl(var(--primary-600-hsl)/0.6);
@@ -1442,7 +1453,7 @@ body:has([class*=profilePanel-]) .container-ZMc96U {
 	display: none
 }
 .scroller-WSmht3 {
-	padding: 0.5em;
+	padding: 0.35em 0;
 	margin: 0.25em;
 	border-radius: var(--modular-border-radius);
 	background: hsl(var(--primary-660-hsl)/0.5) !important
@@ -1450,11 +1461,13 @@ body:has([class*=profilePanel-]) .container-ZMc96U {
 .searchBar-3TnChZ{
 	border-radius: var(--modular-border-radius);
 	background: hsl(var(--primary-660-hsl)/0.5) !important;
-	margin: 0.25em
+	margin: 0.25em;
 }
 .searchBar-3TnChZ .searchBarComponent-3N7dCG {
 	text-align: center;
-	background: transparent 
+	background: transparent;
+	font-size: 16px;
+	font-weight: 700;
 }
 .searchBar-3TnChZ:hover {
 	background: hsl(var(--primary-500-hsl)/0.5) !important 
@@ -2308,6 +2321,7 @@ div[class|="message"] div[class|="markup"] ol {
 .scroller-hE2gWq {
 	margin-left: -0.5em;
 }
+
 .theme-dark .pageWrapper-2PwDoS {
 	margin: 0.25em 0 0.25em 0.75em;
 	background: hsl(var(--primary-660-hsl)/0.5);
@@ -2315,4 +2329,16 @@ div[class|="message"] div[class|="markup"] ol {
 }
 .arrow-2yY1Tm {
 	filter: brightness(10);
+}
+.container-32HW5s, .container-2oNtJn {
+	border-radius: var(--modular-border-radius);
+}
+
+.title-x4dI75 {
+	text-transform: none;
+	font-size: 16px;
+	font-weight: 1000;
+}
+.tabBar-ra-EuL .addFriend-emTWY1.addFriend-emTWY1.addFriend-emTWY1 {
+	color: var(--header-secondary);
 }
