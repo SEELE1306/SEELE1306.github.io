@@ -2308,9 +2308,11 @@ div[class|="message"] div[class|="markup"] ol {
 .scroller-hE2gWq {
 	margin-left: -0.5em;
 }
-
 .theme-dark .pageWrapper-2PwDoS {
 	margin: 0.25em 0 0.25em 0.75em;
 	background: hsl(var(--primary-660-hsl)/0.5);
 	border-radius: var(--modular-border-radius);
+}
+.arrow-2yY1Tm {
+	filter: brightness(10);
 }
