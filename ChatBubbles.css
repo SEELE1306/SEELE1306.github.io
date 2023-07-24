@@ -35,6 +35,10 @@
 	margin-top: calc(-4px - 0.125em);
 	scale: 1.15 
 }
+.highlighted-1TaRLI:hover, .replying-eZ7p5z:hover {
+	position: relative;
+	background-color: var(--background-message-hover) !important
+}
 .groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg, 
 .cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *), 
 .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
