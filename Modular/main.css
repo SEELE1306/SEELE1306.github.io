@@ -939,7 +939,7 @@ svg[class*=addButtonIcon-] {
 .wrapper-1_HaEi {
 	background: hsl(var(--primary-600-hsl)/0.5);
 	padding: 0.5em 0;
-	margin: 0.75em 0 0.75em 1em;
+	margin: 1em -0.5em 1em 1em;
 	border-radius: var(--modular-border-radius)
 }
 /* -------------------------------------------------------------- */
