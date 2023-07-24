@@ -4,13 +4,13 @@
 /* --- CUSTOMIZABLE --- */
 :root, .theme-dark, .theme-light {
 
-	--modular-background: url(https://media.discordapp.net/attachments/865879807988465730/1132800817729122375/Zy756Olm.png?width=1439&height=597) !important;
-	--modular-hue: 215;
-	--modular-saturation: 65%;
-	--modular-luminosity: 15%;
+	--modular-background: none !important;
+	--modular-hue: 223;
+	--modular-saturation: 7%;
+	--modular-luminosity: 17%;
 	--modular-shadow-distance: 8px;
 	--modular-stroke-distance: 1px;
-	--modular-border-radius: 0px;
+	--modular-border-radius: 8px;
 	--modular-client-spacing: 12px;
 	--modular-client-radius: 4px;
 	--font-main: "Segoe UI Variable Static Display" ;
@@ -67,7 +67,6 @@
 	--header-secondary: hsl(var(--primary-200-hsl)/1); 
 	--interactive-active: hsl(var(--primary-160-hsl)/1);
 	--interactive-normal: hsl(var(--primary-160-hsl)/1);
-	--text-link: hsl(var(--primary-200-hsl)/1);
 	--text-normal: hsl(var(--primary-160-hsl)/1);
 	--text-muted: hsl(var(--primary-200-hsl)/0.75);
 	--interactive-hover: hsl(var(--primary-130-hsl)/1);
@@ -76,7 +75,6 @@
 	--header-primary: hsl(var(--primary-700-hsl)/1);
 	--header-secondary: hsl(var(--primary-600-hsl)/1);
 	--interactive-active: hsl(var(--primary-500-hsl)/1);
-	--text-link: hsl(var(--primary-500-hsl)/1);
 	--interactive-normal: hsl(var(--primary-330-hsl)/1);
 	--text-normal: hsl(var(--primary-700-hsl)/1);
 	--interactive-hover: hsl(var(--primary-600-hsl)/1);
@@ -941,7 +939,7 @@ svg[class*=addButtonIcon-] {
 .wrapper-1_HaEi {
 	background: hsl(var(--primary-600-hsl)/0.5);
 	padding: 0.5em 0;
-	margin: 1em -0.5em 1em 1em;
+	margin: 0.75em 0 0.75em 1em;
 	border-radius: var(--modular-border-radius)
 }
 /* -------------------------------------------------------------- */
@@ -1264,6 +1262,13 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 div[class*="lineClamp2Plus"] {
 	display: block 
 }
+.divider-2dDziJ, .divider-SH6OnO {
+	display: none;
+}
+.scroller-Q9d9Di {
+	left: 12.5%
+}
+
 /* -------------------------------------------------------------- */
 /* Embeds */
 .embedFull-1HGV2S {
