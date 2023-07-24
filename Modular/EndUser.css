@@ -17,9 +17,9 @@
 	--modular-stroke-distance: 1px;
 
 	/* Border radius */
-	--modular-border-radius: 8px;
-	--modular-client-spacing: 8px;
-	--modular-client-radius: 4px;
+	--modular-border-radius: 8px; /* Default is 8px */
+	--modular-client-spacing: 8px; /* Default is 12px */
+	--modular-client-radius: 4px; /* Default is 4px */
 
 	/* Font change */
 	--font-main: "" ;
@@ -32,8 +32,9 @@
 	--quote-text-color: #a6da95;
 	--quote-border-radius: 6px;
 
-	/* Menu UI Blur */
-	--modular-background-blur-strength: 10px;
+	/* Menu UI */
+	--modular-background-blur-strength: 10px; /* in px, Default is 10px */
+	--modular-background-brightness: 1; /* Between 0 and 1, Default is 1 */
 	--sidebar-orientation: column; /* column-reverse for user panel on top */
 	--guild-orientation: row; /* row-reverse for guild bar on the right */
 	--client-orientation: row; /* row-reverse for server list and user panel on the right */
