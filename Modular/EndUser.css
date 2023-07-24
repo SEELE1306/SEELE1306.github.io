@@ -35,4 +35,6 @@
 	/* Menu UI Blur */
 	--modular-background-blur-strength: 10px;
 	--sidebar-orientation: column; /* column-reverse for user panel on top */
+	--guild-orientation: row; /* row-reverse for guild bar on the right */
+	--client-orientation: row; /* row-reverse for server list and user panel on the right */
 }

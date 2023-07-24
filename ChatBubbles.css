@@ -1,0 +1,52 @@
+/* Chat bubbles */
+.channelTextArea-1FufC0 {
+	background-color: transparent 
+}
+[class*=messagesWrapper-] {
+	margin-left: 10px 
+}
+[class*=replying-]::before, [class*=mentioned-]::before {
+	display: none 
+}
+[class*=zalgo-]:has([class*=contents-]) {
+	max-width: fit-content 
+}
+[class*=repliedMessage-] {
+	padding-bottom: 0.25em 
+}
+[class*=contents-] [class*=avatar-][class*=clickable-] {
+	margin-top: calc(-4px - 0.125em);
+	scale: 1.15 
+}
+[class*=contents-] [class*=avatarDecoration-] {
+	margin-top: calc(-6px - 0.125em);
+	scale: 1.15 
+}
+[class*=groupStart-][class*=message-] > [class*=contents-],[class*=message-]:not([class*=groupStart-]) > [class*=contents-] > [class*=markup]:not(:empty, [class*=searchResultsWrap]),[class*=message-] > [class*=container-] > div:is([class*=mediaAttachmentsContainer-], [class*=nonMediaAttachmentsContainer-], [class*=inlineMediaEmbed-]),[class*=message-] > [class*=container-] > span {
+	margin: 0.125em 0;
+	padding: 0.5em;
+	border-radius: var(--modular-border-radius);
+	background: var(--background-modifier-accent);
+	max-width: max-content
+}
+[class*=groupStart-][class*=message-]:hover > [class*=contents-],[class*=message-]:not([class*=groupStart-]):hover > [class*=contents-] > [class*=markup]:not(:empty, [class*=searchResultsWrap]),[class*=message-]:hover > [class*=container-] > div:is([class*=clickableSticker-], [class*=mediaAttachmentsContainer-], [class*=nonMediaAttachmentsContainer-], [class*=inlineMediaEmbed-]),[class*=message-]:hover > [class*=container-] > span {
+	background: var(--background-modifier-selected) 
+}
+[class*=message-][class*=replying-] > [class*=contents-],[class*=message-]:not([class*=groupStart-])[class*=replying-] > [class*=contents-] > [class*=markup]:not(:empty, [class*=searchResultsWrap]),[class*=message-][class*=replying-] > [class*=container-] > span,[class*=message-][class*=replying-] > [class*=container-] > div:is([class*=clickableSticker-], [class*=mediaAttachmentsContainer-], [class*=nonMediaAttachmentsContainer-], [class*=inlineMediaEmbed-]) {
+	background: var(--background-modifier-selected);
+	border-radius: var(--modular-border-radius);
+	max-width: max-content
+}
+.scrollableContainer-15eg7h {
+	background: transparent 
+}
+[class*=message-][class*=replying-]:hover > [class*=contents-],[class*=message-]:not([class*=groupStart-])[class*=replying-]:hover > [class*=contents-] > [class*=markup]:not(:empty, [class*=searchResultsWrap]),[class*=message-][class*=replying-]:hover > [class*=container-] > span,[class*=message-][class*=replying-]:hover > [class*=container-] > div:is([class*=clickableSticker-], [class*=mediaAttachmentsContainer-], [class*=nonMediaAttachmentsContainer-], [class*=inlineMediaEmbed-]) {
+	background: var(--background-modifier-hover)
+}
+[class*=message-][class*=mentioned-] > [class*=contents-],[class*=message-][class*=mentioned-] > [class*=container-] > span,[class*=message-][class*=mentioned-] > [class*=container-] > div:is([class*=clickableSticker-], [class*=mediaAttachmentsContainer-], [class*=nonMediaAttachmentsContainer-], [class*=inlineMediaEmbed-]) {
+	background: hsl(var(--peach)/0.3);
+	border-radius: var(--modular-border-radius)
+}
+[class*=message-][class*=mentioned-]:hover > [class*=contents-],[class*=message-][class*=mentioned-]:hover > [class*=container-] > span,[class*=message-][class*=mentioned-]:hover > [class*=container-] > div:is([class*=clickableSticker-], [class*=mediaAttachmentsContainer-], [class*=nonMediaAttachmentsContainer-], [class*=inlineMediaEmbed-]) {
+	background: hsl(var(--peach)/0.5)
+}
