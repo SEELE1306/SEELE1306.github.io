@@ -10,7 +10,7 @@
 	--modular-luminosity: 17%;
 	--modular-shadow-distance: 8px;
 	--modular-stroke-distance: 1px;
-	--modular-border-radius: 8px;
+	--modular-border-radius: 12px;
 	--modular-client-spacing: 12px;
 	--modular-client-radius: 4px;
 	--font-main: "Segoe UI Variable Static Display" ;
@@ -22,6 +22,8 @@
 	--quote-border-radius: 6px;
 	--modular-background-blur-strength: 4px;
 	--sidebar-orientation: column; /* column-reverse for user panel on top */
+	--guild-orientation: row; /* row-reverse for guild bar on the right */
+	--client-orientation: row; /* row-reverse for server list and user panel on the right */
 
 	--info-positive-foreground: hsl(var(--primary-200-hsl)/1);
 	--status-positive-background: hsl(var(--primary-200-hsl)/1);
@@ -924,7 +926,7 @@ svg[class*=addButtonIcon-] {
 }
 .base-2jDfDU {
 	margin: var(--modular-client-spacing);
-	border-radius: var(--modular-client-radius) 
+	border-radius: var(--modular-client-radius);
 }
 .container-1eFtFS {
 	backdrop-filter: blur(var(--modular-background-blur-strength));
@@ -933,14 +935,20 @@ svg[class*=addButtonIcon-] {
 	width: calc(100vw - calc(var(--modular-client-spacing) * 4));
 	height: calc(100vh - calc(var(--modular-client-spacing) * 4));
 	border-radius: calc(var(--modular-client-radius) * 4);
-	box-shadow: var(--modular-shadow)
+	box-shadow: var(--modular-shadow);
+	flex-direction: var(--guild-orientation);
 }
 /* -------------------------------------------------------------- */
 .wrapper-1_HaEi {
 	background: hsl(var(--primary-600-hsl)/0.5);
 	padding: 0.5em 0;
-	margin: 1em -0.5em 1em 1em;
-	border-radius: var(--modular-border-radius)
+	scale: 0.9;
+	height: 200%;
+	margin: -7em -0.375em 0 -0.25em;
+}
+
+.vc-bf-folder-sidebar {
+	margin: 0 2.5px;
 }
 /* -------------------------------------------------------------- */
 /* --- MISC UNSORTED --- */
@@ -1381,13 +1389,17 @@ div[class*=nameAndDecorators-] {
 	border-radius: var(--modular-border-radius);
 	overflow: hidden;
 	background: hsl(var(--primary-600-hsl)/0.5);
-	margin: 0.25em
+	margin: 0.25em;
 }
 .sidebar-1tnWFu {
 	display: flex;
 	flex-direction: var(--sidebar-orientation);
 	max-width: 240px
 }
+.content-1SgpWY {
+	flex-direction: var(--client-orientation);
+}
+
 .pageBody-23bo4p {
 	padding: 0.5em;
 	margin: 0.25em;
@@ -1404,15 +1416,16 @@ div[class*=nameAndDecorators-] {
 	display: flex;
 	border-radius: var(--modular-border-radius);
 	background: hsl(var(--primary-600-hsl)/0.5) !important;
-	max-width: calc(100% - 16px);
+	max-width: calc(100% - 8px);
 	margin: 0.25em;
-	padding: 0.5em 1em
+	padding: 0.5em 1em;
 }
 body:has(.members-3WRCEx) .container-ZMc96U {
-	max-width: calc(100% - 256px) 
+	width: calc(100% - 256px);
 }
+
 body:has([class*=profilePanel-]) .container-ZMc96U {
-	max-width: calc(100% - 363px) 
+	width: calc(100% - 363px) 
 }
 .resizeHandle-PBRzPC {
 	height: 99%;
@@ -1734,7 +1747,7 @@ div[class|="message"] div[class|="markup"] ol {
 .container-2o3qEW > aside > div, .members-3WRCEx {
 	margin: -3.25em 0.25em 0.25em 0.25em;
 	border-radius: var(--modular-border-radius);
-	background: hsl(var(--primary-600-hsl)/0.5) !important
+	background: hsl(var(--primary-600-hsl)/0.5);
 }
 .disabledButtonWrapper-1m0hYZ > button, .buttonsWrapper-2ARRp1 > button {
 	border-radius: var(--modular-border-radius) 
