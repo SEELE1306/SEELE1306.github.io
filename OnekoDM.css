@@ -1,3 +1,6 @@
+[class*=listItem-]>div>div>svg {
+    border-radius: 50% !important;
+}
 #app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .listItem-3SmSlK:first-child .wrapper-3kah-n::before {
     content: "";
     border-radius: 50%;
@@ -6,7 +9,7 @@
 	height: 32px;
   	transition: 0.2s ease;
 	mix-blend-mode: overlay;
-  	opacity: 0.5;
+  	opacity: 0.75;
 	image-rendering: pixelated;
     background-image: url("https://raw.githubusercontent.com/adryd325/oneko.js/14bab15a755d0e35cd4ae19c931d96d306f99f42/oneko.gif");
     animation: sleep, init; 
