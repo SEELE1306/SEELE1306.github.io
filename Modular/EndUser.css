@@ -9,11 +9,11 @@
 
 	/* Overall accent */
 	--modular-hue: 240;
-	--modular-saturation: 40%;
+	--modular-saturation: calc(var(--saturation-factor, 1)* 79%);
 	--modular-luminosity: 20%;
 
   /* Shadow */
-	--modular-shadow-distance: 5px;
+	--modular-shadow-distance: 8px;
 	--modular-stroke-distance: 1px;
 
 	/* Border radius */
@@ -38,4 +38,5 @@
 	--sidebar-orientation: column; /* column-reverse for user panel on top */
 	--guild-orientation: row; /* row-reverse for guild bar on the right */
 	--client-orientation: row; /* row-reverse for server list and user panel on the right */
+	--titlebar-name: "Modular - insert your name here or whatever quote you like I don't care";
 }
