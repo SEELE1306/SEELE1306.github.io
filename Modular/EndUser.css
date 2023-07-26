@@ -34,9 +34,12 @@
 
 	/* Menu UI */
 	--modular-background-blur-strength: 10px; /* in px, Default is 10px */
-	--modular-background-brightness: 1; /* Between 0 and 1, Default is 1 */
+	--modular-background-brightness: 100%; /* Between 0 and 100% */
+	--modular-transparency: 15%; /* Between 0 and 50% */
 	--sidebar-orientation: column; /* column-reverse for user panel on top */
 	--guild-orientation: row; /* row-reverse for guild bar on the right */
 	--client-orientation: row; /* row-reverse for server list and user panel on the right */
+	--memberlist-orientation: row; /* row-reverse for member list on the left */
+	--friendlist-orientation: row; /* row-reverse for now playing tab on the left */
 	--titlebar-name: "Modular - insert your name here or whatever quote you like I don't care";
 }
