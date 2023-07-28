@@ -10,7 +10,7 @@
 	/* Overall accent */
 	--modular-hue: 240;
 	--modular-saturation: calc(var(--saturation-factor, 1)* 79%); /* Change the percentage to something else */
-	--modular-luminosity: 20%; /* Best between 0-30% for visibility */
+	--modular-lightness: 20%; /* Best between 0-30% for visibility */
 
   /* Shadow */
 	--modular-shadow-distance: 8px;
