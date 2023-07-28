@@ -1307,10 +1307,10 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 	padding: 0.5em
 }
 .optionButtonWrapper-2lbogO.selected-KQBgNS:hover {
-	background: rgba(255, 0, 0, 0.25)
+	background: hsl(var(--red)/0.25)
 }
 .optionButtonWrapper-2lbogO:hover {
-	background: rgba(0, 128, 0, 0.25)
+	background: hsl(var(--green)/0.25)
 }
 .optionButtonWrapper-2lbogO.selected-KQBgNS {
 	background: var(--background-floating)
@@ -1386,7 +1386,7 @@ div[class|="message"] div[class|="markup"] ol {
 	border-radius: var(--modular-border-radius);
 	margin: 0.5em 1em 0 0;
 	padding: 2px 0.5em 0 0.5em;
-	background: #FF0000;
+	background: hsl(var(--red)/1);
 	font-weight: 800
 }
 .container-2o3qEW>aside>div, .members-3WRCEx {
