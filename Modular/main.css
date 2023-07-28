@@ -1,13 +1,17 @@
 /* --- Now supports Vencord Discord and Vesktop --- */
 @import url(https://seele1306.github.io/Modular/Root.css);
+@import url(https://dablulite.github.io/css-snippets/BetterModals/import.css);
+@import url(https://dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
 
 /* --- CUSTOMIZABLE --- */
 :root, .theme-dark, .theme-light {
 
-	--modular-background: var(--forest) !important;
-	--modular-hue: 223;
-	--modular-saturation: calc(var(--saturation-factor, 1)* 7%); /* Change the 79% to something else */
-	--modular-lightness: 17%; /* Best between 0 and 30% */
+	--modular-background: var(--mars) !important;
+	/* Available gradients: aurora, forest, hanami, lofi, mint-apple, mars, neon-nights, retro-raincloud, strawberry-lemonade, sepia,
+   * midnight-blurple, chroma-glow, citrus-sherbert, cotton-candy, crimson-moon, desert-khaki, dusk, retro-storm, sunrise, sunset, under-the-sea */
+	--modular-hue: 150;
+	--modular-saturation: calc(var(--saturation-factor, 1)* 50%); /* Change the percentage to something else */
+	--modular-lightness: 20%; /* Best between 0-30% for visibility */
 	--modular-shadow-distance: 8px;
 	--modular-stroke-distance: 1px;
 	--modular-border-radius: 8px;
@@ -22,7 +26,7 @@
 	--quote-border-radius: 6px;
 	--modular-background-blur-strength: 4px;
 	--modular-background-brightness: 100%; /* Between 0 and 100% */
-	--modular-transparency: 15%; /* Between 0 and 50% */
+	--modular-transparency: 30%; /* Between 0 and 50% */
 	--sidebar-orientation: column-reverse; /* column-reverse for user panel on top */
 	--guild-orientation: row; /* row-reverse for guild bar on the right */
 	--client-orientation: row; /* row-reverse for server list and user panel on the right */
@@ -30,30 +34,6 @@
 	--friendlist-orientation: row; /* row-reverse for now playing tab on the left */
 	--titlebar-name: "Modular - insert your name here or whatever quote you like I don't care";
 
-	--info-positive-foreground: hsl(var(--primary-200-hsl)/1);
-	--status-positive-background: hsl(var(--primary-200-hsl)/1);
-	--status-positive-text: hsl(var(--primary-600-hsl)/1);
-	--channels-default: hsl(var(--primary-200-hsl)/0.5);
-	--mention-background: hsl(var(--primary-300-hsl)/0.25);
-	--mention-foreground: hsl(var(--primary-200-hsl)/0.75);
-	--channel-text-area-placeholder: hsl(var(--primary-200-hsl)/0.5);
-	--channeltextarea-background: hsl(var(--primary-600-hsl)/1);
-	--background-primary: hsl(var(--primary-600-hsl)/1);
-	--background-secondary: hsl(var(--primary-560-hsl)/1);
-	--background-secondary-alt: hsl(var(--primary-560-hsl)/1);
-	--background-tertiary: hsl(var(--primary-530-hsl)/1);
-	--background-floating: hsl(var(--primary-500-hsl)/1);
-	--button-positive-background: hsl(var(--primary-500-hsl)/1);
-	--button-positive-background-disabled: hsl(var(--primary-530-hsl)/1);
-	--button-positive-background-hover: hsl(var(--primary-400-hsl)/1);
-	--button-positive-background-active: hsl(var(--primary-300-hsl)/1);
-	--button-positive-background-muted: hsl(var(--primary-600-hsl)/1);
-	--button-secondary-background-hover: hsl(var(--primary-400-hsl)/1);
-	--background-modifier-accent: hsl(var(--primary-300-hsl)/var(--modular-transparency));
-	--background-modifier-selected: hsl(var(--primary-300-hsl)/calc(var(--modular-transparency) + 25%));
-	--background-modifier-hover: hsl(var(--primary-300-hsl)/calc(var(--modular-transparency) + 25%));
-	--channel-icon: hsl(var(--primary-400-hsl)/1);
-	--interactive-muted: hsl(var(--primary-230-hsl)/1);
 	--background-message-hover: none;
 	--background-mentioned: none;
 	--background-mentioned-hover: none;
@@ -67,7 +47,7 @@
 	--font-primary: var(--font-main), var(--font-fallback);
 	--font-display: var(--font-main), var(--font-fallback);
 	--font-header: var(--font-main), var(--font-fallback);
-	--font-fallback: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif
+	--font-fallback: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .theme-dark {
 	--header-primary: hsl(var(--primary-160-hsl)/1);
@@ -77,283 +57,67 @@
 	--text-normal: hsl(var(--primary-160-hsl)/1);
 	--text-muted: hsl(var(--primary-200-hsl)/0.75);
 	--interactive-hover: hsl(var(--primary-130-hsl)/1);
+	--spotify-bar: hsl(var(--primary-200-hsl)/0.25);
+	--spotify-barfill: hsl(var(--primary-200-hsl)/0.75);
+	--mention-background: hsl(var(--primary-600-hsl)/0.25);
+	--info-positive-foreground: hsl(var(--primary-200-hsl)/1);
+	--status-positive-background: hsl(var(--primary-200-hsl)/1);
+	--status-positive-text: hsl(var(--primary-600-hsl)/1);
+	--channels-default: hsl(var(--primary-200-hsl)/0.5);
+	--channel-text-area-placeholder: hsl(var(--primary-200-hsl)/0.5);
+	--channeltextarea-background: hsl(var(--primary-600-hsl)/1);
+	--background-primary: hsl(var(--primary-600-hsl)/1);
+	--background-secondary: hsl(var(--primary-560-hsl)/1);
+	--background-secondary-alt: hsl(var(--primary-660-hsl)/var(--modular-transparency)) !important;
+	--background-tertiary: hsl(var(--primary-530-hsl)/1);
+	--background-tertiary-alt: hsl(var(--primary-530-hsl)/0.5);
+	--background-floating: hsl(var(--primary-500-hsl)/1);
+	--button-positive-background: hsl(var(--primary-500-hsl)/1);
+	--button-positive-background-disabled: hsl(var(--primary-530-hsl)/1);
+	--button-positive-background-hover: hsl(var(--primary-400-hsl)/1);
+	--button-positive-background-active: hsl(var(--primary-300-hsl)/1);
+	--button-positive-background-muted: hsl(var(--primary-600-hsl)/1);
+	--button-secondary-background-hover: hsl(var(--primary-400-hsl)/1);
+	--background-modifier-accent: hsl(var(--primary-300-hsl)/var(--modular-transparency));
+	--background-modifier-selected: hsl(var(--primary-300-hsl)/calc(var(--modular-transparency) + 25%));
+	--background-modifier-hover: hsl(var(--primary-300-hsl)/calc(var(--modular-transparency) + 25%));
+	--channel-icon: hsl(var(--primary-400-hsl)/1);
+	--interactive-muted: hsl(var(--primary-230-hsl)/1);
 }
 .theme-light {
 	--header-primary: hsl(var(--primary-700-hsl)/1);
 	--header-secondary: hsl(var(--primary-600-hsl)/1);
-	--interactive-active: hsl(var(--primary-500-hsl)/1);
-	--interactive-normal: hsl(var(--primary-330-hsl)/1);
+	--interactive-active: hsl(var(--primary-700-hsl)/1);
+	--interactive-normal: hsl(var(--primary-630-hsl)/1);
 	--text-normal: hsl(var(--primary-700-hsl)/1);
 	--interactive-hover: hsl(var(--primary-600-hsl)/1);
-	--text-muted: hsl(var(--primary-600-hsl)/0.6)
-}
-
-/* NoLightInDark by Dablulite */
-.footer-IubaaS {
-    color: var(--header-primary);
-}
-.theme-dark .theme-light:not(.userProfileOuter-2tQwNf) {
-    --guild-header-text-shadow: 0 1px 1px hsl(var(--black-500-hsl)/0.4);
-    --elevation-stroke: 0 0 0 1px hsl(var(--primary-900-hsl)/0.15);
-    --elevation-low: 0 1px 0 hsl(var(--primary-900-hsl)/0.2),0 1.5px 0 hsl(var(--primary-860-hsl)/0.05),0 2px 0 hsl(var(--primary-900-hsl)/0.05);
-    --elevation-medium: 0 4px 4px hsl(var(--black-500-hsl)/0.16);
-    --elevation-high: 0 8px 16px hsl(var(--black-500-hsl)/0.24);
-    --shadow-border: 0 0 0 1px hsla(0,0%,100%,0.08);
-    --shadow-border-filter: drop-shadow(0 0 1px hsla(0,0%,100%,0.08));
-    --shadow-button-overlay: 0 12px 24px 0 rgba(0,0,0,0.24);
-    --shadow-button-overlay-filter: drop-shadow(0 12px 24px rgba(0,0,0,0.24));
-    --shadow-high: 0 12px 24px 0 rgba(0,0,0,0.24);
-    --shadow-high-filter: drop-shadow(0 12px 24px rgba(0,0,0,0.24));
-    --shadow-ledge: 0 2px 0 0 rgba(0,0,0,0.05),0 1.5px 0 0 rgba(0,0,0,0.05),0 1px 0 0 rgba(0,0,0,0.16);
-    --shadow-ledge-filter: drop-shadow(0 1.5px 0 rgba(0,0,0,0.24));
-    --shadow-low: 0 1px 4px 0 rgba(0,0,0,0.14);
-    --shadow-low-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.14));
-    --shadow-low-active: 0 0 4px 0 rgba(0,0,0,0.14);
-    --shadow-low-active-filter: drop-shadow(0 0 4px rgba(0,0,0,0.14));
-    --shadow-low-hover: 0 4px 10px 0 rgba(0,0,0,0.14);
-    --shadow-low-hover-filter: drop-shadow(0 4px 10px rgba(0,0,0,0.14));
-    --shadow-medium: 0 4px 8px 0 rgba(0,0,0,0.16);
-    --shadow-medium-filter: drop-shadow(0 4px 8px rgba(0,0,0,0.16));
-    --shadow-mobile-navigator-x: 0 0 10px 0 rgba(0,0,0,0.22);
-    --shadow-mobile-navigator-x-filter: drop-shadow(0 0 10px rgba(0,0,0,0.22));
-    --shadow-top-high: 0 -12px 32px 0 rgba(0,0,0,0.24);
-    --shadow-top-high-filter: drop-shadow(0 -12px 32px rgba(0,0,0,0.24));
-    --shadow-top-ledge: 0 -2px 0 0 rgba(0,0,0,0.05),0 -1.5px 0 0 rgba(0,0,0,0.05),0 -1px 0 0 rgba(0,0,0,0.16);
-    --shadow-top-ledge-filter: drop-shadow(0 -1.5px 0 rgba(0,0,0,0.24));
-    --shadow-top-low: 0 -1px 4px 0 rgba(0,0,0,0.14);
-    --shadow-top-low-filter: drop-shadow(0 -1px 4px rgba(0,0,0,0.14));
-    --activity-card-background: var(--primary-700);
-    --android-navigation-bar-background: var(--primary-830);
-    --android-navigation-scrim-background: hsl(var(--primary-830-hsl)/0.5);
-    --android-ripple: hsl(var(--white-500-hsl)/0.07);
-    --background-accent: var(--primary-530);
-    --background-floating: var(--primary-800);
-    --background-mentioned: hsl(var(--yellow-300-hsl)/0.1);
-    --background-mentioned-hover: hsl(var(--yellow-300-hsl)/0.08);
-    --background-message-automod: hsl(var(--red-400-hsl)/0.05);
-    --background-message-automod-hover: hsl(var(--red-400-hsl)/0.1);
-    --background-message-highlight: hsl(var(--brand-360-hsl)/0.08);
-    --background-message-highlight-hover: hsl(var(--brand-360-hsl)/0.06);
-    --background-message-hover: hsl(var(--primary-900-hsl)/0.06);
-    --background-mobile-primary: var(--primary-600);
-    --background-mobile-secondary: var(--primary-630);
-    --background-modifier-accent: hsl(var(--primary-500-hsl)/0.48);
-    --background-modifier-active: hsl(var(--primary-500-hsl)/0.48);
-    --background-modifier-hover: hsl(var(--primary-500-hsl)/0.3);
-    --background-modifier-selected: hsl(var(--primary-500-hsl)/0.6);
-    --background-nested-floating: var(--primary-630);
-    --background-primary: var(--primary-600);
-    --background-secondary: var(--primary-630);
-    --background-secondary-alt: var(--primary-660);
-    --background-tertiary: var(--primary-700);
-    --black: var(--black-500);
-    --border-strong: hsl(var(--white-500-hsl)/0.16);
-    --border-subtle: hsl(var(--white-500-hsl)/0.08);
-    --bug-reporter-modal-submitting-background: hsl(var(--primary-800-hsl)/0.6);
-    --button-creator-revenue-background: var(--teal-430);
-    --button-danger-background: var(--red-430);
-    --button-danger-background-active: var(--red-530);
-    --button-danger-background-disabled: var(--red-430);
-    --button-danger-background-hover: var(--red-500);
-    --button-outline-brand-background: hsl(var(--white-500-hsl)/0);
-    --button-outline-brand-background-active: var(--brand-560);
-    --button-outline-brand-background-hover: var(--brand-500);
-    --button-outline-brand-border: var(--brand-500);
-    --button-outline-brand-border-active: var(--brand-560);
-    --button-outline-brand-border-hover: var(--brand-500);
-    --button-outline-brand-text: var(--white-500);
-    --button-outline-brand-text-active: var(--white-500);
-    --button-outline-brand-text-hover: var(--white-500);
-    --button-outline-danger-background: hsl(var(--white-500-hsl)/0);
-    --button-outline-danger-background-active: var(--red-460);
-    --button-outline-danger-background-hover: var(--red-430);
-    --button-outline-danger-border: var(--red-400);
-    --button-outline-danger-border-active: var(--red-430);
-    --button-outline-danger-border-hover: var(--red-430);
-    --button-outline-danger-text: var(--white-500);
-    --button-outline-danger-text-active: var(--white-500);
-    --button-outline-danger-text-hover: var(--white-500);
-    --button-outline-positive-background: hsl(var(--white-500-hsl)/0);
-    --button-outline-positive-background-active: var(--green-530);
-    --button-outline-positive-background-hover: var(--green-430);
-    --button-outline-positive-border: var(--green-360);
-    --button-outline-positive-border-active: var(--green-530);
-    --button-outline-positive-border-hover: var(--green-430);
-    --button-outline-positive-text: var(--white-500);
-    --button-outline-positive-text-active: var(--white-500);
-    --button-outline-positive-text-hover: var(--white-500);
-    --button-outline-primary-background: hsl(var(--white-500-hsl)/0);
-    --button-outline-primary-background-active: var(--primary-430);
-    --button-outline-primary-background-hover: var(--primary-500);
-    --button-outline-primary-border: var(--primary-500);
-    --button-outline-primary-border-active: var(--primary-430);
-    --button-outline-primary-border-hover: var(--primary-500);
-    --button-outline-primary-text: var(--white-500);
-    --button-outline-primary-text-active: var(--white-500);
-    --button-outline-primary-text-hover: var(--white-500);
-    --button-positive-background: var(--green-430);
-    --button-positive-background-active: var(--green-530);
-    --button-positive-background-disabled: var(--green-430);
-    --button-positive-background-hover: var(--green-500);
-    --button-secondary-background: var(--primary-500);
-    --button-secondary-background-active: var(--primary-400);
-    --button-secondary-background-disabled: var(--primary-500);
-    --button-secondary-background-hover: var(--primary-430);
-    --channel-icon: var(--primary-400);
-    --channel-text-area-placeholder: var(--primary-430);
-    --channels-default: var(--primary-360);
-    --channeltextarea-background: var(--primary-560);
-    --chat-background: var(--primary-600);
-    --chat-border: var(--primary-700);
-    --chat-input-container-background: var(--primary-600);
-    --control-brand-foreground: var(--brand-360);
-    --control-brand-foreground-new: var(--brand-360);
-    --creator-revenue-icon-gradient-end: var(--teal-430);
-    --creator-revenue-icon-gradient-start: var(--teal-360);
-    --creator-revenue-info-box-background: hsl(var(--teal-430-hsl)/0.1);
-    --creator-revenue-info-box-border: var(--teal-400);
-    --creator-revenue-locked-channel-icon: var(--teal-345);
-    --creator-revenue-progress-bar: var(--teal-400);
-    --deprecated-card-bg: hsl(var(--primary-700-hsl)/0.6);
-    --deprecated-card-editable-bg: hsl(var(--primary-700-hsl)/0.3);
-    --deprecated-quickswitcher-input-background: var(--primary-400);
-    --deprecated-quickswitcher-input-placeholder: hsl(var(--white-500-hsl)/0.3);
-    --deprecated-store-bg: var(--primary-600);
-    --deprecated-text-input-bg: var(--primary-700);
-    --deprecated-text-input-border: hsl(var(--black-500-hsl)/0.3);
-    --deprecated-text-input-border-disabled: var(--primary-700);
-    --deprecated-text-input-border-hover: var(--primary-900);
-    --deprecated-text-input-prefix: var(--primary-200);
-    --display-banner-overflow-background: hsl(var(--primary-700-hsl)/0.5);
-    --divider-strong: hsl(var(--white-500-hsl)/0.16);
-    --divider-subtle: hsl(var(--white-500-hsl)/0.08);
-    --focus-primary: var(--blue-345);
-    --forum-post-extra-media-count-container-background: hsl(var(--primary-660-hsl)/0.8);
-    --forum-post-tag-background: hsl(var(--primary-660-hsl)/0.9);
-    --header-primary: var(--primary-130);
-    --header-secondary: var(--primary-330);
-    --home-background: var(--primary-645);
-    --home-card-resting-border: hsl(var(--transparent-hsl)/0);
-    --info-box-background: hsl(var(--blue-345-hsl)/0.1);
-    --info-danger-background: hsl(var(--red-400-hsl)/0.1);
-    --info-danger-foreground: var(--red-400);
-    --info-danger-text: var(--white-500);
-    --info-help-background: hsl(var(--blue-345-hsl)/0.1);
-    --info-help-foreground: var(--blue-345);
-    --info-help-text: var(--white-500);
-    --info-positive-background: hsl(var(--green-360-hsl)/0.1);
-    --info-positive-foreground: var(--green-360);
-    --info-positive-text: var(--white-500);
-    --info-warning-background: hsl(var(--yellow-300-hsl)/0.1);
-    --info-warning-foreground: var(--yellow-300);
-    --info-warning-text: var(--white-500);
-    --input-background: var(--primary-700);
-    --input-placeholder-text: var(--input-placeholder-text-dark);
-    --interactive-active: var(--white-500);
-    --interactive-hover: var(--primary-230);
-    --interactive-muted: var(--primary-500);
-    --interactive-normal: var(--primary-330);
-    --live-stage-tile-border: hsl(var(--primary-500-hsl)/0.6);
-    --logo-primary: var(--white-500);
-    --mention-background: hsl(var(--brand-500-hsl)/0.3);
-    --mention-foreground: var(--brand-260);
-    --modal-background: var(--primary-600);
-    --modal-footer-background: var(--primary-630);
-    --profile-gradient-message-input-border: hsl(var(--primary-500-hsl)/0.48);
-    --profile-gradient-note-background: hsl(var(--black-500-hsl)/0.3);
-    --profile-gradient-overlay: hsl(var(--black-500-hsl)/0.6);
-    --profile-gradient-overlay-synced-with-user-theme: hsl(var(--black-500-hsl)/0.8);
-    --profile-gradient-profile-body-background-hover: hsl(var(--white-500-hsl)/0.16);
-    --profile-gradient-role-pill-background: hsl(var(--primary-660-hsl)/var(--modular-transparency));
-    --profile-gradient-role-pill-border: hsl(var(--white-500-hsl)/0.2);
-    --profile-gradient-section-box: hsl(var(--black-500-hsl)/0.45);
-    --redesign-activity-card-background: var(--primary-560);
-    --redesign-activity-card-background-pressed: var(--primary-630);
-    --redesign-activity-card-border: hsl(var(--white-500-hsl)/0.02);
-    --redesign-button-danger-background: var(--red-430);
-    --redesign-button-danger-pressed-background: var(--red-460);
-    --redesign-button-danger-text: var(--white-500);
-    --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl)/0.54);
-    --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl)/0.64);
-    --redesign-button-overlay-alpha-text: var(--white-500);
-    --redesign-button-overlay-background: var(--white-500);
-    --redesign-button-overlay-pressed-background: var(--primary-230);
-    --redesign-button-overlay-text: var(--primary-860);
-    --redesign-button-positive-background: var(--green-430);
-    --redesign-button-positive-pressed-background: var(--green-460);
-    --redesign-button-positive-text: var(--white-500);
-    --redesign-button-primary-alt-background: hsl(var(--brand-500-hsl)/0);
-    --redesign-button-primary-alt-border: var(--brand-360);
-    --redesign-button-primary-alt-on-blurple-background: hsl(var(--brand-530-hsl)/0);
-    --redesign-button-primary-alt-on-blurple-border: var(--white-500);
-    --redesign-button-primary-alt-on-blurple-pressed-background: var(--brand-530);
-    --redesign-button-primary-alt-on-blurple-pressed-border: var(--brand-360);
-    --redesign-button-primary-alt-on-blurple-text: var(--white-500);
-    --redesign-button-primary-alt-pressed-background: hsl(var(--brand-700-hsl)/0.16);
-    --redesign-button-primary-alt-pressed-border: hsl(var(--brand-400-hsl)/0.5);
-    --redesign-button-primary-alt-pressed-text: var(--brand-360);
-    --redesign-button-primary-alt-text: var(--brand-360);
-    --redesign-button-primary-background: var(--brand-500);
-    --redesign-button-primary-on-blurple-background: var(--white-500);
-    --redesign-button-primary-on-blurple-pressed-background: var(--brand-200);
-    --redesign-button-primary-on-blurple-pressed-text: var(--brand-530);
-    --redesign-button-primary-on-blurple-text: var(--brand-500);
-    --redesign-button-primary-pressed-background: var(--brand-560);
-    --redesign-button-primary-text: var(--white-500);
-    --redesign-button-secondary-alt-background: var(--primary-530);
-    --redesign-button-secondary-alt-pressed-background: var(--primary-560);
-    --redesign-button-secondary-alt-text: var(--white-500);
-    --redesign-button-secondary-background: var(--primary-460);
-    --redesign-button-secondary-border: var(--primary-460);
-    --redesign-button-secondary-pressed-background: var(--primary-500);
-    --redesign-button-secondary-pressed-border: var(--primary-500);
-    --redesign-button-secondary-text: var(--white-500);
-    --redesign-input-control-selected: var(--brand-500);
-    --redesign-only-background-active: var(--primary-530);
-    --redesign-only-background-default: var(--primary-700);
-    --redesign-only-background-overlay: var(--primary-600);
-    --redesign-only-background-raised: var(--primary-630);
-    --redesign-only-background-sunken: var(--primary-800);
-    --scrollbar-auto-scrollbar-color-thumb: var(--primary-730);
-    --scrollbar-auto-scrollbar-color-track: var(--primary-630);
-    --scrollbar-auto-thumb: var(--primary-730);
-    --scrollbar-auto-track: var(--primary-630);
-    --scrollbar-thin-thumb: var(--primary-730);
-    --scrollbar-thin-track: hsl(var(--black-500-hsl)/0);
-    --spoiler-hidden-background: var(--primary-700);
-    --spoiler-revealed-background: var(--primary-660);
-    --status-danger: var(--red-400);
-    --status-danger-background: var(--red-400);
-    --status-danger-text: var(--white-500);
-    --status-dnd: var(--red-400);
-    --status-idle: var(--yellow-300);
-    --status-offline: var(--primary-360);
-    --status-online: var(--green-360);
-    --status-positive: var(--green-360);
-    --status-positive-background: var(--green-430);
-    --status-positive-text: var(--white-500);
-    --status-warning: var(--yellow-300);
-    --status-warning-background: var(--yellow-300);
-    --status-warning-text: var(--black-500);
-    --text-brand: var(--brand-360);
-    --text-danger: var(--red-345);
-    --text-link: var(--blue-345);
-    --text-link-low-saturation: var(--blue-330);
-    --text-muted: var(--primary-360);
-    --text-normal: var(--primary-230);
-    --text-positive: var(--green-330);
-    --text-warning: var(--yellow-300);
-    --textbox-markdown-syntax: var(--primary-360);
-    --user-profile-header-overflow-background: hsl(var(--primary-700-hsl)/0.5);
-    --white: var(--white-500);
-}
-.theme-dark .theme-light .footerSeparator-3U8YsT {
-    -webkit-box-shadow: inset 0 1px 0 hsl(var(--primary-630-hsl)/.6);
-    box-shadow: inset 0 1px 0 hsl(var(--primary-630-hsl)/.6);
-}
-.theme-dark .theme-light .rootWithShadow-2hdL2J {
-    -webkit-box-shadow: var(--dark-elevation-border),var(--dark-elevation-high);
-    box-shadow: var(--dark-elevation-border),var(--dark-elevation-high);
+	--text-muted: hsl(var(--primary-600-hsl)/0.6);
+	--spotify-bar: hsl(var(--primary-700-hsl)/0.25);
+	--spotify-barfill: hsl(var(--primary-700-hsl)/0.75);
+	--mention-background: hsl(var(--primary-400-hsl)/0.25);
+	--info-positive-foreground: hsl(var(--primary-700-hsl)/1);
+	--status-positive-background: hsl(var(--primary-200-hsl)/1);
+	--status-positive-text: hsl(var(--primary-260-hsl)/1);
+	--channels-default: hsl(var(--primary-700-hsl)/0.5);
+	--channel-text-area-placeholder: hsl(var(--primary-700-hsl)/0.5);
+	--channeltextarea-background: hsl(var(--primary-300-hsl)/1);
+	--background-primary: hsl(var(--primary-300-hsl)/1);
+	--background-secondary: hsl(var(--primary-260-hsl)/1);
+	--background-secondary-alt: hsl(var(--primary-200-hsl)/var(--modular-transparency)) !important;
+	--background-tertiary: hsl(var(--primary-230-hsl)/1);
+	--background-tertiary-alt: hsl(var(--primary-230-hsl)/0.5);
+	--background-floating: hsl(var(--primary-200-hsl)/1);
+	--button-positive-background: hsl(var(--primary-200-hsl)/1);
+	--button-positive-background-disabled: hsl(var(--primary-230-hsl)/1);
+	--button-positive-background-hover: hsl(var(--primary-160-hsl)/1);
+	--button-positive-background-active: hsl(var(--primary-300-hsl)/1);
+	--button-positive-background-muted: hsl(var(--primary-300-hsl)/1);
+	--button-secondary-background-hover: hsl(var(--primary-230-hsl)/1);
+	--background-modifier-accent: hsl(var(--primary-160-hsl)/var(--modular-transparency));
+	--background-modifier-selected: hsl(var(--primary-160-hsl)/calc(var(--modular-transparency) + 25%));
+	--background-modifier-hover: hsl(var(--primary-160-hsl)/calc(var(--modular-transparency) + 25%));
+	--channel-icon: hsl(var(--primary-700-hsl)/1);
+	--interactive-muted: hsl(var(--primary-600-hsl)/1);
 }
 
 /* Scrollbars */
@@ -378,7 +142,7 @@
 	margin-top: 15px 
 }
 #vc-spotify-player #vc-spotify-song-title,.vc-spotify-comma.vc-spotify-comma {
-	color: hsl(var(--primary-160-hsl)/1) 
+	color: var(--text-normal) 
 }
 #vc-spotify-player #vc-spotify-song-title {
 	font-weight: 1000 
@@ -390,16 +154,16 @@
 }
 .vc-spotify-comma.vc-spotify-comma,#vc-spotify-player .vc-spotify-ellipoverflow,#vc-spotify-player .vc-spotify-artist,#vc-spotify-player .vc-spotify-album {
 	margin-top: -2px;
-	color: hsl(var(--primary-160-hsl)/1) 
+	color: var(--text-normal)
 }
 #vc-spotify-player [class*=bar-] {
-	background: hsl(var(--primary-200-hsl)/0.25) 
+	background: var(--spotify-bar)
 }
 #vc-spotify-player [class*=barFill] {
-	background: hsl(var(--primary-200-hsl)/0.75) 
+	background: var(--spotify-barfill)
 }
 #vc-spotify-player #vc-spotify-progress-bar>[class^=slider] [class^=grabber][class^=grabber] {
-	background-color: hsl(var(--primary-200-hsl)/1);
+	background-color: var(--info-positive-foreground);
 	height: 8px !important;
 	width: 8px !important;
 	border-radius: 50%;
@@ -407,20 +171,20 @@
 }
 /* Spotify buttons */
 #vc-spotify-player .vc-spotify-shuffle-on.vc-spotify-shuffle-on,#vc-spotify-player .vc-spotify-repeat-context.vc-spotify-repeat-context,#vc-spotify-player .vc-spotify-repeat-track.vc-spotify-repeat-track,#vc-spotify-player .vc-spotify-shuffle-on.vc-spotify-shuffle-on:hover,#vc-spotify-player .vc-spotify-repeat-context.vc-spotify-repeat-context:hover,#vc-spotify-player .vc-spotify-repeat-track.vc-spotify-repeat-track:hover {
-	color: hsl(var(--primary-200-hsl)/1) !important 
+	color: var(--info-positive-foreground) !important 
 }
 #vc-spotify-player .vc-spotify-repeat-off.vc-spotify-repeat-off.vc-spotify-repeat-off,#vc-spotify-player .vc-spotify-shuffle-off.vc-spotify-shuffle-off.vc-spotify-shuffle-off {
-	color: hsl(var(--primary-200-hsl)/0.5) 
+	color: var(--channels-default)
 }
 #vc-spotify-player .vc-spotify-button.vc-spotify-button:hover {
-	background: hsl(var(--primary-200-hsl)/0.25) 
+	background: var(--spotify-bar)
 }
 #vc-spotify-player .vc-spotify-button.vc-spotify-button {
-	color: hsl(var(--primary-200-hsl)/1) 
+	color: var(--info-positive-foreground)
 }
 /* VC buttons and settings */
 #vc-spotify-player + [class*=container-] [class*=button-][class*=enabled-] {
-	color: hsl(var(--primary-200-hsl)/1) !important 
+	color: var(--info-positive-foreground) !important 
 }
 [class*=panels-] [class*=activityPanel-] {
 	border-bottom: none 
@@ -446,7 +210,7 @@
 	background: transparent !important
 }
 [class*=callContainer-] {
-	background: hsl(var(--primary-660-hsl)/var(--modular-transparency));
+	background: var(--background-secondary-alt);
 	border-radius: var(--modular-border-radius);
 	padding: 0.5em;
 	margin: 0.25em
@@ -465,7 +229,7 @@
 	border: unset;
 	margin-left: 8px;
 	margin-right: 0;
-	background: var(--background-modifier-selected);
+	background: var(--background-modifier-accent);
 	text-transform: none;
 	letter-spacing: 0.02em;
 	text-align: center
@@ -475,7 +239,7 @@
 }
 [class*=voiceChannelsButton-]>div {
 	font-weight: 800;
-	color: var(--channels-default) 
+	color: var(--text-muted) 
 }
 [class*=voiceChannelsButton-]:hover>div {
 	color: var(--interactive-hover) 
@@ -494,14 +258,14 @@ span[class*=dot-][class*=maskSecondary-] {
 	color: var(--interactive-active) 
 }
 [class*=overlayBottom-] [class*=text-md-normal-][class*=overlayTitle-] {
-	background: hsl(var(--primary-500-hsl)/0.75);
+	background: var(--background-floating);
 	border-radius: var(--modular-border-radius)
 }
 .participantsButton-1WBdFP {
 	background: var(--background-tertiary) 
 }
 [class*=overlayBottom-] [class*=statusContainer-]>svg {
-	background: hsl(var(--primary-500-hsl)/0.75) 
+	background: var(--background-floating)
 }
 /* Screenshare fix */
 [class*=panels-]>[class*=panel-][class*=activityPanel-]v{
@@ -560,7 +324,7 @@ span[class*=dot-][class*=maskSecondary-] {
 	font-size: 14px;
 }
 .channelTextArea-1VQBuV>[class*=channelTextAreaInner-][class*=scrollableContainer-]{
-	background: hsl(var(--primary-600-hsl)/0.6);
+	background: var(--background-secondary-alt);
 	border-radius: var(--modular-border-radius);
 	margin-bottom: 1em
 }
@@ -596,7 +360,7 @@ main[class^=chatContent]>form>*>[class^=attachedBars] {
 	background-color: unset 
 }
 .barButtonBase-Sk2mdB {
-	color: hsl(var(--primary-200-hsl)/1);
+	color: var(--info-positive-foreground);
 	background-color: var(--background-tertiary);
 	border-radius: var(--modular-border-radius);
 	padding-right: 4px;
@@ -622,12 +386,11 @@ main[class^=chatContent]>form>*>[class^=attachedBars] {
 /* -------------------------------------------------------------- */
 /* -- Discord DM Button -- */
 .wrapper-3kah-n .childWrapper-1j_1ub {
-	background-color: hsl(var(--primary-330-hsl)/0.5);
-	color: hsl(var(--primary-200-hsl)/1)
+	background-color: var(--background-modifier-accent);
+	color: --info-positive-foreground
 }
 .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,.wrapper-3kah-n:hover .childWrapper-1j_1ub {
 	background-color: var(--background-modifier-selected);
-	color: hsl(var(--primary-200-hsl)/1)
 }
 /* -------------------------------------------------------------- */
 /* Changes the staff tag background color and also font color - Use with MoreUserTags */
@@ -643,12 +406,12 @@ span[data-tag="owner"] {
 	display: none 
 }
 span[data-tag="admin"] {
-	background-color: hsl(var(--primary-200-hsl)/1);
-	color: var(--background-primary)
+	background-color: var(--info-positive-foreground);
+	color: var(--button-positive-background)
 }
 span[data-tag="staff"] {
-	background-color: hsl(var(--sky)/1);
-	color: var(--background-primary)
+	background-color: var(--info-positive-foreground);
+	color: var(--button-positive-background)
 }
 span[data-tag="webhook"] {
 	display: none 
@@ -660,16 +423,16 @@ span[class*=botText-] {
 	margin-bottom: 4px 
 }
 span[data-tag="mod"] {
-	background-color: hsl(var(--primary-400-hsl)/1);
-	color: hsl(var(--primary-200-hsl)/1)
+	background-color: var(--button-positive-background);
+	color: var(--info-positive-foreground)
 }
 span[data-tag="vc mod"] {
-	background-color: hsl(var(--flamingo)/1);
-	color: var(--background-primary)
+	background-color: var(--button-positive-background);
+	color: var(--info-positive-foreground)
 }
 .botTagRegular-kpctgU {
-	background-color: var(--background-floating);
-	color: hsl(var(--primary-200-hsl)/1)
+	background-color: var(--button-positive-background);
+	color: var(--info-positive-foreground)
 }
 /* -------------------------------------------------------------- */
 /* -- Vencord Toolbox logo change -- */
@@ -681,11 +444,21 @@ span[data-tag="vc mod"] {
 }
 /* -------------------------------------------------------------- */
 /* -- Channel and Memberlist hover -- */ /* NEED OPTIMIZATION */
+.colorDefault-2_rLdz {
+	color: var(--interactive-muted);
+}
 .colorDefault-2_rLdz, .layout-1qmrhw {
 	border-radius: var(--modular-border-radius) 
 }
 .colorDefault-2_rLdz:hover, .layout-1qmrhw:hover {
-	background: var(--background-modifier-hover) !important 
+	background: var(--background-modifier-hover) !important;
+	color: var(--interactive-hover);
+}
+.colorDefault-2_rLdz.focused-3LIdPu, .container-2cd8Mz {
+	background: transparent 
+}
+.separator-12G2Op {
+	display: none;
 }
 [class^="popout-"] [class^="row-"] {
 	background-color: transparent 
@@ -700,9 +473,6 @@ span[data-tag="vc mod"] {
 }
 .containerDefault-YUSmu3:hover>div>div>.link-1_kTxV	{
 	background: var(--background-modifier-hover) !important
-}
-[class*=modeUnread] [class*=icon-],[class*=containerDefault-][class*=selected-] [class*=icon-], [class*=modeSelected-] [class*=icon-],[class*=containerDefault-]:hover [class*=icon-] {
-	color: hsl(var(--primary-160-hsl)/1) !important 
 }
 .containerDefault-YUSmu3selected-2TbFuo>div>div>.link-1_kTxV, li[class*=containerDefault-]>div>div[class*=modeSelected-]>div>a[class*=link-],[class*=member-][class*=container-][class*=selected]>div,[class*=wrapper-][class*=typeThread-][class*=modeSelected-]>div{
 	background: var(--background-modifier-selected)
@@ -720,44 +490,41 @@ span[data-tag="vc mod"] {
 	width: 15px;
 	height: 15px 
 }
-.containerDefault-YUSmu3.selected-2TbFuo .icon-2W8DHg,.containerDefault-YUSmu3:hover .icon-2W8DHg,.modeUnread-3Cxepe .icon-2W8DHg,li[class*=containerDefault-]>div>div[class*=modeSelected-]>div>a>div>div>svg {
-	color: hsl(var(--primary-160-hsl)/1) 
+.containerDefault-YUSmu3.selected-2TbFuo .icon-2W8DHg,.containerDefault-YUSmu3:hover .icon-2W8DHg,.modeUnread-3Cxepe .icon-2W8DHg {
+	color: var(--interactive-active)
 }
 .name-28HaxV, [class^="popout-"] [class^="row-"] .name-3WNuqg {
-	text-shadow: 0 1px 5px hsl(var(--primary-700-hsl)/0.5);
-	font-weight: 600 
+	color: var(--text-muted);
 }
 .modeSelected-3DmyhH .name-28HaxV, .modeMuted-2T4MDZ:hover .name-28HaxV, .wrapper-NhbLHG:hover .name-28HaxV {
-	color: hsl(var(--primary-130-hsl)/1) 
+	color: var(--text-normal);
 }
 /* -------------------------------------------------------------- */
 /* -- For code snippets and inline code -- */
 .markup-eYLPri code {
-	margin: 0.5em 0 0.5em 0 
+	margin: 0.5em 0 0.5em 0;
 }
 .markup-eYLPri code.inline{
-	background: hsl(var(--primary-530-hsl)/0.5) !important;
+	background: var(--background-tertiary) !important;
 	border: none !important;
 	padding: 0.5em 0.75em 0.5em 0.75em;
 	font-weight: 600;
-	color: hsl(var(--primary-200-hsl)/1)
+	color: var(--info-positive-foreground)
 }
 code:not(code.inline) {
-	border-radius: var(--modular-border-radius) !important;
-	background-color: var(--background-floating)
+	background-color: transparent
 }
 .shiki-container {
 	margin: 0.5em;
 	border: unset;
 	width: max-content;
-	border-radius: var(--modular-border-radius) !important
 }
 /* -------------------------------------------------------------- */
-.header-3YNgrp, .popout-TdhJ6Z, .container-3kfp0r{
-	background: hsl(var(--primary-400-hsl)/1)
+.header-3YNgrp, .container-3kfp0r{
+	background: var(--channel-icon)
 }
 .reactionTooltip-3IOBwg {
-	background: hsl(var(--primary-400-hsl)/1) !important 
+	background: var(--channel-icon) !important 
 }
 .option-ayUoaq::after {
 	background: transparent 
@@ -790,7 +557,7 @@ code:not(code.inline) {
 	box-shadow: none !important
 }
 ul.resultsGroup-cfY57t {
-	background-color: var(--background-tertiary) 
+	background-color: var(--background-primary) 
 }
 ul.resultsGroup-cfY57t [class*=option-] {
 	border-radius: var(--modular-border-radius) 
@@ -799,22 +566,22 @@ ul.resultsGroup-cfY57t [class*=option-] {
 	background: var(--background-modifier-hover) !important
 }
 [class*=searchResultsWrap] {
-	background: hsl(var(--primary-660-hsl)/var(--modular-transparency));
+	background: var(--background-secondary-alt);
 	border-radius: var(--modular-border-radius);
 	border-bottom: none !important;
 	margin: 0.25em
 }
 [class*=searchResultsWrap]>[class*=searchHeader-] {
-	background: hsl(var(--primary-660-hsl)/var(--modular-transparency));
+	background: var(--background-secondary-alt);
 	border-radius: unset
 }
 [class*=searchResultsWrap]>[class*=searchHeader-]>div:nth-child(2)>div {
 	border-radius: var(--modular-border-radius);
-	background: hsl(var(--primary-400-hsl)/1);
+	background: var(--channel-icon);
 	font-weight: 800
 }
 [class*=searchResultsWrap]>[class*=searchHeader-]>div:nth-child(2)>div:hover,[class*=searchResultsWrap]>[class*=searchHeader-]>div:nth-child(2)>div[class*=selected-] {
-	background: hsl(var(--primary-300-hsl)/1) !important 
+	background: var(--button-positive-background-active) !important 
 }
 [class*=searchResultsWrap]>[class*=searchHeader-]>div:nth-child(1)>div, .channelNameText-2q3Lge {
 	font-weight: 800 
@@ -834,7 +601,7 @@ button[class*=emojiButtonNormal]>div>div {
 /* -- Channel Headers -- */
 h3[class*=name-][class*=container-]>div {
 	color: var(--text-normal);
-	background: hsl(var(--primary-200-hsl)/0.25);
+	background: var(--background-modifier-accent);
 	border-radius: var(--modular-border-radius);
 	padding: 0.25em;
 	box-sizing: border-box;
@@ -864,7 +631,7 @@ svg[class*=addButtonIcon-] {
 }
 [class*=children-]>button[class*=addButton-] {
 	border-radius: 50%;
-	background: hsl(var(--primary-200-hsl)/0.25);
+	background: var(--background-modifier-accent);
 	top: -4px;
 	margin: 0 0 0 0.5em;
 	width: 20px;
@@ -937,13 +704,13 @@ svg[class*=addButtonIcon-] {
 
 /* -------------------------------------------------------------- */
 .wrapper-1_HaEi {
-	background: hsl(var(--primary-660-hsl)/var(--modular-transparency));
+	background: var(--background-secondary-alt);
 	padding: 0.5em 0;
 }
 /* -------------------------------------------------------------- */
 /* --- MISC UNSORTED --- */
 .wrapper-1ZcZW-:hover {
-	background-color: hsl(var(--primary-400-hsl)/1) 
+	background-color: var(--channel-icon) 
 }
 .form-3gdLxP {
 	padding: 0px 
@@ -968,7 +735,7 @@ svg[class*=addButtonIcon-] {
 /* Members tab */
 h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=container-] {
 	color: var(--text-normal);
-	background: hsl(var(--primary-200-hsl)/0.25);
+	background: var(--background-modifier-accent);
 	height: 2vh;
 	margin: 0.5em 0 0.5em 0.5em;
 	border-radius: calc(var(--modular-border-radius) * 0.75);
@@ -1016,11 +783,11 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 	margin-left: 0px;
 	margin-right: 0px
 }
-.theme-dark .vc-platform-indicator>svg {
+.vc-platform-indicator>svg {
 	fill: hsl(var(--primary-200-hsl)/1) !important 
 }
 .theme-light .vc-platform-indicator>svg {
-	fill: var(--background-primary) !important 
+	fill: hsl(var(--primary-600-hsl)/1) !important 
 }
 /* -------------------------------------------------------------- */
 /* Navigation buttons */
@@ -1112,7 +879,7 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 .name-3Uvkvr, .container-q97qHp, .containerDefault-3TQ5YN .overflow-1wOqNV,[class*=container-] [class*=title-] {
 	font-weight: 1000 
 }
-.title-3CjiSS, .userInfoSectionHeader-2mYYun, [class*=privateChannelsHeaderContainer-] span[class*=headerText-],h1[class*=h5-][class*=eyebrow-][class*=guildTitle-], [class*=activityUserPopoutV2-] [class*=overflow-],span[class*=headerLabel-], [class*=text-xs-semibold], [class*=profile-]>h2, [class*=pageBody-]>div>h2 {
+.title-3CjiSS, .title-1yq5kT, .userInfoSectionHeader-2mYYun, [class*=privateChannelsHeaderContainer-] span[class*=headerText-],h1[class*=h5-][class*=eyebrow-][class*=guildTitle-], .activity-3uaYny .overflow-1wOqNV, span[class*=headerLabel-], [class*=pageBody-]>div>h2, .eyebrow-1Shfyi {
 	text-transform: none;
 	font-size: 14px;
 	font-weight: 1000;
@@ -1213,9 +980,10 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 	padding-top: 0 
 }
 .userProfileInnerThemedNonPremium-2AJg-H {
-	background: transparent 
+	background: var(--background-modifier-selected);
+	backdrop-filter: blur(var(--modular-background-blur-strength));
 }
-.accountProfilePopoutWrapper-3GskID,[class*=submenu-][class*=menu-], .contentWrapper-2f9yME {
+.accountProfilePopoutWrapper-3GskID, [class*=submenu-][class*=menu-], .contentWrapper-2f9yME {
 	border-radius: var(--modular-border-radius);
 	background: var(--background-primary) 
 }
@@ -1225,9 +993,9 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 	left: 10px;
 	background: var(--background-tertiary)
 }
-[class*=mention][class*=wrapper-][class*=interactive] {
+.mention, .wrapper-1ZcZW- {
 	border-radius: var(--modular-border-radius);
-	padding: 0.25em 
+	padding: 0 0.25em 
 }
 .children-3xh0VB:after, #app-mount .form-3gdLxP:before, [class*=icon-][class*=aboutMeGuildIcon-] {
 	display: none 
@@ -1246,6 +1014,9 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 	border-radius: var(--modular-border-radius);
 	background: linear-gradient(var(--profile-gradient-primary-color),var(--profile-gradient-primary-color) 60px,var(--profile-gradient-secondary-color))
 }
+.buttonsContainer-3iOFIV > button {
+	border-radius: var(--modular-border-radius);
+}
 .section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH {
 	border-radius: var(--modular-border-radius);
 	padding: 0.5em;
@@ -1255,10 +1026,10 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 	text-align: center
 }
 .theme-dark .section-28YDOf>div:not(.roles-3vQPxb),.theme-dark .container-3g15px, .theme-dark .userInfoText-2MFCmH {
-	background: hsl(var(--primary-100-hsl)/0.1);
+	background: hsl(var(--primary-100-hsl)/0.1) !important
 }
 .theme-light .section-28YDOf>div:not(.roles-3vQPxb),.theme-light .container-3g15px, .theme-light .userInfoText-2MFCmH {
-	background: hsl(var(--primary-600-hsl)/0.1); 
+	background: hsl(var(--primary-600-hsl)/0.1) !important
 }
 .divider-MZkkle {
 	background: var(--profile-body-divider-color) 
@@ -1356,7 +1127,7 @@ div[class*=nameAndDecorators-] {
 	display: none 
 }
 .panels-3wFtMD {
-	background: hsl(var(--primary-660-hsl)/var(--modular-transparency)) !important;
+	background: var(--background-secondary-alt) !important;
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
@@ -1369,7 +1140,7 @@ div[class*=nameAndDecorators-] {
 	box-sizing: border-box;
 	border-radius: var(--modular-border-radius);
 	overflow: hidden;
-	background: hsl(var(--primary-660-hsl)/var(--modular-transparency));
+	background: var(--background-secondary-alt);
 	margin: 0.25em;
 }
 .sidebar-1tnWFu {
@@ -1391,12 +1162,12 @@ div[class*=nameAndDecorators-] {
 	padding: 0.5em;
 	margin: 0.25em;
 	border-radius: var(--modular-border-radius);
-	background: hsl(var(--primary-660-hsl)/var(--modular-transparency)) !important;
+	background: var(--background-secondary-alt) !important;
 }
 .container-ZMc96U {
 	display: flex;
 	border-radius: var(--modular-border-radius);
-	background: hsl(var(--primary-660-hsl)/var(--modular-transparency)) !important;
+	background: var(--background-secondary-alt) !important;
 	max-width: calc(100% - 8px);
 	margin: 0.25em 0 0.125em 0.25em;
 	padding: 0.5em;
@@ -1407,17 +1178,17 @@ div[class*=nameAndDecorators-] {
 
 .resizeHandle-PBRzPC {
 	height: 99%;
-	background: hsl(var(--primary-500-hsl)/0.5) !important;
+	background: var(--background-tertiary-alt) !important;
 	margin-top: 0.4em
 }
 .container-3XgAHv {
 	border-radius: var(--modular-border-radius);
-	background: hsl(var(--primary-660-hsl)/var(--modular-transparency)) !important;
+	background: var(--background-secondary-alt) !important;
 	padding: 0.5em;
 	margin: 0.25em
 }
 .container-3YcgdM {
-	background: hsl(var(--primary-600-hsl)/0.25);
+	background: var(--background-secondary-alt);
 	border-radius: var(--modular-border-radius);
 	margin: 0.25em
 }
@@ -1428,12 +1199,15 @@ div[class*=nameAndDecorators-] {
 	padding: 0.25em 0;
 	margin: 0.25em ;
 	border-radius: var(--modular-border-radius);
-	background: hsl(var(--primary-660-hsl)/var(--modular-transparency)) !important
+	background: var(--background-secondary-alt) !important
+}
+.name-2m3Cms {
+	font-weight: 800;
 }
 .searchBar-3TnChZ{
 	border-radius: var(--modular-border-radius);
-	background: hsl(var(--primary-660-hsl)/var(--modular-transparency)) !important;
-	margin: 0.25em;
+	background: var(--background-secondary-alt);
+	margin: 0.25em
 }
 .searchBar-3TnChZ .searchBarComponent-3N7dCG {
 	text-align: center;
@@ -1442,7 +1216,7 @@ div[class*=nameAndDecorators-] {
 	font-weight: 700;
 }
 .searchBar-3TnChZ:hover {
-	background: hsl(var(--primary-500-hsl)/0.5) !important 
+	background: var(--background-tertiary-alt)
 }
 .searchBar-3TnChZ:hover .searchBarComponent-3N7dCG {
 	color: var(--interactive-hover) 
@@ -1474,7 +1248,6 @@ div[class*=nameAndDecorators-] {
 }
 span[class*=username-][class*=desaturateUserColors-][class*=clickable] {
 	font-weight: 800;
-	text-shadow: 0 1px 5px hsl(var(--primary-700-hsl)/0.5)
 }
 /* -------------------------------------------------------------- */
 /* Folder Icons and DM button */
@@ -1484,11 +1257,7 @@ span[class*=username-][class*=desaturateUserColors-][class*=clickable] {
 [class*=listItem-]>div>div>svg:hover {
 	filter: brightness(1.1) 
 }
-/* Number badge */
-.numberBadge-37OJ3S {
-	background: hsl(var(--primary-200-hsl)/1) !important;
-	color: var(--background-primary) 
-}
+
 /* -------------------------------------------------------------- */
 .eyebrow-132Xza {
 	font-weight: 1000 
@@ -1497,18 +1266,17 @@ span[class*=username-][class*=desaturateUserColors-][class*=clickable] {
 	color: var(--background-tertiary) 
 }
 .iconBadge-32fMme {
-	background: hsl(var(--primary-400-hsl)/1);
-	color: hsl(var(--primary-200-hsl)/1) 
+	background: var(--channel-icon);
+	color: var(--background-floating)
 }
 .container-3wLKDe {
 	background: transparent 
 }
 .mainCard-3KBsBI {
-	background: hsl(var(--primary-600-hsl)/0.25) 
+	background: var(--background-secondary-alt)
 }
 .pill-3pRQlO.small-1j51ag {
-	background: hsl(var(--primary-500-hsl)/0.5);
-	box-shadow: -4px 4px 0 0 hsl(var(--primary-700-hsl)/0.25), 0 0 1px 1px hsl(var(--primary-700-hsl)/0.5)
+	background: var(--background-tertiary-alt);
 }
 /* -------------------------------------------------------------- */
 /* Threads Container */
@@ -1516,14 +1284,14 @@ span[class*=username-][class*=desaturateUserColors-][class*=clickable] {
 	background: var(--background-tertiary)
 }
 .container-3i3IzO:hover {
-	background: hsl(var(--primary-330-hsl)/0.5) 
+	background: var(--background-modifier-hover)
 }
 [class*=layer-][class*=disabledPointerEvents-]>[class*=tooltip-] {
 	border-radius: var(--modular-border-radius) 
 }
 .channelRow-4X_3fi {
 	border-radius: var(--modular-border-radius);
-	background: hsl(var(--primary-660-hsl)/var(--modular-transparency)) !important;
+	background: var(--background-secondary-alt) !important;
 	margin: 0.25em 0
 }
 .search-kg4MrS {
@@ -1540,14 +1308,14 @@ span[class*=username-][class*=desaturateUserColors-][class*=clickable] {
 }
 .bannerSVGWrapper-2CLfzN {
 	border-radius: var(--modular-border-radius) var(--modular-border-radius) 0 0;
-	overflow: hidden; 
+	overflow: hidden
 }
 /* -------------------------------------------------------------- */
 [class*=userPanelOuter-] {
 	padding: 0;
 	margin: 0 -0.375em 0 0 !important;
 	border-radius: var(--modular-border-radius);
-	background: hsl(var(--primary-660-hsl)/var(--modular-transparency)) !important
+	background: var(--background-secondary-alt) !important
 }
 [class*=userPanel] {
 	border-radius: var(--modular-border-radius) 
@@ -1560,14 +1328,6 @@ span[class*=username-][class*=desaturateUserColors-][class*=clickable] {
 }
 .iconContainerLeft-1Kr6X4 {
 	display: none 
-}
-.theme-dark [class*=menu-]>[class*=scroller-][class*=none-][class*=scrollerBase-]{
-	padding: 0.5em;
-	background: hsl(var(--primary-400-hsl)/0.5) !important
-}
-.theme-light [class*=menu-]>[class*=scroller-][class*=none-][class*=scrollerBase-]{
-	padding: 0.5em;
-	background: hsl(var(--primary-200-hsl)/0.5) !important
 }
 [class*=menu-] {
 	border-radius: var(--modular-border-radius) 
@@ -1604,7 +1364,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 [class*=userInfo-]>button[class*=button-] {
 	border-radius: var(--modular-border-radius);
-	background: hsl(var(--primary-400-hsl)/1);
+	background: var(--channel-icon);
 	margin-right: 0.75em
 }
 .actionButtons-2vEOUh .lookFilled-1H2Jvj.colorBrand-2M3O3N {
@@ -1613,12 +1373,12 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 [class*=constrainedRow-]>div>div>span>button {
 	border-radius: var(--modular-border-radius);
-	background: hsl(var(--primary-400-hsl)/1);
+	background: var(--channel-icon);
 	padding: 0.25em 0.5em;
 	margin-top: 0.5em
 }
 [class*=containerDefault-][class*=wrapper-]>[class^=link-] {
-	background: hsl(var(--primary-400-hsl)/1);
+	background: var(--background-modifier-accent);
 	margin-top: 1em;
 	padding: 0.25em 0.5em;
 	border-radius: var(--modular-border-radius);
@@ -1634,7 +1394,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 	padding: 1em;
 	margin: 0.25em;
 	border-radius: var(--modular-border-radius);
-	background: hsl(var(--primary-660-hsl)/var(--modular-transparency)) !important
+	background: var(--background-secondary-alt) !important
 }
 [class*=pageBody-]>div>div[class*=text-xs-normal-], [class*=profile-]>div[class*=text-xs-normal-] {
 	margin-top: 0.5em;
@@ -1647,10 +1407,10 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 	padding: 0.5em 
 }
 .optionButtonWrapper-2lbogO.selected-KQBgNS:hover {
-	background: hsl(var(--red)/0.25) 
+	background: rgba(255, 0, 0, 0.25) 
 }
 .optionButtonWrapper-2lbogO:hover {
-	background: hsl(var(--green)/0.25) 
+	background: rgba(0, 128, 0, 0.25)
 }
 .optionButtonWrapper-2lbogO.selected-KQBgNS {
 	background: var(--background-floating) 
@@ -1664,11 +1424,11 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 	font-weight: 800
 }
 [class*=chat-]>div>[class*=tabBar-]>div:hover, [class*=chat-]>div>div[class*=tabBar-]>div[class*=selected-] {
-	background: hsl(var(--primary-300-hsl)/0.75) 
+	background: var(--background-modifier-hover)
 }
 .base-3IDx3L {
-	background: hsl(var(--primary-200-hsl)/1) !important;
-	color: var(--background-primary);
+	background: var(--background-modifier-selected) !important;
+	color: var(--header-secondary);
 	border-radius: var(--modular-border-radius)
 }
 button[class*=returnButton-] {
@@ -1680,10 +1440,10 @@ button[class*=returnButton-] {
 	zoom: 90%
 }
 button[class*=returnButton-]:hover {
-	background: hsl(var(--primary-300-hsl)/0.75) !important 
+	background: var(--background-modifier-hover) !important 
 }
 .checkIcon-3eAeN_ {
-	background: hsl(var(--green)/1);
+	background: green;
 	top: 0.5em;
 	right: 0.5em 
 }
@@ -1720,19 +1480,19 @@ div[class|="message"] div[class|="markup"] ol {
 	padding: 0.25em;
 	margin: 0.25em;
 	border-radius: var(--modular-border-radius);
-	background: hsl(var(--primary-660-hsl)/var(--modular-transparency))
+	background: var(--background-secondary-alt)
 }
 .buttonsContainer-Nmgy7x>div {
 	border-radius: var(--modular-border-radius);
 	margin: 0.5em 1em 0 0;
 	padding: 2px 0.5em 0 0.5em;
-	background: hsl(var(--red)/1);
+	background: red;
 	font-weight: 800
 }
 .container-2o3qEW>aside>div, .members-3WRCEx {
 	margin: 0.25em 0.25em 0.25em 0.25em;
 	border-radius: var(--modular-border-radius);
-	background: hsl(var(--primary-660-hsl)/var(--modular-transparency));
+	background: var(--background-secondary-alt);
 }
 .disabledButtonWrapper-1m0hYZ>button, .buttonsWrapper-2ARRp1>button {
 	border-radius: var(--modular-border-radius) 
@@ -1744,9 +1504,6 @@ div[class|="message"] div[class|="markup"] ol {
 	border-radius: var(--modular-border-radius);
 	background: transparent 
 }
-.colorDefault-2_rLdz.focused-3LIdPu, .container-2cd8Mz {
-	background: transparent 
-}
 .tabBody-2dgbAs:before {
 	display: none 
 }
@@ -1756,17 +1513,11 @@ div[class|="message"] div[class|="markup"] ol {
 .circleIconButton-1VxDrg:not(.selected-2r1Hvo) {
 	background: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6)) 
 }
-.username-3_PJ5r {
+.username-3_PJ5r, .username-h_Y3Us {
 	font-weight: 800;
-	text-shadow: 0 1px 5px hsl(var(--primary-700-hsl)/0.5)
+	filter: drop-shadow(1px 1px 2.5px hsl(var(--primary-700-hsl)/0.25));
 }
 /* -------------------------------------------------------------- */
-.emoji.jumboable {
-	/* 96px is the size of the actual image, anything higher will be blurry */
-	width: 96px;
-	height: 96px;
-	border-radius: var(--modular-border-radius)
-}
 .contentWrapper-3vHNP2 {
 	background: var(--background-tertiary) 
 }
@@ -1783,14 +1534,14 @@ div[class|="message"] div[class|="markup"] ol {
 	display: none 
 }
 .inspector-DFKXwB, [class*=wrapper-][class*=categoryList-] {
-	background: hsl(var(--primary-600-hsl)/0.25) 
+	background: var(--background-primary)
 }
 .tabBar-ra-EuL .addFriend-emTWY1.addFriend-emTWY1.addFriend-emTWY1 {
 	border-radius: var(--modular-border-radius);
-	background: var(--background-modifier-selected) !important
+	background: var(--background-modifier-selected)
 }
 .tabBar-ra-EuL .addFriend-emTWY1.addFriend-emTWY1.addFriend-emTWY1:hover {
-	background: hsl(var(--primary-300-hsl)/1) !important
+	background: var(--background-modifier-hover) 
 }
 .actionButton-3-B2x- {
 	background: var(--background-modifier-selected) 
@@ -1829,13 +1580,13 @@ div[class|="message"] div[class|="markup"] ol {
 	flex-direction: column;
 	margin: 0.25em;
 	border-radius: var(--modular-border-radius);
-	background: hsl(var(--primary-660-hsl)/var(--modular-transparency)) !important
+	background: var(--background-secondary-alt) !important
 }
 .scrollerContainer-y16Rs9 {
 	background: transparent !important 
 }
 [class*=messagesPopoutWrap-]>div {
-	background: hsl(var(--primary-400-hsl)/1);
+	background: var(--channel-icon);
 	max-height: 83vh;
 	padding: 0 
 }
@@ -1855,12 +1606,12 @@ div[class|="message"] div[class|="markup"] ol {
 	font-weight: 1000;
 	text-align: center;
 	text-transform: none;
-	background: hsl(var(--primary-400-hsl)/1);
+	background: var(--channel-icon);
 	padding: 0.25em;
 	margin-top: 0.25em
 }
 [class*=recentMentionsPopout-]>div {
-	background: hsl(var(--primary-400-hsl)/1) 
+	background: var(--channel-icon) 
 }
 [class*=collapseButton-] {
 	margin-left: 0.25em 
@@ -1878,7 +1629,7 @@ div[class|="message"] div[class|="markup"] ol {
 	border-radius: var(--modular-border-radius) 
 }
 [class*=circleIconButton-] {
-	color: hsl(var(--primary-200-hsl)/1);
+	color: var(--info-positive-foreground);
 	background: var(--background-modifier-accent) !important
 }
 [class*=circleIconButton-]:hover, [class*=circleIconButton-][class*=selected-] {
@@ -1886,13 +1637,13 @@ div[class|="message"] div[class|="markup"] ol {
 }
 /* Modal mod, original from Dablulite */
 .container-x8Y1ix:hover, .container-1Lk8p7>div>div>div:nth-child(3)>button:hover {
-	background: hsl(var(--primary-330-hsl)/1) 
+	background: var(--button-positive-background-active)
 }
 .root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .templatesList-uohY49>div {
 	color: var(--header-primary) !important 
 }
 .container-x8Y1ix {
-	background: hsl(var(--primary-400-hsl)/1);
+	background: var(--channel-icon);
 	border-radius: var(--modular-border-radius) 
 }
 .root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .header-1ffhsl>div:not(.tier2HeaderBackground-2XINxm) {
@@ -1911,7 +1662,7 @@ div[class|="message"] div[class|="markup"] ol {
 }
 .rowContainer-3t7486 {
 	border-radius: var(--modular-border-radius);
-	background-color: hsl(var(--primary-400-hsl)/1) 
+	background-color: var(--channel-icon)
 }
 .option-ayUoaq::before, .option-ayUoaq::after {
 	display: none 
@@ -1936,10 +1687,10 @@ div[class|="message"] div[class|="markup"] ol {
 	background: var(--background-modifier-hover) 
 }
 [class*=mutualGuildsList-], [class*=mutualFriendsList-] {
-	background: hsl(var(--primary-500-hsl)/0.25) 
+	background: var(--background-modifier-accent) 
 }
 :is([class*=mutualGuildsList-],[class*=mutualFriendsList-])>button {
-	background: hsl(var(--primary-500-hsl)/0.5) 
+	background: transparent
 }
 [class*=connectionList-]>div {
 	padding: auto 0.5em;
@@ -1953,268 +1704,6 @@ div[class|="message"] div[class|="markup"] ol {
 	border-radius: 0 0 var(--modular-border-radius) var(--modular-border-radius) 
 }
 
-/* AccountDetailsGrid by Dablulite */
-.background-3d_SjE {
-    background-color: transparent;
-    padding: 0;
-}
-.fieldList-in8WkP {
-    background-color: transparent;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5px;
-}
-.field-21XZwa {
-    width: 100%;
-    border-radius: 8px;
-    background-color: var(--background-primary);
-    max-height: unset;
-    flex-direction: column;
-    display: flex;
-    padding: 15px;
-    margin-top: 0;
-    overflow-y: auto;
-    height: 120px;
-    margin-bottom: 0;
-}
-.field-21XZwa .fieldButton-14lHvK {
-    background-color: var(--button-secondary-background);
-    border-radius: 6px;
-    -webkit-transition: background-color .17s ease,color .17s ease;
-    transition: background-color .17s ease,color .17s ease;
-}
-.field-21XZwa .fieldButton-14lHvK:hover {
-    background-color: var(--button-secondary-background-hover);
-}
-.field-21XZwa .fieldButton-14lHvK:hover>div {
-    background: none;
-}
-.field-21XZwa .fieldButton-14lHvK {
-    width: 100%;
-    margin-right: 0;
-    position: relative;
-}
-.field-21XZwa .fieldButtonList-28BYbB {
-    gap: 5px;
-}
-.field-21XZwa::-webkit-scrollbar {
-    width: 16px;
-    height: 16px;
-}
-.field-21XZwa::-webkit-scrollbar-corner {
-    background-color: transparent;
-}
-.field-21XZwa::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-auto-thumb);
-    min-height: 40px;
-}
-.field-21XZwa::-webkit-scrollbar-track {
-    background-color: var(--scrollbar-auto-track);
-}
-.field-21XZwa::-webkit-scrollbar-thumb,
-.field-21XZwa::-webkit-scrollbar-track {
-    border: 4px solid transparent;
-    background-clip: padding-box;
-    border-radius: 8px;
-}
-
-/* BetterModals by Dablulite */
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .templatesList-uohY49>div ~ .container-x8Y1ix {
-    width: calc(50% - 4px);
-}
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .templatesList-uohY49>.container-x8Y1ix:first-child,
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .templatesList-uohY49>div {
-    width: 100%;
-}
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .templatesList-uohY49>div {
-    margin: 0;
-    text-transform: capitalize;
-    line-height: 1;
-    font-weight: 700;
-    font-size: 1.125rem;
-}
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .templatesList-uohY49 {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-top: 0;
-}
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .content-1OG56Q {
-    padding: 20px 32px !important;
-    overflow: hidden overlay !important;
-}
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .templatesList-uohY49 + .footer-3ie9JP {
-    flex-direction: row;
-    gap: 8px;
-    align-content: center;
-    justify-content: center;
-}
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .templatesList-uohY49 + .footer-3ie9JP>* {
-    width: 100%;
-    margin-bottom: 0;
-}
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .templatesList-uohY49 + .footer-3ie9JP>button {
-    align-self: center;
-}
-.optionsList-dmHy1l>.container-x8Y1ix + div {
-    text-align: left;
-    padding-left: 5px;
-}
-.footer-IubaaS>.back-Uv5ziB {
-    padding: 0;
-    height: fit-content;
-    max-height: unset;
-    display: flex;
-}
-.footer-IubaaS>button,
-.footer-IubaaS>.back-Uv5ziB>a {
-    padding: 12px 20px;
-    font-weight: 600;
-    min-width: unset;
-    min-height: unset;
-    height: fit-content;
-    width: fit-content !important;
-    border-radius: 8px;
-}
-.footer-IubaaS>.lookBlank-FgPMy6,
-.footer-IubaaS>.back-Uv5ziB>a {
-    background-color: var(--button-secondary-background);
-    -webkit-transition: background-color .17s ease,color .17s ease;
-    transition: background-color .17s ease,color .17s ease;
-    color: var(--white-500);
-}
-.footer-IubaaS>.back-Uv5ziB>a {
-    text-decoration: none !important;
-}
-.footer-IubaaS>.lookBlank-FgPMy6:hover,
-.footer-IubaaS>.back-Uv5ziB>a:hover {
-    background-color: var(--button-secondary-background-hover);
-}
-.footer-IubaaS>.lookBlank-FgPMy6:active,
-.footer-IubaaS>.back-Uv5ziB>a:active {
-    background-color: var(--button-secondary-background-active);
-}
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .createGuild-2m1V10 {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 24px;
-    padding: 0 24px;
-    padding-right: 16px !important;
-}
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .createGuild-2m1V10>form>.nameInput-ph8KMi {
-    margin-top: 0;
-}
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .header-1ffhsl {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 16px 32px;
-}
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .header-1ffhsl>h1 {
-    order: 1;
-    width: calc(100% - 32px);
-    text-align: left;
-    line-height: 1;
-    font-weight: 700;
-    font-size: 1.125rem;
-    display: flex;
-    align-items: center;
-}
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .close-A4ZfTI {
-    position: static;
-    order: 2;
-    margin: 0 !important;
-    max-width: 32px;
-}
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .header-1ffhsl>div:not(.tier2HeaderBackground-2XINxm) {
-    order: 3;
-    width: 100%;
-    margin-top: 16px;
-    font-weight: 700;
-    font-size: 1.25rem;
-    line-height: 1.25;
-    text-align: left;
-}
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .header-1ffhsl>.tier2HeaderBackground-2XINxm {
-    order: 3;
-    width: calc(100% + 32px);
-    margin-top: 0;
-    font-weight: 700;
-    font-size: 1.25rem;
-    line-height: 1.25;
-    text-align: left;
-}
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) {
-    min-width: 500px;
-    border-radius: 16px;
-    overflow: hidden;
-}
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4))>.container-1Lk8p7,
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4))>.container-1Lk8p7>div,
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4))>.container-1Lk8p7>div>div {
-    width: 100% !important;
-}
-.header-1ffhsl>.header-2hjw1J {
-    margin-left: -12px;
-    margin-right: -12px;
-    margin-top: 0;
-    width: calc(100% + 24px);
-}
-.body-2qXItL>div,
-.body-2qXItL>div>div,
-.body-2qXItL>div>div>form {
-    width: 100% !important;
-    max-width: unset;
-}
-.stepBody-3ZoVrh>div:has(>.planOptionClickableContainer-O-50CZ) {
-    display: flex;
-    gap: 8px;
-}
-.planOptionClickableContainer-O-50CZ {
-    width: 100%;
-    border-radius: 8px;
-    -webkit-transition: background-color .17s ease,color .17s ease;
-    transition: background-color .17s ease,color .17s ease;
-}
-.planOptionClickableContainer-O-50CZ * {
-    color: var(--white-500);
-}
-.planOptionClickableContainer-O-50CZ:hover {
-    background-color: var(--button-secondary-background-hover);
-}
-.planOptionClickableContainer-O-50CZ:active {
-    background-color: var(--button-secondary-background-active);
-}
-.planOptionClickableContainer-O-50CZ[aria-checked="true"] {
-    background-color: var(--brand-experiment);
-}
-.planOptionClickableContainer-O-50CZ[aria-checked="true"]:hover {
-    background-color: var(--brand-experiment-560);
-}
-.planOptionClickableContainer-O-50CZ[aria-checked="true"]:active {
-    background-color: var(--brand-experiment-600);
-}
-.planOption-187LtR {
-    flex-direction: column;
-    gap: 8px;
-}
-.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .templatesList-uohY49 + .footer-3ie9JP>h2 {
-    line-height: 1;
-    font-weight: 700;
-    font-size: 1.125rem;
-}
-.toolbar-37BrJ5 {
-	background: var(--background-tertiary);
-	border-radius: var(--modular-border-radius);
-}
-.toolbar-37BrJ5:before {
-	border-top-color: var(--background-tertiary);
-}
-.button-lA2rvH:hover {
-	background: var(--background-modifier-hover);
-}
-.item-2LIpTv {
-	background-color: var(--header-secondary);
-}
 /* BetterTitleBar from Dablulite */
 .wordmarkWindows-2dq6rw>svg {
     width: 19px;
@@ -2244,7 +1733,7 @@ div[class|="message"] div[class|="markup"] ol {
     font-size: 12px;
     font-family: var(--font-display);
     font-weight: 700;
-    background-color: hsl(var(--primary-660-hsl)/var(--modular-transparency));
+    background-color: var(--background-secondary-alt);
     padding: 2px 8px;
     border-radius: var(--modular-border-radius)
 }
@@ -2274,7 +1763,7 @@ div[class|="message"] div[class|="markup"] ol {
 	background: transparent
 }
 .container-1oAagU {
-	background: hsl(var(--primary-700-hsl)/0.5);
+	background: var(--background-secondary-alt);
 	padding: 0.25em;
 	border-radius: var(--modular-border-radius);
 }
@@ -2291,7 +1780,7 @@ div[class|="message"] div[class|="markup"] ol {
 
 .theme-dark .pageWrapper-2PwDoS {
 	margin: 0.25em 0 0.25em 0.75em;
-	background: hsl(var(--primary-660-hsl)/var(--modular-transparency));
+	background: var(--background-secondary-alt);
 	border-radius: var(--modular-border-radius);
 }
 .arrow-2yY1Tm {
@@ -2419,4 +1908,9 @@ div[class|="message"] div[class|="markup"] ol {
 .tabBody-2dgbAs {
 	flex-direction: var(--friendlist-orientation)
 }
-
+.linkButtonIcon-7rsZcu {
+	color: var(--channel-icon);
+}
+.placeholder-1rCBhr {
+	color: var(--text-muted);
+}
