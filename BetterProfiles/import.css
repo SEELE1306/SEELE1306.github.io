@@ -1,0 +1,125 @@
+:root {
+	--section-thickness: 1px; /* must be in pixels */
+}
+
+/* Profile panel */
+[class^=userPopoutOverlayBackground], [class^=userProfileModalOverlayBackground] {
+	background: transparent
+}
+[class*=pronouns-] {
+	text-transform: none;
+	color: var(--text-normal);
+	font-size: 16px;
+	font-weight: 800;
+	padding: 0.25em 0.375em;
+	margin: 0.25em 0 0 0;
+	border-radius: 0.5rem;
+	background: linear-gradient(var(--profile-gradient-primary-color),var(--profile-gradient-primary-color) 60px,var(--profile-gradient-secondary-color))
+}
+.buttonsContainer-3iOFIV > button {
+	border-radius: 0.5rem;
+}
+.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH {
+	border-radius: 0.5rem;
+	padding: 0.5em;
+	border: var(--section-thickness) solid var(--profile-body-divider-color);
+}
+.section-28YDOf>div:not(.activity-3uaYny, .roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .memberSinceContainer-2CBD23, .nameTag-35jqbZ, img[class*=emoji-] {
+	justify-content: center;
+	text-align: center
+}
+.theme-dark .section-28YDOf>div:not(.roles-3vQPxb),.theme-dark .container-3g15px, .theme-dark .userInfoText-2MFCmH {
+	background: hsl(var(--primary-100-hsl)/0.1) !important
+}
+.theme-light .section-28YDOf>div:not(.roles-3vQPxb),.theme-light .container-3g15px, .theme-light .userInfoText-2MFCmH {
+	background: hsl(var(--primary-600-hsl)/0.1) !important
+}
+.divider-MZkkle {
+	background: var(--profile-body-divider-color) 
+}
+.platformIcon-k3yytQ {
+	margin: 2px 2px 
+}
+.divider-2dDziJ, .divider-SH6OnO {
+	display: none
+}
+.scroller-Q9d9Di {
+	left: 12.5%
+}
+.title-3CjiSS, .title-1yq5kT, .userInfoSectionHeader-2mYYun, .activity-3uaYny .overflow-1wOqNV {
+	text-transform: none;
+	font-size: 14px;
+	font-weight: 1000;
+	color: var(--header-primary) !important;
+	text-align: center;
+	display: block
+}
+.profileBadges-2pItdR {
+	background-color: transparent 
+}
+/* Role pills */
+.rolePill-78LFtg {
+	background: transparent 
+}
+[class*="role-"] [class*="roleCircle-"]:before,[class*="actionButton-"][class*="role-"][class*="justifyCenter-"] {
+	border-radius: 10px 
+}
+[class*=roles-] {
+	justify-content: center 
+}
+[class*="role-"] {
+	transform: translate(0);
+	border: 0 
+}
+[class*="role-"] [class*="roleRemoveIcon-"] {
+	margin: 0;
+	left: unset;
+	transform: translate(50%,-50%) 
+}
+[class*="role-"] [class*="roleRemoveButton-"] {
+	position: static 
+}
+[class*="role-"] [class*="roleCircle-"]:before {
+	content: '';
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	position: absolute;
+	background: inherit;
+	border: 2px solid transparent;
+	opacity: .4
+}
+.accountProfilePopoutWrapper-3GskID .section-28YDOf, .separator-12G2Op, .userInfoSectionHeader-2mYYun:nth-child(5) {
+	display: none !important
+}
+/* Platform Indicators */
+:is(.membersWrap-3NUR2t, .privateChannels-oVe7HL) .vc-platform-indicator>svg {
+	width: 12.5px !important;
+	height: 12.5px !important;
+	margin-left: 0px;
+	margin-right: 0px
+}
+.vc-platform-indicator>svg {
+	fill: hsl(var(--primary-200-hsl)/1) !important 
+}
+.theme-light .vc-platform-indicator>svg {
+	fill: hsl(var(--primary-600-hsl)/1) !important 
+}
+/* Connected accounts */
+.connectedAccountContainer-3aLMHJ {
+	border-width: var(--section-thickness);
+	border-radius: 0.5rem
+}
+.connectedAccountContainer-3aLMHJ:has(.connectedAccountOpenIcon-3i81Tz:hover) {
+	background-color: var(--profile-body-divider-color) 
+}
+.flowerStarContainer-1QeD-L.connectedAccountVerifiedIcon-3EPFPC>svg>path {
+	fill: var(--profile-body-divider-color);
+	filter: brightness(1) contrast(2)
+}
+.badgeList-2aoHPw {
+	background: transparent;
+}
