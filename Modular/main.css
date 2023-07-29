@@ -520,26 +520,41 @@ ul.resultsGroup-cfY57t [class*=option-] {
 	border-bottom: none !important;
 	margin: 0.25em
 }
+.message-24k8JL {
+	padding: 1em 0
+}
+.channelNameContainer-4pFmC- {
+	display: flex;
+	justify-content: center;
+	background: var(--background-modifier-selected);
+	padding: 0.25em;
+	border-radius: var(--modular-border-radius);
+}
+.channelNameContainer-4pFmC- >span {
+	font-weight: 800;
+}
 .searchHeader-1r_ZSh {
 	background: var(--background-secondary-alt);
 	border-radius: unset
 }
-.side-1lrxIh .item-2GWPIy {
+.searchHeaderTabList-3CZMQB.side-1lrxIh .item-2GWPIy {
 	border-radius: var(--modular-border-radius);
-	background: var(--channel-icon);
-	font-weight: 800
+	background: var(--background-modifier-accent);
 }
-[class*=searchResultsWrap]>[class*=searchHeader-]>div:nth-child(2)>div:hover,[class*=searchResultsWrap]>[class*=searchHeader-]>div:nth-child(2)>div[class*=selected-] {
-	background: var(--button-positive-background-active) !important
+.searchHeaderTabList-3CZMQB.side-1lrxIh .selected-1sf9UK.item-2GWPIy {
+	background: var(--background-modifier-selected);
+	font-weight: 800;
 }
-[class*=searchResultsWrap]>[class*=searchHeader-]>div:nth-child(1)>div, .channelNameText-2q3Lge {
-	font-weight: 800
+.searchHeaderTabList-3CZMQB.side-1lrxIh .item-2GWPIy:hover {
+	background: var(--background-modifier-hover) !important
 }
 [class*=searchResult-] {
-	background: var(--background-tertiary);
+	background: var(--background-modifier-accent);
 	border-radius: var(--modular-border-radius);
 	border-bottom: none !important;
-	margin: 1em 0.5em
+}
+.searchResult-O9NDji:hover {
+	background: var(--background-modifier-hover);
 }
 button[class*=emojiButtonNormal]>div>div {
 	filter: scale(1) opacity(25%) !important
@@ -763,6 +778,9 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 }
 .cozy-VmLDNB .timestamp-p1Df1m {
 	opacity: 0
+}
+.message-24k8JL .cozy-VmLDNB .timestamp-p1Df1m {
+	display: none;
 }
 .cozy-VmLDNB:hover .timestamp-p1Df1m {
 	opacity: 1
@@ -1857,6 +1875,6 @@ path[d="M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5
 :is([class*="userProfile"], [class*="userPopout"]) [class*="bannerPremium"] {
 	border-radius: var(--modular-border-radius);
 }
-.message-24k8JL {
-	padding: 1em 0;
+.checkIcon-3eAeN_ {
+	background: hsl(var(--green)/1);
 }
