@@ -1,7 +1,6 @@
 @import url(https://seele1306.github.io/Modular/Root.css);
 @import url(https://dablulite.github.io/css-snippets/BetterModals/import.css);
 @import url(https://dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
-@import url(https://minidiscordthemes.github.io/Snippets/EfficientSettings/EfficientSettings.css);
 
 :root, .theme-dark, .theme-light {
 	--modular-background: var(--chroma-glow) !important;
@@ -1877,4 +1876,8 @@ path[d="M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5
 }
 .checkIcon-3eAeN_ {
 	background: hsl(var(--green)/1);
+}
+/* from saltssamure */
+#user-settings-cog > .scroller-nxCRu_ > .item-5ApiZt {
+    display: none
 }
