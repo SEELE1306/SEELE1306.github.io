@@ -460,7 +460,6 @@ span[data-tag="vc mod"] {
 .markup-eYLPri code.inline{
 	background: var(--background-tertiary) !important;
 	border: none !important;
-	padding: 0.5em 0.75em 0.5em 0.75em;
 	font-weight: 600;
 	color: var(--info-positive-foreground)
 }
