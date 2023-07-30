@@ -1338,7 +1338,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 	border-radius: var(--modular-border-radius);
 	background: var(--channel-icon);
 	padding: 0.25em 0.5em;
-	margin-top: 0.5em
+	margin: 0 0.5em
 }
 [class*=containerDefault-][class*=wrapper-]>[class^=link-] {
 	background: var(--background-modifier-accent);
@@ -1899,4 +1899,11 @@ path[d="M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5
 }
 .root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .header-1ffhsl {
 	background: var(--background-tertiary);
+}
+.title-1HgbhV, .h5-2feg8J, .label-7akf7-, .legend-3BgtI3 {
+    text-transform: none;
+    font-size: 16px;
+}
+.divider-1bpIoX, .tabBar-11FwuO  {
+    border: none !important
 }
