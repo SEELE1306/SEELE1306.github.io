@@ -959,7 +959,7 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 	backdrop-filter: blur(var(--modular-background-blur-strength))
 }
 .userProfileInnerThemedNonPremium-2AJg-H {
-	background: transparent
+	background: var(--background-secondary-alt) 
 }
 .buttonsContainer-3iOFIV > button {
 	border-radius: var(--modular-border-radius)
