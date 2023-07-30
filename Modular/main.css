@@ -979,6 +979,23 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 .theme-light .section-28YDOf>div:not(.roles-3vQPxb),.theme-light .container-3g15px, .theme-light .userInfoText-2MFCmH {
 	background: hsl(var(--primary-600-hsl)/0.1) !important
 }
+.lastSection-q3HCfo {
+	display: none;
+}
+:is([class|=userPopoutInner], [class|=userPanelOverlayBackground], [class|=userInfoText]) [style*="-webkit-line-clamp"] {
+    display: block;
+}
+.markup-eYLPri a, .timestamp-6-ptG3 {
+	background: var(--background-modifier-accent);
+	color: var(--text-link);
+	font-weight: 600;
+	padding: 0 0.5em;
+	border-radius: var(--modular-border-radius);
+}
+.markup-eYLPri a:hover, .timestamp-6-ptG3:hover {
+	background: var(--background-modifier-hover);
+	text-decoration: none;
+}
 .markup-eYLPri>div>.blockquoteContainer-3VtvI1	{
   justify-content: center;
 }
@@ -1880,4 +1897,7 @@ path[d="M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5
 /* from saltssamure */
 #user-settings-cog > .scroller-nxCRu_ > .item-5ApiZt {
     display: none
+}
+.root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .header-1ffhsl {
+	background: var(--background-tertiary);
 }

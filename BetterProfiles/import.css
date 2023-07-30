@@ -171,3 +171,14 @@
 	justify-content: center;
 	display: flex
 }
+.markup-eYLPri a, .timestamp-6-ptG3 {
+	background: var(--background-modifier-accent);
+	color: var(--text-link);
+	font-weight: 600;
+	padding: 0 0.5em;
+	border-radius: 0.5em;
+}
+.markup-eYLPri a:hover, .timestamp-6-ptG3:hover {
+	background: var(--background-modifier-hover);
+	text-decoration: none;
+}
