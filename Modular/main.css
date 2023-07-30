@@ -985,14 +985,14 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 :is([class|=userPopoutInner], [class|=userPanelOverlayBackground], [class|=userInfoText]) [style*="-webkit-line-clamp"] {
     display: block;
 }
-.markup-eYLPri a, .timestamp-6-ptG3 {
+.userPopoutInner-nv9Y92 .markup-eYLPri a, .timestamp-6-ptG3 {
 	background: var(--background-modifier-accent);
 	color: var(--text-link);
 	font-weight: 600;
 	padding: 0 0.5em;
 	border-radius: var(--modular-border-radius);
 }
-.markup-eYLPri a:hover, .timestamp-6-ptG3:hover {
+.userPopoutInner-nv9Y92 .markup-eYLPri a:hover, .timestamp-6-ptG3:hover {
 	background: var(--background-modifier-hover);
 	text-decoration: none;
 }
