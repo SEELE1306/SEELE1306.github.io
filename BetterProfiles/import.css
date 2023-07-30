@@ -133,6 +133,10 @@
 	float: none;
 	border-radius: 4px
 }
+.customStatus-19KW6v .customStatusEmoji-1GD8RK.customStatusSoloEmoji-a_jSVz {
+	position: relative;
+	left: 42.5%;
+}
 .customStatus-19KW6v::before {
 	content: "Current status";
 	font-weight: 800;
