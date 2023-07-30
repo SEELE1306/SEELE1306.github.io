@@ -1007,7 +1007,7 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 	border: none;
 	background: var(--background-modifier-accent);
 	border-radius: var(--modular-border-radius);
-	padding: 0.125em 0.5em 0;
+	padding: 0.125em 0.5em;
 	font-weight: 800;
 }
 .userInfoSection-2u2hir+.userInfoSection-2u2hir, .tabBarContainer-sCZC4w, .top-Ktfr_T .themed-qqoYp3.item-2GWPIy:hover {
