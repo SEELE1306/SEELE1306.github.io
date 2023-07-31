@@ -113,3 +113,16 @@
 	z-index: -1;
 	background-color: inherit
 }
+.markup-eYLPri.messageContent-2t3eCI a {
+	background: var(--chat-bubble-default);
+	color: var(--text-link);
+	font-weight: 600;
+	padding: 0 0.5em;
+	border-radius: var(--chat-bubble-border-radius);
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg:hover .markup-eYLPri.messageContent-2t3eCI a,
+.cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg:hover>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *) a
+{
+	background: var(--chat-bubble-default-hover);
+	text-decoration: none;
+}

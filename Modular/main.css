@@ -859,6 +859,19 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 	margin-top: calc(-6px - 0.125em);
 	scale: 1.15
 }
+.markup-eYLPri.messageContent-2t3eCI a {
+	background: var(--background-modifier-accent);
+	color: var(--text-link);
+	font-weight: 600;
+	padding: 0 0.5em;
+	border-radius: var(--modular-border-radius);
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg:hover .markup-eYLPri.messageContent-2t3eCI a,
+.cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg:hover>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *) a
+{
+	background: var(--background-modifier-hover);
+	text-decoration: none;
+}
 .groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg,
 .cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
 .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
