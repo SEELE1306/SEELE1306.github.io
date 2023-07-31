@@ -143,10 +143,26 @@
 	color: var(--text-muted);
 	display: block
 }
+.tabBarContainer-sCZC4w {
+	margin: 20px 0 0;
+}
 .tabBar-2hXqzU {
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: center;
-	gap: 1em
+	align-items: center;
+	row-gap: 0.5em;
+	column-gap: 0.5em;
+	margin-bottom: 1em;
+}
+.top-Ktfr_T .item-2GWPIy {
+	border: none;
+	background: var(--background-modifier-accent);
+	border-radius: var(--modular-border-radius);
+	padding: 0.125em 0;
+	width: 31%;
+	font-weight: 600;
+	text-align: center;
 }
 .top-Ktfr_T .item-2GWPIy {
 	border: none;
