@@ -121,7 +121,7 @@
 	background-size: 200vh;
 	background-image: linear-gradient(rgb(var(--bg-overlay-color)/.4),rgb(var(--bg-overlay-color)/.4)),var(--modular-background)
 }
-#vc-spotify-player#vc-spotify-player {
+#vc-spotify-player {
 	background: transparent !important;
 	border-bottom: none;
 	padding: 0.875em 0.75em
@@ -129,18 +129,32 @@
 .vc-spotify-button-row {
 	margin-top: 15px
 }
-#vc-spotify-player #vc-spotify-song-title,.vc-spotify-comma.vc-spotify-comma {
-	color: var(--text-normal)
+#vc-spotify-titles {
+	margin: 0 0.5em;
 }
-#vc-spotify-player #vc-spotify-song-title {
-	font-weight: 1000
+#vc-spotify-song-title {
+	font-weight: 1000;
+	/* display: flex;
+	justify-content: flex-start;
+	overflow: hidden;
+	white-space: nowrap;
+	padding: 0 100%;
+	animation: move-rtl 10s linear infinite; */
 }
-#vc-spotify-player .vc-spotify-time-right,#vc-spotify-player .vc-spotify-time-left {
+/* @keyframes move-rtl {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+} */
+.vc-spotify-time-right, .vc-spotify-time-left {
 	margin-top: 1px;
 	font-weight: 600;
 	letter-spacing: 0.05em
 }
-.vc-spotify-comma.vc-spotify-comma,#vc-spotify-player .vc-spotify-ellipoverflow,#vc-spotify-player .vc-spotify-artist,#vc-spotify-player .vc-spotify-album {
+.vc-spotify-comma, .vc-spotify-ellipoverflow, .vc-spotify-artist, .vc-spotify-album {
 	margin-top: -2px;
 	color: var(--text-normal)
 }
@@ -150,15 +164,12 @@
 #vc-spotify-player [class*=barFill] {
 	background: var(--spotify-barfill)
 }
-#vc-spotify-player #vc-spotify-progress-bar>[class^=slider] [class^=grabber][class^=grabber] {
+#vc-spotify-player .mini-28oMa3 .grabber-3R-Rx9 {
 	background-color: var(--info-positive-foreground);
 	height: 8px !important;
 	width: 8px !important;
 	border-radius: 50%;
 	transform: translateY(1px) translateX(2.5px)
-}
-#vc-spotify-player .vc-spotify-shuffle-on.vc-spotify-shuffle-on,#vc-spotify-player .vc-spotify-repeat-context.vc-spotify-repeat-context,#vc-spotify-player .vc-spotify-repeat-track.vc-spotify-repeat-track,#vc-spotify-player .vc-spotify-shuffle-on.vc-spotify-shuffle-on:hover,#vc-spotify-player .vc-spotify-repeat-context.vc-spotify-repeat-context:hover,#vc-spotify-player .vc-spotify-repeat-track.vc-spotify-repeat-track:hover {
-	color: var(--info-positive-foreground) !important
 }
 #vc-spotify-player .vc-spotify-repeat-off.vc-spotify-repeat-off.vc-spotify-repeat-off,#vc-spotify-player .vc-spotify-shuffle-off.vc-spotify-shuffle-off.vc-spotify-shuffle-off {
 	color: var(--channels-default)
@@ -239,18 +250,13 @@ span[class*=dot-][class*=maskSecondary-] {
 [class*=contents-][class*=lineHeightReset-]>svg:active {
 	color: var(--interactive-active)
 }
-[class*=overlayBottom-] [class*=text-md-normal-][class*=overlayTitle-] {
-	background: var(--background-floating);
-	border-radius: var(--modular-border-radius)
-}
 .participantsButton-1WBdFP {
 	background: var(--background-tertiary)
 }
 [class*=overlayBottom-] [class*=statusContainer-]>svg {
 	background: var(--background-floating)
 }
-
-[class*=panels-]>[class*=panel-][class*=activityPanel-]v{
+[class*=panels-]>[class*=panel-][class*=activityPanel-] {
 	padding: 0.75em 1em 0.75em 1em;
 	background: var(--background-tertiary)
 }
