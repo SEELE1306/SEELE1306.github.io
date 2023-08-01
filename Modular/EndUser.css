@@ -4,27 +4,33 @@
 :root, .theme-dark, .theme-light {
 	/* Change to none to use solid color theme, or use one of the premade Nitro gradients, or make your own gradient or even add a background (must be an URL) */
 	--modular-background: var(--midnight-blurple) !important;
-  /* Available gradients: aurora, forest, hanami, lofi, mint-apple, mars, neon-nights, retro-raincloud, strawberry-lemonade, sepia,
-   * midnight-blurple, chroma-glow, citrus-sherbert, cotton-candy, crimson-moon, desert-khaki, dusk, retro-storm, sunrise, sunset, under-the-sea */
+  	/* Available gradients: aurora, forest, hanami, lofi, mint-apple, mars, neon-nights, retro-raincloud, strawberry-lemonade, sepia,
+  	* midnight-blurple, chroma-glow, citrus-sherbert, cotton-candy, crimson-moon, desert-khaki, dusk, retro-storm, sunrise, sunset, under-the-sea */
 
 	/* Overall accent */
 	--modular-hue: 240;
-	--modular-saturation: calc(var(--saturation-factor, 1)* 79%); /* Change the percentage to something else */
+	--modular-saturation: calc(var(--saturation-factor, 1)* 40%); /* Change the percentage to something else */
 	--modular-lightness: 20%; /* Best between 0-30% for visibility */
 
-  /* Shadow */
+ 	 /* Shadow */
 	--modular-shadow-distance: 8px;
 	--modular-stroke-distance: 1px;
 
 	/* Border radius */
 	--modular-border-radius: 8px; /* Default is 8px */
-	--modular-client-spacing: 8px; /* Default is 12px */
+	--modular-client-spacing: 12px; /* Default is 12px */
 	--modular-client-radius: 4px; /* Default is 4px */
 
 	/* Font change */
 	--font-main: "" ;
 	--font-code: Iosevka, monospace, Consolas;
 
+	/* Chat bubbles */
+	/* Only solid colors, no transparency! */
+	--chat-bubble-default: rgb(71, 71, 71);
+	--chat-bubble-replying: rgb(87, 226, 184);
+	--chat-bubble-mentioned: rgb(255, 71, 71);
+	
 	/* Quotes */
 	--quote-vertical-spacing: 4px;
 	--quote-horizontal-spacing: 10px;
