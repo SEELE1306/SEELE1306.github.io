@@ -14,6 +14,9 @@
 	--modular-client-radius: 4px;
 	--font-main: "" ;
 	--font-code: Iosevka, monospace, Consolas;
+	--chat-bubble-default: rgb(71, 71, 71);
+	--chat-bubble-replying: rgb(87, 226, 184);
+	--chat-bubble-mentioned: rgb(255, 71, 71);
 	--quote-vertical-spacing: 4px;
 	--quote-horizontal-spacing: 10px;
 	--quote-background-color: #a6da9525;
@@ -884,18 +887,18 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 	margin: 0.125em 0;
 	padding: 0.5em;
 	border-radius: var(--modular-border-radius);
-	background: var(--background-modifier-accent);
+	background: color-mix(in srgb, var(--chat-bubble-default) 20%, transparent);
 	max-width: max-content
 }
 .groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg:hover,
 .cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg:hover>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
 .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
-	background: var(--background-modifier-selected)
+	background: color-mix(in srgb, var(--chat-bubble-default) 40%, transparent);
 }
 .groupStart-3Mlgv1.cozyMessage-1DWF9U.replying-eZ7p5z>.contents-2MsGLg,
 .cozyMessage-1DWF9U.replying-eZ7p5z:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
 .replying-eZ7p5z .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
-	background: var(--background-modifier-selected);
+	background: color-mix(in srgb, var(--chat-bubble-replying) 20%, transparent);
 	border-radius: var(--modular-border-radius);
 	max-width: max-content
 }
@@ -905,18 +908,18 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 .groupStart-3Mlgv1.cozyMessage-1DWF9U.replying-eZ7p5z>.contents-2MsGLg:hover,
 .cozyMessage-1DWF9U.replying-eZ7p5z:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
 .replying-eZ7p5z .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
-	background: var(--background-modifier-hover)
+	background: color-mix(in srgb, var(--chat-bubble-replying) 40%, transparent)
 }
 .groupStart-3Mlgv1.cozyMessage-1DWF9U.mentioned-Tre-dv>.contents-2MsGLg,
 .cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
 .mentioned-Tre-dv .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
-	background: hsl(var(--peach)/0.3);
+	background: color-mix(in srgb, var(--chat-bubble-mentioned) 20%, transparent);
 	border-radius: var(--modular-border-radius)
 }
 .groupStart-3Mlgv1.cozyMessage-1DWF9U.mentioned-Tre-dv>.contents-2MsGLg:hover,
 .cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
 .mentioned-Tre-dv .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
-	background: hsl(var(--peach)/0.5)
+	background: color-mix(in srgb, var(--chat-bubble-mentioned) 40%, transparent)
 }
 .content-yjf30S .content-1gYQeQ {
 	align-items: center

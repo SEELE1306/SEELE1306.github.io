@@ -1,11 +1,9 @@
 /* Chat bubbles */
 :root {
-	--chat-bubble-default: #00000025;
-	--chat-bubble-default-hover: #00000050;
-	--chat-bubble-replying: #3946be25;
-	--chat-bubble-replying-hover: #3946be50;
-	--chat-bubble-mentioned: #ffd08925;
-	--chat-bubble-mentioned-hover: #ffd08950;
+	/* Solid color only, no transparency! */
+	--chat-bubble-default: gray;
+	--chat-bubble-replying: cyan;
+	--chat-bubble-mentioned: orange;
 	--chat-bubble-border-radius: 8px;
 }
 :root {
@@ -45,39 +43,39 @@
 	margin: 0.125em 0;
 	padding: 0.5em;
 	border-radius: var(--chat-bubble-border-radius);
-	background: var(--chat-bubble-default);
-	max-width: max-content;
+	background: color-mix(in srgb, var(--chat-bubble-default) 20%, transparent);
+	max-width: max-content
 }
 .groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg:hover, 
 .cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg:hover>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *), 
 .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
-	background: var(--chat-bubble-default-hover) 
+	background: color-mix(in srgb, var(--chat-bubble-default) 40%, transparent);
 }
-.groupStart-3Mlgv1.cozyMessage-1DWF9U.replying-eZ7p5z>.contents-2MsGLg, 
-.cozyMessage-1DWF9U.replying-eZ7p5z:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *), 
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.replying-eZ7p5z>.contents-2MsGLg,
+.cozyMessage-1DWF9U.replying-eZ7p5z:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
 .replying-eZ7p5z .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
-	background: var(--chat-bubble-replying);
+	background: color-mix(in srgb, var(--chat-bubble-replying) 20%, transparent);
 	border-radius: var(--chat-bubble-border-radius);
 	max-width: max-content
 }
 .scrollableContainer-15eg7h {
-	background: transparent 
+	background: transparent
 }
-.groupStart-3Mlgv1.cozyMessage-1DWF9U.replying-eZ7p5z>.contents-2MsGLg:hover, 
-.cozyMessage-1DWF9U.replying-eZ7p5z:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover, 
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.replying-eZ7p5z>.contents-2MsGLg:hover,
+.cozyMessage-1DWF9U.replying-eZ7p5z:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
 .replying-eZ7p5z .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
-	background: var(--chat-bubble-replying-hover)
+	background: color-mix(in srgb, var(--chat-bubble-replying) 40%, transparent)
 }
-.groupStart-3Mlgv1.cozyMessage-1DWF9U.mentioned-Tre-dv>.contents-2MsGLg, 
-.cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *), 
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.mentioned-Tre-dv>.contents-2MsGLg,
+.cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
 .mentioned-Tre-dv .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
-	background: var(--chat-bubble-mentioned);
+	background: color-mix(in srgb, var(--chat-bubble-mentioned) 20%, transparent);
 	border-radius: var(--chat-bubble-border-radius)
 }
-.groupStart-3Mlgv1.cozyMessage-1DWF9U.mentioned-Tre-dv>.contents-2MsGLg:hover, 
-.cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover, 
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.mentioned-Tre-dv>.contents-2MsGLg:hover,
+.cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
 .mentioned-Tre-dv .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
-	background: var(--chat-bubble-mentioned-hover)
+	background: color-mix(in srgb, var(--chat-bubble-mentioned) 40%, transparent)
 }
 /* Embeds */
 .embedFull-1HGV2S {
