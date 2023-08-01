@@ -1245,7 +1245,6 @@ div[class*=nameAndDecorators-] {
 	justify-content: center;
 	gap: 0px
 }
-
 .vc-smyn-suffix:before {
 	content: "| @" !important
 }
@@ -1256,8 +1255,13 @@ div[class*=nameAndDecorators-] {
 	color: currentColor !important;
 	opacity: 0.5
 }
-span[class*=username-][class*=desaturateUserColors-][class*=clickable] {
-	font-weight: 800
+.contents-2MsGLg .username-h_Y3Us {
+	border-radius: var(--modular-border-radius);
+	background: color-mix(in srgb, currentColor 30%, rgba(0, 0, 0, 0.30));
+	padding: 0 0.375em;
+}
+.contents-2MsGLg .username-h_Y3Us:hover {
+	background: color-mix(in srgb, currentColor 30%, transparent)
 }
 [class*=listItem-]>div>div>svg {
 	border-radius: 50% !important
