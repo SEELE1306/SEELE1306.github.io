@@ -147,10 +147,10 @@
 }
 body:has(.vc-spotify-pause) #vc-spotify-song-title {
 	animation-play-state: running;
-}
+} 
 #vc-spotify-song-title::before {
 	content: 'Now playing:';
-	padding: 0 0.5em;
+	padding: 0 0.5em 0 0;
 	color: var(--header-secondary);
 }
 @keyframes move-rtl {
@@ -855,10 +855,6 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 	font-weight: 1000;
 	padding-top: 0px
 }
-::selection {
-	background: hsl(var(--primary-160-hsl)/1);
-	color: var(--background-primary)
-}
 .channelTextArea-1FufC0 {
 	background-color: transparent
 }
@@ -869,7 +865,7 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 	display: none
 }
 .zalgo-26OfGz:has(.contents-2MsGLg) {
-	max-width: fit-content
+	max-width: fit-content;
 }
 .contents-2MsGLg .avatar-2e8lTP {
 	margin-top: calc(-4px - 0.125em);
@@ -1001,6 +997,9 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 .buttonsContainer-3iOFIV > button {
 	border-radius: var(--modular-border-radius)
 }
+.section-28YDOf:has(.roles-3vQPxb:empty) {
+    display: none;
+}
 .section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH {
 	border-radius: var(--modular-border-radius);
 	padding: 0.5em
@@ -1008,6 +1007,7 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 .container-3g15px {
 	margin: 0 0.75em
 }
+
 .section-28YDOf>div:not(.activity-3uaYny, .roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .memberSinceContainer-2CBD23, .nameTag-35jqbZ, img[class*=emoji-] {
 	justify-content: center;
 	text-align: center
@@ -1185,7 +1185,6 @@ div[class*=nameAndDecorators-] {
 .content-1SgpWY {
 	flex-direction: var(--client-orientation)
 }
-
 .pageBody-23bo4p {
 	padding: 0.5em;
 	margin: 0.25em;
@@ -1274,14 +1273,6 @@ div[class*=nameAndDecorators-] {
 .vc-smyn-suffix {
 	color: currentColor !important;
 	opacity: 0.5
-}
-.contents-2MsGLg .username-h_Y3Us {
-	border-radius: var(--modular-border-radius);
-	background: color-mix(in srgb, currentColor 30%, rgba(0, 0, 0, 0.30));
-	padding: 0 0.375em;
-}
-.contents-2MsGLg .username-h_Y3Us:hover {
-	background: color-mix(in srgb, currentColor 30%, transparent)
 }
 [class*=listItem-]>div>div>svg {
 	border-radius: 50% !important
@@ -1961,4 +1952,16 @@ path[d="M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5
 }
 .divider-1bpIoX, .tabBar-11FwuO  {
     border: none !important
+}
+rect[fill="#23a55a"], rect[fill="rgba(35, 165, 90, 1)"], foreignObject[mask="url(#svg-mask-status-online)"] > div, div[class^=dotOnline], i[class^=statusOnline-] {
+  fill: #a6da95 !important;
+  background-color: #a6da95 !important;
+}
+rect[fill="#f0b232"], rect[fill="rgba(240, 178, 50, 1)"], foreignObject[mask="url(#svg-mask-status-idle)"] > div {
+  fill: #eed49f !important;
+  background-color: #eed49f !important;
+}
+rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
+  fill: #c55667 !important;
+  background-color: #c55667 !important;
 }
