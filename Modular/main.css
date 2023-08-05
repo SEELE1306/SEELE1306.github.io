@@ -43,7 +43,6 @@
 	--info-warning-foreground: none;
 	--scrollbar-thin-thumb: none;
 	--scrollbar-thin-track: none;
-	--profile-body-background-color: none !important;
 	--profile-role-pill-background-color: none;
 	--modular-shadow: var(--modular-shadow-distance) var(--modular-shadow-distance) 0 0 hsl(var(--primary-700-hsl)/0.25), 0 0 var(--modular-stroke-distance) var(--modular-stroke-distance) hsl(var(--primary-700-hsl)/0.5);
 	--font-primary: var(--font-main), var(--font-fallback);
@@ -968,11 +967,8 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 	justify-content: center;
 	text-align: center
 }
-.theme-dark .section-28YDOf>div:not(.roles-3vQPxb),.theme-dark .container-3g15px, .theme-dark .userInfoText-2MFCmH {
-	background: hsl(var(--primary-100-hsl)/0.15) 
-}
-.theme-light .section-28YDOf>div:not(.roles-3vQPxb),.theme-light .container-3g15px, .theme-light .userInfoText-2MFCmH {
-	background: hsl(var(--primary-600-hsl)/0.15) 
+.section-28YDOf>div:not(.roles-3vQPxb),.theme-dark .container-3g15px, .theme-dark .userInfoText-2MFCmH {
+	background: var(--profile-body-background-color)
 }
 :is([class|=userPopoutInner], [class|=userPanelOverlayBackground], [class|=userInfoText]) [style*="-webkit-line-clamp"] {
     display: block;
