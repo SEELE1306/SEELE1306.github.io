@@ -967,7 +967,7 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 	justify-content: center;
 	text-align: center
 }
-body:not([class*=profilePanel-]).section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH {
+.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH {
 	background: var(--profile-body-background-color)
 }
 :is([class|=userPopoutInner], [class|=userPanelOverlayBackground], [class|=userInfoText]) [style*="-webkit-line-clamp"] {
@@ -1575,7 +1575,7 @@ h3.membersGroup-2eiWxl > span > span[style] {
 	padding: 0.5em 0.625em
 }
 [class*=profilePanel-] .section-28YDOf>div {
-	background: var(--background-modifier-accent);
+	background: var(--background-modifier-accent) !important;
 }
 [class*=profilePanelConnections-] {
 	padding: 0 0.75em
@@ -1910,4 +1910,7 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 .divider-2rZFJK {
 	border: none;
 	padding: 0 4.125em;
+}
+.badgeList-2hF9ig {
+	background: transparent;
 }

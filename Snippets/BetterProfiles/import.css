@@ -22,7 +22,7 @@
 .buttonsContainer-3iOFIV > button {
 	border-radius: 0.5rem;
 }
-body:not([class*=profilePanel-]).section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH {
+.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH {
 	border-radius: 0.5rem;
 	padding: 0.5em;
 	border: var(--section-thickness) solid var(--profile-body-divider-color);
