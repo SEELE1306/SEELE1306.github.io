@@ -954,11 +954,8 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 	border-radius: var(--modular-border-radius);
 	background: linear-gradient(var(--profile-gradient-primary-color),var(--profile-gradient-primary-color) 60px,var(--profile-gradient-secondary-color))
 }
-:not(.accountProfilePopoutWrapper-3GskID)>.userProfileOuterUnthemed-11rPfA .userProfileInnerThemedNonPremium-2AJg-H::before {
-	backdrop-filter: blur(var(--modular-background-blur-strength))
-}
-.userProfileInnerThemedNonPremium-2AJg-H {
-	background: var(--background-secondary-alt) 
+.scroller-15bIdk {
+	padding: 6px 12px;
 }
 .section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH {
 	border-radius: var(--modular-border-radius);
