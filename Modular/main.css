@@ -1001,7 +1001,7 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 }
 .userProfileModalInner-3dx9L9 .top-Ktfr_T .item-2GWPIy {
 	border: none;
-	background: var(--background-modifier-accent);
+	background: color-mix(in srgb, var(--profile-body-background-color) 40%, transparent);
 	border-radius: var(--modular-border-radius);
 	padding: 0.125em 0;
 	width: 31%;
@@ -1012,10 +1012,10 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 	border: none
 }
 .userProfileModalInner-3dx9L9 .top-Ktfr_T .item-2GWPIy:hover {
-	background: var(--background-modifier-hover) !important;
+	background: color-mix(in srgb, var(--profile-body-background-color) 70%, transparent) !important;
 }
 .userProfileModalInner-3dx9L9 .top-Ktfr_T .selected-1sf9UK.item-2GWPIy {
-	background: var(--background-modifier-selected)
+	background: color-mix(in srgb, var(--profile-body-background-color) 100%, transparent)
 }
 .tabBarItem-30Te4- {
 	height: fit-content;
