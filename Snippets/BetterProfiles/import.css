@@ -16,6 +16,9 @@
 	border-radius: 0.5rem;
 	background: linear-gradient(var(--profile-gradient-primary-color),var(--profile-gradient-primary-color) 60px,var(--profile-gradient-secondary-color))
 }
+.scroller-15bIdk {
+	padding: 6px 12px;
+}
 .buttonsContainer-3iOFIV > button {
 	border-radius: 0.5rem;
 }
@@ -23,16 +26,11 @@
 	border-radius: 0.5rem;
 	padding: 0.5em;
 	border: var(--section-thickness) solid var(--profile-body-divider-color);
+	background: var(--profile-body-background-color)
 }
 .section-28YDOf>div:not(.activity-3uaYny, .roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .memberSinceContainer-2CBD23, .nameTag-35jqbZ, img[class*=emoji-] {
 	justify-content: center;
 	text-align: center
-}
-.theme-dark .section-28YDOf>div:not(.roles-3vQPxb),.theme-dark .container-3g15px, .theme-dark .userInfoText-2MFCmH {
-	background: hsl(var(--primary-100-hsl)/0.1) !important
-}
-.theme-light .section-28YDOf>div:not(.roles-3vQPxb),.theme-light .container-3g15px, .theme-light .userInfoText-2MFCmH {
-	background: hsl(var(--primary-600-hsl)/0.1) !important
 }
 .divider-MZkkle {
 	background: var(--profile-body-divider-color) 
@@ -40,7 +38,7 @@
 .platformIcon-k3yytQ {
 	margin: 2px 2px 
 }
-.divider-2dDziJ, .divider-SH6OnO {
+:is(.userPopoutInner-nv9Y92, .profilePanel-2VBkh8) [class*=divider-] {
 	display: none
 }
 .scroller-Q9d9Di {
@@ -155,29 +153,22 @@
 	column-gap: 0.5em;
 	margin-bottom: 1em;
 }
-.top-Ktfr_T .item-2GWPIy {
+.userProfileModalInner-3dx9L9 .top-Ktfr_T .item-2GWPIy {
 	border: none;
 	background: var(--background-modifier-accent);
-	border-radius: var(--modular-border-radius);
+	border-radius: 0.5em;
 	padding: 0.125em 0;
 	width: 31%;
 	font-weight: 600;
 	text-align: center;
 }
-.top-Ktfr_T .item-2GWPIy {
-	border: none;
-	background: var(--background-modifier-accent);
-	border-radius: 0.5em;
-	padding: 0.125em 0.5em 0;
-	font-weight: 800
-}
 .userInfoSection-2u2hir+.userInfoSection-2u2hir, .tabBarContainer-sCZC4w, .top-Ktfr_T .themed-qqoYp3.item-2GWPIy:hover {
 	border: none
 }
-.top-Ktfr_T .item-2GWPIy:hover {
-	background: var(--background-modifier-hover) !important
+.userProfileModalInner-3dx9L9 .top-Ktfr_T .item-2GWPIy:hover {
+	background: var(--background-modifier-hover) !important;
 }
-.top-Ktfr_T .selected-1sf9UK.item-2GWPIy {
+.userProfileModalInner-3dx9L9 .top-Ktfr_T .selected-1sf9UK.item-2GWPIy {
 	background: var(--background-modifier-selected)
 }
 .tabBarItem-30Te4- {

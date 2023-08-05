@@ -967,7 +967,7 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 	justify-content: center;
 	text-align: center
 }
-.section-28YDOf>div:not(.roles-3vQPxb),.theme-dark .container-3g15px, .theme-dark .userInfoText-2MFCmH {
+.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH {
 	background: var(--profile-body-background-color)
 }
 :is([class|=userPopoutInner], [class|=userPanelOverlayBackground], [class|=userInfoText]) [style*="-webkit-line-clamp"] {
