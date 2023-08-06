@@ -1852,10 +1852,17 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 .accountProfilePopoutWrapper-3GskID {
 	left: 0;
 }
-.accountProfilePopoutWrapper-3GskID>.userProfileOuterUnthemed-11rPfA .userProfileInnerThemedNonPremium-2AJg-H {
-	background: var(--background-tertiary);
+.accountProfilePopoutWrapper-3GskID [class*=userProfileOuter-] [class*=userProfileInner-] {
 	width: 60%;
 	border-radius: var(--modular-border-radius);
+}
+.accountProfilePopoutWrapper-3GskID [class*=userProfileOuter-] {
+	margin-right: -136px;
+}
+.userPopoutOuter-1OHwPL.userProfileOuter-2tQwNf.userProfileOuterUnthemed-11rPfA.profileColors-2AgAV4.theme-dark,
+.accountProfilePopoutWrapper-3GskID .userProfileOuterThemed-2BgJCM.userPopoutOuter-1OHwPL {
+	background-color: transparent;
+	box-shadow: none;
 }
 .userPopoutOuter-1OHwPL.userProfileOuter-2tQwNf.userProfileOuterUnthemed-11rPfA.profileColors-2AgAV4.theme-dark {
 	background-color: transparent;
@@ -1913,4 +1920,8 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 }
 .badgeList-2hF9ig {
 	background: transparent;
+}
+/* profile popup fix */
+[class*=userPopoutOuter-], .popoutBannerPremium-3i5EEI, .popoutNoBannerPremium-25mwJy {
+    width: 338px;
 }

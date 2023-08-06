@@ -193,3 +193,19 @@
 	background: var(--background-modifier-hover);
 	text-decoration: none;
 }
+.accountProfilePopoutWrapper-3GskID [class*=userProfileOuter-] [class*=userProfileInner-] {
+	width: 60%;
+	border-radius: var(--modular-border-radius);
+}
+.accountProfilePopoutWrapper-3GskID [class*=userProfileOuter-] {
+	margin-right: -136px;
+}
+.userPopoutOuter-1OHwPL.userProfileOuter-2tQwNf.userProfileOuterUnthemed-11rPfA.profileColors-2AgAV4.theme-dark,
+.accountProfilePopoutWrapper-3GskID .userProfileOuterThemed-2BgJCM.userPopoutOuter-1OHwPL {
+	background-color: transparent;
+	box-shadow: none;
+}
+/* profile popup fix */
+[class*=userPopoutOuter-], .popoutBannerPremium-3i5EEI, .popoutNoBannerPremium-25mwJy {
+    width: 338px;
+}
