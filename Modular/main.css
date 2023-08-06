@@ -1266,7 +1266,10 @@ div[class*=nameAndDecorators-] {
 	background-color: transparent;
 	grid-gap: 0.75em
 }
-.field-21XZwa {
+.fieldList-in8WkP {
+	background-color: transparent;
+}
+/*.field-21XZwa {
 	border-radius: var(--modular-border-radius);
 	position: relative
 }
@@ -1281,11 +1284,8 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 [class*=constrainedRow-]>div>div>span>button:hover {
 	background: hsl(var(--red)/1) !important
-}
-[class*=containerDefault-][class*=wrapper-]>[class^=link-]:hover {
-	background: var(--background-modifier-selected)
-}
-[class*=userInfo-]>button[class*=button-] {
+}*/
+.userInfo-regn9W .button-ejjZWC {
 	border-radius: var(--modular-border-radius);
 	background: var(--channel-icon);
 	margin-right: 0.75em
@@ -1294,7 +1294,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 	border-radius: unset;
 	background: transparent
 }
-[class*=constrainedRow-]>div>div>span>button {
+.constrainedRow-3y91Xf .button-ejjZWC {
 	border-radius: var(--modular-border-radius);
 	background: var(--channel-icon);
 	padding: 0.25em 0.5em;
