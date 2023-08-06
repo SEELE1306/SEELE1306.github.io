@@ -1212,10 +1212,7 @@ div[class*=nameAndDecorators-] {
 	opacity: 0.5
 }
 [class*=listItem-]>div>div>svg {
-	border-radius: 50% !important
-}
-[class*=listItem-]>div>div>svg:hover {
-	filter: brightness(1.1)
+	border-radius: 50px !important
 }
 .eyebrow-132Xza {
 	font-weight: 1000
