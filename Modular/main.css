@@ -1300,17 +1300,14 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 	padding: 0.25em 0.5em;
 	margin: 0 0.5em
 }
-[class*=containerDefault-][class*=wrapper-]>[class^=link-] {
+.containerDefault-YUSmu3.wrapper-NhbLHG .link-1_kTxV {
+	font-weight: 800;
+	text-align: center;
+	letter-spacing: 0.05em;
 	background: var(--background-modifier-accent);
-	margin-top: 1em;
 	padding: 0.25em 0.5em;
 	border-radius: var(--modular-border-radius);
 	text-transform: none
-}
-[class*=containerDefault-][class*=wrapper-]>[class^=link-]>[class*=content-]>div {
-	font-weight: 800;
-	text-align: center;
-	letter-spacing: 0.05em
 }
 .profile-3xd-Cg, .pageBody-29jwEZ {
 	max-height: 50%;
