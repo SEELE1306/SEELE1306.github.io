@@ -1319,11 +1319,14 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 	border-radius: var(--modular-border-radius);
 	background: var(--background-secondary-alt) !important
 }
-[class*=pageBody-]>div>div[class*=text-xs-normal-], [class*=profile-]>div[class*=text-xs-normal-] {
+:is(.pageBody-29jwEZ>:not(.prompt-1sE27N), .profile-3xd-Cg) .text-xs-normal-3O7EaX {
 	margin-top: 0.5em;
 	text-align: center;
-	font-weight: 800;
-	letter-spacing: 0.02em
+	font-weight: 600;
+	font-size: 14px;
+}
+.profile-3xd-Cg .heading-md-semibold-2h_vsp {
+	text-align: center;
 }
 .prompt-1sE27N {
 	background: transparent;
