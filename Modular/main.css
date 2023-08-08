@@ -684,7 +684,7 @@ svg[class*=addButtonIcon-] {
 h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=container-] {
 	color: var(--text-normal);
 	background: var(--background-modifier-accent);
-	height: 2vh;
+	height: 24px;
 	margin: 0.5em 0 0.5em 0.5em;
 	border-radius: calc(var(--modular-border-radius) * 0.75);
 	padding-top: 4px;
