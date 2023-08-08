@@ -3,18 +3,18 @@
 /* --- CUSTOMIZABLE --- */
 :root, .theme-dark, .theme-light {
 	/* Change to none to use solid color theme, or use one of the premade Nitro gradients, or make your own gradient or even add a background (must be an URL) */
-	--modular-background: var(--midnight-blurple) !important;
+	--modular-background: none !important;
   	/* Available gradients: aurora, forest, hanami, lofi, mint-apple, mars, neon-nights, retro-raincloud, strawberry-lemonade, sepia,
   	* midnight-blurple, chroma-glow, citrus-sherbert, cotton-candy, crimson-moon, desert-khaki, dusk, retro-storm, sunrise, sunset, under-the-sea */
 
 	/* Overall accent */
-	--modular-hue: 240;
-	--modular-saturation: calc(var(--saturation-factor, 1)* 40%); /* Change the percentage to something else */
-	--modular-lightness: 20%; /* Best between 0-30% for visibility */
+	--modular-hue: 223;
+	--modular-saturation: calc(var(--saturation-factor, 1)* 7%); /* Change the percentage to something else */
+	--modular-lightness: 17%; /* Best between 0-30% for visibility */
 
  	 /* Shadow */
-	--modular-shadow-distance: 8px;
-	--modular-stroke-distance: 1px;
+	--modular-shadow-distance: 8px; /* Default is 8px */
+	--modular-stroke-distance: 1px; /* Default is 1px */
 
 	/* Border radius */
 	--modular-border-radius: 8px; /* Default is 8px */
@@ -30,6 +30,12 @@
 	--chat-bubble-default: rgb(71, 71, 71);
 	--chat-bubble-replying: rgb(87, 226, 184);
 	--chat-bubble-mentioned: rgb(255, 71, 71);
+
+	/* Status colors */
+	/* Only solid colors, no transparency! */
+	--online-status-color: rgba(35, 165, 90, 1);
+	--idle-status-color: rgba(240, 178, 50, 1);
+	--dnd-status-color: rgba(242, 63, 67, 1);
 	
 	/* Quotes */
 	--quote-vertical-spacing: 4px;
@@ -38,10 +44,16 @@
 	--quote-text-color: #a6da95;
 	--quote-border-radius: 6px;
 
+	/* Guilds list */
+	--guild-item-radius: 0px;
+	--guild-list-height: 40px;
+	--guild-list-width: 64px;
+	--guild-item-spacing: 4px;
+
 	/* Menu UI */
 	--modular-background-blur-strength: 10px; /* in px, Default is 10px */
-	--modular-background-brightness: 100%; /* Between 0 and 100% */
-	--modular-transparency: 15%; /* Between 0 and 50% */
+	--modular-background-brightness: 100%; /* Between 0 and 100% - Default is 100% */
+	--modular-transparency: 25%; /* Between 0 and 50% - Default is 25% */
 	--sidebar-orientation: column; /* column-reverse for user panel on top */
 	--guild-orientation: row; /* row-reverse for guild bar on the right */
 	--client-orientation: row; /* row-reverse for server list and user panel on the right */
