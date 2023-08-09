@@ -1,7 +1,6 @@
 @import url(https://seele1306.github.io/Modular/Root.css);
 @import url(https://dablulite.github.io/css-snippets/BetterModals/import.css);
 @import url(https://dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
-
 :root, .theme-dark, .theme-light {
 	/* Start of customizable parameters */
 	--modular-background: none !important;
@@ -15,20 +14,24 @@
 	--modular-client-radius: 4px;
 	--font-main: "" ;
 	--font-code: Iosevka, monospace, Consolas;
-	--chat-bubble-default: rgb(71, 71, 71);
+	--chat-bubble-default: var(--background-modifier-hover); /* Can change to var(--background-modifier-hover) */
 	--chat-bubble-replying: rgb(87, 226, 184);
 	--chat-bubble-mentioned: rgb(233, 167, 44);
-	--online-status-color: rgb(0, 255, 110);
-	--idle-status-color: rgb(220, 176, 255);
-	--dnd-status-color: rgb(252, 104, 18);
+	--online-status-color: rgba(35, 165, 90, 1);
+	--idle-status-color: rgba(240, 178, 50, 1);
+	--dnd-status-color: rgba(242, 63, 67, 1);
 	--quote-vertical-spacing: 4px;
 	--quote-horizontal-spacing: 10px;
+	--guild-item-radius: 4px;
+	--guild-list-height: 40px;
+	--guild-list-width: 64px;
+	--guild-item-spacing: 4px;
 	--quote-background-color: #a6da9525;
 	--quote-text-color: #a6da95;
-	--quote-border-radius: 6px;
+	--quote-border-radius: 4px;
 	--modular-background-blur-strength: 10px;
-	--modular-background-brightness: 75%;
-	--modular-transparency: 25%;
+	--modular-background-brightness: 100%;
+	--modular-transparency: 37.5%;
 	--sidebar-orientation: column;
 	--guild-orientation: row;
 	--client-orientation: row;
@@ -69,8 +72,9 @@
 	--channel-text-area-placeholder: hsl(var(--primary-200-hsl)/0.5);
 	--channeltextarea-background: hsl(var(--primary-600-hsl)/1);
 	--background-primary: hsl(var(--primary-600-hsl)/1);
+	--background-primary-alt: hsl(var(--primary-660-hsl)/var(--modular-transparency)) !important;
 	--background-secondary: hsl(var(--primary-560-hsl)/1);
-	--background-secondary-alt: hsl(var(--primary-660-hsl)/var(--modular-transparency)) !important;
+	--background-secondary-alt: hsl(var(--primary-560-hsl)/1);
 	--background-tertiary: hsl(var(--primary-530-hsl)/1);
 	--background-tertiary-alt: hsl(var(--primary-530-hsl)/0.5);
 	--background-floating: hsl(var(--primary-500-hsl)/1);
@@ -104,8 +108,9 @@
 	--channel-text-area-placeholder: hsl(var(--primary-700-hsl)/0.5);
 	--channeltextarea-background: hsl(var(--primary-300-hsl)/1);
 	--background-primary: hsl(var(--primary-300-hsl)/1);
+	--background-primary-alt: hsl(var(--primary-200-hsl)/var(--modular-transparency)) !important;
 	--background-secondary: hsl(var(--primary-260-hsl)/1);
-	--background-secondary-alt: hsl(var(--primary-200-hsl)/var(--modular-transparency)) !important;
+	--background-secondary-alt: hsl(var(--primary-260-hsl)/1);
 	--background-tertiary: hsl(var(--primary-230-hsl)/1);
 	--background-tertiary-alt: hsl(var(--primary-230-hsl)/0.5);
 	--background-floating: hsl(var(--primary-200-hsl)/1);
