@@ -2037,10 +2037,6 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 	max-height: var(--guild-list-height);
   	background-color: var(--background-modifier-hover);
 }
-.item-2LIpTv[style="opacity: 1; height: 20px; transform: none;"]
-{
-  	background-color: var(--interactive-muted);
-}
 .item-2LIpTv[style="opacity: 1; height: 40px; transform: none;"] {
   	background-color: var(--header-secondary);
 }
