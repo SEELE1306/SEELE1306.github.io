@@ -984,6 +984,12 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 	margin: 0.5em 0 0.25em;
 	background: var(--background-modifier-accent);
 }
+.vc-rdb-view >.cozyMessage-1DWF9U {
+	padding: 0 0 0 0.25em !important;
+}
+.vc-rdb-view .avatar-2e8lTP.clickable-31pE3P {
+	display: none;
+}
 .vc-rdb-input {
 	border-radius: var(--modular-border-radius);
 	margin: 0.375em 0
@@ -2055,7 +2061,4 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 }
 .listItem-3SmSlK {
 	margin: calc(var(--guild-item-spacing) * 2) 0;
-}
-.containerDefault-3TQ5YN {
-	padding-top: 0.625em;
 }
