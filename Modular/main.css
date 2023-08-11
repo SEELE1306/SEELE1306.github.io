@@ -142,13 +142,12 @@ span[class*=dot-][class*=maskSecondary-], [class^=jumpToPresentBar]>[class^=barB
 span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unreadMentionsBar-ZXXoOH,
 .message-24k8JL .cozy-VmLDNB .timestamp-p1Df1m, .container-3XgAHv .message-2CShn3 .timestamp-p1Df1m, .cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH, 
 .replying-eZ7p5z::before, .mentioned-Tre-dv::before, .children-3xh0VB:after, #app-mount .form-3gdLxP:before, .section-28YDOf:has(.roles-3vQPxb:empty),
-.lastSection-q3HCfo, .content-1jQy2l::before, .chat-25x62K::before, [class*=userPanelInner-]::before, .iconContainerLeft-1Kr6X4, 
-[class*=containerDefault-][class*=wrapper-]>[class^=link-]>[class*=content-]>div>[class*=icon], .bar-wDIGjg, .attachment-16cAbS, .avatar-l9Txm5, 
+.lastSection-q3HCfo, .content-1jQy2l::before, .chat-25x62K::before, [class*=userPanelInner-]::before, .iconContainerLeft-1Kr6X4, .bar-wDIGjg, .attachment-16cAbS, .avatar-l9Txm5, 
 .blob-1uHjdp, .wrapper-15CKyy, .wrapper-3HVHpV, .tabBody-2dgbAs::before, .wrapper-1NNaWG:after, .accountProfilePopoutWrapper-3GskID .section-28YDOf,
 .option-ayUoaq::before, .option-ayUoaq::after, .wordmarkWindows-2dq6rw path:not(:first-child), .homeIcon-r0w4ny,
 #user-settings-cog > .scroller-nxCRu_ > .item-5ApiZt, [class*=gradientBottom-], [class*=gradientTop],
 .userPopoutInner-nv9Y92:has(#account) > *:not(:has(#account)), .userPopoutOverlayBackground-3A0Pcz:has(#account) > *:not(#account), .container-TT--xs ::-webkit-scrollbar,
-:is(.userPopoutInner-nv9Y92, .profilePanel-2VBkh8) [class*=divider-] {
+:is(.userPopoutInner-nv9Y92, .profilePanel-2VBkh8) [class*=divider-], .emojiItemDisabled-3VVnwp {
 	display: none !important;
 }
 .auto-2TJ1RH::-webkit-scrollbar-thumb {
