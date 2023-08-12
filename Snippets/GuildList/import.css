@@ -74,7 +74,7 @@
 }
 .base-3IDx3L {
 	background: var(--background-primary) !important;
-	color: var(--interactive-muted);
+	color: var(--interactive-normal);
 }
 .pill-1NRFie, .wrapper-z5ab_q:not(:last-child) {
   	height: var(--guild-list-height) !important;
@@ -92,11 +92,11 @@
 }
 .item-2LIpTv {
   	max-height: var(--guild-list-height);
-	background-color: var(--background-modifier-hover);
+	background-color: var(--interactive-muted);
 	border-radius: 0;
 }
 .item-2LIpTv[style="opacity: 1; height: 40px; transform: none;"] {
-	background-color: var(--header-secondary);
+	background-color: var(--interactive-active);
 }
 .circleIcon-3489FI {
   	margin-left: 0;
