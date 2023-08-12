@@ -25,11 +25,13 @@
 .buttonsContainer-3iOFIV > button {
 	border-radius: 0.5rem;
 }
-body:not([class*=profilePanel-]) .theme-dark :is(.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-input, .vc-rdb-view) {
+body:not([class*=profilePanel-]) .theme-dark :is(.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-input, .vc-rdb-view,
+div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"]) {
 	--background-modifier-accent: hsl(var(--primary-160-hsl)/calc(var(--modular-transparency)/3));
 	background: var(--background-modifier-accent);
 }
-body:not([class*=profilePanel-]) .theme-light :is(.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-input, .vc-rdb-view) {
+body:not([class*=profilePanel-]) .theme-light :is(.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-input, .vc-rdb-view,
+div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"]) {
 	--background-modifier-accent: hsl(var(--primary-600-hsl)/calc(var(--modular-transparency)/3));
 	background: var(--background-modifier-accent);
 }
@@ -219,7 +221,6 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 	padding: 0.25em 0.75em;
 	margin: 0.5em 0;
 	border-radius: var(--modular-border-radius);
-	background: var(--background-modifier-accent);
 }
 .scrollerSeparator-6DmwRQ {
 	box-shadow: none;
