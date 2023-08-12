@@ -29,7 +29,8 @@
 	/* Only solid colors, no transparency! */
 	--chat-bubble-default: rgb(71, 71, 71);
 	--chat-bubble-replying: rgb(87, 226, 184);
-	--chat-bubble-mentioned: rgb(255, 71, 71);
+	--chat-bubble-mentioned: rgb(255, 157, 71);
+	--chat-bubble-automod: rgb(255, 38, 0);
 
 	/* Status colors */
 	/* Only solid colors, no transparency! */
@@ -59,5 +60,5 @@
 	--client-orientation: row; /* row-reverse for server list and user panel on the right */
 	--memberlist-orientation: row; /* row-reverse for member list on the left */
 	--friendlist-orientation: row; /* row-reverse for now playing tab on the left */
-	--titlebar-name: "Modular - insert your name here or whatever quote you like I don't care";
+	--titlebar-name: "insert your name here or whatever quote you like I don't care";
 }
