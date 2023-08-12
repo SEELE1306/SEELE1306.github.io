@@ -17,6 +17,7 @@
 	--chat-bubble-default: var(--background-modifier-hover); /* Can change to var(--background-modifier-hover) */
 	--chat-bubble-replying: rgb(87, 226, 184);
 	--chat-bubble-mentioned: rgb(233, 167, 44);
+	--chat-bubble-automod: rgb(255, 38, 0);
 	--online-status-color: rgba(35, 165, 90, 1);
 	--idle-status-color: rgba(240, 178, 50, 1);
 	--dnd-status-color: rgba(242, 63, 67, 1);
@@ -43,6 +44,8 @@
 	--background-mentioned: none;
 	--background-mentioned-hover: none;
 	--background-message-highlight: none;
+	--background-message-automod: none;
+	--background-message-automod-hover: none;
 	--info-warning-foreground: none;
 	--scrollbar-thin-thumb: none;
 	--scrollbar-thin-track: none;
@@ -147,7 +150,8 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 .option-ayUoaq::before, .option-ayUoaq::after, .wordmarkWindows-2dq6rw path:not(:first-child), .homeIcon-r0w4ny,
 #user-settings-cog > .scroller-nxCRu_ > .item-5ApiZt, [class*=gradientBottom-], [class*=gradientTop],
 .userPopoutInner-nv9Y92:has(#account) > *:not(:has(#account)), .userPopoutOverlayBackground-3A0Pcz:has(#account) > *:not(#account), .container-TT--xs ::-webkit-scrollbar,
-:is(.userPopoutInner-nv9Y92, .profilePanel-2VBkh8) [class*=divider-], .emojiItemDisabled-3VVnwp {
+:is(.userPopoutInner-nv9Y92, .profilePanel-2VBkh8) [class*=divider-], .emojiItemDisabled-3VVnwp, .automodMessage-265YwJ:before, 
+.container-2giAcK:after, .scroller-1ox3I2 .sectionDivider-189lqb {
 	display: none !important;
 }
 .auto-2TJ1RH::-webkit-scrollbar-thumb {
@@ -897,6 +901,17 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 .cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
 .mentioned-Tre-dv .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
 	background: color-mix(in srgb, var(--chat-bubble-mentioned) 40%, transparent)
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.automodMessage-265YwJ>.contents-2MsGLg,
+.cozyMessage-1DWF9U.automodMessage-265YwJ:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+.automodMessage-265YwJ .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
+	background: color-mix(in srgb, var(--chat-bubble-automod) 20%, transparent);
+	border-radius: var(--modular-border-radius)
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.automodMessage-265YwJ>.contents-2MsGLg:hover,
+.cozyMessage-1DWF9U.automodMessage-265YwJ:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
+.automodMessage-265YwJ .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
+	background: color-mix(in srgb, var(--chat-bubble-automod) 40%, transparent)
 }
 .content-yjf30S .content-1gYQeQ {
 	align-items: center

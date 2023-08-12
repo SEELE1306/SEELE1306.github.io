@@ -4,6 +4,7 @@
 	--chat-bubble-default: gray;
 	--chat-bubble-replying: cyan;
 	--chat-bubble-mentioned: orange;
+	--chat-bubble-automod: rgb(255, 38, 0);
 	--chat-bubble-border-radius: 8px;
 }
 :root {
@@ -11,6 +12,8 @@
 	--background-mentioned: none;
 	--background-mentioned-hover: none;
 	--background-message-highlight: none;
+	--background-message-automod: none;
+	--background-message-automod-hover: none;
 	--info-warning-foreground: none;
 }
 .channelTextArea-1FufC0 {
@@ -19,7 +22,7 @@
 .messageListItem-ZZ7v6g {
 	margin-left: 10px 
 }
-.replying-eZ7p5z::before, .mentioned-Tre-dv::before {
+.replying-eZ7p5z::before, .mentioned-Tre-dv::before, .automodMessage-265YwJ:before {
 	display: none 
 }
 .zalgo-26OfGz:has(.contents-2MsGLg) {
@@ -76,6 +79,17 @@
 .cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
 .mentioned-Tre-dv .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
 	background: color-mix(in srgb, var(--chat-bubble-mentioned) 40%, transparent)
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.automodMessage-265YwJ>.contents-2MsGLg,
+.cozyMessage-1DWF9U.automodMessage-265YwJ:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+.automodMessage-265YwJ .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
+	background: color-mix(in srgb, var(--chat-bubble-automod) 20%, transparent);
+	border-radius: var(--modular-border-radius)
+}
+.groupStart-3Mlgv1.cozyMessage-1DWF9U.automodMessage-265YwJ>.contents-2MsGLg:hover,
+.cozyMessage-1DWF9U.automodMessage-265YwJ:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
+.automodMessage-265YwJ .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
+	background: color-mix(in srgb, var(--chat-bubble-automod) 40%, transparent)
 }
 /* Embeds */
 .embedFull-1HGV2S {
