@@ -1518,12 +1518,21 @@ h3.membersGroup-2eiWxl > span > span[style] {
 #vc-membercount {
 	margin: 0.75em 0 0.5em 0.5em !important;
 	padding: 0.5em;
-	border-radius: var(--modular-border-radius)
 }
-#vc-membercount>div>span {
-	color: var(--text-muted) !important;
-	border-color: var(--header-primary) !important;
-	font-weight: 800
+#vc-membercount span {
+	font-weight: 800;
+}
+#vc-membercount span[style="width: 6px; height: 6px; border-radius: 50%; border: 3px solid var(--primary-400); display: inline-block; margin-right: 0.5em; margin-left: 1em;"] {
+	border-color: var(--interactive-muted) !important;
+}
+#vc-membercount span[style="color: var(--primary-400);"] {
+	color: var(--interactive-muted) !important;
+}
+#vc-membercount span[style="color: var(--green-360);"] {
+	color: var(--online-status-color) !important;
+}
+#vc-membercount span[style="background-color: var(--green-360); width: 12px; height: 12px; border-radius: 50%; display: inline-block; margin-right: 0.5em;"] {
+	background-color: var(--online-status-color) !important;
 }
 #vc-friendcount, #vc-guildcount {
 	text-transform: none !important
