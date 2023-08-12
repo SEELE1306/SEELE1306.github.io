@@ -1933,7 +1933,7 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 	font-size: 14px;
 	background: var(--background-modifier-accent)
 }
-.divider-2rZFJK {
+.divider-IqmEqJ:not(.isUnread-3Lojb-).divider-2rZFJK {
 	border: none;
 	padding: 0 0.5em;
 }
