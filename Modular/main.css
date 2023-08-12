@@ -1018,11 +1018,12 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 }
 .vc-rdb-input {
 	border-radius: var(--modular-border-radius);
+	background: var(--background-modifier-accent);
+	border: none;
 	margin: 0.375em 0
 }
 .vc-rdb-input:is(:hover,:focus-within) {
-	border-color: var(--profile-message-input-border-color);
-	background: var(--profile-message-input-border-color);
+	background: var(--background-modifier-hover);
 }
 .container-3g15px {
 	margin: 0 0.75em
