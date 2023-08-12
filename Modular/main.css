@@ -1325,22 +1325,6 @@ div[class*=nameAndDecorators-] {
 .fieldList-in8WkP {
 	background-color: transparent;
 }
-/*.field-21XZwa {
-	border-radius: var(--modular-border-radius);
-	position: relative
-}
-.fieldButton-14lHvK:hover {
-	background: hsl(var(--red)/1) !important
-}
-html.decorate-links .lowSaturationUnderline-Z6CW6z {
-	text-decoration: none !important
-}
-[class*=userInfo-]>button[class*=button-]:hover {
-	background: hsl(var(--red)/1)
-}
-[class*=constrainedRow-]>div>div>span>button:hover {
-	background: hsl(var(--red)/1) !important
-}*/
 .userInfo-regn9W .button-ejjZWC {
 	border-radius: var(--modular-border-radius);
 	background: var(--channel-icon);
