@@ -1660,32 +1660,32 @@ h3.membersGroup-2eiWxl > span > span[style] {
 	color: var(--header-primary)
 }
 .wordmarkWindows-2dq6rw::after {
- 	content: var(--titlebar-name);
- 	display: flex;
- 	width: fit-content;
- 	font-size: 12px;
- 	font-family: var(--font-display);
- 	font-weight: 700;
- 	background-color: var(--background-primary-alt);
- 	padding: 2px 8px;
- 	border-radius: var(--modular-border-radius)
+	content: var(--titlebar-name);
+	display: flex;
+	width: fit-content;
+	font-size: 14px;
+	font-family: var(--font-display);
+	font-weight: 600;
+	background: var(--background-primary-alt);
+	padding: 2px 8px;
+	border-radius: var(--modular-border-radius)
 }
 .typeWindows-2-g3UY {
- 	margin-top: 0;
- 	padding: 0 4px;
- 	height: fit-content
+	margin-top: 0;
+	padding: 0 4px;
+   height: fit-content;
+   background: transparent;
 }
 .typeWindows-2-g3UY>* {
- 	position: relative
+	position: relative
 }
 .winButton-3UMjdg {
-	top: 0 !important;
- 	margin: -4px 0;
- 	height: 31px;
- 	width: 46px
-}
-.winButtonClose-3Q8ZH5 {
- margin-right: -4px
+   top: 0 !important;
+	margin: 0.25em;
+	height: 30px;
+	width: 30px;
+   border-radius: 50%;
+   background: var(--background-modifier-accent);
 }
 .embedSpotify-1rDvOE {
 	padding: 0.25em 0
