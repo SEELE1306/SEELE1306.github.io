@@ -456,11 +456,19 @@ span[data-tag="mod"], span[data-tag="vc mod"], .botTagRegular-kpctgU {
 .icon-2W8DHg {
 	width: 15px;
 	height: 15px;
-	margin-top: 2px;
-	color: var(--interactive-muted)
+	margin: 2px 2px 0 0;
+	color: var(--interactive-muted);
+	background: var(--background-modifier-accent);
+	border-radius: var(--modular-border-radius);	
+	padding: 3px;
 }
-.containerDefault-YUSmu3.selected-2TbFuo .icon-2W8DHg,.containerDefault-YUSmu3:hover .icon-2W8DHg,.modeUnread-3Cxepe .icon-2W8DHg {
-	color: var(--interactive-active)
+.containerDefault-YUSmu3.selected-2TbFuo .icon-2W8DHg,.modeUnread-3Cxepe .icon-2W8DHg {
+	color: var(--interactive-active);
+	background: var(--background-modifier-selected);
+}
+.containerDefault-YUSmu3:hover .icon-2W8DHg {
+	color: var(--interactive-hover);
+	background: var(--background-modifier-hover);
 }
 .name-28HaxV {
 	color: var(--text-muted)
