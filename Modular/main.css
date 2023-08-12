@@ -2059,16 +2059,24 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
   	background: var(--background-primary) !important;
   	color: var(--interactive-muted);
 }
-.pill-1NRFie, .wrapper-z5ab_q {
+.pill-1NRFie, .wrapper-z5ab_q:not(:last-child) {
 	height: var(--guild-list-height) !important;
-  	border-radius: 0;
+  border-radius: 0;
 	align-items: center;
-  	width: 2px;
-  	background-color: var(--background-modifier-accent);
+  width: 3px;
+  margin-left: 4px;
+  background-color: var(--background-modifier-accent);
+}
+.wrapper-z5ab_q:last-child {
+  width: 3px;
+  align-items: center;
+  border-radius: 0;
+  height: var(--guild-list-height) !important;
 }
 .item-2LIpTv {
 	max-height: var(--guild-list-height);
-  	background-color: var(--background-modifier-hover);
+  background-color: var(--background-modifier-hover);
+  border-radius: 0;
 }
 .item-2LIpTv[style="opacity: 1; height: 40px; transform: none;"] {
   	background-color: var(--header-secondary);
