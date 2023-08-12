@@ -1938,6 +1938,15 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 .scroller-3X7KbA {
 	padding: 0.25em 0;
 }
+.scroller-3X7KbA>button {
+	position: relative;
+	right: 6px;
+	border-radius: var(--modular-border-radius);
+	background: var(--background-modifier-accent) !important;
+}
+.scroller-3X7KbA>button:hover {
+	background: var(--background-modifier-hover) !important;
+}
 .tabBar-1_P75h, .optionButtonWrapper-2lbogO, .top-Ktfr_T .item-2GWPIy {
 	border: none;
 }
