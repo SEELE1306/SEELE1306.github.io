@@ -38,7 +38,7 @@
 	--client-orientation: row;
 	--memberlist-orientation: row;
 	--friendlist-orientation: row;
-	--titlebar-name: "Modular - insert your name here or whatever quote you like I don't care";
+	--titlebar-name: "insert your name here or whatever quote you like I don't care";
 	/* End of customizable parameters */
 	--background-message-hover: none;
 	--background-mentioned: none;
@@ -1660,7 +1660,7 @@ h3.membersGroup-2eiWxl > span > span[style] {
 	color: var(--header-primary)
 }
 .wordmarkWindows-2dq6rw::after {
-	content: var(--titlebar-name);
+	content: "Modular - " var(--titlebar-name);
 	display: flex;
 	width: fit-content;
 	font-size: 14px;
