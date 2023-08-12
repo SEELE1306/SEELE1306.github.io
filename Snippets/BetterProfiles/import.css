@@ -25,11 +25,13 @@
 .buttonsContainer-3iOFIV > button {
 	border-radius: 0.5rem;
 }
-.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-view {
-	border-radius: 0.5rem;
-	padding: 0.5em;
-	border: var(--section-thickness) solid var(--profile-body-divider-color);
-	background: var(--profile-body-background-color)
+body:not([class*=profilePanel-]) .theme-dark :is(.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-input, .vc-rdb-view) {
+	--background-modifier-accent: hsl(var(--primary-160-hsl)/calc(var(--modular-transparency)/3));
+	background: var(--background-modifier-accent);
+}
+body:not([class*=profilePanel-]) .theme-light :is(.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-input, .vc-rdb-view) {
+	--background-modifier-accent: hsl(var(--primary-600-hsl)/calc(var(--modular-transparency)/3));
+	background: var(--background-modifier-accent);
 }
 .section-28YDOf>div:not(.activity-3uaYny, .roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .memberSinceContainer-2CBD23, .nameTag-35jqbZ, img[class*=emoji-] {
 	justify-content: center;
@@ -227,17 +229,12 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 }
 .vc-rdb-view {
 	margin: 0.5em 0 0.25em;
-	background: var(--background-modifier-accent);
 }
 .vc-rdb-view .container-2gUZhU {
 	margin-right: 0.5em;
 }
 .vc-rdb-input {
 	border-radius: var(--modular-border-radius);
-	background: var(--background-modifier-accent);
 	border: none;
 	margin: 0.375em 0
-}
-.vc-rdb-input:is(:hover,:focus-within) {
-	background: var(--background-modifier-hover);
 }

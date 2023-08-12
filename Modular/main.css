@@ -1005,7 +1005,6 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 }
 .vc-rdb-view {
 	margin: 0.5em 0 0.25em;
-	background: var(--background-modifier-accent);
 }
 .vc-rdb-view .container-2gUZhU {
 	margin-right: 0.5em;
@@ -1018,12 +1017,8 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 }
 .vc-rdb-input {
 	border-radius: var(--modular-border-radius);
-	background: var(--background-modifier-accent);
 	border: none;
 	margin: 0.375em 0
-}
-.vc-rdb-input:is(:hover,:focus-within) {
-	background: var(--background-modifier-hover);
 }
 .container-3g15px {
 	margin: 0 0.75em
@@ -1032,11 +1027,13 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 	justify-content: center;
 	text-align: center
 }
-body:not([class*=profilePanel-]) .theme-dark .section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH {
-	backdrop-filter: brightness(1.5)
+body:not([class*=profilePanel-]) .theme-dark :is(.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-input, .vc-rdb-view) {
+	--background-modifier-accent: hsl(var(--primary-160-hsl)/calc(var(--modular-transparency)/3));
+	background: var(--background-modifier-accent);
 }
-body:not([class*=profilePanel-]) .theme-light .section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH {
-	backdrop-filter: brightness(0.95) saturate(1.5)
+body:not([class*=profilePanel-]) .theme-light :is(.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-input, .vc-rdb-view) {
+	--background-modifier-accent: hsl(var(--primary-600-hsl)/calc(var(--modular-transparency)/3));
+	background: var(--background-modifier-accent);
 }
 :is([class|=userPopoutInner], [class|=userPanelOverlayBackground], [class|=userInfoText]) [style*="-webkit-line-clamp"] {
     display: block;
