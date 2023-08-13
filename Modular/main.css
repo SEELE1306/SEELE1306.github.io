@@ -1027,14 +1027,12 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 }
 body:not([class*=profilePanel-]) .theme-dark :is(.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-input, .vc-rdb-view,
 div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"]) {
-	--background-modifier-accent: hsl(var(--primary-160-hsl)/calc(var(--modular-transparency)/3));
-	background: var(--background-modifier-accent);
+	background: color-mix(in srgb, var(--profile-body-divider-color) 50%, rgba(255, 255, 255, 0.10));
 	border: var(--section-thickness) solid var(--profile-body-divider-color)
 }
 body:not([class*=profilePanel-]) .theme-light :is(.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-input, .vc-rdb-view,
 div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"]) {
-	--background-modifier-accent: hsl(var(--primary-600-hsl)/calc(var(--modular-transparency)/3));
-	background: var(--background-modifier-accent);
+	background: color-mix(in srgb, var(--profile-body-divider-color) 50%, rgba(0, 0, 0, 0.10));
 	border: var(--section-thickness) solid var(--profile-body-divider-color)
 }
 :is([class|=userPopoutInner], [class|=userPanelOverlayBackground], [class|=userInfoText]) [style*="-webkit-line-clamp"] {
