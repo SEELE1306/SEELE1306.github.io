@@ -21,6 +21,10 @@
 	--online-status-color: rgba(35, 165, 90, 1);
 	--idle-status-color: rgba(240, 178, 50, 1);
 	--dnd-status-color: rgba(242, 63, 67, 1);
+	--owner-tag-color: rgb(238, 174, 185);
+	--admin-tag-color: rgb(106, 228, 171);
+	--staff-tag-color: rgb(190, 190, 236);
+	--mod-tag-color: rgb(231, 183, 93);
 	--section-thickness: 3px;
 	--quote-vertical-spacing: 4px;
 	--quote-horizontal-spacing: 10px;
@@ -412,16 +416,16 @@ main[class^=chatContent] [class^=attachedBars] {
 	background-color: var(--background-modifier-selected)
 }
 span[data-tag="owner"] {
-	background-color: hsl(var(--pink)/1);
+	background-color: var(--owner-tag-color);
 	color: var(--background-primary)
 }
 span[data-tag="admin"] {
-	background-color: hsl(var(--green)/1);
-	color: var(--button-positive-background)
+	background-color: var(--admin-tag-color);
+	color: var(--background-primary)
 }
 span[data-tag="staff"] {
-	background-color: hsl(var(--yellow)/1);
-	color: var(--button-positive-background)
+	background-color: var(--staff-tag-color);
+	color: var(--background-primary)
 }
 span[class*=botText-] {
 	font-weight: 1000;
@@ -430,8 +434,8 @@ span[class*=botText-] {
 	margin-bottom: 4px
 }
 span[data-tag="mod"], span[data-tag="vc mod"], .botTagRegular-kpctgU {
-	background-color: var(--button-positive-background);
-	color: var(--info-positive-foreground)
+	background-color: var(--mod-tag-color);
+	color: var(--background-primary)
 }
 .colorDefault-2_rLdz {
 	color: var(--interactive-muted)
