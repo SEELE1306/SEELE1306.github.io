@@ -21,6 +21,7 @@
 	--online-status-color: rgba(35, 165, 90, 1);
 	--idle-status-color: rgba(240, 178, 50, 1);
 	--dnd-status-color: rgba(242, 63, 67, 1);
+	--section-thickness: 3px;
 	--quote-vertical-spacing: 4px;
 	--quote-horizontal-spacing: 10px;
 	--guild-item-radius: 4px;
@@ -1028,11 +1029,13 @@ body:not([class*=profilePanel-]) .theme-dark :is(.section-28YDOf>div:not(.roles-
 div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"]) {
 	--background-modifier-accent: hsl(var(--primary-160-hsl)/calc(var(--modular-transparency)/3));
 	background: var(--background-modifier-accent);
+	border: var(--section-thickness) solid var(--profile-body-divider-color)
 }
 body:not([class*=profilePanel-]) .theme-light :is(.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-input, .vc-rdb-view,
 div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"]) {
 	--background-modifier-accent: hsl(var(--primary-600-hsl)/calc(var(--modular-transparency)/3));
 	background: var(--background-modifier-accent);
+	border: var(--section-thickness) solid var(--profile-body-divider-color)
 }
 :is([class|=userPopoutInner], [class|=userPanelOverlayBackground], [class|=userInfoText]) [style*="-webkit-line-clamp"] {
     display: block;
