@@ -6,6 +6,9 @@
 [class^=userPopoutOverlayBackground], [class^=userProfileModalOverlayBackground] {
 	background: transparent
 }
+:is(.userPopoutInner-nv9Y92, .profilePanel-2VBkh8) [class*=divider-], .section-28YDOf:has(.roles-3vQPxb:empty), .accountProfilePopoutWrapper-3GskID .section-28YDOf {
+	display: none
+}
 .userPopoutInner-nv9Y92 {
 	max-height: calc(100vh - 480px);
 }
@@ -45,13 +48,10 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 .platformIcon-k3yytQ {
 	margin: 2px 2px 
 }
-:is(.userPopoutInner-nv9Y92, .profilePanel-2VBkh8) [class*=divider-] {
-	display: none
-}
 .scroller-Q9d9Di {
 	left: 12.5%
 }
-.title-3CjiSS, .title-1yq5kT, .userInfoSectionHeader-2mYYun, .activity-3uaYny .overflow-1wOqNV {
+.title-3CjiSS, .title-1yq5kT, .userInfoSectionHeader-2mYYun, .activity-3uaYny .overflow-1wOqNV, .eyebrow-1Shfyi {
 	text-transform: none;
 	font-size: 14px;
 	font-weight: 1000;
@@ -97,8 +97,8 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 	border: 2px solid transparent;
 	opacity: .4
 }
-.accountProfilePopoutWrapper-3GskID .section-28YDOf, .separator-12G2Op, .userInfoSectionHeader-2mYYun:nth-child(5) {
-	display: none !important
+.separator-12G2Op {
+	border: none;
 }
 /* Platform Indicators */
 :is(.membersWrap-3NUR2t, .privateChannels-oVe7HL) .vc-platform-indicator>svg {
@@ -238,4 +238,8 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 	border-radius: var(--modular-border-radius);
 	border: none;
 	margin: 0.375em 0
+}
+.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-view {
+	border-radius: 8px;
+	padding: 0.5em;
 }
