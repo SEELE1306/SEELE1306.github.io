@@ -37,7 +37,17 @@
 	--online-status-color: rgba(35, 165, 90, 1);
 	--idle-status-color: rgba(240, 178, 50, 1);
 	--dnd-status-color: rgba(242, 63, 67, 1);
-	
+
+	/* Important people colors */
+	/* Only solid (preferably bright) colors, no transparency! */
+	--owner-tag-color: rgb(238, 174, 185);
+	--admin-tag-color: rgb(106, 228, 171);
+	--staff-tag-color: rgb(190, 190, 236);
+	--mod-tag-color: rgb(231, 183, 93);
+
+	/* User panel section border */
+	--section-thickness: 2px; /* Default is 2px; 0px for no border */
+
 	/* Quotes */
 	--quote-vertical-spacing: 4px;
 	--quote-horizontal-spacing: 10px;
