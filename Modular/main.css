@@ -1,6 +1,5 @@
 @import url(https://seele1306.github.io/Modular/Root.css);
-@import url(https://dablulite.github.io/css-snippets/BetterModals/import.css);
-@import url(https://dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
+
 :root, .theme-dark, .theme-light {
 	/* Start of customizable parameters */
 	--modular-background: none !important;
