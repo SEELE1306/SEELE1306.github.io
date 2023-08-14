@@ -23,7 +23,6 @@
 
 	/* Font change */
 	--font-main: "" ;
-	--font-code: Iosevka, monospace, Consolas;
 
 	/* Chat bubbles */
 	/* Only solid colors, no transparency! */
@@ -56,10 +55,8 @@
 	--quote-border-radius: 6px;
 
 	/* Guilds list */
-	--guild-item-radius: 0px;
-	--guild-list-height: 40px;
-	--guild-list-width: 64px;
-	--guild-item-spacing: 4px;
+	--guild-item-radius: 4px; /* Default is 4px */
+	--guild-item-spacing: 4px;  /* Default is 4px */
 
 	/* Menu UI */
 	--modular-background-blur-strength: 10px; /* in px, Default is 10px */
