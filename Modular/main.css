@@ -1029,12 +1029,12 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 	text-align: center
 }
 body:not([class*=profilePanel-]) .theme-dark :is(.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-input, .vc-rdb-view,
-div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"]) {
+div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"], [class*=mutualGuildsList-], [class*=mutualFriendsList-]) {
 	background: color-mix(in srgb, var(--profile-body-divider-color) 50%, rgba(255, 255, 255, 0.10));
 	border: var(--section-thickness) solid var(--profile-body-divider-color)
 }
 body:not([class*=profilePanel-]) .theme-light :is(.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-input, .vc-rdb-view,
-div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"]) {
+div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"], [class*=mutualGuildsList-], [class*=mutualFriendsList-]) {
 	background: color-mix(in srgb, var(--profile-body-divider-color) 50%, rgba(0, 0, 0, 0.10));
 	border: var(--section-thickness) solid var(--profile-body-divider-color)
 }
@@ -1617,9 +1617,6 @@ h3.membersGroup-2eiWxl > span > span[style] {
 	margin: -0.25em 0 -0.25em -0.375em;
 	padding: 0.5em 0.625em
 }
-[class*=profilePanel-] .section-28YDOf>div {
-	background: var(--background-modifier-accent) !important;
-}
 [class*=profilePanelConnections-] {
 	padding: 0 0.75em
 }
@@ -1628,9 +1625,6 @@ h3.membersGroup-2eiWxl > span > span[style] {
 }
 [class*=connectionList-]>div:hover {
 	background: var(--background-modifier-hover)
-}
-[class*=mutualGuildsList-], [class*=mutualFriendsList-] {
-	background: var(--background-modifier-accent)
 }
 :is([class*=mutualGuildsList-],[class*=mutualFriendsList-])>button {
 	background: transparent
@@ -2098,4 +2092,13 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 }
 .listItem-3SmSlK {
 	margin: calc(var(--guild-item-spacing) * 2) 0;
+}
+.userProfileOuterUnthemed-11rPfA .userPanelInner-3KPel3 {
+	background: transparent
+}
+.wrapperCommon-I1TMDb {
+	margin-top: -0.375em;
+}
+.separator-12G2Op {
+	border: none;
 }
