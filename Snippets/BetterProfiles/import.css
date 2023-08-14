@@ -1,13 +1,14 @@
 :root {
 	--section-thickness: 1px; /* must be in pixels */
 }
-
+.userPopoutInner-nv9Y92:has(#account) > *:not(:has(#account)), .userPopoutOverlayBackground-3A0Pcz:has(#account) > *:not(#account), .container-TT--xs ::-webkit-scrollbar,
+:is(.userPopoutInner-nv9Y92, .profilePanel-2VBkh8) [class*=divider-], [class*=userPanelInner-]::before, .accountProfilePopoutWrapper-3GskID .section-28YDOf, .lastSection-q3HCfo,
+.section-28YDOf:has(.roles-3vQPxb:empty), .accountProfilePopoutWrapper-3GskID .section-28YDOf {
+    display: none;
+}
 /* Profile panel */
 [class^=userPopoutOverlayBackground], [class^=userProfileModalOverlayBackground] {
 	background: transparent
-}
-:is(.userPopoutInner-nv9Y92, .profilePanel-2VBkh8) [class*=divider-], .section-28YDOf:has(.roles-3vQPxb:empty), .accountProfilePopoutWrapper-3GskID .section-28YDOf {
-	display: none
 }
 .userPopoutInner-nv9Y92 {
 	max-height: calc(100vh - 480px);
@@ -53,7 +54,7 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 .scroller-Q9d9Di {
 	left: 12.5%
 }
-.title-3CjiSS, .title-1yq5kT, .userInfoSectionHeader-2mYYun, .activity-3uaYny .overflow-1wOqNV, .eyebrow-1Shfyi {
+.title-3CjiSS, .title-1yq5kT, .userInfoSectionHeader-2mYYun, .activity-3uaYny .overflow-1wOqNV, .userPopoutInner-nv9Y92 .eyebrow-1Shfyi {
 	text-transform: none;
 	font-size: 14px;
 	font-weight: 1000;
@@ -196,7 +197,7 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 	color: var(--text-link);
 	font-weight: 600;
 	padding: 0 0.5em;
-	border-radius: var(--modular-border-radius);
+	border-radius: 8px;
 }
 .userPopoutInner-nv9Y92 .markup-eYLPri a:hover, .userInfoText-2MFCmH.markup-eYLPri a:hover, .timestamp-6-ptG3:hover {
 	background: var(--background-modifier-hover);
@@ -204,7 +205,7 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 }
 .accountProfilePopoutWrapper-3GskID [class*=userProfileOuter-] [class*=userProfileInner-] {
 	width: 60%;
-	border-radius: var(--modular-border-radius);
+	border-radius: 8px;
 }
 .accountProfilePopoutWrapper-3GskID [class*=userProfileOuter-] {
 	margin-right: -136px;
@@ -222,7 +223,7 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"] {
 	padding: 0.25em 0.75em;
 	margin: 0.5em 0;
-	border-radius: var(--modular-border-radius);
+	border-radius: 8px;
 }
 .scrollerSeparator-6DmwRQ {
 	box-shadow: none;
@@ -237,11 +238,23 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 	margin-right: 0.5em;
 }
 .vc-rdb-input {
-	border-radius: var(--modular-border-radius);
+	border-radius: 8px;
 	border: none;
 	margin: 0.375em 0
 }
 .section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-view {
 	border-radius: 8px;
 	padding: 0.5em;
+}
+.overlayBackground-2aa7wt, .badgeList-2hF9ig {
+	background: transparent;
+}
+.banner-1AB1xq {
+	background: var(--background-modifier-accent);
+	margin: 0.5em 0.25em;
+	padding: 0.5em;
+	border-radius: 8px;
+}
+.userPopoutOverlayBackground-3A0Pcz:has(#account) {
+  	margin: 0;
 }
