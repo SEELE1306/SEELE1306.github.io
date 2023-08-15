@@ -460,7 +460,6 @@ span[data-tag="mod"], span[data-tag="vc mod"], .botTagRegular-kpctgU {
 	height: 15px;
 	margin: 2px 2px 0 0;
 	color: var(--interactive-muted);
-	background: var(--background-modifier-accent);
 	border-radius: var(--modular-border-radius);	
 	padding: 3px;
 }
@@ -470,7 +469,7 @@ span[data-tag="mod"], span[data-tag="vc mod"], .botTagRegular-kpctgU {
 }
 .containerDefault-YUSmu3:hover .icon-2W8DHg {
 	color: var(--interactive-hover);
-	background: var(--background-modifier-hover);
+	background: transparent;
 }
 .name-28HaxV {
 	color: var(--text-muted)
