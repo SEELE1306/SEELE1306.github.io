@@ -153,7 +153,7 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 #user-settings-cog > .scroller-nxCRu_ > .item-5ApiZt, [class*=gradientBottom-], [class*=gradientTop],
 .userPopoutInner-nv9Y92:has(#account) > *:not(:has(#account)), .userPopoutOverlayBackground-3A0Pcz:has(#account) > *:not(#account), .container-TT--xs ::-webkit-scrollbar,
 :is(.userPopoutInner-nv9Y92, .profilePanel-2VBkh8) [class*=divider-], .emojiItemDisabled-3VVnwp, .automodMessage-265YwJ:before, 
-.container-2giAcK:after, .scroller-1ox3I2 .sectionDivider-189lqb {
+.container-2giAcK:after, .scroller-1ox3I2 .sectionDivider-189lqb, .content-2V2neN .iconContainer-21RCa3  {
 	display: none !important;
 }
 .auto-2TJ1RH::-webkit-scrollbar-thumb {
@@ -673,7 +673,6 @@ svg[class*=addButtonIcon-] {
 }
 .wrapper-1_HaEi {
 	background: var(--background-primary-alt);
-	padding: 0.5em 0;
 }
 .form-3gdLxP {
 	padding: 0px
@@ -1343,13 +1342,9 @@ div[class*=nameAndDecorators-] {
 	margin: 0 0.5em
 }
 .containerDefault-YUSmu3.wrapper-NhbLHG .link-1_kTxV {
-	font-weight: 800;
 	text-align: center;
-	letter-spacing: 0.05em;
 	background: var(--background-modifier-accent);
 	padding: 0.25em 0.5em;
-	border-radius: var(--modular-border-radius);
-	text-transform: none
 }
 .profile-3xd-Cg, .pageBody-29jwEZ {
 	max-height: 50%;
