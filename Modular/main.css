@@ -153,8 +153,8 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 .option-ayUoaq::before, .option-ayUoaq::after, .wordmarkWindows-2dq6rw path:not(:first-child), .homeIcon-r0w4ny,
 #user-settings-cog > .scroller-nxCRu_ > .item-5ApiZt, [class*=gradientBottom-], [class*=gradientTop],
 .userPopoutInner-nv9Y92:has(#account) > *:not(:has(#account)), .userPopoutOverlayBackground-3A0Pcz:has(#account) > *:not(#account), .container-TT--xs ::-webkit-scrollbar,
-:is(.userPopoutInner-nv9Y92, .profilePanel-2VBkh8) [class*=divider-], .emojiItemDisabled-3VVnwp, .automodMessage-265YwJ:before, 
-.container-2giAcK:after, .scroller-1ox3I2 .sectionDivider-189lqb, .content-2V2neN .iconContainer-21RCa3  {
+.emojiItemDisabled-3VVnwp, .automodMessage-265YwJ:before, 
+.content-2V2neN .iconContainer-21RCa3  {
 	display: none !important;
 }
 .auto-2TJ1RH::-webkit-scrollbar-thumb {
@@ -1885,9 +1885,6 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 .modalContainer-sCcBXL, .root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .header-1ffhsl, .container-1Gt1iQ, .root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) {
 	background: var(--background-primary);
 }
-.divider-1bpIoX, .tabBar-11FwuO {
-    border: none !important
-}
 .userPopoutOverlayBackground-3A0Pcz:has(#account) {
   	margin: 0;
 }
@@ -1960,10 +1957,6 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 	justify-content: center;
 	font-size: 14px;
 	background: var(--background-modifier-accent)
-}
-.divider-IqmEqJ:not(.isUnread-3Lojb-).divider-2rZFJK {
-	border: none;
-	padding: 0 0.5em;
 }
 .overlayBackground-2aa7wt {
 	background: transparent;
@@ -2104,6 +2097,21 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 .wrapperCommon-I1TMDb {
 	margin-top: -0.375em;
 }
-.separator-12G2Op {
+.scroller-1ox3I2 .sectionDivider-189lqb, .container-2giAcK:after, .divider-1bpIoX, .tabBar-11FwuO, 
+.separator-12G2Op, :is(.userPopoutInner-nv9Y92, .profilePanel-2VBkh8) [class*=divider-] {
+	background-color: transparent;
+	border-color: transparent;
+}
+/*.separator-12G2Op {
 	border: none;
+}
+.container-2giAcK:after, :is(.userPopoutInner-nv9Y92, .profilePanel-2VBkh8) [class*=divider-] {
+	display: none
+}
+.divider-1bpIoX, .tabBar-11FwuO {
+    border: none !important
+}
+.divider-IqmEqJ:not(.isUnread-3Lojb-).divider-2rZFJK {
+	border: none;
+	padding: 0 0.5em;
 }
