@@ -967,8 +967,8 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 	display: block;
 }
 .defaultColor-1EVLSt.eyebrow-1Shfyi.defaultColor-1GKx81.title-3CjiSS {
-  justify-content: center;
-  display: flex;
+  	justify-content: center;
+  	display: flex;
 }
 .userPopoutInner-nv9Y92 {
 	max-height: calc(100vh - 480px);
@@ -1324,7 +1324,7 @@ div[class*=nameAndDecorators-] {
 	border-radius: var(--modular-border-radius);
 	background: var(--background-primary-alt) !important
 }
-[class*=userPanelInnerThemed-], .background-3d_SjE {
+.userProfileOuterUnthemed-11rPfA .userPanelInner-3KPel3 {
 	background: transparent
 }
 .fieldList-in8WkP {
@@ -1658,32 +1658,31 @@ h3.membersGroup-2eiWxl > span > span[style] {
 	color: var(--header-primary)
 }
 .wordmarkWindows-2dq6rw::after {
-	content: "Modular - " var(--titlebar-name);
-	display: flex;
-	width: fit-content;
-	font-size: 14px;
-	font-family: var(--font-display);
-	font-weight: 600;
-	background: var(--background-primary-alt);
-	padding: 2px 8px;
-	border-radius: var(--modular-border-radius)
+ 	content: "Modular - " var(--titlebar-name);
+ 	display: flex;
+ 	width: fit-content;
+ 	font-size: 14px;
+ 	font-family: var(--font-display);
+ 	font-weight: 600;
+ 	background: var(--background-primary-alt);
+ 	padding: 2px 8px;
+ 	border-radius: var(--modular-border-radius)
 }
 .typeWindows-2-g3UY {
-	margin-top: 0;
-	padding: 0 4px;
-   height: fit-content;
-   background: transparent;
+ 	margin-top: 0;
+	height: fit-content;
+	background: var(--background-primary);
 }
 .typeWindows-2-g3UY>* {
-	position: relative
+ 	position: relative
 }
 .winButton-3UMjdg {
-   top: 0 !important;
-	margin: 0.25em;
-	height: 30px;
-	width: 30px;
-   border-radius: 50%;
-   background: var(--background-modifier-accent);
+	top: 0 !important;
+ 	margin: 0.25em;
+ 	height: 30px;
+ 	width: 30px;
+	border-radius: 50%;
+	background: var(--background-modifier-accent);
 }
 .embedSpotify-1rDvOE {
 	padding: 0.25em 0
@@ -1830,7 +1829,7 @@ h3.membersGroup-2eiWxl > span > span[style] {
  	}
 }
 .content-1jQy2l {
-	flex-direction: var(--memberlist-orientation)
+	flex-direction: var(--memberlist-orientation);
 }
 .tabBody-2dgbAs {
 	flex-direction: var(--friendlist-orientation)
@@ -1986,13 +1985,14 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 /* profile popup fix */
 [class*=userPopoutOuter-], .popoutBannerPremium-3i5EEI, .popoutNoBannerPremium-25mwJy {
     width: 338px;
-	}
+}
 .banner-1AB1xq {
 	background: var(--background-modifier-accent);
 	margin: 0.5em 0.25em;
 	padding: 0.5em;
 	border-radius: var(--modular-border-radius);
 }
+/* Thank you DaBluLite */
 .guilds-2JjMmN {
 	width: 64px;
 }
@@ -2001,26 +2001,26 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
   	mask: none !important;
 }
 .listItem-3SmSlK:not(:has(.guildSeparator-a4uisj)), .wrapper-2PSQCG, .svg-2ifYOU>foreignObject {
- 	height: 40px;
+  	height: 40px;
 }
 .expandedFolderBackground-1kSAf6 {
-  	width: calc(64px - 24px);
+ 	width: calc(64px - 24px);
   	border-radius: min(24px, var(--guild-item-radius));
 }
 .svg-2ifYOU>foreignObject {
   	transform: translateX(calc(((64px*-1)/2) + 50%));
 }
 .wrapper-3kah-n, .folder-241Joy, .circleIconButton-1VxDrg {
- 	margin-left: 12px;
+  	margin-left: 12px;
   	width: calc(64px - 24px);
   	justify-content: start;
-  	border-radius: var(--guild-item-radius) !important;
+	border-radius: var(--guild-item-radius) !important;
   	height: 40px;
 }
 .wrapper-3kah-n img, .folderIconWrapper-1oRIZr, .childWrapper-1j_1ub, .expandedFolderIconWrapper-3RwQpD, .closedFolderIconWrapper-3tRb2d {
   	border-radius: var(--guild-item-radius) !important;
   	height: 40px;
-  	width: 40px;
+	width: 40px;
 }
 .svg-2ifYOU {
   	position: static;
@@ -2045,65 +2045,61 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
   	height: 100%;
 }
 .upperBadge-1d6YsW, .lowerBadge-3j0ZAg {
-	transform: translateX(-75%) !important;
+  	transform: translateX(-50%) !important;
 }
 .numberBadge-37OJ3S {
-  	border-radius: var(--guild-item-radius) 0 0 0;
-  	position: relative;
-  	left: 4px;
-  	top: 1px;
+	border-radius: var(--guild-item-radius) 0 0 0;
+	position: relative;
+	top: 1px;
 }
 .iconBadge-32fMme {
-  	border-radius: 0 0 0 var(--guild-item-radius);
-  	position: relative;
+	border-radius: 0 0 0 var(--guild-item-radius);
+	position: relative;
 }
 .iconBadge-32fMme.participating-2Z81oO {
-  	color: var(--interactive-active);
+	color: var(--interactive-active);
 }
 .base-3IDx3L {
-  	background: var(--background-primary) !important;
-  	color: var(--interactive-muted);
+	background: var(--background-primary) !important;
+	color: var(--interactive-muted);
 }
 .pill-1NRFie, .wrapper-z5ab_q:not(:last-child) {
-	height: 40px !important;
-  border-radius: 0;
-	align-items: center;
-  width: 3px;
-  margin-left: 4px;
-  background-color: var(--background-modifier-accent);
+  	height: 40px !important;
+	border-radius: 0;
+  	align-items: center;
+	width: 3px;
+	margin-left: 4px;
+	background-color: var(--background-modifier-accent);
 }
 .wrapper-z5ab_q:last-child {
-  width: 3px;
-  align-items: center;
-  border-radius: 0;
-  height: 40px !important;
+	width: 3px;
+	align-items: center;
+	border-radius: 0;
+	height: 40px !important;
 }
 .item-2LIpTv {
-	max-height: 40px;
-  background-color: color-mix(in srgb, var(--modular-accent-color) 50%, transparent);
-  border-radius: 0;
+  	max-height: 40px;
+	background-color: color-mix(in srgb, var(--modular-accent-color) 50%, transparent);
+	border-radius: 0;
 }
 .item-2LIpTv[style="opacity: 1; height: 40px; transform: none;"] {
 	background-color: var(--modular-accent-color);
 }
 .circleIcon-3489FI {
-	margin-left: 0;
+  	margin-left: 0;
 }
 .circleIcon-3489FI {
-	width: 40px;
-	justify-content: center;
-	align-items: center;
-	box-sizing: border-box;
-	padding: calc(40px/7);
+  	width: 40px;
+  	justify-content: center;
+  	align-items: center;
+  	box-sizing: border-box;
+  	padding: calc(40px/7);
 }
 .blobContainer-ikKyFs .wrapper-3kah-n[data-list-item-id*="guildsnav___"]::after {
-	content: none;
+  	content: none;
 }
 .listItem-3SmSlK {
-	margin: calc(var(--guild-item-spacing) * 2) 0;
-}
-.userProfileOuterUnthemed-11rPfA .userPanelInner-3KPel3 {
-	background: transparent
+  	margin: calc(var(--guild-item-spacing) * 2) 0;
 }
 .wrapperCommon-I1TMDb {
 	margin-top: -0.375em;
