@@ -32,16 +32,20 @@
 	border-radius: 0.5rem;
 }
 body:not([class*=profilePanel-]) .theme-dark :is(.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-input, .vc-rdb-view,
-div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"]) {
-	--background-modifier-accent: hsl(var(--primary-160-hsl)/0.15);
-	background: var(--background-modifier-accent);
+div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"], [class*=mutualGuildsList-], [class*=mutualFriendsList-]) {
+	background: color-mix(in srgb, var(--profile-body-divider-color) 50%, rgba(255, 255, 255, 0.10));
 	border: var(--section-thickness) solid var(--profile-body-divider-color)
 }
 body:not([class*=profilePanel-]) .theme-light :is(.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-input, .vc-rdb-view,
-div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"]) {
-	--background-modifier-accent: hsl(var(--primary-600-hsl)/0.15);
-	background: var(--background-modifier-accent);
+div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"], [class*=mutualGuildsList-], [class*=mutualFriendsList-]) {
+	background: color-mix(in srgb, var(--profile-body-divider-color) 50%, rgba(0, 0, 0, 0.10));
 	border: var(--section-thickness) solid var(--profile-body-divider-color)
+}
+:is([class|=userPopoutInner], [class|=userPanelOverlayBackground], [class|=userInfoText]) [style*="-webkit-line-clamp"] {
+    display: block;
+}
+.markup-eYLPri>div>.blockquoteContainer-3VtvI1	{
+  justify-content: center;
 }
 .section-28YDOf>div:not(.activity-3uaYny, .roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .memberSinceContainer-2CBD23, .nameTag-35jqbZ, img[class*=emoji-] {
 	justify-content: center;
