@@ -50,6 +50,8 @@
 	--background-message-automod: none;
 	--background-message-automod-hover: none;
 	--info-warning-foreground: none;
+	--scrollbar-auto-thumb: var(--modular-accent-color);
+	--scrollbar-auto-track: color-mix(in srgb, var(--modular-accent-color) 25%, transparent);
 	--scrollbar-thin-thumb: none;
 	--scrollbar-thin-track: none;
 	--profile-role-pill-background-color: none;
@@ -156,14 +158,6 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 .emojiItemDisabled-3VVnwp, .automodMessage-265YwJ:before, 
 .content-2V2neN .iconContainer-21RCa3  {
 	display: none !important;
-}
-.auto-2TJ1RH::-webkit-scrollbar-thumb {
-	background-size: 200vh;
-	background-image: linear-gradient(rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-4)),rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-4))),var(--modular-background)
-}
-.auto-2TJ1RH::-webkit-scrollbar-track {
-	background-size: 200vh;
-	background-image: linear-gradient(rgb(var(--bg-overlay-color)/.4),rgb(var(--bg-overlay-color)/.4)),var(--modular-background)
 }
 #vc-spotify-player {
 	background: transparent !important;
