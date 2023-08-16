@@ -24,6 +24,7 @@
 	--admin-tag-color: rgb(106, 228, 171);
 	--staff-tag-color: rgb(190, 190, 236);
 	--mod-tag-color: rgb(231, 183, 93);
+	--modular-accent-color: rgb(39, 165, 214);
 	--section-thickness: 3px;
 	--quote-vertical-spacing: 4px;
 	--quote-horizontal-spacing: 10px;
@@ -440,17 +441,26 @@ span[data-tag="mod"], span[data-tag="vc mod"], .botTagRegular-kpctgU {
 	color: var(--interactive-muted)
 }
 .colorDefault-2_rLdz:hover {
-	background: var(--background-modifier-hover) !important;
+	background: var(--background-modifier-hover);
+	background: color-mix(in srgb, var(--modular-accent-color) 75%, transparent) !important;
 	color: var(--interactive-hover)
 }
 .colorDefault-2_rLdz.focused-3LIdPu, .container-2cd8Mz {
 	background: transparent
 }
-.containerDefault-YUSmu3:hover .link-1_kTxV, .wrapper-NhbLHG:hover .link-1_kTxV, .content-1Tgc42:hover, .layout-1qmrhw:hover	{
-	background: var(--background-modifier-hover) !important
+.containerDefault-YUSmu3:hover .link-1_kTxV, .wrapper-NhbLHG:hover .link-1_kTxV, .content-1Tgc42:hover, .layout-1qmrhw:hover {
+	background: var(--background-modifier-hover);
+	background: color-mix(in srgb, var(--modular-accent-color) 75%, transparent) !important
 }
 .containerDefault-YUSmu3.selected-2TbFuo .link-1_kTxV, .wrapper-NhbLHG.modeSelected-3DmyhH .link-1_kTxV, .wrapper-NhbLHG.modeConnected-NrO4cP .link-1_kTxV, .selected-1-Z6gm .layout-1qmrhw	{
-	background: var(--background-modifier-selected)
+	background: var(--background-modifier-selected);
+	background: color-mix(in srgb, var(--modular-accent-color) 50%, transparent)
+}
+.channel-1Shao0.container-32HW5s>.interactiveSelected-29CP8y {
+	background: color-mix(in srgb, var(--modular-accent-color) 50%, transparent)
+}
+.interactive-26HRN_:hover {
+	background: color-mix(in srgb, var(--modular-accent-color) 75%, transparent) !important
 }
 :has(.content-1Tgc42:hover) .wrapper-NhbLHG.modeConnected-NrO4cP .link-1_kTxV {
 	background: transparent !important
@@ -466,6 +476,7 @@ span[data-tag="mod"], span[data-tag="vc mod"], .botTagRegular-kpctgU {
 .containerDefault-YUSmu3.selected-2TbFuo .icon-2W8DHg,.modeUnread-3Cxepe .icon-2W8DHg {
 	color: var(--interactive-active);
 	background: var(--background-modifier-selected);
+	background: color-mix(in srgb, var(--modular-accent-color) 50%, transparent);
 }
 .containerDefault-YUSmu3:hover .icon-2W8DHg {
 	color: var(--interactive-hover);
