@@ -1952,9 +1952,9 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 	color: var(--text-normal);
 }
 .divider-2rZFJK {
-	--divider-color: var(--modular-accent-color)
+	--divider-color: hsla(var(--modular-accent-color)/calc(var(--modular-transparency) + 40%))
 }
-.divider-IqmEqJ.divider-2rZFJK.isUnread-3Lojb- {
+.divider-IqmEqJ {
 	border: 10px solid var(--divider-color);
 	border-radius: var(--modular-border-radius);
 }
@@ -2112,7 +2112,7 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
     background-color: unset !important;
 }
 ::selection {
-	background: var(--modular-accent-color);
+	background: hsla(var(--modular-accent-color)/calc(var(--modular-transparency) + 40%))
 }
 .textArea-7J7xQx {
 	padding: 0 8px
