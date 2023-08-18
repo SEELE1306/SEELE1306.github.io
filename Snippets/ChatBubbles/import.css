@@ -1,11 +1,13 @@
 /* Chat bubbles */
 :root {
-	/* Solid color only, no transparency! */
-	--chat-bubble-default: gray;
-	--chat-bubble-replying: cyan;
-	--chat-bubble-mentioned: orange;
-	--chat-bubble-automod: rgb(255, 38, 0);
+	/* HSLA */
+	--test-color: hsl(0, 75%, 62%);
+	--chat-bubble-default: 0deg 0% 50%;
+	--chat-bubble-replying: 180deg, 100%, 50%;
+	--chat-bubble-mentioned: 39deg, 100%, 50%;
+	--chat-bubble-automod: 9deg, 100%, 50%;
 	--chat-bubble-border-radius: 8px;
+	--chat-bubble-transparency: 25%
 }
 :root {
 	--background-message-hover: none;
@@ -40,24 +42,27 @@
 	position: relative;
 	background-color: var(--background-message-hover) !important
 }
-.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg, 
-.cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *), 
+.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg,
+.cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
 .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
 	margin: 0.125em 0;
 	padding: 0.5em;
 	border-radius: var(--chat-bubble-border-radius);
-	background: color-mix(in srgb, var(--chat-bubble-default) 20%, transparent);
+	background: hsla(var(--chat-bubble-default)/var(--chat-bubble-transparency));
+	/*background: color-mix(in srgb, var(--chat-bubble-default) 20%, transparent);*/
 	max-width: max-content
 }
-.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg:hover, 
-.cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg:hover>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *), 
+.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg:hover,
+.cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg:hover>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
 .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
-	background: color-mix(in srgb, var(--chat-bubble-default) 40%, transparent);
+	background: hsla(var(--chat-bubble-default)/calc(var(--chat-bubble-transparency) + 20%));
+	/*background: color-mix(in srgb, var(--chat-bubble-default) 40%, transparent);*/
 }
 .groupStart-3Mlgv1.cozyMessage-1DWF9U.replying-eZ7p5z>.contents-2MsGLg,
 .cozyMessage-1DWF9U.replying-eZ7p5z:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
 .replying-eZ7p5z .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
-	background: color-mix(in srgb, var(--chat-bubble-replying) 20%, transparent);
+	background: hsla(var(--chat-bubble-replying)/var(--chat-bubble-transparency));
+	/*background: color-mix(in srgb, var(--chat-bubble-replying) 20%, transparent);*/
 	border-radius: var(--chat-bubble-border-radius);
 	max-width: max-content
 }
@@ -67,29 +72,34 @@
 .groupStart-3Mlgv1.cozyMessage-1DWF9U.replying-eZ7p5z>.contents-2MsGLg:hover,
 .cozyMessage-1DWF9U.replying-eZ7p5z:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
 .replying-eZ7p5z .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
-	background: color-mix(in srgb, var(--chat-bubble-replying) 40%, transparent)
+	background: hsla(var(--chat-bubble-replying)/calc(var(--chat-bubble-transparency) + 20%));
+	/*background: color-mix(in srgb, var(--chat-bubble-replying) 40%, transparent)*/
 }
 .groupStart-3Mlgv1.cozyMessage-1DWF9U.mentioned-Tre-dv>.contents-2MsGLg,
 .cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
 .mentioned-Tre-dv .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
-	background: color-mix(in srgb, var(--chat-bubble-mentioned) 20%, transparent);
+	background: hsla(var(--chat-bubble-mentioned)/var(--chat-bubble-transparency));
+	/*background: color-mix(in srgb, var(--chat-bubble-mentioned) 20%, transparent);*/
 	border-radius: var(--chat-bubble-border-radius)
 }
 .groupStart-3Mlgv1.cozyMessage-1DWF9U.mentioned-Tre-dv>.contents-2MsGLg:hover,
 .cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
 .mentioned-Tre-dv .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
-	background: color-mix(in srgb, var(--chat-bubble-mentioned) 40%, transparent)
+	background: hsla(var(--chat-bubble-mentioned)/calc(var(--chat-bubble-transparency) + 20%));
+	/*background: color-mix(in srgb, var(--chat-bubble-mentioned) 40%, transparent)*/
 }
 .groupStart-3Mlgv1.cozyMessage-1DWF9U.automodMessage-265YwJ>.contents-2MsGLg,
 .cozyMessage-1DWF9U.automodMessage-265YwJ:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
 .automodMessage-265YwJ .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
-	background: color-mix(in srgb, var(--chat-bubble-automod) 20%, transparent);
-	border-radius: var(--modular-border-radius)
+	background: hsla(var(--chat-bubble-automod)/var(--chat-bubble-transparency));
+	/*background: color-mix(in srgb, var(--chat-bubble-automod) 20%, transparent);*/
+	border-radius: var(--chat-bubble-border-radius)
 }
 .groupStart-3Mlgv1.cozyMessage-1DWF9U.automodMessage-265YwJ>.contents-2MsGLg:hover,
 .cozyMessage-1DWF9U.automodMessage-265YwJ:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
 .automodMessage-265YwJ .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
-	background: color-mix(in srgb, var(--chat-bubble-automod) 40%, transparent)
+	background: hsla(var(--chat-bubble-automod)/calc(var(--chat-bubble-transparency) + 20%));
+	/*background: color-mix(in srgb, var(--chat-bubble-automod) 40%, transparent)*/
 }
 /* Embeds */
 .embedFull-1HGV2S {
