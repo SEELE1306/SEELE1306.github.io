@@ -1,39 +1,37 @@
 /* Original Credits to DaBluLite */
 
 :root {
-  --guild-item-radius: 4px;
-	--guild-list-height: 40px;
-	--guild-list-width: 64px;
+  	--guild-item-radius: 4px;
 	--guild-item-spacing: 4px;
 }
 .guilds-2JjMmN {
-	width: var(--guild-list-width);
+	width: 64px;
 }
 .listItem-3SmSlK, .wrapper-38slSD, .svg-2ifYOU, .blobContainer-ikKyFs, .listItem-3SmSlK>.wrapper-z5ab_q+div:not([class]), .wrapper-2PSQCG, .svg-2ifYOU>foreignObject {
-  	width: var(--guild-list-width);
+  	width: 64px;
   	mask: none !important;
 }
 .listItem-3SmSlK:not(:has(.guildSeparator-a4uisj)), .wrapper-2PSQCG, .svg-2ifYOU>foreignObject {
-  	height: var(--guild-list-height);
+  	height: 40px;
 }
 .expandedFolderBackground-1kSAf6 {
- 	width: calc(var(--guild-list-width) - 24px);
+ 	width: calc(64px - 24px);
   	border-radius: min(24px, var(--guild-item-radius));
 }
 .svg-2ifYOU>foreignObject {
-  	transform: translateX(calc(((var(--guild-list-width)*-1)/2) + 50%));
+  	transform: translateX(calc(((64px*-1)/2) + 50%));
 }
 .wrapper-3kah-n, .folder-241Joy, .circleIconButton-1VxDrg {
   	margin-left: 12px;
-  	width: calc(var(--guild-list-width) - 24px);
+  	width: calc(64px - 24px);
   	justify-content: start;
 	border-radius: var(--guild-item-radius) !important;
-  	height: var(--guild-list-height);
+  	height: 40px;
 }
 .wrapper-3kah-n img, .folderIconWrapper-1oRIZr, .childWrapper-1j_1ub, .expandedFolderIconWrapper-3RwQpD, .closedFolderIconWrapper-3tRb2d {
   	border-radius: var(--guild-item-radius) !important;
-  	height: var(--guild-list-height);
-	width: var(--guild-list-height);
+  	height: 40px;
+	width: 40px;
 }
 .svg-2ifYOU {
   	position: static;
@@ -43,7 +41,7 @@
 }
 .circleIcon-3489FI {
   	margin-left: 12px;
-  	height: calc(var(--guild-list-height) - 8px);
+  	height: calc(40px - 8px);
 }
 .circleIconButton-1VxDrg.selected-2r1Hvo::after {
   	color: var(--interactive-active);
@@ -77,7 +75,7 @@
 	color: var(--interactive-normal);
 }
 .pill-1NRFie, .wrapper-z5ab_q:not(:last-child) {
-  	height: var(--guild-list-height) !important;
+  	height: 40px !important;
 	border-radius: 0;
   	align-items: center;
 	width: 3px;
@@ -88,10 +86,10 @@
 	width: 3px;
 	align-items: center;
 	border-radius: 0;
-	height: var(--guild-list-height) !important;
+	height: 40px !important;
 }
 .item-2LIpTv {
-  	max-height: var(--guild-list-height);
+  	max-height: 40px;
 	background-color: var(--interactive-muted);
 	border-radius: 0;
 }
@@ -102,11 +100,11 @@
   	margin-left: 0;
 }
 .circleIcon-3489FI {
-  	width: var(--guild-list-height);
+  	width: 40px;
   	justify-content: center;
   	align-items: center;
   	box-sizing: border-box;
-  	padding: calc(var(--guild-list-height)/7);
+  	padding: calc(40px/7);
 }
 .blobContainer-ikKyFs .wrapper-3kah-n[data-list-item-id*="guildsnav___"]::after {
   	content: none;
