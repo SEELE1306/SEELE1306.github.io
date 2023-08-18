@@ -3,9 +3,9 @@
 	/* HSLA */
 	--test-color: hsl(0, 75%, 62%);
 	--chat-bubble-default: 0deg 0% 50%;
-	--chat-bubble-replying: 180deg, 100%, 50%;
-	--chat-bubble-mentioned: 39deg, 100%, 50%;
-	--chat-bubble-automod: 9deg, 100%, 50%;
+	--chat-bubble-replying: 180deg 100% 50%;
+	--chat-bubble-mentioned: 39deg 100% 50%;
+	--chat-bubble-automod: 9deg 100% 50%;
 	--chat-bubble-border-radius: 8px;
 	--chat-bubble-transparency: 25%
 }
