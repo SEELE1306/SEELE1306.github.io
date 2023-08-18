@@ -1,5 +1,8 @@
 :root {
+	--test-color: hsl(250, 45%, 45%);
 	--section-thickness: 1px; /* must be in pixels */
+	--profile-accent-color: 250deg 45% 45%;
+	--profile-transparency: 25%;
 }
 .userPopoutInner-nv9Y92:has(#account) > *:not(:has(#account)), .userPopoutOverlayBackground-3A0Pcz:has(#account) > *:not(#account), .container-TT--xs ::-webkit-scrollbar,
 :is(.userPopoutInner-nv9Y92, .profilePanel-2VBkh8) [class*=divider-], [class*=userPanelInner-]::before, .accountProfilePopoutWrapper-3GskID .section-28YDOf, .lastSection-q3HCfo,
@@ -23,7 +26,7 @@
 	border-radius: 0.5rem;
 	max-width: 90%;
 	overflow: hidden;
-	background: linear-gradient(var(--profile-gradient-primary-color),var(--profile-gradient-primary-color) 60px,var(--profile-gradient-secondary-color))
+	background: var(--profile-gradient-secondary-color)
 }
 .scroller-15bIdk {
 	padding: 6px 12px;
@@ -31,14 +34,11 @@
 .buttonsContainer-3iOFIV > button {
 	border-radius: 0.5rem;
 }
-body:not([class*=profilePanel-]) .theme-dark :is(.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-input, .vc-rdb-view,
+body:not([class*=profilePanel-]) :is(.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-input, .vc-rdb-view,
 div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"], [class*=mutualGuildsList-], [class*=mutualFriendsList-]) {
-	background: color-mix(in srgb, var(--profile-body-divider-color) 50%, rgba(255, 255, 255, 0.10));
-	border: var(--section-thickness) solid var(--profile-body-divider-color)
-}
-body:not([class*=profilePanel-]) .theme-light :is(.section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-input, .vc-rdb-view,
-div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"], [class*=mutualGuildsList-], [class*=mutualFriendsList-]) {
-	background: color-mix(in srgb, var(--profile-body-divider-color) 50%, rgba(0, 0, 0, 0.10));
+	background: linear-gradient(45deg, var(--profile-gradient-primary-color), var(--profile-gradient-secondary-color));
+	background-size: 200% 200%;
+	/*background: color-mix(in srgb, var(--profile-body-divider-color) 50%, rgba(255, 255, 255, 0.10));*/
 	border: var(--section-thickness) solid var(--profile-body-divider-color)
 }
 :is([class|=userPopoutInner], [class|=userPanelOverlayBackground], [class|=userInfoText]) [style*="-webkit-line-clamp"] {
@@ -171,8 +171,9 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 }
 .userProfileModalInner-3dx9L9 .top-Ktfr_T .item-2GWPIy {
 	border: none;
-	background: color-mix(in srgb, var(--profile-body-background-color) 40%, transparent);
-	border-radius: 0.5em;
+	background: hsla(var(--profile-accent-color)/var(--profile-transparency));
+	/*background: color-mix(in srgb, var(--profile-body-background-color) 40%, transparent);*/
+	border-radius: var(--profile-border-radius);
 	padding: 0.125em 0;
 	width: 31%;
 	font-weight: 600;
@@ -182,10 +183,12 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 	border: none
 }
 .userProfileModalInner-3dx9L9 .top-Ktfr_T .item-2GWPIy:hover {
-	background: color-mix(in srgb, var(--profile-body-background-color) 70%, transparent) !important;
+	background: hsla(var(--profile-accent-color)/calc(var(--profile-transparency) + 40%)) !important;
+	/*background: color-mix(in srgb, var(--profile-body-background-color) 70%, transparent) !important;*/
 }
 .userProfileModalInner-3dx9L9 .top-Ktfr_T .selected-1sf9UK.item-2GWPIy {
-	background: color-mix(in srgb, var(--profile-body-background-color) 100%, transparent)
+	background: hsla(var(--profile-accent-color)/calc(var(--profile-transparency) + 20%));
+	/*background: color-mix(in srgb, var(--profile-body-background-color) 100%, transparent)*/
 }
 .tabBarItem-30Te4- {
 	height: fit-content
