@@ -2044,20 +2044,23 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
   	transform: translateX(-50%) !important;
 }
 .numberBadge-37OJ3S {
-	border-radius: var(--guild-item-radius) 0 0 0;
+	border-radius: calc(var(--guild-item-radius)/2);
+}
+.wrapper-2PSQCG:has(.wrapper-3kah-n) .numberBadge-37OJ3S {
 	position: relative;
-	top: 1px;
+	top: 1px
 }
 .iconBadge-32fMme {
-	border-radius: 0 0 0 var(--guild-item-radius);
+	border-radius: calc(var(--guild-item-radius)/2);
 	position: relative;
+	right: 5px;
 }
 .iconBadge-32fMme.participating-2Z81oO {
 	color: var(--interactive-active);
 }
 .base-3IDx3L {
-	background: var(--background-primary) !important;
-	color: var(--interactive-muted);
+	background: hsla(var(--modular-accent-color)) !important;
+	color: var(--interactive-active);
 }
 .pill-1NRFie, .wrapper-z5ab_q:not(:last-child) {
   	height: 40px !important;
