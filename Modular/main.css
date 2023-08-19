@@ -422,9 +422,9 @@ main[class^=chatContent] [class^=attachedBars] {
 .barButtonBase-Sk2mdB {
 	color: var(--info-positive-foreground);
 	background-color: var(--background-tertiary);
-	border-radius: var(--modular-border-radius);
-	padding-right: 4px;
-	margin: 0px 4px 6px 0
+	border-radius: calc(var(--modular-border-radius)/1.5);
+	padding-right: 8px;
+	margin: 0px 8px 6px 0
 }
 .barButtonBase-Sk2mdB:hover {
 	background-color: var(--background-floating)
@@ -806,10 +806,6 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 .button-lA2rvH:hover .icon-3g7qdA, .icon-3g7qdA:hover, [class*=iconWrapper-][class*=clickable-] [class*=icon-]:hover {
 	color: var(--interactive-hover) !important
 }
-.search-2Mwzzq .DraftEditor-root .public-DraftStyleDefault-block span, .queryText-j8z984 strong {
-	background-color: var(--background-floating);
-	color: var(--text-normal) !important
-}
 .section-2zQkYM {
 	background-color: var(--background-primary)
 }
@@ -1015,7 +1011,7 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 	max-width: 90%;
 	overflow: hidden;
 	border-radius: var(--modular-border-radius);
-	background: linear-gradient(var(--profile-gradient-primary-color),var(--profile-gradient-primary-color) 60px,var(--profile-gradient-secondary-color))
+	background: var(--profile-gradient-secondary-color)
 }
 .userProfileInnerThemedNonPremium-2AJg-H {
 	background: var(--background-primary);
@@ -1136,8 +1132,8 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 	overflow: hidden;
 	border-left: none;
 	z-index: 0;
+	width: 640px;
 	border-radius: var(--modular-border-radius);
-	width: fit-content;
 	background-color: inherit;
 	margin-top: 0.5em
 }
@@ -1932,9 +1928,8 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 	margin-right: 1em;
 }
 .newMessagesBar-1hF-9G {
-	border-radius: var(--modular-border-radius) var(--modular-border-radius) 0 0;
 	background: transparent;
-	margin: 0 5em 0 0.25em;
+	margin: 0 5em 0 1.25em;
 	opacity: 1;
 	top: 96.67%;
 	box-shadow: none;
@@ -2088,15 +2083,6 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 	position: relative;
 	right: 5px;
 }
-.wrapper-2PSQCG:has(.wrapper-3kah-n) .numberBadge-37OJ3S {
-	position: relative;
-	top: 1px
-}
-.iconBadge-32fMme {
-	border-radius: calc(var(--guild-item-radius)/2);
-	position: relative;
-	right: 5px;
-}
 .iconBadge-32fMme.participating-2Z81oO {
 	color: var(--interactive-active);
 }
@@ -2220,3 +2206,19 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 .navButton-1XuvI-:hover, .navButtonActive-1EqC5l {
 	color: var(--interactive-active);
 }
+/*.separator-12G2Op {
+	border: none;
+}
+.container-2giAcK:after, :is(.userPopoutInner-nv9Y92, .profilePanel-2VBkh8) [class*=divider-] {
+	display: none
+}
+.divider-1bpIoX, .tabBar-11FwuO {
+    border: none !important
+}
+.divider-IqmEqJ:not(.isUnread-3Lojb-).divider-2rZFJK {
+	border: none;
+	padding: 0 0.5em;
+}
+.divider-IqmEqJ.hasContent-1y12-u.divider-2rZFJK.hasContent-31hcsn {
+	border-top: none;
+}*/
