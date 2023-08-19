@@ -2088,6 +2088,15 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 	position: relative;
 	right: 5px;
 }
+.wrapper-2PSQCG:has(.wrapper-3kah-n) .numberBadge-37OJ3S {
+	position: relative;
+	top: 1px
+}
+.iconBadge-32fMme {
+	border-radius: calc(var(--guild-item-radius)/2);
+	position: relative;
+	right: 5px;
+}
 .iconBadge-32fMme.participating-2Z81oO {
 	color: var(--interactive-active);
 }
