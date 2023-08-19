@@ -336,8 +336,44 @@ body:has(.vc-spotify-pause) #vc-spotify-song-title {
 	min-height: 49px;
 	padding-top: 4px;
 	margin: -12px 0 16px;
-	background: var(--background-modifier-accent);
+	background: transparent;
 	border-radius: var(--modular-border-radius)
+}
+.autocomplete-3jLKbj {
+	margin: 0 1em;
+	border-radius: var(--modular-border-radius);
+}
+.inner-NQg18Y {
+	width: calc(100% - 24px);
+}
+.attachButton-1ijpt9 {
+	margin-left: 0;
+	padding: 0.25em 0.5em
+}
+.attachWrapper-3slhXI {
+	background: var(--background-modifier-accent);
+	border-radius: var(--modular-border-radius);
+}
+.slateTextArea-27tjG0 {
+	padding-left: 10px;
+}
+.textArea-2CLwUE {
+	background: var(--background-modifier-accent);
+	border-radius: var(--modular-border-radius);
+	margin: 0 4px 0 8px
+}
+.buttons-uaqb-5 {
+	background: transparent;
+	border-radius: var(--modular-border-radius);
+}
+.buttons-uaqb-5>:is(button,div) {
+	background: var(--background-modifier-accent);
+	margin: 0 4px;
+	border-radius: var(--modular-border-radius);
+}
+.buttons-uaqb-5 button[style="padding: 0px 2px; height: 100%;"] img[src="https://discord.com/assets/4c5a77a89716352686f590a6f014770c.svg"] {
+	content: url("https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=48&name=shiggy%7E1&quality=lossless");
+	padding: 0 4px
 }
 .contents-2MsGLg .scrollableContainer-15eg7h {
 	margin: 12px 0 !important
@@ -358,8 +394,8 @@ body:has(.vc-spotify-pause) #vc-spotify-song-title {
 .button-2fCJ0o:hover {
 	color: var(--interactive-hover) !important
 }
-:is(main,section)[class^=chatContent] .scrollableContainer-15eg7h:is(:hover,:focus-within) {
-	background: var(--background-modifier-selected)
+:is(.textArea-2CLwUE, .attachWrapper-3slhXI, .buttons-uaqb-5>:is(button,div)):is(:hover,:focus-within) {
+	background: hsla(var(--modular-accent-color)/calc(var(--modular-transparency) + 40%));
 }
 :is(main,section)[class^=chatContent] .typing-2J1mQU {
 	padding-left: 16px;
@@ -378,7 +414,7 @@ main[class^=chatContent] [class^=attachedBars] {
 	background-color: transparent
 }
 [class^=jumpToPresentBar] {
-	margin: 0 20px -8px 0;
+	margin: 0 2.25em -0.5em 0;
 	right: unset;
 	opacity: 1;
 	background-color: unset
@@ -439,7 +475,7 @@ span[data-tag="mod"], span[data-tag="vc mod"], .botTagRegular-kpctgU {
 	color: var(--interactive-hover)
 }
 :is(.containerDefault-YUSmu3, .wrapper-NhbLHG):hover .link-1_kTxV, 
-:is(.content-1Tgc42, .layout-1qmrhw, interactive-26HRN_, .colorDefault-2_rLdz):hover {
+:is(.content-1Tgc42, .layout-1qmrhw, interactive-26HRN_, .colorDefault-2_rLdz, .clickable-2V8YKY[aria-disabled=false]>.base-2v-uc0):hover {
 	background: hsla(var(--modular-accent-color)/calc(var(--modular-transparency) + 40%)) !important;
 	/*background: color-mix(in srgb, var(--modular-accent-color) 75%, transparent) !important*/
 }
