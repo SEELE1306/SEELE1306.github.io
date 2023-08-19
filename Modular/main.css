@@ -365,6 +365,10 @@ body:has(.vc-spotify-pause) #vc-spotify-song-title {
 .buttons-uaqb-5 {
 	background: transparent;
 	border-radius: var(--modular-border-radius);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 8px 0;
+	height: fit-content
 }
 .buttons-uaqb-5>:is(button,div) {
 	background: var(--background-modifier-accent);
