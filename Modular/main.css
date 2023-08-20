@@ -392,6 +392,14 @@ body:has(.vc-spotify-pause) #vc-spotify-song-title {
 	position: relative;
 	height: auto !important;
 }
+.innerDisabled-2dbG11 .textArea-2CLwUE>div {
+	position: absolute;
+	left: 44px;
+	min-height: unset;
+}
+.form-3gdLxP:not(:has(.attachButton-1ijpt9)) .textArea-2CLwUE>div {
+	left: 36px;
+}
 .textArea-2CLwUE>div {
 	position: absolute;
 	background: var(--background-modifier-accent);
