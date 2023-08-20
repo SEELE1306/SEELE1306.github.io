@@ -329,38 +329,97 @@ body:has(.vc-spotify-pause) #vc-spotify-song-title {
 	background-color: hsla(var(--quote-text-color))
 }
 :is(main,section)[class^=chatContent] .form-3gdLxP {
-	padding: 20px
+	padding: 20px 0;
+	right: 16px;
 }
 :is(main,section)[class^=chatContent] .scrollableContainer-15eg7h {
 	max-width: 100%;
-	min-height: 49px;
 	padding-top: 4px;
-	margin: -12px 0 16px;
+	margin: -16px 0 16px;
 	background: transparent;
-	border-radius: var(--modular-border-radius)
-}
-.autocomplete-3jLKbj {
-	margin: 0 1em;
 	border-radius: var(--modular-border-radius);
 }
-.inner-NQg18Y {
-	width: calc(100% - 24px);
+.channelTextArea-1FufC0 .divider-2rZFJK {
+	border-top: none;
+}
+.channelAttachmentArea-HwpkuQ {
+	background: var(--background-modifier-accent);
+	border-radius: var(--modular-border-radius);
+	margin: 0.5em 0 0.5em 2.75em;
+	padding: 0.5em;
+	gap: 8px
+}
+.upload-vLbqu- {
+	min-height: 150px;
+	max-height: 150px;
+	min-width: 150px;
+	max-width: 150px;
+}
+.actionBar-1ozugS {
+	transform: translate(0, 0);
+}
+.autocomplete-3jLKbj {
+	margin: 0 0.625em -0.75em 2.75em;
+	border-radius: var(--modular-border-radius);
 }
 .attachButton-1ijpt9 {
 	margin-left: 0;
-	padding: 0.25em 0.5em
+	padding: 0.5em 0.5em;
 }
 .attachWrapper-3slhXI {
+	position: relative;
 	background: var(--background-modifier-accent);
 	border-radius: var(--modular-border-radius);
+	max-height: 30px;
+	max-width: 36px;
+	top: 80px;
+	left: calc(100% - 36px);
+	z-index: 10;
+	margin-left: 1px;
 }
+.attachButton-_ACFSu {
+	position: relative;
+	height: 30px;
+	right: 1px;
+}	
 .slateTextArea-27tjG0 {
 	padding-left: 10px;
 }
+.form-3gdLxP:not(:has(channelTextAreaDisabled-1p2fQv)) .sansAttachButton-1ERHue {
+	padding-left: 0;
+}
 .textArea-2CLwUE {
+	position: relative;
+	height: auto !important;
+}
+.textArea-2CLwUE>div {
+	position: absolute;
 	background: var(--background-modifier-accent);
 	border-radius: var(--modular-border-radius);
-	margin: 0 4px 0 8px
+	left: 0;
+	right: 4px;
+	bottom: 0;
+	min-height: 109px;
+	max-height: 100%;
+	overflow: auto;
+}
+.textArea-2CLwUE>div::-webkit-scrollbar {
+	width: 6px;
+}
+.textArea-2CLwUE>div::-webkit-scrollbar-track {
+	background: var(--background-modifier-accent);
+	border-radius: var(--modular-border-radius) !important;
+}
+.textArea-2CLwUE>div::-webkit-scrollbar-thumb {
+	height: 30px;
+	background: hsla(var(--modular-accent-color));
+	border-radius: var(--modular-border-radius) !important;
+}
+.characterCount-8yNPfb {
+	bottom: 120px
+}
+.channelTextArea-1FufC0:has(.characterCount-8yNPfb) .textArea-2CLwUE>div {
+	background: hsl(var(--red)/0.6);
 }
 .buttons-uaqb-5 {
 	background: transparent;
@@ -378,6 +437,12 @@ body:has(.vc-spotify-pause) #vc-spotify-song-title {
 .buttons-uaqb-5 button[style="padding: 0px 2px; height: 100%;"] img[src="https://discord.com/assets/4c5a77a89716352686f590a6f014770c.svg"] {
 	content: url("https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=48&name=shiggy%7E1&quality=lossless");
 	padding: 0 4px
+}
+.separator-3ng7S5::before {
+	display: none;
+}
+.separator-3ng7S5 button {
+	margin-left: -6px;
 }
 .contents-2MsGLg .scrollableContainer-15eg7h {
 	margin: 12px 0 !important
@@ -398,7 +463,7 @@ body:has(.vc-spotify-pause) #vc-spotify-song-title {
 .button-2fCJ0o:hover {
 	color: var(--interactive-hover) !important
 }
-:is(.textArea-2CLwUE, .attachWrapper-3slhXI, .buttons-uaqb-5>:is(button,div), .inner-1NoIT5, .searchBar-jGtisZ):is(:hover,:focus-within) {
+:is(.textArea-2CLwUE>div, .attachWrapper-3slhXI, .buttons-uaqb-5>:is(button,div), .inner-1NoIT5, .searchBar-jGtisZ):is(:hover,:focus-within) {
 	background: hsla(var(--modular-accent-color)/calc(var(--modular-transparency) + 40%));
 }
 :is(main,section)[class^=chatContent] .typing-2J1mQU {
@@ -410,17 +475,16 @@ main[class^=chatContent] [class^=attachedBars] {
 	min-height: unset !important;
 	position: relative;
 	padding-bottom: 4px;
-	margin: 0 0 20px 0 !important;
+	margin: 0 8px 20px 36px !important;
 	border-radius: var(--modular-border-radius);
 	z-index: 0
 }
 .replyBar-1oi75v {
-	background-color: transparent
+	background-color: transparent;
 }
 [class^=jumpToPresentBar] {
-	margin: 0 2.25em -0.5em 0;
+	margin: 0 26px -16px 0;
 	right: unset;
-	opacity: 1;
 	background-color: unset
 }
 .barButtonBase-Sk2mdB {
@@ -428,14 +492,23 @@ main[class^=chatContent] [class^=attachedBars] {
 	background-color: var(--background-tertiary);
 	border-radius: calc(var(--modular-border-radius)/1.5);
 	padding-right: 8px;
-	margin: 0px 8px 6px 0
+	margin: 0px 8px 16px 0
 }
 .barButtonBase-Sk2mdB:hover {
 	background-color: var(--background-floating)
 }
+.newMessagesBar-1hF-9G {
+	background: transparent;
+	margin: 0 5em 0 0.75em;
+	top: 96.67%;
+	box-shadow: none;
+}
+.barButtonAlt-TQoCdZ {
+	margin-right: 45%;
+}
 :root :is(main,section)[class^=chatContent] .typing-2J1mQU {
 	right: unset;
-	left: 0px
+	left: 10px
 }
 :root [class^=jumpToPresentBar] {
 	left: unset;
@@ -1931,16 +2004,6 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 .footer-IubaaS > button:last-child {
 	margin-right: 1em;
 }
-.newMessagesBar-1hF-9G {
-	background: transparent;
-	margin: 0 5em 0 1.25em;
-	opacity: 1;
-	top: 96.67%;
-	box-shadow: none;
-}
-.barButtonAlt-TQoCdZ {
-	margin-right: 45%;
-}
 .scroller-3X7KbA {
 	padding: 0.25em 0;
 }
@@ -2210,19 +2273,3 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 .navButton-1XuvI-:hover, .navButtonActive-1EqC5l {
 	color: var(--interactive-active);
 }
-/*.separator-12G2Op {
-	border: none;
-}
-.container-2giAcK:after, :is(.userPopoutInner-nv9Y92, .profilePanel-2VBkh8) [class*=divider-] {
-	display: none
-}
-.divider-1bpIoX, .tabBar-11FwuO {
-    border: none !important
-}
-.divider-IqmEqJ:not(.isUnread-3Lojb-).divider-2rZFJK {
-	border: none;
-	padding: 0 0.5em;
-}
-.divider-IqmEqJ.hasContent-1y12-u.divider-2rZFJK.hasContent-31hcsn {
-	border-top: none;
-}*/
