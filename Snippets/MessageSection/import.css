@@ -65,7 +65,7 @@
 .textArea-2CLwUE>div {
 	position: absolute;
 	background: var(--background-modifier-accent);
-	border-radius: var(--modular-border-radius);
+	border-radius: 8px;
 	left: 0;
 	right: 4px;
 	bottom: 0;
@@ -78,18 +78,18 @@
 }
 .textArea-2CLwUE>div::-webkit-scrollbar-track {
 	background: var(--background-modifier-accent);
-	border-radius: var(--modular-border-radius) !important;
+	border-radius: 8px !important;
 }
 .textArea-2CLwUE>div::-webkit-scrollbar-thumb {
 	height: 30px;
-	background: hsla(var(--modular-accent-color));
-	border-radius: var(--modular-border-radius) !important;
+	background: rgba(44, 151, 250, 0.596);
+	border-radius: 8px !important;
 }
 .characterCount-8yNPfb {
 	bottom: 120px
 }
 .channelTextArea-1FufC0:has(.characterCount-8yNPfb) .textArea-2CLwUE>div {
-	background: hsl(var(--red)/0.6);
+	background: var(--red-400);
 }
 .buttons-uaqb-5 {
 	background: transparent;
