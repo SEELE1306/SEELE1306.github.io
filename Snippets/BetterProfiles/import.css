@@ -6,7 +6,7 @@
 }
 .userPopoutInner-nv9Y92:has(#account) > *:not(:has(#account)), .userPopoutOverlayBackground-3A0Pcz:has(#account) > *:not(#account), .container-TT--xs ::-webkit-scrollbar,
 :is(.userPopoutInner-nv9Y92, .profilePanel-2VBkh8) [class*=divider-], [class*=userPanelInner-]::before, .accountProfilePopoutWrapper-3GskID .section-28YDOf, .lastSection-q3HCfo,
-.section-28YDOf:has(.roles-3vQPxb:empty), .accountProfilePopoutWrapper-3GskID .section-28YDOf {
+.section-28YDOf:has(.roles-3vQPxb:empty) {
     display: none;
 }
 /* Profile panel */
