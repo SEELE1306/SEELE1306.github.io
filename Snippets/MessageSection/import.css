@@ -55,14 +55,41 @@
 .slateTextArea-27tjG0 {
 	padding-left: 10px;
 }
-.form-3gdLxP:not(:has(channelTextAreaDisabled-1p2fQv)).sansAttachButton-1ERHue {
+.form-3gdLxP:not(:has(channelTextAreaDisabled-1p2fQv)) .sansAttachButton-1ERHue {
 	padding-left: 0;
 }
 .textArea-2CLwUE {
+	position: relative;
+	height: auto !important;
+}
+.textArea-2CLwUE>div {
+	position: absolute;
 	background: var(--background-modifier-accent);
-	border-radius: 8px;
-	margin: 0 4px 0 8px;
+	border-radius: var(--modular-border-radius);
+	left: 0;
+	right: 4px;
+	bottom: 0;
 	min-height: 109px;
+	max-height: 100%;
+	overflow: auto;
+}
+.textArea-2CLwUE>div::-webkit-scrollbar {
+	width: 6px;
+}
+.textArea-2CLwUE>div::-webkit-scrollbar-track {
+	background: var(--background-modifier-accent);
+	border-radius: var(--modular-border-radius) !important;
+}
+.textArea-2CLwUE>div::-webkit-scrollbar-thumb {
+	height: 30px;
+	background: hsla(var(--modular-accent-color));
+	border-radius: var(--modular-border-radius) !important;
+}
+.characterCount-8yNPfb {
+	bottom: 120px
+}
+.channelTextArea-1FufC0:has(.characterCount-8yNPfb) .textArea-2CLwUE>div {
+	background: hsl(var(--red)/0.6);
 }
 .buttons-uaqb-5 {
 	background: transparent;
@@ -118,7 +145,7 @@ main[class^=chatContent] [class^=attachedBars] {
 	min-height: unset !important;
 	position: relative;
 	padding-bottom: 4px;
-	margin: 0 8px 20px 44px !important;
+	margin: 0 8px 20px 36px !important;
 	border-radius: 8px;
 	z-index: 0
 }
