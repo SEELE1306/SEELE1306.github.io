@@ -566,7 +566,7 @@ span[data-tag="mod"], span[data-tag="vc mod"], .botTagRegular-kpctgU {
 }
 :is(.containerDefault-YUSmu3.selected-2TbFuo, .wrapper-NhbLHG.modeSelected-3DmyhH, .wrapper-NhbLHG.modeConnected-NrO4cP) .link-1_kTxV, 
 :is(.containerDefault-YUSmu3.selected-2TbFuo,.modeUnread-3Cxepe) .icon-2W8DHg,
-.selected-1-Z6gm .layout-1qmrhw, .channel-1Shao0.container-32HW5s>.interactiveSelected-29CP8y, .colorDefault-2_rLdz.focused-3LIdPu, .container-2cd8Mz, .navButtonActive-1EqC5l {
+.selected-1-Z6gm .layout-1qmrhw, .channel-1Shao0.container-32HW5s>.interactiveSelected-29CP8y, .colorDefault-2_rLdz.focused-3LIdPu, .navButtonActive-1EqC5l {
 	background: hsla(var(--modular-accent-color)/calc(var(--modular-transparency) + 20%)) !important;
 	/*background: color-mix(in srgb, var(--modular-accent-color) 50%, transparent)*/
 }
@@ -2212,7 +2212,7 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 	border-color: transparent;
 }
 .container-2cd8Mz {
-	background: var(--background-primary-alt);
+	background: transparent;
 }
 .backgroundFlash-1X5jVs {
     background-color: unset !important;
