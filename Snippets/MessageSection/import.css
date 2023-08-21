@@ -38,14 +38,16 @@
 }
 .attachWrapper-3slhXI {
 	position: relative;
-	background: var(--background-modifier-accent);
-	border-radius: 8px;
+	background: hsla(var(--modular-accent-color));
+	border-radius: var(--modular-border-radius);
 	max-height: 30px;
 	max-width: 36px;
-	top: 80px;
-	left: calc(100% - 36px);
+	top: 72px;
+	left: 45px;
 	z-index: 10;
-	margin-left: 1px;
+}
+.attachWrapper-3slhXI:is(:hover, :focus) {
+	box-shadow: 0 0 10px var(--background-primary);
 }
 .attachButton-_ACFSu {
 	position: relative;
