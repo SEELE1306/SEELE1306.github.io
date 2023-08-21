@@ -150,8 +150,8 @@
 	background: var(--accent-color)
 }
 :is(main,section)[class^=chatContent] .typing-2J1mQU {
-	padding-left: 20px;
-	padding-bottom: 4px;
+	padding-left: 28px;
+	padding-bottom: 8px;
 	font-weight: 1000
 }
 main[class^=chatContent] [class^=attachedBars] {
