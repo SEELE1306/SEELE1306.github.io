@@ -55,14 +55,17 @@
 .slateTextArea-27tjG0 {
 	padding-left: 10px;
 }
-.form-3gdLxP:not(:has(channelTextAreaDisabled-1p2fQv)) .sansAttachButton-1ERHue {
+.form-3gdLxP .sansAttachButton-1ERHue {
 	padding-left: 0;
 }
-.textArea-2CLwUE {
+.form-3gdLxP .innerDisabled-2dbG11.sansAttachButton-1ERHue {
+	padding-left: 16px;
+}
+.form-3gdLxP .textArea-2CLwUE {
 	position: relative;
 	height: auto !important;
 }
-.innerDisabled-2dbG11 .textArea-2CLwUE>div {
+.form-3gdLxP .innerDisabled-2dbG11 .textArea-2CLwUE>div {
 	position: absolute;
 	left: 44px;
 	min-height: unset;
@@ -70,28 +73,28 @@
 .form-3gdLxP:not(:has(.attachButton-1ijpt9)) .textArea-2CLwUE>div {
 	left: 36px;
 }
-.textArea-2CLwUE>div {
+.form-3gdLxP .textArea-2CLwUE>div {
 	position: absolute;
 	background: var(--background-modifier-accent);
-	border-radius: 8px;
+	border-radius: var(--modular-border-radius);
 	left: 0;
 	right: 4px;
 	bottom: 0;
-	min-height: 109px;
 	max-height: 100%;
+	min-height: 109px;
 	overflow: auto;
 }
-.textArea-2CLwUE>div::-webkit-scrollbar {
+.form-3gdLxP .textArea-2CLwUE>div::-webkit-scrollbar {
 	width: 6px;
 }
-.textArea-2CLwUE>div::-webkit-scrollbar-track {
+.form-3gdLxP .textArea-2CLwUE>div::-webkit-scrollbar-track {
 	background: var(--background-modifier-accent);
-	border-radius: 8px !important;
+	border-radius: var(--modular-border-radius) !important;
 }
-.textArea-2CLwUE>div::-webkit-scrollbar-thumb {
+.form-3gdLxP .textArea-2CLwUE>div::-webkit-scrollbar-thumb {
 	height: 30px;
-	background: rgba(44, 151, 250, 0.596);
-	border-radius: 8px !important;
+	background: hsla(var(--modular-accent-color));
+	border-radius: var(--modular-border-radius) !important;
 }
 .characterCount-8yNPfb {
 	bottom: 120px
