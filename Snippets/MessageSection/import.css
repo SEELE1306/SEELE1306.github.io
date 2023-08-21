@@ -171,7 +171,7 @@ main[class^=chatContent] [class^=attachedBars] {
 	background-color: unset
 }
 .barButtonBase-Sk2mdB {
-	color: var(--info-positive-foreground);
+	color: var(--text-normal);
 	background-color: var(--background-tertiary);
 	border-radius: calc(8px/1.5);
 	padding-right: 8px;
