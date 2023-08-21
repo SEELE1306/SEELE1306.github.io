@@ -1,4 +1,6 @@
 @import url(https://seele1306.github.io/Modular/Root.css);
+@import url(https://dablulite.github.io/css-snippets/NoLightInDark/import.css);
+
 
 :root, .theme-dark, .theme-light {
 	/* Start of customizable parameters */
