@@ -370,16 +370,13 @@ body:has(.vc-spotify-pause) #vc-spotify-song-title {
 }
 .attachWrapper-3slhXI {
 	position: relative;
-	background: hsla(var(--modular-accent-color));
+	background: var(--background-tertiary);;
 	border-radius: var(--modular-border-radius);
 	max-height: 30px;
 	max-width: 36px;
 	top: 72px;
 	left: 45px;
 	z-index: 10;
-}
-.attachWrapper-3slhXI:is(:hover, :focus) {
-	box-shadow: 0 0 10px hsl(var(--primary-600-hsl)/1);
 }
 .attachButton-_ACFSu {
 	position: relative;
