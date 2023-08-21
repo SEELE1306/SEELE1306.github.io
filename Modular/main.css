@@ -347,7 +347,7 @@ body:has(.vc-spotify-pause) #vc-spotify-song-title {
 .channelAttachmentArea-HwpkuQ {
 	background: var(--background-modifier-accent);
 	border-radius: var(--modular-border-radius);
-	margin: 0.5em 0 0.5em 2.75em;
+	margin: 0 0 0.5em 2.125em;
 	padding: 0.5em;
 	gap: 8px
 }
@@ -361,7 +361,7 @@ body:has(.vc-spotify-pause) #vc-spotify-song-title {
 	transform: translate(0, 0);
 }
 .autocomplete-3jLKbj {
-	margin: 0 0.625em -0.75em 2.75em;
+	margin: 0.25em 0.625em -0.25em 2.125em;
 	border-radius: var(--modular-border-radius);
 }
 .attachButton-1ijpt9 {
