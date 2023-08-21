@@ -90,12 +90,12 @@
 	width: 6px;
 }
 .form-3gdLxP .textArea-2CLwUE>div::-webkit-scrollbar-track {
-	background: var(--background-modifier-accent);
+	background: var(--scrollbar-auto-track);
 	border-radius: 8px !important;
 }
 .form-3gdLxP .textArea-2CLwUE>div::-webkit-scrollbar-thumb {
 	height: 30px;
-	background: var(--interactive-normal);
+	background: var(--scrollbar-auto-thumb);
 	border-radius: 8px !important;
 }
 .characterCount-8yNPfb {
