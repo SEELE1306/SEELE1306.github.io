@@ -43,16 +43,16 @@
 	border-radius: 8px;
 	height: 30px;
 	width: 36px;
-	top: 7px;
-	left: 45px;
-	z-index: 1;
+	top: 38px;
+	left: calc(100% - 35px);
+	z-index: 10;
 }
 .attachButton-_ACFSu {
 	position: relative;
 	height: 30px;
 }	
 .slateTextArea-27tjG0 {
-	padding-left: 55px;
+	padding-left: 10px;
 }
 .form-3gdLxP .sansAttachButton-1ERHue {
 	padding-left: 0;
@@ -76,18 +76,6 @@
 	right: 4px;
 	bottom: 0;
 }
-.form-3gdLxP .textArea-2CLwUE>div::-webkit-scrollbar {
-	width: 6px;
-}
-.form-3gdLxP .textArea-2CLwUE>div::-webkit-scrollbar-track {
-	background: var(--scrollbar-auto-track);
-	border-radius: 8px !important;
-}
-.form-3gdLxP .textArea-2CLwUE>div::-webkit-scrollbar-thumb {
-	height: 30px;
-	background: var(--scrollbar-auto-thumb);
-	border-radius: 8px !important;
-}
 .characterCount-8yNPfb {
 	bottom: 120px
 }
@@ -95,7 +83,6 @@
 	background: var(--red-400);
 }
 .buttons-uaqb-5 {
-	padding: 0 8px;
 	background: transparent;
 	border-radius: 8px;
 	display: grid;
@@ -146,8 +133,8 @@
 	opacity: 1;
 }
 :is(main,section)[class^=chatContent] .typing-2J1mQU {
-	padding-left: 28px;
-	padding-bottom: 8px;
+	padding-left: 20px;
+	padding-bottom: 4px;
 	font-weight: 1000
 }
 main[class^=chatContent] [class^=attachedBars] {
@@ -187,7 +174,7 @@ main[class^=chatContent] [class^=attachedBars] {
 }
 :root :is(main,section)[class^=chatContent] .typing-2J1mQU {
 	right: unset;
-	left: 0px
+	left: 10px
 }
 :root [class^=jumpToPresentBar] {
 	left: unset;
