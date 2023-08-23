@@ -538,7 +538,14 @@ main[class^=chatContent] [class^=attachedBars] {
 	right: 0;
 	border-top-right-radius: unset;
 	border-top-left-radius: unset
-} 
+}
+.form-3gdLxP:has(.attachWrapper-3slhXI) .sansAttachButton-1ERHue {
+	padding-left: 32px;
+}
+.form-3gdLxP:not(:has(.attachWrapper-3slhXI)) .sansAttachButton-1ERHue,
+.form-3gdLxP .innerDisabled-2dbG11.sansAttachButton-1ERHue {
+	padding-left: 0 !important;
+}
 
 .wrapper-3kah-n .childWrapper-1j_1ub {
 	background-color: var(--background-modifier-accent);
