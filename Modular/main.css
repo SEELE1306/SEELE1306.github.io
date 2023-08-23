@@ -421,18 +421,6 @@ body:has(.vc-spotify-pause) #vc-spotify-song-title {
 	right: 4px;
 	bottom: 0;
 }
-.form-3gdLxP .textArea-2CLwUE>div::-webkit-scrollbar {
-	width: 6px;
-}
-.form-3gdLxP .textArea-2CLwUE>div::-webkit-scrollbar-track {
-	background: var(--background-modifier-accent);
-	border-radius: var(--modular-border-radius) !important;
-}
-.form-3gdLxP .textArea-2CLwUE>div::-webkit-scrollbar-thumb {
-	height: 30px;
-	background: hsla(var(--modular-accent-color));
-	border-radius: var(--modular-border-radius) !important;
-}
 .characterCount-8yNPfb {
 	bottom: 120px
 }
