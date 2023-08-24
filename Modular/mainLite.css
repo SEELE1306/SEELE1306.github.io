@@ -3,16 +3,10 @@
 :root, .theme-dark, .theme-light {
 	--font-main: "Segoe UI Variable Static Display" ;
 	--font-code: Jetbrains Mono Regular;
-
-	--sidebar-orientation: column-reverse;
-	--guild-orientation: row;
-	--client-orientation: row;
-	--memberlist-orientation: row-reverse;
-	--friendlist-orientation: row;
-
 	--scrollbar-thin-thumb: none;
 	--scrollbar-thin-track: none;
-	--profile-role-pill-background-color: none;
+	--scrollbar-auto-thumb: none;
+	--scrollbar-auto-track: none;
 	--font-primary: var(--font-main), var(--font-fallback);
 	--font-display: var(--font-main), var(--font-fallback);
 	--font-fallback: "gg sans";
@@ -242,14 +236,14 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 	padding: 0.5em;
 }
 .attachWrapper-3slhXI {
-	/*order: 3;*/
+	/*order: 3;*/  
 	position: relative;
 	display: flex;
 	align-items: center;
 	background: var(--bg-overlay-4,var(--background-modifier-accent));
 	border-radius: 8px;
 	width: 36px;
-	max-height: 30px;
+	height: 30px;
 }
 .slateTextArea-27tjG0 {
 	padding-left: 10px;
@@ -312,15 +306,22 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 	content: url("https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=48&name=shiggy%7E1&quality=lossless");
 	padding: 0 4px;
 }
+.contents-2MsGLg .inner-NQg18Y {
+    gap: 8px;
+}
 .inner-NQg18Y.sansAttachButton-1ERHue {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-columns: auto;
     gap: 4px;
 }
-.textArea-2CLwUE.textAreaSlate-9-y-k2.slateContainer-3x9zil {
+.textArea-2CLwUE {
     grid-row: 1/3;
     grid-column: 1;
+}
+.textArea-2CLwUE>div {
+	background: var(--bg-overlay-4,var(--background-modifier-accent));
+	border-radius: 8px;
 }
 .separator-3ng7S5 {
 	grid-row: 1/3;
@@ -416,7 +417,7 @@ main[class^=chatContent] [class^=attachedBars] {
 	background-color: var(--background-modifier-selected)
 }
 
-
+/* IMPORTANT PEOPLE TAGS */
 span[data-tag="owner"], span[data-tag="admin"], span[data-tag="staff"], span[data-tag="mod"], span[data-tag="vc mod"], .botTagRegular-kpctgU {
 	color: var(--background-primary);
 }
@@ -439,6 +440,7 @@ span[data-tag="mod"], span[data-tag="vc mod"], .botTagRegular-kpctgU {
 	background-color: #e7b85f;
 }
 
+/* HOVER AND SELECTED ELEMENTS */
 :is(.containerDefault-YUSmu3, .wrapper-NhbLHG):hover .link-1_kTxV, 
 :is(.content-1Tgc42, .layout-1qmrhw, interactive-26HRN_, .colorDefault-2_rLdz, .clickable-2V8YKY[aria-disabled=false]>.base-2v-uc0, .navButton-1XuvI-, .option-ayUoaq):hover {
 	background: var(--bg-overlay-5,var(--background-modifier-hover));
@@ -649,7 +651,7 @@ svg[class*=addButtonIcon-] {
 	height: calc(100vh - calc(12px * 4));
 	border-radius: calc(4px * 4);
 	box-shadow: 8px 8px 0 0 var(--bg-overlay-2,var(--background-tertiary)), 0 0 2px 2px var(--bg-overlay-2,var(--background-tertiary));
-	flex-direction: var(--guild-orientation)
+	flex-direction: row
 }
 .wrapper-1_HaEi {
 	background: var(--bg-overlay-3,var(--background-primary));
@@ -832,7 +834,6 @@ svg[class*=addButtonIcon-] {
 }
 .markup-eYLPri.messageContent-2t3eCI a {
 	background: var(--bg-overlay-4,var(--background-modifier-accent));
-
 	color: var(--text-link);
 	font-weight: 600;
 	padding: 0 0.5em;
@@ -1031,7 +1032,7 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
   justify-content: center;
 }
 .userPopoutInner-nv9Y92 .markup-eYLPri a, .userInfoText-2MFCmH.markup-eYLPri a, .timestamp-6-ptG3 {
-	background: var(--bg-overlay-4,var(--background-modifier-accent));
+	background: var(--background-modifier-accent);
 	color: var(--text-link);
 	font-weight: 600;
 	padding: 0 0.5em;
@@ -1171,11 +1172,11 @@ div[class*=nameAndDecorators-] {
 }
 .sidebar-1tnWFu {
 	display: flex;
-	flex-direction: var(--sidebar-orientation);
+	flex-direction: column-reverse;
 	max-width: 240px
 }
 .content-1SgpWY {
-	flex-direction: var(--client-orientation)
+	flex-direction: row
 }
 .pageBody-23bo4p {
 	padding: 0.5em;
@@ -1208,13 +1209,13 @@ div[class*=nameAndDecorators-] {
 .container-3XgAHv {
 	border-radius: 8px;
 	/*background: color-mix(in srgb, var(--background-primary) 50%, transparent) !important;*/
-
+	background: var(--bg-overlay-3, var(--background-primary));
 	padding: 0.5em;
 	margin: 0.25em
 }
 .container-3YcgdM {
 	/*background: color-mix(in srgb, var(--background-primary) 50%, transparent) !important;*/
-
+	background: var(--bg-overlay-3, var(--background-primary));
 	border-radius: 8px;
 	margin: 0.25em
 }
@@ -1310,7 +1311,6 @@ div[class*=nameAndDecorators-] {
 	margin: 0 -0.375em 0 0 !important;
 	border-radius: 8px;
 	/*background: color-mix(in srgb, var(--background-primary) 50%, transparent) !important;*/
-
 }
 .userProfileOuterUnthemed-11rPfA .userPanelInner-3KPel3 {
 	background: var(--bg-overlay-3,var(--background-primary));
@@ -1406,12 +1406,11 @@ button[class*=returnButton-]:hover {
 .bio-3IBPZG, .username-YfeGz8 {
 	text-align: center
 }
-
 [class*=container-]>[class*=wrapper-][class*=userSelectNone-] {
 	padding: 1em;
 	margin: 0.5em 0 0.5em 0;
 	border-radius: 8px;
-	background: var(--bg-overlay-2,var(--background-tertiary)) !important
+	background: var(--bg-overlay-3,var(--background-modifier-accent))
 }
 div[class|="message"] div[class|="markup"] ol {
 	margin-left: unset;
@@ -1421,8 +1420,6 @@ div[class|="message"] div[class|="markup"] ol {
 	padding: 0.25em;
 	margin: 0.25em;
 	border-radius: 8px;
-	/*background: color-mix(in srgb, var(--background-primary) 50%, transparent) !important;*/
-
 }
 .buttonsContainer-Nmgy7x>div {
 	border-radius: 8px;
@@ -1434,8 +1431,6 @@ div[class|="message"] div[class|="markup"] ol {
 .container-2o3qEW>aside>div, .members-3WRCEx {
 	margin: 0.25em 0.25em 0.25em 0.25em;
 	border-radius: 8px;
-	/*background: color-mix(in srgb, var(--background-primary) 50%, transparent) !important;*/
-
 }
 .privateChannels-oVe7HL {
 	border-radius: 8px;
@@ -1806,10 +1801,10 @@ h3.membersGroup-2eiWxl > span > span[style] {
  	}
 }
 .content-1jQy2l {
-	flex-direction: var(--memberlist-orientation);
+	flex-direction: row-reverse;
 }
 .tabBody-2dgbAs {
-	flex-direction: var(--friendlist-orientation)
+	flex-direction: row
 }
 .linkButtonIcon-7rsZcu {
 	color: var(--interactive-active)
