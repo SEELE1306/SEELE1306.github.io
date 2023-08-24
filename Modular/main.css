@@ -399,9 +399,6 @@ body:has(.vc-spotify-pause) #vc-spotify-song-title {
 .slateTextArea-27tjG0 {
 	padding-left: 10px;
 }
-.form-3gdLxP .sansAttachButton-1ERHue {
-	padding-left: 0;
-}
 .form-3gdLxP .innerDisabled-2dbG11.sansAttachButton-1ERHue {
 	padding-left: 16px;
 }
@@ -409,8 +406,32 @@ body:has(.vc-spotify-pause) #vc-spotify-song-title {
 	height: fit-content;
 	min-height: 64px;
 }
-.form-3gdLxP:not(:has(.attachButton-1ijpt9)) .textArea-2CLwUE>div {
-	left: 36px;
+.form-3gdLxP:has(.attachWrapper-3slhXI) .sansAttachButton-1ERHue {
+	padding-left: 32px
+}
+.form-3gdLxP:has(.attachButton-1ijpt9) .sansAttachButton-1ERHue {
+	padding-left: 36px
+}
+.form-3gdLxP:not(:has(.attachWrapper-3slhXI, .attachButton-1ijpt9)) .sansAttachButton-1ERHue,
+.form-3gdLxP .innerDisabled-2dbG11.sansAttachButton-1ERHue {
+	padding-left: 0 !important
+}
+.attachButton-1ijpt9:not(:has(.icon-2P5yLI)) {
+	margin-left: 0;
+	padding: 0.5em
+}
+.icon-2P5yLI {
+	padding: 0;
+	margin: 0 0 0 1em;
+	border-radius: 8px;
+	height: 30px;
+	width: 36px;
+	background: var(--background-modifier-accent);
+	display: flex;
+	justify-content: center;
+}
+.icon-1kx1ir {
+	padding-top: 3px;
 }
 .form-3gdLxP .textArea-2CLwUE>div {
 	position: absolute;
