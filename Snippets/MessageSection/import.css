@@ -183,11 +183,8 @@ main[class^=chatContent] [class^=attachedBars] {
 	border-top-right-radius: unset;
 	border-top-left-radius: unset
 }
-.form-3gdLxP:has(.attachWrapper-3slhXI) .sansAttachButton-1ERHue {
+.form-3gdLxP:has(.attachWrapper-3slhXI, .attachButton-1ijpt9) .sansAttachButton-1ERHue {
 	padding-left: 32px
-}
-.form-3gdLxP:has(.attachButton-1ijpt9) .sansAttachButton-1ERHue {
-	padding-left: 36px
 }
 .form-3gdLxP:not(:has(.attachWrapper-3slhXI, .attachButton-1ijpt9)) .sansAttachButton-1ERHue,
 .form-3gdLxP .innerDisabled-2dbG11.sansAttachButton-1ERHue {
