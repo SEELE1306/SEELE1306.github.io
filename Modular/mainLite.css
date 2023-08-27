@@ -1,7 +1,10 @@
 @import url(https://dablulite.github.io/css-snippets/NoLightInDark/import.css);
+@import url(https://raw.githubusercontent.com/DiscordStyles/RadialStatus/deploy/RadialStatus.theme.css);
 
 :root, .theme-dark, .theme-light {
-	--font-main: "Segoe UI Variable Static Display" ;
+	--rs-avatar-shape: 50%;
+	--rs-phone-visible: none;
+	--font-main: "Liberation Sans Regular" ;
 	--font-code: Jetbrains Mono Regular;
 	--scrollbar-thin-thumb: none;
 	--scrollbar-thin-track: none;
@@ -31,9 +34,9 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 :is(.message-24k8JL .cozy-VmLDNB, .container-3XgAHv .message-2CShn3, .messagesPopoutWrap-3zryHW) .timestamp-p1Df1m, .cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH,
 .replying-eZ7p5z::before, .mentioned-Tre-dv::before, .children-3xh0VB:after, #app-mount .form-3gdLxP:before, .section-28YDOf:has(.roles-3vQPxb:empty),
 .lastSection-q3HCfo, .content-1jQy2l::before, .chat-25x62K::before, [class*=userPanelInner-]::before, .iconContainerLeft-1Kr6X4, .bar-wDIGjg, .attachment-16cAbS, .avatar-l9Txm5,
-.blob-1uHjdp, .tabBody-2dgbAs::before, .wrapper-1NNaWG:after, .accountProfilePopoutWrapper-3GskID .section-28YDOf,
+.blob-1uHjdp, .tabBody-2dgbAs::before, .wrapper-1NNaWG:after, .accountProfilePopoutWrapper-3GskID .scroller-15bIdk.thin-RnSY0a.scrollerBase-1Pkza4, .accountProfilePopoutWrapper-3GskID .copiableField-2DYmf7>div:nth-child(2),
 .option-ayUoaq::before, .option-ayUoaq::after, .wordmarkWindows-2dq6rw path:not(:first-child), .homeIcon-r0w4ny,
-#user-settings-cog > .scroller-nxCRu_ > .item-5ApiZt, .userPopoutInner-nv9Y92:has(#account) > *:not(:has(#account)), .userPopoutOverlayBackground-3A0Pcz:has(#account) > *:not(#account), .container-TT--xs ::-webkit-scrollbar,
+#user-settings-cog > .scroller-nxCRu_ > .item-5ApiZt, .container-TT--xs ::-webkit-scrollbar,
 .emojiItemDisabled-3VVnwp, .automodMessage-265YwJ:before, .content-2V2neN .iconContainer-21RCa3, .separator-3ng7S5::before, .uploadInput-YH_iku {
 	display: none !important
 }
@@ -376,12 +379,12 @@ main[class^=chatContent] [class^=attachedBars] {
 }
 .newMessagesBar-1hF-9G {
 	background: transparent;
-	margin: 0 5em 0 0.25em;
+	margin: 0 5em 0 0;
 	top: 96.67%;
 	box-shadow: none
 }
 .barButtonAlt-TQoCdZ {
-	margin-right: 45%
+	margin-right: 50%
 }
 :root :is(main,section)[class^=chatContent] .typing-2J1mQU {
 	right: unset;
@@ -395,11 +398,10 @@ main[class^=chatContent] [class^=attachedBars] {
 }
 
 .wrapper-3kah-n .childWrapper-1j_1ub {
-	background-color: var(--background-modifier-accent);
-	color: --info-positive-foreground
+	background: var(--bg-overlay-4,var(--background-modifier-selected))
 }
 .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub,.wrapper-3kah-n:hover .childWrapper-1j_1ub {
-	background-color: var(--bg-overlay-4,var(--background-modifier-selected))
+	background: var(--bg-overlay-5,var(--background-modifier-selected))
 }
 
 /* IMPORTANT PEOPLE TAGS */
@@ -437,6 +439,9 @@ span[data-tag="mod"], span[data-tag="vc mod"], .botTagRegular-kpctgU {
 }
 :has(.content-1Tgc42:hover) .wrapper-NhbLHG.modeConnected-NrO4cP .link-1_kTxV {
 	background: transparent !important
+}
+.colorDefault-2_rLdz .check-3-73a4, .colorDefault-2_rLdz.focused-3LIdPu {
+	color: var(--interactive-hover);
 }
 .icon-2W8DHg {
 	width: 15px;
@@ -565,7 +570,8 @@ svg[class*=arrow-][class*=icon-] {
 	width: 20px;
 	height: 20px;
 	left: 5%;
-	color: var(--interactive-muted)
+	z-index: 10;
+	color: var(--interactive-normal)
 }
 svg[class*=addButtonIcon-] {
 	width: 15px;
@@ -637,8 +643,9 @@ svg[class*=addButtonIcon-] {
 	box-shadow: 8px 8px 0 0 var(--background-floating), 0 0 2px 2px var(--background-floating);
 	flex-direction: row
 }
-.wrapper-1_HaEi {
-	background: var(--bg-overlay-3,var(--background-primary))
+.wrapper-1_HaEi, .custom-theme-background .scroller-3X7KbA {
+	background: var(--bg-overlay-3,var(--background-tertiary));
+	margin: 0 0.25em 0 0;
 }
 .form-3gdLxP {
 	padding: 0px
@@ -699,6 +706,9 @@ svg[class*=addButtonIcon-] {
 	margin-left: 0px;
 	margin-right: 0px
 }
+.contents-2MsGLg .vc-platform-indicator>svg {
+	display: none;
+}
 .vc-platform-indicator>svg {
 	fill: hsl(var(--primary-200-hsl)/1) !important
 }
@@ -751,7 +761,7 @@ svg[class*=addButtonIcon-] {
 }
 .shiki-btn:last-child {
 	background: var(--blue-400) !important;
-	color: var(--text-normal) !important
+	color: white !important
 }
 .connectedAccountContainer-3aLMHJ {
 	border-width: 2px;
@@ -805,10 +815,22 @@ svg[class*=addButtonIcon-] {
 	max-width: fit-content
 }
 .contents-2MsGLg .avatar-2e8lTP {
-	margin-top: -6px
+	scale: 0.85;
+	margin-top: -0.625em;
+	border: 4px solid transparent;
+	box-shadow: 0 0 0 2px #747f8d
 }
-.contents-2MsGLg [class*=avatarDecoration-] {
-	margin-top: -6px
+.contents-2MsGLg:has(svg[fill="var(--green-360"]) .avatar-2e8lTP {
+	box-shadow: 0 0 0 2.5px #43b581
+}
+.contents-2MsGLg:has(svg[fill="var(--yellow-300"]) .avatar-2e8lTP {
+	box-shadow: 0 0 0 2.5px #faa61a
+}
+.contents-2MsGLg:has(svg[fill="var(--red-400"]) .avatar-2e8lTP {
+	box-shadow: 0 0 0 2.5px #f04747
+}
+.contents-2MsGLg:has(span[class*=botTag-][class*=botTagRegular-]) .avatar-2e8lTP {
+	box-shadow: 0 0 0 2.5px #5865f2
 }
 .markup-eYLPri.messageContent-2t3eCI a {
 	background: var(--bg-overlay-4,var(--background-modifier-accent));
@@ -816,6 +838,12 @@ svg[class*=addButtonIcon-] {
 	font-weight: 600;
 	padding: 0 0.5em;
 	border-radius: 8px
+}
+[class*=messageContent] strong {
+  color: salmon;
+}
+[class*=messageContent] :is(h1,h2,h3) {
+  color: salmon;
 }
 :is(.replying-eZ7p5z, .mentioned-Tre-dv, .automodMessage-265YwJ, .highlighted-1TaRLI, .message-2CShn3),
 :is(.replying-eZ7p5z, .mentioned-Tre-dv, .automodMessage-265YwJ, .highlighted-1TaRLI, .message-2CShn3):hover {
@@ -1131,7 +1159,7 @@ div[class*=nameAndDecorators-] {
 	background: transparent
 }
 .panels-3wFtMD {
-	background: var(--bg-overlay-3,var(--background-secondary));
+	background: var(--bg-overlay-2,var(--background-secondary));
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
@@ -1144,7 +1172,8 @@ div[class*=nameAndDecorators-] {
 	box-sizing: border-box;
 	border-radius: 8px;
 	overflow: hidden;
-	margin: 0.25em
+	margin: 0.25em;
+	background: var(--bg-overlay-2,var(--background-secondary));
 }
 .sidebar-1tnWFu {
 	display: flex;
@@ -1163,7 +1192,8 @@ div[class*=nameAndDecorators-] {
 	overflow: hidden;
 	padding: 0.5em;
 	margin: 0.25em;
-	border-radius: 8px
+	border-radius: 8px;
+	background: var(--bg-overlay-2,var(--background-secondary));
 }
 .container-ZMc96U {
 	display: flex;
@@ -1171,7 +1201,8 @@ div[class*=nameAndDecorators-] {
 	max-width: calc(100% - 8px);
 	box-shadow: none;
 	margin: 0.25em 0 0.125em 0.25em;
-	padding: 0.5em
+	padding: 0.5em;
+	background: var(--bg-overlay-2,var(--background-secondary)) !important;
 }
 .resizeHandle-PBRzPC {
 	height: 99%;
@@ -1406,7 +1437,8 @@ div[class|="message"] div[class|="markup"] ol {
 }
 .container-2o3qEW>aside>div, .members-3WRCEx {
 	margin: 0.25em 0.25em 0.25em 0.25em;
-	border-radius: 8px
+	border-radius: 8px;
+	background: var(--bg-overlay-2,var(--background-secondary));
 }
 .privateChannels-oVe7HL {
 	border-radius: 8px;
@@ -1798,19 +1830,6 @@ h3.membersGroup-2eiWxl > span > span[style] {
 .modalContainer-sCcBXL, .root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .header-1ffhsl, .container-1Gt1iQ, .root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) {
 	background: var(--background-primary)
 }
-.userPopoutOverlayBackground-3A0Pcz:has(#account) {
- 	margin: 0
-}
-.accountProfilePopoutWrapper-3GskID {
-	left: 0
-}
-.accountProfilePopoutWrapper-3GskID [class*=userProfileOuter-] [class*=userProfileInner-] {
-	width: 60%;
-	border-radius: 8px
-}
-.accountProfilePopoutWrapper-3GskID [class*=userProfileOuter-] {
-	margin-right: -136px
-}
 .userPopoutOuter-1OHwPL.userProfileOuter-2tQwNf.userProfileOuterUnthemed-11rPfA.profileColors-2AgAV4.theme-dark,
 .accountProfilePopoutWrapper-3GskID .userProfileOuterThemed-2BgJCM.userPopoutOuter-1OHwPL {
 	background: transparent
@@ -1932,7 +1951,8 @@ h3.membersGroup-2eiWxl > span > span[style] {
  	transform: translateX(-50%) !important
 }
 .numberBadge-37OJ3S {
-	border-radius: calc(8px/2)
+	border-radius: calc(8px/2);
+	color: var(--white-500) !important;
 }
 .wrapper-2PSQCG:has(.wrapper-3kah-n) .numberBadge-37OJ3S {
 	position: relative;
@@ -1955,7 +1975,7 @@ h3.membersGroup-2eiWxl > span > span[style] {
  	align-items: center;
 	width: 3px;
 	margin-left: 4px;
-	background: var(--bg-overlay-6,var(--background-modifier-accent))
+	background: var(--background-modifier-accent)
 }
 .wrapper-z5ab_q:last-child {
 	width: 3px;
@@ -2118,4 +2138,21 @@ path[d="M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5
 .side-1lrxIh .themed-qqoYp3.item-2GWPIy:hover:not(.disabled-2G98Nl), .topPill-2vcLsa .themed-qqoYp3.item-2GWPIy:hover:not(.disabled-2G98Nl) {
 	background: var(--bg-overlay-5, var(--background-modifier-hover))
 }
-
+:root { 
+	--username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/7.gif); 
+				/*To change the background, please edit the number. (1-9)*/
+}
+/* chat field */           
+[class*=contents]:has(img[src*="518795791318384647"]) [class*=username],
+/* memberlist */
+[role=listitem] :has(img[src*="518795791318384647"]) [class*=name-],
+/* settings profile card */
+[class*=profileCard] span,
+/* reviewdb */
+.vc-rdb-view :has(img[src*="518795791318384647"]) [class*=username],
+/* replies */
+[class*=repliedMessage]:has(img[src*="518795791318384647"]) [class*=username]
+{
+    background-image: var(--username-bg) !important;
+    text-shadow: 1px 1px 4px var(--background-floating);
+}
