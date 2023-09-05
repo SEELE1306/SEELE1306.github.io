@@ -11,6 +11,7 @@
 	--modular-hue: 223;
 	--modular-saturation: calc(var(--saturation-factor, 1)* 7%); /* Change the percentage to something else */
 	--modular-lightness: 17%; /* Best between 0-30% for visibility */
+	--modular-accent-color: #6075d3;
 
  	 /* Shadow */
 	--modular-shadow-distance: 8px; /* Default is 8px */
@@ -23,28 +24,6 @@
 
 	/* Font change */
 	--font-main: "" ;
-
-	/* Chat bubbles */
-	--test-color: hsl(234, 71%, 61%);
-	--chat-bubble-default: 223deg 7% 57%;
-	--chat-bubble-replying:	162deg 71% 61%;
-	--chat-bubble-mentioned: 39deg 81% 54%;
-	--chat-bubble-automod: 9deg 100% 50%;
-	--modular-accent-color: 88deg 70% 40%;
-	--quote-text-color: 105deg 48% 72%;
-
-	/* Status colors */
-	/* Only solid colors, no transparency! */
-	--online-status-color: hsl(105, 48%, 72%);
-	--idle-status-color: hsl(40, 70%, 78%);
-	--dnd-status-color: hsl(351, 74%, 73%);
-
-	/* Important people colors */
-	/* Only solid (preferably bright) colors, no transparency! */
-	--owner-tag-color: rgb(238, 174, 185);
-	--admin-tag-color: rgb(106, 228, 171);
-	--staff-tag-color: rgb(190, 190, 236);
-	--mod-tag-color: rgb(231, 183, 93);
 
 	/* User panel section border */
 	--section-thickness: 2px; /* Default is 2px; 0px for no border */

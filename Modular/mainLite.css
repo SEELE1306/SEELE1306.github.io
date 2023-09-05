@@ -13,7 +13,7 @@
 	--font-primary: var(--font-main), var(--font-fallback);
 	--font-display: var(--font-main), var(--font-fallback);
 	--font-fallback: "gg sans";
-	--text-link: var(--text-normal)
+	--text-link: var(--text-normal);
 }
 
 /* All single border-radius elements */
@@ -25,7 +25,7 @@ img[class*=assetsLargeImageSpotify-], .buttonsContainer-3iOFIV > button, .lookFi
 [class*=content-]>button[class*=button-], .disabledButtonWrapper-1m0hYZ>button, .buttonsWrapper-2ARRp1>button, .side-1lrxIh .item-2GWPIy,
 :is([class*="userProfile"], [class*="userPopout"]) [class*="bannerPremium"], .popoutContainer-2wbmiM, .imageWrapper-oMkQl4
 {
-	border-radius: 8px !important
+	border-radius: 4px !important
 }
 
 /* All display none elements */
@@ -94,7 +94,7 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 	padding-bottom: 24px !important
 }
 #vc-spotify-player #vc-spotify-album-image {
-	border-radius: 8px;
+	border-radius: 4px;
 	margin-top: -6px
 }
 .wrapper-1gVUIN {
@@ -112,7 +112,7 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 }
 [class*=callContainer-] {
 	background: var(--bg-overlay-3,var(--background-primary));
-	border-radius: 8px;
+	border-radius: 4px;
 	padding: 0.5em;
 	margin: 0.25em
 }
@@ -121,7 +121,7 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 	background-color: var(--bg-overlay-5,var(--background-modifier-hover))
 }
 [class*=voiceChannelsButton-] {
-	border-radius: 8px;
+	border-radius: 4px;
 	border: unset;
 	margin-left: 8px;
 	margin-right: 0;
@@ -167,7 +167,7 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 [class*=pictureInPictureVideo-] {
 	width: 480px;
 	height: 270px;
-	border-radius: 8px
+	border-radius: 4px
 }
 
 /* QUOTES */
@@ -198,17 +198,14 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 	padding-top: 4px;
 	margin: -16px 0 16px;
 	background: transparent;
-	border-radius: 8px
+	border-radius: 4px
 }
 .textArea-2CLwUE {
 	order: 1
 }
-.channelTextArea-1FufC0 .divider-2rZFJK {
-	border-top: none
-}
 .channelAttachmentArea-HwpkuQ {
 	background: var(--bg-overlay-4,var(--background-modifier-accent));
-	border-radius: 8px;
+	border-radius: 4px;
 	margin: 0 0 0.5em 2.125em;
 	padding: 0.5em;
 	gap: 8px
@@ -225,7 +222,7 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 }
 .autocomplete-3jLKbj {
 	margin: 0.25em 0.625em -0.25em 2.125em;
-	border-radius: 8px
+	border-radius: 4px
 }
 .form-3gdLxP:has(.attachWrapper-3slhXI, .attachButton-1ijpt9) .sansAttachButton-1ERHue {
 	padding-left: 32px
@@ -241,7 +238,7 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 .icon-2P5yLI {
 	padding: 0;
 	margin: 0 0 0 1em;
-	border-radius: 8px;
+	border-radius: 4px;
 	height: 30px;
 	width: 36px;
 	background: var(--bg-overlay-4,var(--background-modifier-accent));
@@ -256,7 +253,7 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 	display: flex;
 	align-items: center;
 	background: var(--bg-overlay-4,var(--background-modifier-accent));
-	border-radius: 8px;
+	border-radius: 4px;
 	width: 36px;
 	height: 30px
 }
@@ -276,21 +273,21 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 .form-3gdLxP .textArea-2CLwUE>div {
 	position: absolute;
 	background: var(--bg-overlay-4,var(--background-modifier-accent));
-	border-radius: 8px;
+	border-radius: 4px;
 	left: 0;
 	right: 4px;
 	bottom: 0
 }
 .form-3gdLxP .buttons-uaqb-5 {
 	background: transparent;
-	border-radius: 8px;
+	border-radius: 4px;
 	display: contents;
 }
 .form-3gdLxP .buttons-uaqb-5>:is(button,div) {
 	background: var(--bg-overlay-4,var(--background-modifier-accent));
 	max-height: 30px;
 	width: 36px;
-	border-radius: 8px;
+	border-radius: 4px;
 	display: flex;
 	justify-content: center
 }
@@ -305,7 +302,7 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
  	display: grid;
  	grid-template-columns: 1fr;
  	grid-auto-columns: auto;
- 	gap: 4px
+ 	gap: 2px
 }
 .form-3gdLxP .textArea-2CLwUE.textAreaSlate-9-y-k2.slateContainer-3x9zil {
  	grid-row: 1/3;
@@ -313,7 +310,7 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 }
 .form-3gdLxP .textArea-2CLwUE>div {
 	background: var(--bg-overlay-4,var(--background-modifier-accent));
-	border-radius: 8px
+	border-radius: 4px
 }
 .separator-3ng7S5 {
 	grid-row: 1/3;
@@ -337,7 +334,7 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 }
 .channelTextArea-1VQBuV>[class*=channelTextAreaInner-][class*=scrollableContainer-]{
 	background: var(--bg-overlay-3,var(--background-primary));
-	border-radius: 8px;
+	border-radius: 4px;
 	margin-bottom: 1em
 }
 .button-2fCJ0o:hover {
@@ -355,12 +352,9 @@ main[class^=chatContent] [class^=attachedBars] {
 	min-height: unset !important;
 	position: relative;
 	padding-bottom: 4px;
-	margin: 0px 8px 20px 36px !important;
-	border-radius: 8px;
+	margin: 0px 8px 20px 30px !important;
+	border-radius: 4px;
 	z-index: 0
-}
-.replyBar-1oi75v {
-	background-color: transparent
 }
 [class^=jumpToPresentBar] {
 	margin: 0 26px -16px 0;
@@ -372,7 +366,7 @@ main[class^=chatContent] [class^=attachedBars] {
 	background: var(--bg-overlay-4,var(--background-modifier-accent));
 	border-radius: calc(8px/1.5);
 	padding-right: 8px;
-	margin: 0px 8px 16px 0
+	margin: 0px 8px 8px 0
 }
 .barButtonBase-Sk2mdB:hover {
 	background: var(--bg-overlay-5,var(--background-modifier-hover))
@@ -429,8 +423,9 @@ span[data-tag="mod"], span[data-tag="vc mod"], .botTagRegular-kpctgU {
 
 /* HOVER AND SELECTED ELEMENTS */
 :is(.containerDefault-YUSmu3, .wrapper-NhbLHG):hover .link-1_kTxV,
-:is(.content-1Tgc42, .layout-1qmrhw, interactive-26HRN_, .colorDefault-2_rLdz, .clickable-2V8YKY[aria-disabled=false]>.base-2v-uc0, .navButton-1XuvI-, .option-ayUoaq):hover {
-	background: var(--bg-overlay-4,var(--background-modifier-hover))
+:is(.content-1Tgc42, .layout-1qmrhw, interactive-26HRN_, .colorDefault-2_rLdz, .clickable-2V8YKY[aria-disabled=false]>.base-2v-uc0, .navButton-1XuvI-, .option-ayUoaq, .row-1qtctT):hover {
+	background: var(--bg-overlay-4,var(--background-modifier-hover));
+	border-radius: 4px;
 }
 :is(.containerDefault-YUSmu3.selected-2TbFuo, .wrapper-NhbLHG.modeSelected-3DmyhH, .wrapper-NhbLHG.modeConnected-NrO4cP) .link-1_kTxV,
 :is(.containerDefault-YUSmu3.selected-2TbFuo,.modeUnread-3Cxepe) .icon-2W8DHg,
@@ -448,7 +443,7 @@ span[data-tag="mod"], span[data-tag="vc mod"], .botTagRegular-kpctgU {
 	height: 15px;
 	margin: 2px 2px 0 0;
 	color: var(--interactive-normal);
-	border-radius: 8px;	
+	border-radius: 4px;	
 	padding: 3px
 }
 .containerDefault-YUSmu3.selected-2TbFuo .icon-2W8DHg,.modeUnread-3Cxepe .icon-2W8DHg {
@@ -487,11 +482,11 @@ span[data-tag="mod"], span[data-tag="vc mod"], .botTagRegular-kpctgU {
 .searchBar-jGtisZ {
 	width: 100px;
 	background: var(--bg-overlay-4,var(--background-modifier-accent));
-	border-radius: 8px;
+	border-radius: 4px;
 	padding: 0 0 0 5px
 }
 .container-2McqkF {
-	border-radius: 8px;
+	border-radius: 4px;
 	background: none;
 	position: relative;
 	right: 8.75em;
@@ -503,7 +498,7 @@ ul.resultsGroup-cfY57t {
 }
 [class*=searchResultsWrap] {
 	background: var(--bg-overlay-3,var(--background-primary));
-	border-radius: 8px;
+	border-radius: 4px;
 	border-bottom: none !important;
 	margin: 0.25em
 }
@@ -515,7 +510,7 @@ ul.resultsGroup-cfY57t {
 	justify-content: center;
 	background: var(--bg-overlay-4, var(--background-modifier-accent));
 	padding: 0.25em;
-	border-radius: 8px
+	border-radius: 4px
 }
 .channelNameContainer-4pFmC- >span {
 	font-weight: 800
@@ -525,7 +520,7 @@ ul.resultsGroup-cfY57t {
 	border-radius: unset
 }
 .searchHeaderTabList-3CZMQB.side-1lrxIh .item-2GWPIy {
-	border-radius: 8px;
+	border-radius: 4px;
 	background: var(--bg-overlay-4,var(--background-modifier-accent))
 
 }
@@ -539,7 +534,7 @@ ul.resultsGroup-cfY57t {
 [class*=searchResult-] {
 	background: var(--bg-overlay-4,var(--background-modifier-accent));
 
-	border-radius: 8px;
+	border-radius: 4px;
 	border-bottom: none !important
 }
 .searchResult-O9NDji:hover {
@@ -551,7 +546,7 @@ button[class*=emojiButtonNormal]>div>div {
 .name-3BUDLf.container-q97qHp .overflow-1wOqNV {
 	color: var(--text-normal);
 	background: var(--bg-overlay-4,var(--background-modifier-accent));
-	border-radius: 8px;
+	border-radius: 4px;
 	padding: 0.25em;
 	box-sizing: border-box;
 	margin-bottom: 10px;
@@ -632,15 +627,15 @@ svg[class*=addButtonIcon-] {
 }
 .base-2jDfDU {
 	margin: 6px 6px 6px 0;
-	border-radius: 8px
+	border-radius: 4px
 }
 .container-1eFtFS {
 	background: var(--bg-overlay-4,var(--background-secondary));
 	margin: calc(12px * 2);
 	width: calc(100vw - calc(12px * 4));
 	height: calc(100vh - calc(12px * 4));
-	border-radius: calc(4px * 4);
-	box-shadow: 8px 8px 0 0 var(--background-floating), 0 0 2px 2px var(--background-floating);
+	border-radius: calc(0px * 4);
+	box-shadow: var(--elevation-high);
 	flex-direction: row
 }
 .wrapper-1_HaEi, .custom-theme-background .scroller-3X7KbA {
@@ -683,7 +678,7 @@ svg[class*=addButtonIcon-] {
 .container-1oeRFJ {
 	margin: 0.25em 0 0 auto;
 	padding: 0;
-	border-radius: 8px;
+	border-radius: 4px;
 	background: transparent
 }
 :is(#message-favorite, #message-unfavorite) [class|=label]::after {
@@ -765,7 +760,7 @@ svg[class*=addButtonIcon-] {
 }
 .connectedAccountContainer-3aLMHJ {
 	border-width: 2px;
-	border-radius: 8px
+	border-radius: 4px
 }
 .connectedAccountContainer-3aLMHJ:has(.connectedAccountOpenIcon-3i81Tz:hover) {
 	background-color: var(--profile-body-divider-color)
@@ -814,30 +809,40 @@ svg[class*=addButtonIcon-] {
 .zalgo-26OfGz:has(.contents-2MsGLg) {
 	max-width: fit-content
 }
+
 .contents-2MsGLg .avatar-2e8lTP {
-	scale: 0.85;
 	margin-top: -0.625em;
+	scale: 0.85;
 	border: 4px solid transparent;
-	box-shadow: 0 0 0 2px #747f8d
+	margin-left: -4px;
+	box-shadow: 0 0 0 2.5px #747f8d;
+	border-radius: 50%;
 }
 .contents-2MsGLg:has(svg[fill="var(--green-360"]) .avatar-2e8lTP {
-	box-shadow: 0 0 0 2.5px #43b581
+  	box-shadow: 0 0 0 2.5px #43b581
 }
 .contents-2MsGLg:has(svg[fill="var(--yellow-300"]) .avatar-2e8lTP {
-	box-shadow: 0 0 0 2.5px #faa61a
+  	box-shadow: 0 0 0 2.5px #faa61a
 }
 .contents-2MsGLg:has(svg[fill="var(--red-400"]) .avatar-2e8lTP {
-	box-shadow: 0 0 0 2.5px #f04747
+  	box-shadow: 0 0 0 2.5px #f04747
 }
-.contents-2MsGLg:has(span[class*=botTag-][class*=botTagRegular-]) .avatar-2e8lTP {
-	box-shadow: 0 0 0 2.5px #5865f2
+.contents-2MsGLg:has(svg[fill="var(--twitch"]) .avatar-2e8lTP {
+  	box-shadow: 0 0 0 2.5px #5d1896
 }
+.contents-2MsGLg:has(span[class*=botTag-][class*=botTagRegular-]:not([data-tag="staff"],[data-tag="owner"],[data-tag="admin"],[data-tag="mod"],[data-tag="vc mod"])) .avatar-2e8lTP {
+  	box-shadow: 0 0 0 2.5px #5865f2
+}
+.contents-2MsGLg:has(span[class*=botTag-][class*=AI-]) .avatar-2e8lTP {
+	box-shadow: 0 0 0 2.5px #ea9dec
+}
+
 .markup-eYLPri.messageContent-2t3eCI a {
 	background: var(--bg-overlay-4,var(--background-modifier-accent));
 	color: var(--text-link);
 	font-weight: 600;
 	padding: 0 0.5em;
-	border-radius: 8px
+	border-radius: 4px
 }
 [class*=messageContent] strong {
   color: salmon;
@@ -860,7 +865,7 @@ svg[class*=addButtonIcon-] {
 .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
 	margin: 0.125em 0;
 	padding: 0.5em;
-	border-radius: 8px;
+	border-radius: 4px;
 	background: var(--bg-overlay-3,var(--background-modifier-accent));
 	max-width: max-content
 }
@@ -873,7 +878,7 @@ svg[class*=addButtonIcon-] {
 .cozyMessage-1DWF9U.replying-eZ7p5z:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
 .replying-eZ7p5z .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
 	background: var(--background-message-highlight);
-	border-radius: 8px;
+	border-radius: 4px;
 	max-width: max-content
 }
 .scrollableContainer-15eg7h {
@@ -888,7 +893,7 @@ svg[class*=addButtonIcon-] {
 .cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
 .mentioned-Tre-dv .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
 	background: var(--background-mentioned);
-	border-radius: 8px
+	border-radius: 4px
 }
 .groupStart-3Mlgv1.cozyMessage-1DWF9U.mentioned-Tre-dv>.contents-2MsGLg:hover,
 .cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
@@ -899,7 +904,7 @@ svg[class*=addButtonIcon-] {
 .cozyMessage-1DWF9U.automodMessage-265YwJ:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
 .automodMessage-265YwJ .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
 	background: var(--background-message-automod);
-	border-radius: 8px
+	border-radius: 4px
 }
 .groupStart-3Mlgv1.cozyMessage-1DWF9U.automodMessage-265YwJ>.contents-2MsGLg:hover,
 .cozyMessage-1DWF9U.automodMessage-265YwJ:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
@@ -916,11 +921,11 @@ svg[class*=addButtonIcon-] {
 	background: transparent
 }
 [class*=submenu-][class*=menu-], .contentWrapper-2f9yME {
-	border-radius: 8px;
+	border-radius: 4px;
 	background: var(--bg-overlay-3,var(--background-primary))
 }
 .wrapper-2vIMkT {
-	border-radius: 8px;
+	border-radius: 4px;
 	top: -5px;
 	left: 10px;
 	background: var(--bg-overlay-2,var(--background-tertiary))
@@ -929,7 +934,7 @@ svg[class*=addButtonIcon-] {
 	background: var(--bg-overlay-5,var(--background-modifier-hover))
 }
 .mention, .wrapper-1ZcZW- {
-	border-radius: 8px;
+	border-radius: 4px;
 	padding: 0 0.25em
 }
 .customStatus-19KW6v .customStatusEmoji-1GD8RK {
@@ -965,7 +970,7 @@ svg[class*=addButtonIcon-] {
 	margin: 0.25em 0 0 0;
 	max-width: 90%;
 	overflow: hidden;
-	border-radius: 8px;
+	border-radius: 4px;
 	background: linear-gradient(45deg, var(--profile-gradient-primary-color), var(--profile-gradient-secondary-color));
 	background-size: 200% 200%
 }
@@ -988,14 +993,14 @@ svg[class*=addButtonIcon-] {
 	padding: 6px 12px
 }
 .section-28YDOf>div:not(.roles-3vQPxb), .container-3g15px, .userInfoText-2MFCmH, .vc-rdb-view {
-	border-radius: 8px;
+	border-radius: 4px;
 	padding: 0.5em
 }
 /* ReviewDB header */
 div[style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;"] {
 	padding: 0.25em 0.75em;
 	margin: 0.5em 0;
-	border-radius: 8px
+	border-radius: 4px
 }
 .scrollerSeparator-6DmwRQ {
 	box-shadow: none
@@ -1016,7 +1021,7 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 	display: none
 }
 .vc-rdb-input {
-	border-radius: 8px;
+	border-radius: 4px;
 	border: none;
 	margin: 0.375em 0
 }
@@ -1042,7 +1047,7 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 	color: var(--text-link);
 	font-weight: 600;
 	padding: 0 0.5em;
-	border-radius: 8px
+	border-radius: 4px
 }
 .userPopoutInner-nv9Y92 .markup-eYLPri a:hover, .userInfoText-2MFCmH.markup-eYLPri a:hover, .timestamp-6-ptG3:hover {
 	background: var(--background-modifier-hover);
@@ -1063,7 +1068,7 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 .userProfileModalInner-3dx9L9 .top-Ktfr_T .item-2GWPIy {
 	border: none;
 	background: color-mix(in srgb, var(--profile-body-background-color) 40%, transparent);
-	border-radius: 8px;
+	border-radius: 4px;
 	padding: 0.125em 0;
 	width: 31%;
 	font-weight: 600;
@@ -1095,7 +1100,7 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 	border-left: none;
 	z-index: 0;
 	width: 640px;
-	border-radius: 8px;
+	border-radius: 4px;
 	background-color: inherit;
 	margin-top: 0.5em
 }
@@ -1163,14 +1168,14 @@ div[class*=nameAndDecorators-] {
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
-	border-radius: 8px;
+	border-radius: 4px;
 	overflow: hidden;
 	margin: 0.25em;
 	position: relative;
 }
 .chatContent-3KubbW {
 	box-sizing: border-box;
-	border-radius: 8px;
+	border-radius: 4px;
 	overflow: hidden;
 	margin: 0.25em;
 	background: var(--bg-overlay-2,var(--background-secondary));
@@ -1186,23 +1191,23 @@ div[class*=nameAndDecorators-] {
 .pageBody-23bo4p {
 	padding: 0.5em;
 	margin: 0.25em;
-	border-radius: 8px
+	border-radius: 4px
 }
 .container-1NXEtd {
 	overflow: hidden;
 	padding: 0.5em;
 	margin: 0.25em;
-	border-radius: 8px;
-	background: var(--bg-overlay-2,var(--background-secondary));
+	border-radius: 4px;
+	background: var(--bg-overlay-2,var(--background-secondary)) !important;
 }
 .container-ZMc96U {
 	display: flex;
-	border-radius: 8px;
+	border-radius: 4px;
 	max-width: calc(100% - 8px);
 	box-shadow: none;
 	margin: 0.25em 0 0.125em 0.25em;
 	padding: 0.5em;
-	background: var(--bg-overlay-2,var(--background-secondary)) !important;
+	background: var(--bg-overlay-2,var(--background-tertiary)) !important;
 }
 .resizeHandle-PBRzPC {
 	height: 99%;
@@ -1210,26 +1215,26 @@ div[class*=nameAndDecorators-] {
 	margin-top: 0.4em
 }
 .container-3XgAHv {
-	border-radius: 8px;
+	border-radius: 4px;
 	background: var(--bg-overlay-3, var(--background-primary));
 	padding: 0.5em;
 	margin: 0.25em
 }
 .container-3YcgdM {
 	background: var(--bg-overlay-3, var(--background-primary));
-	border-radius: 8px;
+	border-radius: 4px;
 	margin: 0.25em
 }
 .scroller-WSmht3 {
 	padding: 0.25em 0;
 	margin: 0.25em ;
-	border-radius: 8px
+	border-radius: 4px
 }
 .name-2m3Cms {
 	font-weight: 800
 }
 .searchBar-3TnChZ{
-	border-radius: 8px;
+	border-radius: 4px;
 	background: var(--bg-overlay-3, var(--background-primary));
 	margin: 0.25em
 }
@@ -1291,7 +1296,7 @@ div[class*=nameAndDecorators-] {
 	background: var(--bg-overlay-5,var(--background-modifier-hover))
 }
 .channelRow-4X_3fi {
-	border-radius: 8px;
+	border-radius: 4px;
 	background: var(--bg-overlay-2, var(--background-primary));
 	margin: 0.25em 0
 }
@@ -1299,15 +1304,15 @@ div[class*=nameAndDecorators-] {
 	margin-top: 0.5em;
 	padding: 0px 0px 0px 5px;
 	background-color: transparent !important;
-	border-radius: 8px
+	border-radius: 4px
 }
 .newMosaicStyle-2jdUaP .textContainer-36wgKK {
-	border-radius: 8px 8px 0 0
+	border-radius: 4px 8px 0 0
 }
 [class*=userPanelOuter-] {
 	padding: 0;
 	margin: 0 -0.375em 0 0 !important;
-	border-radius: 8px
+	border-radius: 4px
 }
 .userProfileOuterUnthemed-11rPfA .userPanelInner-3KPel3 {
 	background: var(--bg-overlay-3,var(--background-primary))
@@ -1316,7 +1321,7 @@ div[class*=nameAndDecorators-] {
 	background-color: transparent
 }
 .userInfo-regn9W .button-ejjZWC {
-	border-radius: 8px;
+	border-radius: 4px;
 	margin-right: 0.75em
 }
 .actionButtons-2vEOUh .lookFilled-1H2Jvj.colorBrand-2M3O3N {
@@ -1324,8 +1329,8 @@ div[class*=nameAndDecorators-] {
 	background: transparent
 }
 .constrainedRow-3y91Xf .button-ejjZWC {
-	border-radius: 8px;
-	background: var(--channel-icon);
+	border-radius: 4px;
+	background: var(--bg-overlay-5, var(--brand-experiment));
 	padding: 0.25em 0.5em;
 	margin: 0 0.5em
 }
@@ -1338,7 +1343,7 @@ div[class*=nameAndDecorators-] {
 	max-height: 50%;
 	padding: 1em;
 	margin: 0.25em;
-	border-radius: 8px
+	border-radius: 4px
 }
 :is(.pageBody-29jwEZ>:not(.prompt-1sE27N), .profile-3xd-Cg) .text-xs-normal-3O7EaX {
 	margin-top: 0.5em;
@@ -1364,7 +1369,7 @@ div[class*=nameAndDecorators-] {
 }
 .tabBarItem-onx_ng, .tabBarItem-MeqDhW {
 	background: var(--background-floating);
-	border-radius: 8px;
+	border-radius: 4px;
 	border-bottom: none !important;
 	padding: 0.5em 1em;
 	margin: 0.25em;
@@ -1379,7 +1384,7 @@ div[class*=nameAndDecorators-] {
 button[class*=returnButton-] {
 	background: var(--background-floating);
 	border: none;
-	border-radius: 8px;
+	border-radius: 4px;
 	padding: 0.5em 1em;
 	max-width: 500px !important;
 	zoom: 90%
@@ -1407,7 +1412,7 @@ button[class*=returnButton-]:hover {
 [class*=container-]>[class*=wrapper-][class*=userSelectNone-] {
 	padding: 1em;
 	margin: 0.5em 0 0.5em 0;
-	border-radius: 8px;
+	border-radius: 4px;
 	background: var(--bg-overlay-3,var(--background-modifier-accent))
 }
 div[class|="message"] div[class|="markup"] ol {
@@ -1417,11 +1422,12 @@ div[class|="message"] div[class|="markup"] ol {
 .peopleColumn-1wMU14 {
 	padding: 0.25em;
 	margin: 0.25em;
-	border-radius: 8px;
+	border-radius: 4px;
 	background: var(--bg-overlay-3, var(--background-primary))
 }
 .peopleListItem-u6dGxF.active-2UF8Zh, .peopleListItem-u6dGxF:hover {
-	background: var(--bg-overlay-5, var(--background-modifier-hover))
+	background: var(--bg-overlay-5, var(--background-modifier-hover));
+	background-size: 200% 200%
 }
 .actionButton-3-B2x- {
 	background: var(--bg-overlay-4, var(--background-modifier-accent))
@@ -1430,18 +1436,18 @@ div[class|="message"] div[class|="markup"] ol {
 	background: var(--bg-overlay-3, var(--background-tertiary))
 }
 .buttonsContainer-Nmgy7x>div {
-	border-radius: 8px;
+	border-radius: 4px;
 	margin: 0.5em 1em 0 0;
 	padding: 2px 0.5em 0 0.5em;
 	font-weight: 800
 }
 .container-2o3qEW>aside>div, .members-3WRCEx {
 	margin: 0.25em 0.25em 0.25em 0.25em;
-	border-radius: 8px;
+	border-radius: 4px;
 	background: var(--bg-overlay-2,var(--background-secondary));
 }
 .privateChannels-oVe7HL {
-	border-radius: 8px;
+	border-radius: 4px;
 	background: transparent
 }
 .children-3xh0VB:after, .form-3gdLxP:before {
@@ -1463,18 +1469,18 @@ h3.membersGroup-2eiWxl > span > span[style] {
 }
 .wrapper-1NNaWG {
 	background: var(--bg-overlay-4,var(--background-modifier-selected));
-	border-radius: 8px;
+	border-radius: 4px;
 	margin: 0.5em 0
 }
 .container-1SX9VC {
-	border-radius: 8px;
+	border-radius: 4px;
 	background: var(--bg-overlay-4,var(--background-modifier-selected))
 }
 .inspector-DFKXwB, [class*=wrapper-][class*=categoryList-] {
 	background: var(--bg-overlay-2,var(--background-tertiary))
 }
 .tabBar-ra-EuL .addFriend-emTWY1.addFriend-emTWY1.addFriend-emTWY1 {
-	border-radius: 8px;
+	border-radius: 4px;
 	background: var(--bg-overlay-4,var(--background-modifier-selected))
 }
 .tabBar-ra-EuL .addFriend-emTWY1.addFriend-emTWY1.addFriend-emTWY1:hover {
@@ -1488,7 +1494,7 @@ h3.membersGroup-2eiWxl > span > span[style] {
 }
 #message-actions, #message, #image-context {
 	background: var(--bg-overlay-3,var(--background-primary));
-	border-radius: 8px
+	border-radius: 4px
 }
 #vc-membercount {
 	margin: 0.75em 0 0.5em 0.5em !important;
@@ -1504,7 +1510,7 @@ h3.membersGroup-2eiWxl > span > span[style] {
 	padding: 0.5em;
 	flex-direction: column;
 	margin: 0.25em;
-	border-radius: 8px;
+	border-radius: 4px;
 	background: var(--bg-overlay-3,var(--background-primary)) !important
 }
 .scrollerContainer-y16Rs9 {
@@ -1517,13 +1523,13 @@ h3.membersGroup-2eiWxl > span > span[style] {
 }
 [class*=messagesPopoutWrap-], [class*=recentMentionsPopout-] {
 	background: none;
-	border-radius: 8px;
+	border-radius: 4px;
 	height: 80vh;
 	box-shadow: var(--elevation-high)
 }
 [class*=messagesPopoutWrap-]>div:nth-child(2)>div>div {
 	background: var(--bg-overlay-3,var(--background-primary));
-	border-radius: 8px;
+	border-radius: 4px;
 	margin: 0.5em 0 0 0.5em
 }
 [class*=messagesPopoutWrap-]>div:nth-child(1)>h1 {
@@ -1544,14 +1550,14 @@ h3.membersGroup-2eiWxl > span > span[style] {
 [class*=recentMentionsPopout-]>div:nth-child(2)>div>div>div:nth-child(1) {
 	margin: 0.5em 0;
 	padding: 0 1em;
-	border-radius: 8px
+	border-radius: 4px
 }
 [class*=container-][class*=clickable-]>header {
 	box-shadow: unset
 }
 [class*=animatedContainer-] {
 	box-shadow: unset;
-	border-radius: 8px
+	border-radius: 4px
 }
 [class*=circleIconButton-] {
 	color: var(--interactive-normal)
@@ -1567,7 +1573,7 @@ h3.membersGroup-2eiWxl > span > span[style] {
 }
 .container-x8Y1ix {
 	background: var(--channel-icon);
-	border-radius: 8px
+	border-radius: 4px
 }
 .root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .header-1ffhsl>div:not(.tier2HeaderBackground-2XINxm) {
 	color: var(--header-primary) !important
@@ -1581,11 +1587,11 @@ h3.membersGroup-2eiWxl > span > span[style] {
 	text-transform: none
 }
 .rowContainer-3t7486 {
-	border-radius: 8px;
+	border-radius: 4px;
 	background-color: var(--channel-icon)
 }
 .header-3OsQeK {
-	border-radius: 8px;
+	border-radius: 4px;
 	padding: 0.5em;
 	margin: 0.25em 0.5em
 }
@@ -1608,10 +1614,10 @@ h3.membersGroup-2eiWxl > span > span[style] {
 [class*=connectionList-]>div {
 	padding: auto 0.5em;
 	margin: 0.5em;
-	border-radius: 8px
+	border-radius: 4px
 }
 [class*=mutualGuildsList-], [class*=mutualGuildsList-]>button {
-	border-radius: 8px 8px 0 0
+	border-radius: 4px 8px 0 0
 }
 [class*=mutualFriendsList-], [class*=mutualFriendsList-]>button {
 	border-radius: 0 0 8px 8px
@@ -1643,7 +1649,7 @@ h3.membersGroup-2eiWxl > span > span[style] {
  	font-weight: 600;
  	background: var(--bg-overlay-3,var(--background-primary));
  	padding: 2px 8px;
- 	border-radius: 8px
+ 	border-radius: 4px
 }
 .typeWindows-2-g3UY {
  	margin-top: 0;
@@ -1666,13 +1672,13 @@ h3.membersGroup-2eiWxl > span > span[style] {
 }
 .nowPlayingColumn-1eCBCN {
 	margin: 0.25em 0.25em 0.75em 0.25em;
-	border-radius: 8px;
+	border-radius: 4px;
 	background: transparent
 }
 .container-1oAagU {
 	background: var(--bg-overlay-3,var(--background-primary));
 	padding: 0.25em;
-	border-radius: 8px
+	border-radius: 4px
 }
 .theme-dark .outer-2JOHae.interactive-2zD88a:hover {
 	background-color: var(--bg-overlay-4,var(--background-modifier-selected))
@@ -1695,13 +1701,13 @@ h3.membersGroup-2eiWxl > span > span[style] {
 .theme-dark .pageWrapper-2PwDoS {
 	margin: 0.25em 0 0.25em 0.75em;
 	background: var(--bg-overlay-3,var(--background-primary));
-	border-radius: 8px
+	border-radius: 4px
 }
 .arrow-2yY1Tm {
 	filter: brightness(10)
 }
 .container-32HW5s, .container-2oNtJn {
-	border-radius: 8px
+	border-radius: 4px
 }
 .title-x4dI75 {
 	text-transform: none;
@@ -1724,7 +1730,7 @@ h3.membersGroup-2eiWxl > span > span[style] {
 }
 [class*=reactionInner-] {
 	padding: 0.25em 0.5em;
-	border-radius: 8px
+	border-radius: 4px
 }
 .reactionInner-YJjOtT:hover {
 	background-color: var(--bg-overlay-5,var(--background-modifier-hover))
@@ -1843,7 +1849,7 @@ h3.membersGroup-2eiWxl > span > span[style] {
 .scroller-3X7KbA>button {
 	position: relative;
 	right: 6px;
-	border-radius: 8px;
+	border-radius: 4px;
 	background: var(--bg-overlay-4,var(--background-modifier-accent)) !important
 }
 .scroller-3X7KbA>button:hover {
@@ -1854,7 +1860,7 @@ h3.membersGroup-2eiWxl > span > span[style] {
 }
 .container-TT--xs {
 	box-sizing: border-box;
-	border-radius: 8px;
+	border-radius: 4px;
 	overflow: hidden;
 	background: var(--bg-overlay-3,var(--background-primary));
 	margin: 0.25em
@@ -1863,22 +1869,44 @@ h3.membersGroup-2eiWxl > span > span[style] {
 	background: var(--background-tertiary-alt)
 }
 .welcomeCTA-3GMMRK button {
-	border-radius: 8px;
+	border-radius: 4px;
 	margin-top: 0.5em;
 	background: var(--bg-overlay-4,var(--background-modifier-accent)) !important
 }
 .welcomeCTA-3GMMRK button:hover {
 	background: var(--bg-overlay-5,var(--background-modifier-hover)) !important
 }
-.content-3spvdd {
+/*.content-3spvdd {
 	display: flex;
-	padding: 0.25em;
-	flex: 1 1 auto;
+	padding: 0.25em 0.75em;
 	justify-content: center;
 	font-size: 14px;
 	background: var(--bg-overlay-4,var(--background-modifier-accent));
 	color: var(--text-normal)
 }
+.custom-theme-background .divider-2rZFJK:not(.isUnread-3Lojb-) {
+	border-top: none
+}
+.custom-theme-background .divider-2rZFJK.isUnread-3Lojb- {
+	border-width: 1.25em;
+	border-radius: 4px;
+	border-color: color-mix(in srgb, var(--divider-color) 50%, transparent);
+}
+.unreadPill-3nEWYM {
+	background: transparent;
+	margin-top: -10px;
+	font-size: 0;
+	text-transform: capitalize;
+	right: 8px
+}
+.unreadPill-3nEWYM.endCap-2wHt31::after {
+	content: "Unread messages";
+	font-size: 14px;
+}
+.unreadPillCap-2-iI4h path {
+	fill: none;
+	color: transparent;
+}*/
 .overlayBackground-2aa7wt {
 	background: transparent
 }
@@ -1893,7 +1921,7 @@ h3.membersGroup-2eiWxl > span > span[style] {
 	background: var(--bg-overlay-4,var(--background-modifier-accent));
 	margin: 0.5em 0.25em;
 	padding: 0.5em;
-	border-radius: 8px
+	border-radius: 4px
 }
 /* Thank you DaBluLite */
 .guilds-2JjMmN {
@@ -1917,11 +1945,11 @@ h3.membersGroup-2eiWxl > span > span[style] {
  	margin-left: 12px;
  	width: calc(64px - 24px);
  	justify-content: start;
-	border-radius: 8px !important;
+	border-radius: 4px !important;
  	height: 40px
 }
 .wrapper-3kah-n img, .folderIconWrapper-1oRIZr, .childWrapper-1j_1ub, .expandedFolderIconWrapper-3RwQpD, .closedFolderIconWrapper-3tRb2d {
- 	border-radius: 8px !important;
+ 	border-radius: 4px !important;
  	height: 40px;
 	width: 40px
 }
@@ -1953,6 +1981,7 @@ h3.membersGroup-2eiWxl > span > span[style] {
 .numberBadge-37OJ3S {
 	border-radius: calc(8px/2);
 	color: var(--white-500) !important;
+	background: var(--bg-overlay-4, var(--background-modifier-accent));
 }
 .wrapper-2PSQCG:has(.wrapper-3kah-n) .numberBadge-37OJ3S {
 	position: relative;
@@ -1967,7 +1996,8 @@ h3.membersGroup-2eiWxl > span > span[style] {
 	color: var(--interactive-active)
 }
 .base-3IDx3L {
-	color: var(--interactive-active)
+	color: var(--interactive-active);
+	background: var(--bg-overlay-4, var(--background-modifier-accent));
 }
 .pill-1NRFie, .wrapper-z5ab_q:not(:last-child) {
  	height: 40px !important;
@@ -2026,7 +2056,7 @@ h3.membersGroup-2eiWxl > span > span[style] {
 }
 .progressBar-2yl2pi, .progressBarContainer-1efroK {
 	height: 40px;
-	border-radius: 8px
+	border-radius: 4px
 }
 .container-2giAcK,.containerWithMargin-1CVXAM {
 	position: relative;
@@ -2070,7 +2100,7 @@ h3.membersGroup-2eiWxl > span > span[style] {
 .theme-dark .tooltip-33Jwqe {
 	background: var(--bg-overlay-4,var(--background-tertiary));
 	background-size: 400% 400%;
-	border-radius: 8px
+	border-radius: 4px
 }
 .theme-dark .tooltip-33Jwqe .tooltipPointer-sMBQqe {
 	border-top-color: var(--interactive-hover)
@@ -2138,21 +2168,6 @@ path[d="M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5
 .side-1lrxIh .themed-qqoYp3.item-2GWPIy:hover:not(.disabled-2G98Nl), .topPill-2vcLsa .themed-qqoYp3.item-2GWPIy:hover:not(.disabled-2G98Nl) {
 	background: var(--bg-overlay-5, var(--background-modifier-hover))
 }
-:root { 
-	--username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/7.gif); 
-				/*To change the background, please edit the number. (1-9)*/
-}
-/* chat field */           
-[class*=contents]:has(img[src*="518795791318384647"]) [class*=username],
-/* memberlist */
-[role=listitem] :has(img[src*="518795791318384647"]) [class*=name-],
-/* settings profile card */
-[class*=profileCard] span,
-/* reviewdb */
-.vc-rdb-view :has(img[src*="518795791318384647"]) [class*=username],
-/* replies */
-[class*=repliedMessage]:has(img[src*="518795791318384647"]) [class*=username]
-{
-    background-image: var(--username-bg) !important;
-    text-shadow: 1px 1px 4px var(--background-floating);
+.members-3WRCEx::-webkit-scrollbar-thumb, .container-1NXEtd ::-webkit-scrollbar-thumb {
+	background: transparent !important;
 }
