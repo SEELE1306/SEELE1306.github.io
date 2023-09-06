@@ -1,3 +1,6 @@
+@import url(https://raw.githubusercontent.com/coolesding/shiggycord/v2/Files/Radialstatus.css);
+@import url(https://dablulite.github.io/css-snippets/NoLightInDark/import.css);
+
 :root, .theme-dark, .theme-light {
   --primary-100-hsl: var(--modular-hue) var(--modular-saturation) calc(var(--modular-lightness) + 96.00%);
   --primary-130-hsl: var(--modular-hue) var(--modular-saturation) calc(var(--modular-lightness) + 84.00%);
@@ -190,6 +193,32 @@
   --sapphire: 199 66% 69%;
   --blue: 220 83% 75%;
   --lavender: 234 82% 85%;
+
+  	/* Radial Status */
+	--rs-online-color: hsl(var(--green)); 
+	--rs-idle-color: hsl(var(--yellow)); 
+  --rs-dnd-color: hsl(var(--red)); 
+	--rs-streaming-color: hsl(var(--lavender));
+	--rs-phone-visible: none;
+  --rs-offline-color: #636b75; /* default: #636b75 */
+  --rs-bot-color: hsl(var(--blue)); /* default: #5865f2 */
+  --rs-spacer-color: transparent; /* default: transparent*/
+  --rs-show-platformindicators: none; /* default: none */
+  --rs-small-size: 0.85; /* default: 0.85 */
+  --rs-small-roundness: 25%; /* default: 100% */
+  --rs-small-thickness: 2.5px; /* default: 2.5px */
+  --rs-small-glow: 0px; /* default: 0px */
+  --rs-small-spacing: 4px; /* default: 4px */
+  --rs-medium-size: 1; /* default: 1 */
+  --rs-medium-roundness: 100%; /* default: 100% */
+  --rs-medium-thickness: 2.5px; /* default: 2.5px */
+  --rs-medium-glow: 0px; /* default: 0px */
+  --rs-medium-spacing: 4px; /* default: 4px */
+  --rs-large-size: 1; /* default: 1 */
+  --rs-large-roundness: 100%; /* default: 100% */
+ 	--rs-large-thickness: 2.5px; /* default: 2.5px */
+  --rs-large-glow: 0px; /* default: 0px */
+  --rs-large-spacing: 4px; /* default: 4px */
 }
 
 .theme-dark {
@@ -211,6 +240,34 @@
   --bg-overlay-opacity-home: 0.85;
   --bg-overlay-opacity-home-card: 0.8;
   --bg-overlay-opacity-app-frame: var(--bg-overlay-opacity-4);
+  --header-primary: hsl(var(--primary-160-hsl)/1);
+	--header-secondary: hsl(var(--primary-200-hsl)/1);
+	--interactive-active: hsl(var(--primary-160-hsl)/1);
+	--interactive-normal: hsl(var(--primary-160-hsl)/1);
+	--text-normal: hsl(var(--primary-160-hsl)/1);
+	--text-muted: hsl(var(--primary-200-hsl)/0.75);
+	--interactive-hover: hsl(var(--primary-130-hsl)/1);
+	--spotify-bar: hsl(var(--primary-200-hsl)/0.25);
+	--spotify-barfill: hsl(var(--primary-200-hsl)/0.75);
+	--mention-background: hsl(var(--primary-600-hsl)/0.25);
+	--info-positive-foreground: hsl(var(--primary-200-hsl)/1);
+	--status-positive-background: hsl(var(--primary-200-hsl)/1);
+	--status-positive-text: hsl(var(--primary-600-hsl)/1);
+	--channels-default: hsl(var(--primary-200-hsl)/0.5);
+	--channel-text-area-placeholder: hsl(var(--primary-200-hsl)/0.5);
+	--channeltextarea-background: hsl(var(--primary-600-hsl)/1);
+	--background-primary: hsl(var(--primary-600-hsl)/1);
+	--background-primary-alt: hsl(var(--primary-660-hsl)/var(--modular-transparency)) !important;
+	--background-secondary: hsl(var(--primary-560-hsl)/1);
+	--background-secondary-alt: hsl(var(--primary-560-hsl)/1);
+	--background-tertiary: hsl(var(--primary-530-hsl)/1);
+	--background-tertiary-alt: hsl(var(--primary-530-hsl)/0.5);
+	--background-floating: hsl(var(--primary-500-hsl)/1);
+	--background-modifier-accent: hsl(var(--primary-300-hsl)/var(--modular-transparency));
+	--background-modifier-selected: hsl(var(--primary-300-hsl)/calc(var(--modular-transparency) + 20%));
+	--background-modifier-hover: hsl(var(--primary-300-hsl)/calc(var(--modular-transparency) + 40%));
+	--channel-icon: hsl(var(--primary-400-hsl)/1);
+	--interactive-muted: hsl(var(--primary-230-hsl)/1)
 }
 
 .theme-light {
@@ -232,4 +289,32 @@
   --bg-overlay-opacity-home: 0.7;
   --bg-overlay-opacity-home-card: 0.9;
   --bg-overlay-opacity-app-frame: var(--bg-overlay-opacity-5);
+  --header-primary: hsl(var(--primary-700-hsl)/1);
+	--header-secondary: hsl(var(--primary-600-hsl)/1);
+	--interactive-active: hsl(var(--primary-700-hsl)/1);
+	--interactive-normal: hsl(var(--primary-630-hsl)/1);
+	--text-normal: hsl(var(--primary-700-hsl)/1);
+	--interactive-hover: hsl(var(--primary-600-hsl)/1);
+	--text-muted: hsl(var(--primary-600-hsl)/0.6);
+	--spotify-bar: hsl(var(--primary-700-hsl)/0.25);
+	--spotify-barfill: hsl(var(--primary-700-hsl)/0.75);
+	--mention-background: hsl(var(--primary-400-hsl)/0.25);
+	--info-positive-foreground: hsl(var(--primary-700-hsl)/1);
+	--status-positive-background: hsl(var(--primary-200-hsl)/1);
+	--status-positive-text: hsl(var(--primary-260-hsl)/1);
+	--channels-default: hsl(var(--primary-700-hsl)/0.5);
+	--channel-text-area-placeholder: hsl(var(--primary-700-hsl)/0.5);
+	--channeltextarea-background: hsl(var(--primary-300-hsl)/1);
+	--background-primary: hsl(var(--primary-300-hsl)/1);
+	--background-primary-alt: hsl(var(--primary-200-hsl)/var(--modular-transparency)) !important;
+	--background-secondary: hsl(var(--primary-260-hsl)/1);
+	--background-secondary-alt: hsl(var(--primary-260-hsl)/1);
+	--background-tertiary: hsl(var(--primary-230-hsl)/1);
+	--background-tertiary-alt: hsl(var(--primary-230-hsl)/0.5);
+	--background-floating: hsl(var(--primary-200-hsl)/1);
+	--background-modifier-accent: hsl(var(--primary-160-hsl)/var(--modular-transparency));
+	--background-modifier-selected: hsl(var(--primary-160-hsl)/calc(var(--modular-transparency) + 20%));
+	--background-modifier-hover: hsl(var(--primary-160-hsl)/calc(var(--modular-transparency) + 40%));
+	--channel-icon: hsl(var(--primary-700-hsl)/1);
+	--interactive-muted: hsl(var(--primary-600-hsl)/1)
 }
