@@ -137,14 +137,14 @@ span[data-tag="webhook"], [class*=unread-], [class^="threadSuggestionBar"], .unr
 :is(.message-24k8JL .cozy-VmLDNB, .container-3XgAHv .message-2CShn3, .messagesPopoutWrap-3zryHW) .timestamp-p1Df1m, .cozy-VmLDNB .timestamp-p1Df1m.alt-1dvXnH, 
 .replying-eZ7p5z::before, .mentioned-Tre-dv::before, .children-3xh0VB:after, #app-mount .form-3gdLxP:before, .section-28YDOf:has(.roles-3vQPxb:empty),
 .lastSection-q3HCfo, .content-1jQy2l::before, .chat-25x62K::before, [class*=userPanelInner-]::before, .iconContainerLeft-1Kr6X4, .bar-wDIGjg, .attachment-16cAbS, .avatar-l9Txm5, 
-.blob-1uHjdp, /*.wrapper-15CKyy, .wrapper-3HVHpV,*/ .tabBody-2dgbAs::before, .wrapper-1NNaWG:after, .accountProfilePopoutWrapper-3GskID .section-28YDOf,
+.blob-1uHjdp, .tabBody-2dgbAs::before, .wrapper-1NNaWG:after, .accountProfilePopoutWrapper-3GskID .section-28YDOf,
 .option-ayUoaq::before, .option-ayUoaq::after, .wordmarkWindows-2dq6rw path:not(:first-child), .homeIcon-r0w4ny,
-#user-settings-cog > .scroller-nxCRu_ > .item-5ApiZt, .userPopoutInner-nv9Y92:has(#account) > *:not(:has(#account)), .userPopoutOverlayBackground-3A0Pcz:has(#account) > *:not(#account), .container-TT--xs ::-webkit-scrollbar,
-.emojiItemDisabled-3VVnwp, .automodMessage-265YwJ:before, .contents-2MsGLg .vc-platform-indicator>svg,
-.content-2V2neN .iconContainer-21RCa3, .separator-3ng7S5::before, .uploadInput-YH_iku, .vc-rdb-view .avatar-2e8lTP.clickable-31pE3P {
+#user-settings-cog > .scroller-nxCRu_ > .item-5ApiZt, .container-TT--xs ::-webkit-scrollbar,
+.emojiItemDisabled-3VVnwp, .automodMessage-265YwJ:before, .content-2V2neN .iconContainer-21RCa3, .separator-3ng7S5::before, .uploadInput-YH_iku, .vc-rdb-view .avatar-2e8lTP.clickable-31pE3P,
+.userPopoutInner-nv9Y92:has(#account) > *:not(:has(#account)), .userPopoutOverlayBackground-3A0Pcz:has(#account) > *:not(#account)
+{
 	display: none !important;
 }
-
 /* SPOTIFY CONTROLS */
 #vc-spotify-player {
 	background: transparent !important;
