@@ -492,7 +492,7 @@ main[class^=chatContent] [class^=attachedBars] {
 	background-color: transparent;
 }
 [class^=jumpToPresentBar] {
-	margin: 0 26px -16px 0;
+	margin: 0 26px -10px 0;
 	right: unset;
 	background-color: unset
 }
@@ -767,9 +767,6 @@ svg[class*=addButtonIcon-] {
 	border: 2px solid transparent;
 	opacity: .4
 }
-[class^=userPopoutOverlayBackground], [class^=userProfileModalOverlayBackground] {
-	background: transparent !important
-}
 .bg-1QIAus {
 	filter: brightness(var(--modular-background-brightness));
 	background: var(--modular-background) center/cover no-repeat !important
@@ -969,28 +966,18 @@ h3[class*=membersGroup][class*=container-], h2[class*=membersGroup][class*=conta
 }
 .contents-2MsGLg .avatar-2e8lTP {
 	margin-top: -0.625em;
-	scale: 0.85;
-	border: 4px solid transparent;
-	margin-left: -4px;
-	box-shadow: 0 0 0 2.5px #747f8d;
 }
-.contents-2MsGLg:has(svg[fill="var(--green-360"]) .avatar-2e8lTP {
-  	box-shadow: 0 0 0 2.5px hsl(var(--green)/1)
+.memberInner--L4X2b .avatar-6qzftW {
+	margin: 0 0.5em 0 0;
 }
-.contents-2MsGLg:has(svg[fill="var(--yellow-300"]) .avatar-2e8lTP {
-  	box-shadow: 0 0 0 2.5px hsl(var(--yellow)/1)
+.avatarHoverTarget-1zzfRL, .avatar-3QF_VA {
+	background: var(--profile-body-background-color);
 }
-.contents-2MsGLg:has(svg[fill="var(--red-400"]) .avatar-2e8lTP {
-  	box-shadow: 0 0 0 2.5px hsl(var(--red)/1)
+.avatarHoverTarget-1zzfRL img {
+	border-radius: calc(var(--rs-medium-roundness)/2);
 }
-.contents-2MsGLg:has(svg[fill="var(--twitch"]) .avatar-2e8lTP {
-  	box-shadow: 0 0 0 2.5px hsl(var(--purple)/1)
-}
-.contents-2MsGLg:has(span[class*=botTag-][class*=botTagRegular-]:not([data-tag="staff"],[data-tag="owner"],[data-tag="admin"],[data-tag="mod"],[data-tag="vc mod"])) .avatar-2e8lTP {
-  	box-shadow: 0 0 0 2.5px hsl(var(--blue)/1)
-}
-.contents-2MsGLg:has(span[class*=botTag-][class*=AI-]) .avatar-2e8lTP {
-	box-shadow: 0 0 0 2.5px hsl(var(--pink)/1)
+.avatar-3QF_VA img {
+	border-radius: calc(var(--rs-large-roundness)/2);
 }
 .markup-eYLPri.messageContent-2t3eCI a {
 	background: var(--background-modifier-accent);
@@ -2010,18 +1997,13 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 .modalContainer-sCcBXL, .root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) .header-1ffhsl, .container-1Gt1iQ, .root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) {
 	background: var(--background-primary);
 }
-.userPopoutOverlayBackground-3A0Pcz:has(#account) {
-  	margin: 0;
-}
 .accountProfilePopoutWrapper-3GskID {
 	left: 0;
 }
-.accountProfilePopoutWrapper-3GskID [class*=userProfileOuter-] [class*=userProfileInner-] {
-	width: 60%;
-	border-radius: var(--modular-border-radius);
-}
-.accountProfilePopoutWrapper-3GskID [class*=userProfileOuter-] {
-	margin-right: -136px;
+.accountProfilePopoutWrapper-3GskID [class*=userPopout] {
+	border-radius: calc(var(--modular-border-radius)*1.5);
+	margin: 0;
+	width: fit-content;
 }
 .userPopoutOuter-1OHwPL.userProfileOuter-2tQwNf.userProfileOuterUnthemed-11rPfA.profileColors-2AgAV4.theme-dark,
 .accountProfilePopoutWrapper-3GskID .userProfileOuterThemed-2BgJCM.userPopoutOuter-1OHwPL {
@@ -2136,8 +2118,7 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
   	transform: translateX(-50%) !important;
 }
 .numberBadge-37OJ3S {
-	border-radius: calc(var(--guild-item-radius)/2);
-	color: var(--background-tertiary) !important;
+	border-radius: calc(var(--guild-item-radius));
 }
 .wrapper-2PSQCG:has(.wrapper-3kah-n) .numberBadge-37OJ3S {
 	position: relative;
@@ -2152,8 +2133,9 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 	color: var(--interactive-active);
 }
 .base-3IDx3L {
-	background: var(--modular-accent-color) !important;
+	background: color-mix(in srgb, var(--modular-accent-color) 50%, black) !important;
 	color: var(--interactive-active);
+	box-shadow: 0 0 0 2.5px var(--background-primary);
 }
 .pill-1NRFie, .wrapper-z5ab_q:not(:last-child) {
   	height: 40px !important;
@@ -2278,4 +2260,7 @@ rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"], foreignObject[mask="url
 }
 [class*=userProfileModalOuter-], [class*=userProfileModalInner-]::before, .root-1CAIjD:not(:has(.imageWrapper-oMkQl4)) {
 	border-radius: calc(var(--modular-border-radius) * 2.5);
+}
+.vc-rdb-review {
+  overflow: hidden;
 }
