@@ -1,6 +1,9 @@
 @import url(https://seele1306.github.io/Modular/main.css);
 
 /* --- CUSTOMIZABLE --- */
+/* Optional settings icons in Settings */
+@import url(https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css); /* comment out to disable */
+
 :root {
 	/* Change to none to use solid color theme, or use one of the premade Nitro gradients, or make your own gradient or even add a background (must be an URL) */
 	--modular-background: none !important;
