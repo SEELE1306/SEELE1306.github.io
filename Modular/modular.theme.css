@@ -43,7 +43,7 @@
 	--owner-color: var(--ctp-mocha-pink);
 	--admin-color: var(--ctp-frappe-green);
 	--staff-color: var(--ctp-mocha-lavender);
-	--bot-color: var(--ctp-latte-rosewater);
+	--mod-color: var(--ctp-latte-rosewater);
 
  	 /* [[ CLIENT SHADOW ]] */
 	--modular-shadow-distance: 8px; /* Default is 8px */
