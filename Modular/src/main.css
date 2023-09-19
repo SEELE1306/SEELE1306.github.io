@@ -298,7 +298,7 @@ span[data-tag="webhook"],
 	background: var(--background-modifier-accent)
 }
 #vc-spotify-player [class*=barFill] {
-	background: var(--interactive-muted)
+	background: var(--modular-accent-color)
 }
 #vc-spotify-player .mini-28oMa3 .grabber-3R-Rx9 {
 	background-color: var(--interactive-muted);
