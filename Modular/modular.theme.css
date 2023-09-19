@@ -7,14 +7,41 @@
 :root {
 	/* Change to none to use solid color theme, or use one of the premade Nitro gradients, or make your own gradient or even add a background (must be an URL) */
 	--modular-background: none !important;
-  	/* Available gradients: aurora, forest, hanami, lofi, mint-apple, mars, neon-nights, retro-raincloud, strawberry-lemonade, sepia,
-  	* midnight-blurple, chroma-glow, citrus-sherbert, cotton-candy, crimson-moon, desert-khaki, dusk, retro-storm, sunrise, sunset, under-the-sea */
 
-	/* Overall accent */
-	--modular-hue: 223;
-	--modular-saturation: calc(var(--saturation-factor, 1)* 7%); /* Change the percentage to something else */
-	--modular-lightness: 17%; /* Best between 0-30% for visibility */
-	--modular-accent-color: #6075d3;
+  	/* 
+	* Available gradients: aurora, forest, hanami, lofi, mint-apple, mars, neon-nights, retro-raincloud, strawberry-lemonade, sepia,
+  	* midnight-blurple, chroma-glow, citrus-sherbert, cotton-candy, crimson-moon, desert-khaki, dusk, retro-storm, sunrise, sunset, under-the-sea 
+	*
+	* Catppuchin colors are available for convenience, more information at https://github.com/catppuccin/catppuccin
+	* To apply a color, use this format: var(--ctp-{scheme}-{color})
+	* Available schemes (replace {scheme} with these): latte, frappe, macchiato, mocha
+	* Available colors (replace {color} with these): rosewater, flamingo, pink, mauve, red, maroon, peach, yellow, green, teal, sky, sapphire, blue, lavender
+	*/
+
+	/* [[ OVERALL ACCENT ]] */
+	--modular-hue: 232;
+	--modular-saturation: calc(var(--saturation-factor, 1)* 23%); /* Change the percentage to something else */
+	--modular-lightness: 18%; /* Best between 0-30% for visibility */
+	--modular-accent-color: var(--ctp-frappe-mauve);
+
+	/* [[ RADIAL STATUS COLORS ]] */
+	--rs-online-color: var(--ctp-macchiato-green); 
+	--rs-idle-color: var(--ctp-macchiato-yellow); 
+  	--rs-dnd-color: var(--ctp-macchiato-red); 
+	--rs-streaming-color: var(--ctp-macchiato-lavender);
+	--rs-bot-color: var(--ctp-macchiato-blue); 
+
+	/* [[ CHAT BUBBLE COLORS ]] */
+	--chat-bubble-default: var(--background-modifier-accent);
+	--chat-bubble-replying: var(--ctp-latte-sky);
+	--chat-bubble-mentioned: var(--ctp-macchiato-peach);
+	--chat-bubble-automod: var(--ctp-latte-red);
+
+	/* [[ STAFF TAG COLORS ]] */
+	--owner-color: var(--ctp-mocha-pink);
+	--admin-color: var(--ctp-frappe-green);
+	--staff-color: var(--ctp-mocha-lavender);
+	--bot-color: var(--ctp-latte-rosewater);
 
  	 /* Shadow */
 	--modular-shadow-distance: 8px; /* Default is 8px */
