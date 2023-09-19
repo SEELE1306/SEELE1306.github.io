@@ -30,10 +30,10 @@
 	display: flex;
 	justify-content: center;
 }
-.buttons-uaqb-5:where(:not(:hover)){
+.form-3gdLxP .buttons-uaqb-5:where(:not(:hover)){
     max-width: 32px;
 }
-.buttons-uaqb-5::before {
+.form-3gdLxP .buttons-uaqb-5::before {
     opacity: 0%;
     transition: opacity 150ms;
     position: absolute;
@@ -42,24 +42,24 @@
     display: block;
     width: 32px;
 }
-.buttons-uaqb-5:where(:not(:hover))::before {
+.form-3gdLxP .buttons-uaqb-5:where(:not(:hover))::before {
     opacity: 100%;
     transition: opacity 1000ms;
 }
-.buttons-uaqb-5:hover {
+.form-3gdLxP .buttons-uaqb-5:hover {
     transition: all 150ms;
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
 	height: unset;
 	width: 200px;
 }
-.buttons-uaqb-5 > :is(div,button) {
+.form-3gdLxP .buttons-uaqb-5 > :is(div,button) {
     transform: scaleX(0%) !important;
     opacity: 0%;
 	display: flex;
 	justify-content: center;
 }
-.buttons-uaqb-5:hover > :is(div,button) {
+.form-3gdLxP .buttons-uaqb-5:hover > :is(div,button) {
     transform: scaleX(100%) !important;
     transition: opacity 300ms;
     opacity: 100%;
