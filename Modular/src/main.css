@@ -435,14 +435,14 @@ span[data-tag="webhook"],
 	border-bottom-right-radius: var(--quote-border-radius)
 }
 .theme-dark[class*="markup-"] blockquote {
-	color: var(--modular-color-accent);
-	background-color: var(--modular-color-accent)
+	color: var(--modular-accent-color);
+	background-color: var(--modular-accent-color)
 }
 .theme-light[class*="markup-"] blockquote {
-	color: var(--modular-color-accent)
+	color: var(--modular-accent-color)
 }
 [class*="blockquoteDivider-"] {
-	background-color: var(--modular-color-accent)
+	background-color: var(--modular-accent-color)
 }
 
 /* CHAT AREA */
