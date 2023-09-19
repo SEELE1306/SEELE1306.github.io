@@ -2,7 +2,8 @@
 .rolePill-78LFtg {
 	background: transparent
 }
-[class*="role-"] [class*="roleCircle-"]:before,[class*="actionButton-"][class*="role-"][class*="justifyCenter-"] {
+[class*="role-"] [class*="roleCircle-"]:before,
+[class*="actionButton-"][class*="role-"][class*="justifyCenter-"] {
 	border-radius: 10px
 }
 [class*=roles-] {

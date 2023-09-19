@@ -13,12 +13,16 @@
 #vc-spotify-song-title {
 	font-weight: 800;
 }
-.vc-spotify-time-right, .vc-spotify-time-left {
+.vc-spotify-time-right, 
+.vc-spotify-time-left {
 	margin-top: 1px;
 	font-weight: 600;
 	letter-spacing: 0.05em
 }
-.vc-spotify-comma, .vc-spotify-ellipoverflow, .vc-spotify-artist, .vc-spotify-album {
+.vc-spotify-comma, 
+.vc-spotify-ellipoverflow, 
+.vc-spotify-artist, 
+.vc-spotify-album {
 	margin-top: -2px;
 	color: var(--header-secondary);
 	font-weight: 600;
@@ -37,7 +41,8 @@
 	border-radius: 50%;
 	transform: translateY(1px) translateX(2.5px)
 }
-#vc-spotify-player .vc-spotify-repeat-off.vc-spotify-repeat-off.vc-spotify-repeat-off,#vc-spotify-player .vc-spotify-shuffle-off.vc-spotify-shuffle-off.vc-spotify-shuffle-off {
+#vc-spotify-player .vc-spotify-repeat-off.vc-spotify-repeat-off.vc-spotify-repeat-off,
+#vc-spotify-player .vc-spotify-shuffle-off.vc-spotify-shuffle-off.vc-spotify-shuffle-off {
 	color: var(--background-modifier-accent)
 }
 #vc-spotify-player .vc-spotify-button.vc-spotify-button:hover {
@@ -56,7 +61,6 @@
 	padding-bottom: 24px !important
 }
 #vc-spotify-player #vc-spotify-album-image {
-	border-radius: var(--modular-border-radius);
 	margin-top: -6px
 }
 .wrapper-1gVUIN {

@@ -66,9 +66,6 @@
 }
 .buttons-uaqb-5 > :is(div,button):hover svg {
 	color: var(--modular-accent-color);
-	background: var(--background-modifier-hover);
-	padding: 8px;
-	border-radius: var(--modular-border-radius);
 }
 .buttons-uaqb-5 > :is(div,button) svg {
     transition: all 0.3s;
@@ -82,6 +79,28 @@
 .separator-3ng7S5 .innerButton-1aF_E_ {
 	padding: 0;
 	margin: 0;
+}
+.channelTextArea-1FufC0 .divider-2rZFJK {
+	border-top: none;
+}
+.channelAttachmentArea-HwpkuQ {
+  	background: color-mix(in srgb, var(--modular-accent-color) 50%, black);
+	margin-left: 0.25em;
+	padding: 0.5em;
+	gap: 8px;
+	width: fit-content;
+}
+.upload-vLbqu- {
+	min-height: 150px;
+	max-height: 150px;
+	min-width: 150px;
+	max-width: 150px;
+}
+.actionBar-1ozugS {
+	transform: translate(-8px, 2px);
+}
+.actionBar-1ozugS .button-3bklZh {
+  	background: color-mix(in srgb, var(--modular-accent-color) 50%, black);
 }
 /* ----- Aligned Chatbox ----- */
 /* align edges of chatbox to sides */
@@ -120,6 +139,13 @@
 }
 [class^=jumpToPresentBar] > [class^=barButtonMain] {
   	flex: 0 0 auto;
+}
+main[class^=chatContent] [class^=attachedBars] {
+	min-height: unset !important;
+	position: relative;
+	padding: 0 0 4px 0 !important;
+	margin: -4px 20px 0 -4px !important;
+	border-radius: 0 0 var(--modular-border-radius) 0 !important;
 }
 .separator-3ng7S5:before {
 	border-left: 2.5px solid var(--modular-accent-color)

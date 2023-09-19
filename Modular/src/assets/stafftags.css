@@ -1,14 +1,14 @@
 /* STAFF TAGS */
 span[data-tag="owner"] {
-	background-color: hsl(var(--pink)/1);
+	background-color: var(--owner-color);
 	color: var(--background-primary)
 }
 span[data-tag="admin"] {
-	background-color: hsl(var(--green)/1);
+	background-color: var(--admin-color);
 	color: var(--background-primary)
 }
 span[data-tag="staff"] {
-	background-color: hsl(var(--lavender)/1);
+	background-color: var(--staff-color);
 	color: var(--background-primary)
 }
 span[class*=botText-] {
@@ -17,7 +17,9 @@ span[class*=botText-] {
 [class^="userTagNoNickname-"]>[class*="botTag"] {
 	margin-bottom: 4px
 }
-span[data-tag="mod"], span[data-tag="vc mod"], .botTagRegular-kpctgU {
-	background-color: hsl(var(--peach)/1);
+span[data-tag="mod"], 
+span[data-tag="vc mod"], 
+.botTagRegular-kpctgU {
+	background-color: var(--mod-color);
 	color: var(--background-primary)
 }

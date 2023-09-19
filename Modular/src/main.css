@@ -279,31 +279,7 @@ span[data-tag="webhook"],
 }
 #vc-spotify-song-title {
 	font-weight: 800;
-	display: flex;
-	justify-content: flex-start;
-	overflow: hidden;
-	white-space: nowrap;
-	padding: 0 250%;
-	animation: move-rtl 20s linear infinite;
-	animation-play-state: paused;
 }
-body:has(.vc-spotify-pause) #vc-spotify-song-title {
-	animation-play-state: running;
-} 
-#vc-spotify-song-title::before {
-	content: 'Now playing:';
-	padding: 0 0.5em 0 0;
-	color: var(--header-secondary);
-}
-@keyframes move-rtl {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(-100%);
-	}
-}
-
 .vc-spotify-time-right, 
 .vc-spotify-time-left {
 	margin-top: 1px;
@@ -701,12 +677,7 @@ span[data-tag="vc mod"],
 	color: var(--interactive-hover)
 }
 :is(.containerDefault-YUSmu3, .wrapper-NhbLHG):hover .link-1_kTxV, 
-:is(.content-1Tgc42, .layout-1qmrhw, 
-interactive-26HRN_, 
-.colorDefault-2_rLdz, 
-.clickable-2V8YKY[aria-disabled=false]>.base-2v-uc0, 
-.navButton-1XuvI-, 
-.option-ayUoaq):hover {
+:is(.content-1Tgc42, .layout-1qmrhw, .interactive-26HRN_,  .colorDefault-2_rLdz,  .clickable-2V8YKY[aria-disabled=false]>.base-2v-uc0,  .navButton-1XuvI-,  .option-ayUoaq):hover {
 	background: color-mix(in srgb, var(--modular-accent-color) 75%, transparent) !important
 }
 :is(.containerDefault-YUSmu3.selected-2TbFuo, .wrapper-NhbLHG.modeSelected-3DmyhH, .wrapper-NhbLHG.modeConnected-NrO4cP) .link-1_kTxV, 

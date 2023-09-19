@@ -6,12 +6,7 @@
 	color: var(--interactive-hover)
 }
 :is(.containerDefault-YUSmu3, .wrapper-NhbLHG):hover .link-1_kTxV, 
-:is(.content-1Tgc42, .layout-1qmrhw, 
-interactive-26HRN_, 
-.colorDefault-2_rLdz, 
-.clickable-2V8YKY[aria-disabled=false]>.base-2v-uc0, 
-.navButton-1XuvI-, 
-.option-ayUoaq):hover {
+:is(.content-1Tgc42, .layout-1qmrhw, .interactive-26HRN_,  .colorDefault-2_rLdz,  .clickable-2V8YKY[aria-disabled=false]>.base-2v-uc0,  .navButton-1XuvI-,  .option-ayUoaq):hover {
 	background: color-mix(in srgb, var(--modular-accent-color) 75%, transparent) !important
 }
 :is(.containerDefault-YUSmu3.selected-2TbFuo, .wrapper-NhbLHG.modeSelected-3DmyhH, .wrapper-NhbLHG.modeConnected-NrO4cP) .link-1_kTxV, 

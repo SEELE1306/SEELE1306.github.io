@@ -13,7 +13,6 @@
 	color: var(--text-link);
 	font-weight: 600;
 	padding: 0 0.5em;
-	border-radius: var(--modular-border-radius);
 }
 .groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg:hover .markup-eYLPri.messageContent-2t3eCI a,
 .cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg:hover>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *) a
@@ -26,25 +25,18 @@
 .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
 	margin: 0.125em 0;
 	padding: 0.5em;
-	border-radius: var(--modular-border-radius);
-	background: var(--background-modifier-accent);
+	background: color-mix(in srgb, var(--chat-bubble-default) 50%, transparent);
 	max-width: max-content
 }
-/*.messageListItem-ZZ7v6g[data-is-self="true"] :is(.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg,
-.cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
-.container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *)) {
-	box-shadow: 0 0 0 2px var(--modular-accent-color);
-}*/
 .groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg:hover,
 .cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg:hover>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
 .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
-	background: var(--background-modifier-hover)
+	background: color-mix(in srgb, var(--chat-bubble-default) 100%, transparent);
 }
 .groupStart-3Mlgv1.cozyMessage-1DWF9U.replying-eZ7p5z>.contents-2MsGLg,
 .cozyMessage-1DWF9U.replying-eZ7p5z:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
 .replying-eZ7p5z .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
-	background: hsl(var(--teal)/0.25);
-	border-radius: var(--modular-border-radius);
+	background: color-mix(in srgb, var(--chat-bubble-replying) 25%, transparent);
 	max-width: max-content
 }
 .scrollableContainer-15eg7h {
@@ -53,27 +45,25 @@
 .groupStart-3Mlgv1.cozyMessage-1DWF9U.replying-eZ7p5z>.contents-2MsGLg:hover,
 .cozyMessage-1DWF9U.replying-eZ7p5z:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
 .replying-eZ7p5z .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
-	background: hsl(var(--teal)/0.5);
+	background: color-mix(in srgb, var(--chat-bubble-replying) 50%, transparent);
 }
 .groupStart-3Mlgv1.cozyMessage-1DWF9U.mentioned-Tre-dv>.contents-2MsGLg,
 .cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
 .mentioned-Tre-dv .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
-	background: hsl(var(--peach)/0.25);
-	border-radius: var(--modular-border-radius)
+	background: color-mix(in srgb, var(--chat-bubble-mentioned) 25%, transparent);
 }
 .groupStart-3Mlgv1.cozyMessage-1DWF9U.mentioned-Tre-dv>.contents-2MsGLg:hover,
 .cozyMessage-1DWF9U.mentioned-Tre-dv:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
 .mentioned-Tre-dv .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
-	background: hsl(var(--peach)/0.5);
+	background: color-mix(in srgb, var(--chat-bubble-mentioned) 50%, transparent);
 }
 .groupStart-3Mlgv1.cozyMessage-1DWF9U.automodMessage-265YwJ>.contents-2MsGLg,
 .cozyMessage-1DWF9U.automodMessage-265YwJ:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
 .automodMessage-265YwJ .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *) {
-	background: hsl(var(--red)/0.25);
-	border-radius: var(--modular-border-radius)
+	background: color-mix(in srgb, var(--chat-bubble-automod) 25%, transparent);
 }
 .groupStart-3Mlgv1.cozyMessage-1DWF9U.automodMessage-265YwJ>.contents-2MsGLg:hover,
 .cozyMessage-1DWF9U.automodMessage-265YwJ:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *):hover,
 .automodMessage-265YwJ .container-2sjPya>:not(.reactions-3ryImn, .searchResultsWrap-5RVOkx *):hover {
-	background: hsl(var(--red)/0.5);
+	background: color-mix(in srgb, var(--chat-bubble-automod) 50%, transparent);
 }
