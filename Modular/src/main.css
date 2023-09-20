@@ -1137,6 +1137,9 @@ div[class*=nameAndDecorators-] {
 	margin: 0.25em;
 	position: relative
 }
+body:has(.vc-spotify-pause) .panels-3wFtMD {
+	background: color-mix(in srgb, var(--modular-accent-color) 25%, rgba(0, 0, 0, 0.25)) !important;
+}
 .chatContent-3KubbW {
 	box-sizing: border-box;
 	overflow: hidden;
@@ -2178,7 +2181,7 @@ path[d="M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5
 }
 .content-3spvdd {
 	background: color-mix(in srgb, var(--modular-accent-color) 50%, black);
-	padding: 0.25em 47.5%;
+	padding: 0.25em calc(50% - 50px);
 }
 .header-3YNgrp, .container-3kfp0r{
 	background: var(--channel-icon)
