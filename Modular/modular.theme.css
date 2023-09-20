@@ -2,7 +2,7 @@
 
 /* --- CUSTOMIZABLE --- */
 
-/* Optional settings icons in Settings */
+/* Optional settings icons in Settings by saltssaumure */
 @import url(https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css); /* comment out to disable */
 /* Radial Status by coolesding */
 @import url(https://raw.githubusercontent.com/coolesding/shiggycord/v2/Deploy/Radialstatus.css); /* comment out to disable */
@@ -47,10 +47,6 @@
 	--admin-color: var(--ctp-frappe-green);
 	--staff-color: var(--ctp-mocha-lavender);
 	--mod-color: var(--ctp-latte-rosewater);
-
- 	 /* [[ CLIENT SHADOW ]] */
-	--modular-shadow-distance: 8px; /* Default is 8px */
-	--modular-stroke-distance: 1px; /* Default is 1px */
 
 	/* [[ CLIENT BORDER RADIUS ]] */
 	--modular-border-radius: 8px; /* Default is 8px */
