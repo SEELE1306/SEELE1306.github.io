@@ -1,8 +1,11 @@
 @import url(https://seele1306.github.io/Modular/src/main.min.css);
 
 /* --- CUSTOMIZABLE --- */
+
 /* Optional settings icons in Settings */
 @import url(https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css); /* comment out to disable */
+/* Radial Status by coolesding */
+@import url(https://raw.githubusercontent.com/coolesding/shiggycord/v2/Deploy/Radialstatus.css); /* comment out to disable */
 
 :root {
 	/* 
@@ -26,7 +29,7 @@
 	--modular-lightness: 18%; /* Best between 0-30% for visibility */
 	--modular-accent-color: var(--ctp-frappe-mauve);
 
-	/* [[ RADIAL STATUS COLORS ]] */
+	/* [[ RADIAL STATUS COLORS ]] - comment out to disable */ 
 	--rs-online-color: var(--ctp-macchiato-green); 
 	--rs-idle-color: var(--ctp-macchiato-yellow); 
   	--rs-dnd-color: var(--ctp-macchiato-red); 
