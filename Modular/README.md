@@ -22,3 +22,32 @@ Get the latest build here: [Releases - Vencord/Vesktop](https://github.com/Venco
 - Several ***add-ons*** (Settings Icons by [Saltssaumure](https://github.com/Saltssaumure) and Radial Status by [coolesding](https://github.com/coolesding) for now) are available separately in the `modular.theme.css` file
 - Active support (to my ability)
 - Some of the elements of this theme are available separately as snippets. Check them out [here](https://github.com/SEELE1306/SEELE1306.github.io/tree/main/Snippets).
+
+## Images
+
+### This is what you will see upon loading the theme for the first time:
+
+![First Load](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20225845.png)
+
+### Layouts can be customized to these:
+
+![Layout Sample 1](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20173634.png)
+![Layout Sample 2](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20173847.png)
+![Layout Sample 3](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20174111.png)
+
+### Some of the features: 
+
+Chat bubbles
+  
+![Chat bubbles 1](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20225627.png)
+![Chat bubbles 2](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20225614.png)
+![Chat embed](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20225635.png)
+
+Revamped profile panels and modals
+  
+![Profile panel](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20221245.png)
+![Profile modal](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20221254.png)
+
+Revamped Spotify player
+
+![Spotify](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20232002.png)
