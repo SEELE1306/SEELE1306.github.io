@@ -54,18 +54,18 @@
 		--rs-offline-color: #636b75;
 		--rs-spacer-color: transparent;
 		--rs-show-platformindicators: none;
-		--rs-small-size: 0.85; 
-		--rs-small-roundness: 50%; 
-		--rs-small-thickness: 2.5px;
-		--rs-small-spacing: 4px;
-		--rs-medium-size: 0.85; 
-		--rs-medium-roundness: 50%; 
-		--rs-medium-thickness: 3px; 
-		--rs-medium-spacing: 4.5px; 
-		--rs-large-size: 0.85;
-		--rs-large-roundness: 50%;
-		--rs-large-thickness: 4px; 
-		--rs-large-spacing: 5.5px; 
+		  --rs-small-size: 0.85; 
+		  --rs-small-roundness: 50%; 
+		  --rs-small-thickness: 2.5px;
+		  --rs-small-spacing: 4px;
+		  --rs-medium-size: 0.85; 
+		  --rs-medium-roundness: 50%; 
+		  --rs-medium-thickness: 3px; 
+		  --rs-medium-spacing: 4.5px; 
+		  --rs-large-size: 0.85;
+		  --rs-large-roundness: 50%;
+		 --rs-large-thickness: 4px; 
+		  --rs-large-spacing: 5.5px; 
 		/* Chat bubbles requirements */
 		--background-message-hover: none;
 		--background-mentioned: none;
@@ -254,7 +254,6 @@
 	.homeIcon-r0w4ny,
 	#user-settings-cog > .scroller-nxCRu_ > .item-5ApiZt, 
 	.separator-3ng7S5:before, 
-	.contents-2MsGLg .vc-platform-indicator>svg,
 	.emojiItemDisabled-3VVnwp, 
 	.automodMessage-265YwJ:before, 
 	.content-2V2neN .iconContainer-21RCa3, 
@@ -811,24 +810,24 @@
 	foreignObject[mask="url(#svg-mask-status-online)"] > div,
 	div[class^=dotOnline],
 	i[class^=statusOnline-] {
-	  fill: var(--rs-online-color) !important;
-	  background-color: var(--rs-online-color) !important;
+		fill: var(--rs-online-color) !important;
+		background-color: var(--rs-online-color) !important;
 	}
 	rect[fill="#f0b232"], rect[fill="rgba(240, 178, 50, 1)"],
 	foreignObject[mask="url(#svg-mask-status-idle)"] > div {
-	  fill: var(--rs-idle-color) !important;
-	  background-color: var(--rs-idle-color) !important;
+		fill: var(--rs-idle-color) !important;
+		background-color: var(--rs-idle-color) !important;
 	}
 	rect[fill="#f23f43"], rect[fill="rgba(242, 63, 67, 1)"],
 	foreignObject[mask="url(#svg-mask-status-dnd)"] > div {
-	  fill: var(--rs-dnd-color) !important;
-	  background-color: var(--rs-dnd-color) !important;
+		fill: var(--rs-dnd-color) !important;
+		background-color: var(--rs-dnd-color) !important;
 	}
 	rect[fill="#593695"] {
-	  fill: var(--rs-streaming-color) !important;
+		fill: var(--rs-streaming-color) !important;
 	}
 	
-	/* 16. [[ CHAT BUBBLES ]] */
+	/* 17. [[ CHAT BUBBLES ]] */
 	.channelTextArea-1FufC0 {
 		background-color: transparent
 	}
@@ -898,7 +897,7 @@
 		background: color-mix(in srgb, var(--chat-bubble-automod) 50%, transparent);
 	}
 	
-	/* 17. [[ PROFILES ]] */
+	/* 18. [[ PROFILES ]] */
 	.customStatus-19KW6v .customStatusEmoji-1GD8RK {
 		margin: 0.25em -0.75em 0.5em;
 		position: relative;
@@ -1068,7 +1067,7 @@
 		left: 12.5%
 	}
 	
-	/* 18. [[ EMBEDS ]] */
+	/* 19. [[ EMBEDS ]] */
 	.embedFull-1HGV2S {
 		overflow: hidden;
 		border-left: none;
@@ -1098,6 +1097,33 @@
 		z-index: -1;
 		background-color: inherit
 	}
+	
+	/* 20. [[ PLATFORM INDICATORS ]] */
+	:is(.membersWrap-3NUR2t, .privateChannels-oVe7HL) .vc-platform-indicator>svg {
+		width: 12.5px !important;
+		height: 12.5px !important;
+		margin-left: 0px;
+		margin-right: 0px
+	}
+	.contents-2MsGLg .vc-platform-indicator>svg {
+		width: 15px !important;
+		height: 15px !important;
+		margin-top: 2px;
+	}
+	:is(.contents-2MsGLg, .profileBadges-2pItdR, [class*=nameAndDecorators]):has(svg[fill="var(--green-360"]) .vc-platform-indicator>svg {
+		fill: var(--rs-online-color)
+	}
+	:is(.contents-2MsGLg, .profileBadges-2pItdR, [class*=nameAndDecorators]):has(svg[fill="var(--yellow-300"]) .vc-platform-indicator>svg {
+		fill: var(--rs-idle-color)
+	}
+	:is(.contents-2MsGLg, .profileBadges-2pItdR, [class*=nameAndDecorators]):has(svg[fill="var(--red-400"]) .vc-platform-indicator>svg {
+		fill: var(--rs-dnd-color)
+	}
+	:is(.contents-2MsGLg, .profileBadges-2pItdR, [class*=nameAndDecorators]):has(span[data-tag="bot"]) .vc-platform-indicator>svg {
+		fill: var(--rs-bot-color)
+	}
+	
+	
 	div[class*=nameAndDecorators-] {
 		color: var(--text-normal)
 	}
@@ -2360,19 +2386,6 @@
 	}
 	.emoji[alt="🥺"] {
 		content: url("https://vendicated.github.io/random-files/pleading_face.svg")
-	}
-	
-	:is(.membersWrap-3NUR2t, .privateChannels-oVe7HL) .vc-platform-indicator>svg {
-		width: 12.5px !important;
-		height: 12.5px !important;
-		margin-left: 0px;
-		margin-right: 0px
-	}
-	.vc-platform-indicator>svg {
-		fill: hsl(var(--primary-200-hsl)/1) !important
-	}
-	.theme-light .vc-platform-indicator>svg {
-		fill: hsl(var(--primary-600-hsl)/1) !important
 	}
 	
 	.navButtonActive-1EqC5l, 
