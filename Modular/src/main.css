@@ -44,7 +44,7 @@
 	--client-orientation: row;
 	--memberlist-orientation: row;
 	--friendlist-orientation: row;
-	--titlebar-name: "insert your name here or whatever quote you like I don't care";
+	--titlebar-name: "Your name here";
 }
 
 	/* 2. [[ END OF CUSTOMIZABLE PARAMETERS ]] */
@@ -84,7 +84,7 @@
 	--font-primary: var(--font-main), var(--font-fallback);
 	--font-display: var(--font-main), var(--font-fallback);
 	--font-header: var(--font-main), var(--font-fallback);
-	--font-fallback: "gg sans";
+	--font-fallback: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 	--text-link: var(--text-normal);
 	--modular-version: "v1.0.0";
 }
@@ -1135,7 +1135,8 @@ div[class*=nameAndDecorators-] {
 	box-sizing: border-box;
 	overflow: hidden;
 	margin: 0.25em;
-	position: relative
+	position: relative;
+	transition: background 250ms ease-in-out;
 }
 body:has(.vc-spotify-pause) .panels-3wFtMD {
 	background: color-mix(in srgb, var(--modular-accent-color) 25%, rgba(0, 0, 0, 0.25)) !important;
@@ -1591,7 +1592,7 @@ h3.membersGroup-2eiWxl > span > span[style] {
 	margin: -0.125em 0 -0.25em -0.375em;
 	padding: 0.5em 0.625em
 }
-.bannerPremium-kkSkPv {
+[class*=profilePanel-] .bannerPremium-kkSkPv {
 	margin: 0.75em;
 	width: calc(100% - 24px);
 	height: calc(100px - 24px) !important;
