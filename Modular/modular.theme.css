@@ -29,7 +29,7 @@
 	--modular-lightness: 18%; /* Best between 0-30% for visibility */
 	--modular-accent-color: var(--ctp-frappe-mauve);
 
-	/* [[ RADIAL STATUS COLORS ]] - comment out to disable */ 
+	/* [[ STATUS COLORS ]]  */ 
 	--rs-online-color: var(--ctp-macchiato-green); 
 	--rs-idle-color: var(--ctp-macchiato-yellow); 
   	--rs-dnd-color: var(--ctp-macchiato-red); 
