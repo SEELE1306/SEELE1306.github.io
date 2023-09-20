@@ -1,4 +1,7 @@
 # Modular - A theme made for Vesktop
+
+## Introduction
+
 This is one of the first themes that is made exclusively for **Vencord's own client, Vesktop**. It incorporates many of the things I have learned since I started learning about CSS (and modifying Discord clients) in April this year. 
 
 Consider this as my "baby", my first "finished" product that I can contribute to the playground of Discord client mods.
@@ -8,6 +11,7 @@ Consider this as my "baby", my first "finished" product that I can contribute to
 Get the latest build here: [Releases - Vencord/Vesktop](https://github.com/Vencord/Vesktop/releases)
 
 ## Features
+
 - High customizability:
   + ***Add a pre-made Nitro theme or background of your choice*** and adjust the brightness, blur as well as transparency
   + **Client global accent** using the HSL scheme
@@ -37,17 +41,35 @@ Get the latest build here: [Releases - Vencord/Vesktop](https://github.com/Venco
 
 ### Some of the features: 
 
-Chat bubbles
+### Chat bubbles
   
 ![Chat bubbles 1](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20225627.png)
 ![Chat bubbles 2](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20225614.png)
 ![Chat embed](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20225635.png)
 
-Revamped profile panels and modals
+### Revamped profile panels and modals
   
 ![Profile panel](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20221245.png)
 ![Profile modal](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20221254.png)
 
-Revamped Spotify player
+### Revamped Spotify player
 
 ![Spotify](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20232002.png)
+
+## Apply and customize
+
+### Apply
+There are several methods to apply this theme:
+- Via Local Themes:
+  + Download the file `modular.theme.css` from this repository.
+  + Open Settings > Vencord > Themes > Local Themes > Open Themes Folder.
+  + Paste the downloaded file into the **themes** folder.
+    
+- Via Online Themes
+  + Open Settings > Vencord > Themes > Online Themes.
+  + Paste the following link into **Theme Links**: `https://seele1306.github.io/Modular/modular.theme.css`
+  + Enter or mouse-click outside the Online Themes box to apply
+ 
+- Via QuickCSS
+  + Open Settings > Vencord > Vencord > Open QuickCSS File
+  + Paste the following line as your **first line (ahead of any other custom CSS)**: `https://seele1306.github.io/Modular/modular.theme.css`.
