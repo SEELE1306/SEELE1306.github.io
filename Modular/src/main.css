@@ -49,9 +49,6 @@
 :root, .theme-dark, .theme-light {
 	/* Radial Status */
   	--rs-offline-color: #636b75;
-	--rs-phone-visible: none;
-  	--rs-spacer-color: transparent; 
-  	--rs-show-platformindicators: none; 
   	--rs-small-size: 0.85; 
   	--rs-small-roundness: 50%; 
   	--rs-small-thickness: 2.5px;
