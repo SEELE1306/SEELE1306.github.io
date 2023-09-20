@@ -268,32 +268,6 @@
 	--ctp-frappe-lavender: #babbf1;
 	--ctp-macchiato-lavender: #b7bdf8;
 	--ctp-mocha-lavender: #b4befe;
-	
-  /* Radial Status */
-  --rs-online-color: #43b581;
-  --rs-idle-color: #faa61a;
-  --rs-dnd-color: #f04747;
-  --rs-offline-color: #636b75;
-  --rs-bot-color: #5865f2;
-  --rs-spacer-color: transparent;
-  --rs-show-platformindicators: none;
-  --rs-small-size: 0.85;
-  --rs-small-roundness: 100%;
-  --rs-small-thickness: 4px;
-  --rs-small-glow: 0px;
-  --rs-small-spacing: 0px;
-  --rs-medium-size: 1;
-  --rs-medium-roundness: 100%;
-  --rs-medium-thickness: 2.5px;
-  --rs-medium-glow: 0px;
-  --rs-medium-spacing: 4px;
-  --rs-medium-backgroundcolor: none;
-  --rs-medium-backgroundsize: 0px;
-  --rs-large-size: 1;
-  --rs-large-roundness: 100%;
-  --rs-large-thickness: 2.5px;
-  --rs-large-glow: 0px;
-  --rs-large-spacing: 4px;
 }
 
 /* [[ CUSTOM THEME VARIABLES ]] */
