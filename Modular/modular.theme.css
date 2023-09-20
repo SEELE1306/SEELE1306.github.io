@@ -47,7 +47,7 @@
 	--admin-color: var(--ctp-frappe-green);
 	--staff-color: var(--ctp-mocha-lavender);
 	--mod-color: var(--ctp-latte-rosewater);
-
+ 
 	/* [[ CLIENT BORDER RADIUS ]] */
 	--modular-border-radius: 8px; /* Default is 8px */
 	--modular-client-spacing: 12px; /* Default is 12px */
