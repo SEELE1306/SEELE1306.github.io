@@ -165,7 +165,7 @@ midnight-blurple, chroma-glow, citrus-sherbert, cotton-candy, crimson-moon, dese
 | `--titlebar-name`                    | Enter whatever you like in between the quotation marks                                  | insert your name here or whatever quote you like I don't care |
 
 ##  Special thanks to
-My theme, in the end, is just a compilation of the many snippets that I have found. I will try my best to credit all the users whose snippets I have ultilized, but if your name does not show up here, feel free to contact me.
+My theme, at the end of the day, is just a compilation of the many snippets that I have found. I will try my best to credit all the users whose snippets I have ultilized, but if your name does not show up here, feel free to contact me.
 
 ### Credits
 [coolesding](https://github.com/coolesding), [Saltssaumure](https://github.com/Saltssaumure), [DaBluLite](https://github.com/DaBluLite), [Vendicated](https://github.com/Vendicated), [CodeF53](https://github.com/CodeF53), AkiraSimplex (`akirasimplex` on Discord)
