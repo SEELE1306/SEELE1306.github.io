@@ -39,41 +39,60 @@ Get the latest build here: [Releases - Vencord/Vesktop](https://github.com/Venco
 ![Layout Sample 2](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20173847.png)
 ![Layout Sample 3](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20174111.png)
 
-### Some of the features: 
-
-### Chat bubbles
+<details>
+<summary>Features</summary>
+  
+Chat bubbles
   
 ![Chat bubbles 1](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20225627.png)
 ![Chat bubbles 2](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20225614.png)
 ![Chat embed](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20225635.png)
 
-### Revamped profile panels and modals
+Revamped profile panels and modals
   
 ![Profile panel](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20221245.png)
 ![Profile modal](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20221254.png)
 
-### Revamped Spotify player
+Revamped Spotify player
 
 ![Spotify](https://github.com/SEELE1306/SEELE1306.github.io/blob/main/Modular/src/images/Screenshot%202023-09-20%20232002.png)
+
+</details>
 
 ## Apply and customize
 
 ### Apply
 There are several methods to apply this theme:
-- Via Local Themes:
+
+<details>
+  
+<summary>Via Local Themes:</summary>
+
   + Download the file `modular.theme.css` from this repository.
   + Open Settings > Vencord > Themes > Local Themes > Open Themes Folder.
   + Paste the downloaded file into the **themes** folder.
-    
-- Via Online Themes
+
+</details>
+
+<details>
+  
+<summary>Via Online Themes</summary>
+
   + Open Settings > Vencord > Themes > Online Themes.
   + Paste the following link into **Theme Links**: `https://seele1306.github.io/Modular/modular.theme.css`
   + Enter or mouse-click outside the Online Themes box to apply
- 
-- Via QuickCSS
+
+</details>
+
+<details>
+
+<summary>Via QuickCSS</summary>
+
   + Open Settings > Vencord > Vencord > Open QuickCSS File
   + Paste the following line as your **first line (ahead of any other custom CSS)**: `@import url(https://seele1306.github.io/Modular/modular.theme.css);`.
- 
+
+</details>
+
 ### Customization
 A large part of the following guide is also available inside the `modular.theme.css` file.
 
