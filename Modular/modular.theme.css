@@ -14,6 +14,9 @@
 	* [[ BACKGROUND ]] 
 	* Change to none to use solid color theme, or use one of the premade Nitro gradients, or make your own gradient or even add a background (must be an URL) */
 	--modular-background: none !important; 
+	--modular-background-blur-strength: 10px; /* in px, Default is 10px */
+	--modular-background-brightness: 100%; /* Between 0 and 100% - Default is 100% */
+	--modular-transparency: 25%; /* Between 0 and 50% - Default is 25% */
 
   	/* 
 	* Available gradients: aurora, forest, hanami, lofi, mint-apple, mars, neon-nights, retro-raincloud, strawberry-lemonade, sepia,
@@ -21,15 +24,15 @@
 	*
 	* Catppuccin colors are available for convenience, more information at https://github.com/catppuccin/catppuccin
 	* To apply a color, use this format: var(--ctp-{scheme}-{color})
-	* Available schemes (replace {scheme} with these): latte, frappe, macchiato, mocha
+	* Available schemes (replace {scheme} with these): macchiato, macchiato, macchiato, macchiato
 	* Available colors (replace {color} with these): rosewater, flamingo, pink, mauve, red, maroon, peach, yellow, green, teal, sky, sapphire, blue, lavender
 	*/
 
 	/* [[ OVERALL ACCENT ]] */
 	--modular-hue: 232;
-	--modular-saturation: calc(var(--saturation-factor, 1)* 23%); /* Change the percentage to something else */
+	--modular-saturation: 23%; /* Change the percentage to something else */
 	--modular-lightness: 18%; /* Best between 0-30% for visibility */
-	--modular-accent-color: var(--ctp-frappe-mauve);
+	--modular-accent-color: var(--ctp-macchiato-mauve);
 
 	/* [[ STATUS COLORS ]]  */ 
 	--rs-online-color: var(--ctp-macchiato-green); 
@@ -40,15 +43,15 @@
 
 	/* [[ CHAT BUBBLE COLORS ]] */
 	--chat-bubble-default: var(--background-modifier-accent);
-	--chat-bubble-replying: var(--ctp-latte-sky);
+	--chat-bubble-replying: var(--ctp-macchiato-sky);
 	--chat-bubble-mentioned: var(--ctp-macchiato-peach);
-	--chat-bubble-automod: var(--ctp-latte-red);
+	--chat-bubble-automod: var(--ctp-macchiato-red);
 
 	/* [[ STAFF TAG COLORS ]] */
-	--owner-color: var(--ctp-mocha-pink);
-	--admin-color: var(--ctp-frappe-green);
-	--staff-color: var(--ctp-mocha-lavender);
-	--mod-color: var(--ctp-latte-rosewater);
+	--owner-color: var(--ctp-macchiato-pink);
+	--admin-color: var(--ctp-macchiato-green);
+	--staff-color: var(--ctp-macchiato-lavender);
+	--mod-color: var(--ctp-macchiato-rosewater);
  
 	/* [[ CLIENT BORDER RADIUS ]] */
 	--modular-border-radius: 8px; /* Default is 8px */
@@ -60,21 +63,13 @@
 	--font-code: "" ;
 
 	/* [[ USER PANEL SECTION BORDER ]] */
-	--section-thickness: 2px; /* Default is 2px; 0px for no border */
-
-	/* [[ QUOTES PARATMETERS ]] */
-	--quote-vertical-spacing: 4px;
-	--quote-horizontal-spacing: 10px;
-	--quote-border-radius: 6px;
+	--section-thickness: 0px; /* Default is 0px; 0px for no border */
 
 	/* [[ GUILD LIST PARAMETERS ]] */
 	--guild-item-radius: 4px; /* Default is 4px */
 	--guild-item-spacing: 4px;  /* Default is 4px */
 
 	/* [[ GENERAL LAYOUT ]] */
-	--modular-background-blur-strength: 10px; /* in px, Default is 10px */
-	--modular-background-brightness: 100%; /* Between 0 and 100% - Default is 100% */
-	--modular-transparency: 25%; /* Between 0 and 50% - Default is 25% */
 	--sidebar-orientation: column; /* column-reverse for user panel on top */
 	--guild-orientation: row; /* row-reverse for guild bar on the right */
 	--client-orientation: row; /* row-reverse for server list and user panel on the right */
