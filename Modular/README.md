@@ -23,7 +23,7 @@ Get the latest build here: [Releases - Vencord/Vesktop](https://github.com/Venco
     
 - **A revamped look** for many elements, including profile panels and modals, Spotify controls, guild list and many more!
 - **Compatibility and quality of life changes** for many of Vesktop's existing plugins
-- Several ***add-ons*** (Settings Icons by [Saltssaumure](https://github.com/Saltssaumure) and Radial Status by [coolesding](https://github.com/coolesding) for now) are available separately in the `modular.theme.css` file
+- Several ***add-ons*** are available separately in the `modular.theme.css` file
 - Active support (to my ability)
 - Some of the elements of this theme are available separately as snippets. Check them out [here](https://github.com/SEELE1306/SEELE1306.github.io/tree/main/Snippets).
 
@@ -82,6 +82,7 @@ To start customizing your layout, copy and paste **lines 10-82** of `modular.the
 Additionally, if you want to use add-ons (Settings Icons and Radial Status), paste these lines at the top of your QuickCSS:
 - Settings Icons by [Saltssaumure](https://github.com/Saltssaumure): `@import url(https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css);`
 - Radial Status by [coolesding](https://github.com/coolesding): `@import url(https://raw.githubusercontent.com/coolesding/shiggycord/v2/Deploy/Radialstatus.css);`
+- OnekoDM: `@import url(https://seele1306.github.io/Snippets/OnekoDM/import.css);`
 
 **Catppuccin Colors** are available in this theme for convenience. More about how the colors look like can be found [here](https://github.com/catppuccin/catppuccin).
 
