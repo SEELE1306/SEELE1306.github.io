@@ -6,6 +6,8 @@
 @import url(https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css); /* comment out to disable */
 /* Radial Status by coolesding */
 @import url(https://raw.githubusercontent.com/coolesding/shiggycord/v2/Deploy/Radialstatus.css); /* comment out to disable */
+/* Oneko instead of default DM button */
+@import url(https://seele1306.github.io/Snippets/OnekoDM/import.css); /* comment out to disable */
 
 :root {
 	/* 
@@ -17,7 +19,7 @@
 	* Available gradients: aurora, forest, hanami, lofi, mint-apple, mars, neon-nights, retro-raincloud, strawberry-lemonade, sepia,
   	* midnight-blurple, chroma-glow, citrus-sherbert, cotton-candy, crimson-moon, desert-khaki, dusk, retro-storm, sunrise, sunset, under-the-sea 
 	*
-	* Catppuchin colors are available for convenience, more information at https://github.com/catppuccin/catppuccin
+	* Catppuccin colors are available for convenience, more information at https://github.com/catppuccin/catppuccin
 	* To apply a color, use this format: var(--ctp-{scheme}-{color})
 	* Available schemes (replace {scheme} with these): latte, frappe, macchiato, mocha
 	* Available colors (replace {color} with these): rosewater, flamingo, pink, mauve, red, maroon, peach, yellow, green, teal, sky, sapphire, blue, lavender

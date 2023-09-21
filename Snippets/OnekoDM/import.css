@@ -1,6 +1,7 @@
-[class*=listItem-]>div>div>svg {
-    border-radius: 50% !important;
+.homeIcon-r0w4ny {
+    display: none !important;
 }
+
 #app-mount .guilds-2JjMmN .tutorialContainer-1pL9QS .listItem-3SmSlK:first-child .wrapper-3kah-n::before {
     content: "";
     border-radius: 50%;
@@ -9,7 +10,7 @@
 	height: 32px;
   	transition: 0.2s ease;
     opacity: 0.5;
-	/* mix-blend-mode: overlay; */
+	mix-blend-mode: overlay;
 	image-rendering: pixelated;
     background-image: url("https://raw.githubusercontent.com/adryd325/oneko.js/14bab15a755d0e35cd4ae19c931d96d306f99f42/oneko.gif");
     animation: sleep, init; 
