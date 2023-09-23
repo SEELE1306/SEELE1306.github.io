@@ -219,6 +219,8 @@ button[class*=returnButton-],
 .topPill-2vcLsa .item-2GWPIy,
 [class*=recentMentionsPopout-] .channelHeader-DFRX8q,
 .listRow-2nO1T6
+[class*=messagesPopoutWrap-] .messageGroupWrapper-1jf_7C,
+.jumpButton-1ZwI_j
 {
 	border-radius: var(--modular-border-radius) !important;
 }
@@ -1519,6 +1521,35 @@ h3.membersGroup-2eiWxl > span > span[style] {
 }
 .scrollerContainer-y16Rs9 {
 	background: transparent !important
+}
+
+/* PINNED MESSAGES */
+[class*=messagesPopoutWrap-] {
+	background: var(--background-tertiary);
+	height: 80vh;
+}
+[class*=messagesPopoutWrap-] .header-1w9Q93 {
+	margin-bottom: 0.5em;
+	padding: 0.5em 1em;
+	background: var(--background-modifier-accent);
+	text-align: center;
+}
+[class*=messagesPopoutWrap-] .header-1w9Q93 h1 {
+	font-weight: 800;
+}
+[class*=messagesPopoutWrap-] .messageGroupWrapper-1jf_7C {
+	border: unset;
+	margin: 0.5em;
+	padding: 0.5em 0.5em 0.5em 0;
+}
+.jumpButton-1ZwI_j {
+	padding: 0.5em 0.5em 0;
+}
+.jumpButton-1ZwI_j:hover {
+	background: var(--modular-accent-color);
+}
+.jumpButton-1ZwI_j div {
+	margin-top: -2px;
 }
 
 /* INBOX TAB */
