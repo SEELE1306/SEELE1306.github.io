@@ -44,8 +44,7 @@
 	--titlebar-name: "Your name here";
 }
 
-
-/* 5. [[ SPOTIFY CONTROLS ]] */
+/* [[ SPOTIFY CONTROLS ]] */
 #vc-spotify-player {
 	background: transparent !important;
 	border-bottom: none;
@@ -142,7 +141,7 @@
 	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-disc-2'%3E%3Ccircle cx='12' cy='12' r='4'%3E%3C/circle%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='12' x2='12' y2='12.01'%3E%3C/line%3E%3C/svg%3E");
 }
 
-/* 6. [[ VC CONTAINER + CONTROLS ]] */
+/* [[ VC CONTAINER + CONTROLS ]] */
 .container-1zzFcN {
 	display: flex;
 	flex-direction: column;
@@ -207,7 +206,7 @@
 	height: 270px;
 }
 
-/* 7. [[ QUOTES ]] */
+/* [[ QUOTES ]] */
 [class*="markup-"] blockquote {
 	padding: var(--quote-vertical-spacing) var(--quote-horizontal-spacing);
 	background: color-mix(in srgb, var(--modular-accent-color) 25%, transparent);
@@ -225,7 +224,7 @@
 	background-color: var(--modular-accent-color)
 }
 
-/* 8. [[ CHAT AREA ]] */
+/* [[ CHAT AREA ]] */
 :is(main,section)[class^=chatContent] .form-3gdLxP {
 	padding: 0.25em;
 }
@@ -410,7 +409,7 @@ main[class^=chatContent] [class^=attachedBars] {
     }
 }
 
-/* 9. [[ DISCORD DM AND FAVORITES ICON ]] */
+/* [[ DISCORD DM AND FAVORITES ICON ]] */
 .wrapper-3kah-n .childWrapper-1j_1ub {
 	background-color: var(--background-modifier-accent);
 	color: var(--info-positive-foreground)
@@ -420,7 +419,7 @@ main[class^=chatContent] [class^=attachedBars] {
 	background-color: var(--background-modifier-selected)
 }
 
-/* 10. [[ STAFF TAGS ]] */
+/* [[ STAFF TAGS ]] */
 span[data-tag="owner"] {
 	background-color: var(--owner-color);
 	color: var(--background-primary)
@@ -446,7 +445,7 @@ span[data-tag="vc mod"],
 	color: var(--background-primary)
 }
 
-/* 11. [[ CHANNEL LIST ]] */
+/* [[ CHANNEL LIST ]] */
 .colorDefault-2_rLdz {
 	color: var(--interactive-muted)
 }
@@ -489,7 +488,7 @@ span[data-tag="vc mod"],
 	color: var(--text-normal)
 }
 
-/* 12. [[ SHIKI CODEBLOCKS ]] */
+/* [[ SHIKI CODEBLOCKS ]] */
 .markup-eYLPri code {
 	margin: 0.5em 0 0.5em 0
 }
@@ -508,7 +507,7 @@ code:not(code.inline) {
 	width: max-content
 }
 
-/* 13. [[ ROLE PILLS ]] */
+/* [[ ROLE PILLS ]] */
 .rolePill-78LFtg {
 	background: transparent
 }
@@ -545,7 +544,7 @@ code:not(code.inline) {
 	opacity: .4
 }
 
-/* 14. [[ MAIN BACKGROUND COMPONENTS ]] */
+/* [[ MAIN BACKGROUND COMPONENTS ]] */
 .bg-1QIAus {
 	filter: brightness(var(--modular-background-brightness));
 	background: var(--modular-background) center/cover no-repeat !important
@@ -572,7 +571,7 @@ code:not(code.inline) {
 	background: var(--background-primary-alt);
 }
 
-/* 15. [[ RADIAL STATUS ]] */
+/* [[ RADIAL STATUS ]] */
 .contents-2MsGLg .avatar-2e8lTP {
 	margin-top: -0.625em;
 }
@@ -581,7 +580,7 @@ code:not(code.inline) {
 	margin: 0 0.5em 0 0;
 }
 
-/* 16. [[ STATUS (ALTERNATIVE) ]] */
+/* [[ STATUS (ALTERNATIVE) ]] */
 
 rect[fill="#23a55a"], rect[fill="rgba(35, 165, 90, 1)"],
 foreignObject[mask="url(#svg-mask-status-online)"] > div,
@@ -604,7 +603,7 @@ rect[fill="#593695"] {
 	fill: var(--rs-streaming-color) !important;
 }
 
-/* 17. [[ CHAT BUBBLES ]] */
+/* [[ CHAT BUBBLES ]] */
 .channelTextArea-1FufC0 {
 	background-color: transparent
 }
@@ -671,7 +670,7 @@ rect[fill="#593695"] {
 	background: color-mix(in srgb, var(--chat-bubble-automod) 50%, transparent);
 }
 
-/* 18. [[ PROFILES ]] */
+/* [[ PROFILES ]] */
 .customStatus-19KW6v .customStatusEmoji-1GD8RK {
 	margin: 0.25em -0.75em 0.5em;
 	position: relative;
@@ -841,7 +840,7 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 	left: 12.5%
 }
 
-/* 19. [[ EMBEDS ]] */
+/* [[ EMBEDS ]] */
 .embedFull-1HGV2S {
 	overflow: hidden;
 	border-left: none;
@@ -872,7 +871,7 @@ div[style="display: flex; justify-content: space-between; align-items: center; m
 	background-color: inherit
 }
 
-/* 20. [[ PLATFORM INDICATORS ]] */
+/* [[ PLATFORM INDICATORS ]] */
 :is(.membersWrap-3NUR2t, .privateChannels-oVe7HL) .vc-platform-indicator>svg {
 	width: 12.5px !important;
 	height: 12.5px !important;
