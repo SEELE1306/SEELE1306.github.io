@@ -6,8 +6,8 @@
   --primary-160-hsl: var(--modular-hue) var(--modular-saturation) calc(var(--modular-lightness) + 72.00%);
   --primary-200-hsl: var(--modular-hue) var(--modular-saturation) calc(var(--modular-lightness) + 60.00%);
   --primary-230-hsl: var(--modular-hue) var(--modular-saturation) calc(var(--modular-lightness) + 52.00%);
-  --primary-260-hsl: var(--modular-hue) var(--modular-saturation) calc(var(--modular-lightness) + 44.00%);   
-  --primary-300-hsl: var(--modular-hue) var(--modular-saturation) calc(var(--modular-lightness) + 36.00%);      
+  --primary-260-hsl: var(--modular-hue) var(--modular-saturation) calc(var(--modular-lightness) + 44.00%); 
+  --primary-300-hsl: var(--modular-hue) var(--modular-saturation) calc(var(--modular-lightness) + 36.00%);
   --primary-330-hsl: var(--modular-hue) var(--modular-saturation) calc(var(--modular-lightness) + 28.00%);
   --primary-345-hsl: var(--modular-hue) var(--modular-saturation) calc(var(--modular-lightness) + 24.00%);
   --primary-360-hsl: var(--modular-hue) var(--modular-saturation) calc(var(--modular-lightness) + 20.00%);
@@ -28,14 +28,14 @@
   --primary-830-hsl: var(--modular-hue) var(--modular-saturation) calc(var(--modular-lightness) - 20.00%);
   --primary-860-hsl: var(--modular-hue) var(--modular-saturation) calc(var(--modular-lightness) - 24.00%);
   --primary-900-hsl: var(--modular-hue) var(--modular-saturation) calc(var(--modular-lightness) - 28.00%);
-
+  
   --brand-100-hsl: hsl(var(--primary-100-hsl)/1);
   --brand-130-hsl: hsl(var(--primary-130-hsl)/1);
   --brand-160-hsl: hsl(var(--primary-160-hsl)/1);
   --brand-200-hsl: hsl(var(--primary-200-hsl)/1);
   --brand-230-hsl: hsl(var(--primary-230-hsl)/1);
-  --brand-260-hsl: hsl(var(--primary-260-hsl)/1);   
-  --brand-300-hsl: hsl(var(--primary-300-hsl)/1);      
+  --brand-260-hsl: hsl(var(--primary-260-hsl)/1); 
+  --brand-300-hsl: hsl(var(--primary-300-hsl)/1);
   --brand-330-hsl: hsl(var(--primary-330-hsl)/1);
   --brand-345-hsl: hsl(var(--primary-345-hsl)/1);
   --brand-360-hsl: hsl(var(--primary-360-hsl)/1);
@@ -56,14 +56,14 @@
   --brand-830-hsl: hsl(var(--primary-830-hsl)/1);
   --brand-860-hsl: hsl(var(--primary-860-hsl)/1);
   --brand-900-hsl: hsl(var(--primary-900-hsl)/1);
-
+  
   --primary-100: hsl(var(--primary-100-hsl)/1);
   --primary-130: hsl(var(--primary-130-hsl)/1);
   --primary-160: hsl(var(--primary-160-hsl)/1);
   --primary-200: hsl(var(--primary-200-hsl)/1);
   --primary-230: hsl(var(--primary-230-hsl)/1);
-  --primary-260: hsl(var(--primary-260-hsl)/1);   
-  --primary-300: hsl(var(--primary-300-hsl)/1);      
+  --primary-260: hsl(var(--primary-260-hsl)/1); 
+  --primary-300: hsl(var(--primary-300-hsl)/1);
   --primary-330: hsl(var(--primary-330-hsl)/1);
   --primary-345: hsl(var(--primary-345-hsl)/1);
   --primary-360: hsl(var(--primary-360-hsl)/1);
@@ -84,7 +84,7 @@
   --primary-830: hsl(var(--primary-830-hsl)/1);
   --primary-860: hsl(var(--primary-860-hsl)/1);
   --primary-900: hsl(var(--primary-900-hsl)/1);
-
+  
   --brand-experiment-100: var(--brand-100-hsl);
   --brand-experiment-130: var(--brand-130-hsl);
   --brand-experiment-160: var(--brand-160-hsl);
@@ -112,7 +112,7 @@
   --brand-experiment-830: var(--brand-830-hsl);
   --brand-experiment-860: var(--brand-860-hsl);
   --brand-experiment-900: var(--brand-900-hsl);
-
+  
   --brand-100: var(--brand-100-hsl);
   --brand-130: var(--brand-130-hsl);
   --brand-160: var(--brand-160-hsl);
@@ -140,11 +140,11 @@
   --brand-830: var(--brand-830-hsl);
   --brand-860: var(--brand-860-hsl);
   --brand-900: var(--brand-900-hsl);
-
+  
   /* Reformatted, original credits to DaBluLite */
-
+  
   /* [[ NITRO THEMES ]] */
-
+  
   --aurora: linear-gradient(239.16deg, hsl(220 calc(var(--saturation-factor, 1)*86.5%) 17.5%/1) 10.39%, hsl(238 calc(var(--saturation-factor, 1)*76.4%) 41.6%/1) 26.87%, hsl(184 calc(var(--saturation-factor, 1)*78%) 33.9%/1) 48.31%, hsl(169 calc(var(--saturation-factor, 1)*60.2%) 32.5%/1) 64.98%, hsl(230 calc(var(--saturation-factor, 1)*92.5%) 26.3%/1) 92.5%);
   --forest: linear-gradient(162.27deg, hsl(124 calc(var(--saturation-factor, 1)*25.9%) 10.6%/1) 11.2%, hsl(143 calc(var(--saturation-factor, 1)*26.2%) 23.9%/1) 29.93%, hsl(76 calc(var(--saturation-factor, 1)*20.6%) 24.7%/1) 48.64%, hsl(117 calc(var(--saturation-factor, 1)*17%) 41.6%/1) 67.85%, hsl(43 calc(var(--saturation-factor, 1)*38.5%) 47.8%/1) 83.54%);
   --hanami: linear-gradient(38.08deg, hsl(352 calc(var(--saturation-factor, 1)*68.3%) 80.2%/1) 3.56%, hsl(43 calc(var(--saturation-factor, 1)*73.6%) 76.3%) 35.49%, hsl(116 calc(var(--saturation-factor, 1)*43.1%) 74.5%/1) 68.78%);
@@ -179,97 +179,97 @@
   --bg-overlay-home: linear-gradient(rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-home)),rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-home))) fixed 0 0/cover,var(--custom-theme-background) fixed 0 0/cover;
   --bg-overlay-home-card: linear-gradient(rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-home-card)),rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-home-card))) fixed 0 0/cover,var(--custom-theme-background) fixed 0 0/cover;
   --bg-overlay-app-frame: linear-gradient(rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-app-frame)),rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-app-frame))) fixed 0 0/cover,var(--custom-theme-background) fixed 0 0/cover;
-
+  
   /* [[ CATPPUCHIN COLORS ]] */
-
+  
   /* Rosewater */
   --ctp-latte-rosewater: #dc8a78;
-	--ctp-frappe-rosewater: #f2d5cf;
-	--ctp-macchiato-rosewater: #f4dbd6;
-	--ctp-mocha-rosewater: #f5e0dc;
-
+    --ctp-frappe-rosewater: #f2d5cf;
+    --ctp-macchiato-rosewater: #f4dbd6;
+    --ctp-mocha-rosewater: #f5e0dc;
+  
   /* Flamingo */
-	--ctp-latte-flamingo: #dd7878;
-	--ctp-frappe-flamingo: #eebebe;
-	--ctp-macchiato-flamingo: #f0c6c6;
-	--ctp-mocha-flamingo: #f2cdcd;
-
+    --ctp-latte-flamingo: #dd7878;
+    --ctp-frappe-flamingo: #eebebe;
+    --ctp-macchiato-flamingo: #f0c6c6;
+    --ctp-mocha-flamingo: #f2cdcd;
+  
   /* Pink */
-	--ctp-latte-pink: #ea76cb;
-	--ctp-frappe-pink: #f4b8e4;
-	--ctp-macchiato-pink: #f5bde6;
-	--ctp-mocha-pink: #f5c2e7;
-
+    --ctp-latte-pink: #ea76cb;
+    --ctp-frappe-pink: #f4b8e4;
+    --ctp-macchiato-pink: #f5bde6;
+    --ctp-mocha-pink: #f5c2e7;
+  
   /* Mauve */
-	--ctp-latte-mauve: #8839ef;
-	--ctp-frappe-mauve: #ca9ee6;
-	--ctp-macchiato-mauve: #c6a0f6;
-	--ctp-mocha-mauve: #cba6f7;
-
+    --ctp-latte-mauve: #8839ef;
+    --ctp-frappe-mauve: #ca9ee6;
+    --ctp-macchiato-mauve: #c6a0f6;
+    --ctp-mocha-mauve: #cba6f7;
+  
   /* Red */
-	--ctp-latte-red: #d20f39;
+    --ctp-latte-red: #d20f39;
   --ctp-frappe-red: #e78284;
-	--ctp-macchiato-red: #ed8796;
-	--ctp-mocha-red: #f38ba8;
-
+    --ctp-macchiato-red: #ed8796;
+    --ctp-mocha-red: #f38ba8;
+  
   /* Maroon */
-	--ctp-latte-maroon: #e64553;
-	--ctp-frappe-maroon: #ea999c;
-	--ctp-macchiato-maroon: #ee99a0;
-	--ctp-mocha-maroon: #eba0ac;
-
+    --ctp-latte-maroon: #e64553;
+    --ctp-frappe-maroon: #ea999c;
+    --ctp-macchiato-maroon: #ee99a0;
+    --ctp-mocha-maroon: #eba0ac;
+  
   /* Peach */
-	--ctp-latte-peach: #fe640b;
-	--ctp-frappe-peach: #ef9f76;
-	--ctp-macchiato-peach: #f5a97f;
-	--ctp-mocha-peach: #fab387;
-
+    --ctp-latte-peach: #fe640b;
+    --ctp-frappe-peach: #ef9f76;
+    --ctp-macchiato-peach: #f5a97f;
+    --ctp-mocha-peach: #fab387;
+  
   /* Yellow */
-	--ctp-latte-yellow: #df8e1d;
-	--ctp-frappe-yellow: #e5c890;
-	--ctp-macchiato-yellow: #eed49f;
-	--ctp-mocha-yellow: #f9e2af;
-
+    --ctp-latte-yellow: #df8e1d;
+    --ctp-frappe-yellow: #e5c890;
+    --ctp-macchiato-yellow: #eed49f;
+    --ctp-mocha-yellow: #f9e2af;
+  
   /* Green */
-	--ctp-latte-green: #40a02b;
-	--ctp-frappe-green: #a6d189;
-	--ctp-macchiato-green: #a6da95;
-	--ctp-mocha-green: #a6e3a1;
-
+    --ctp-latte-green: #40a02b;
+    --ctp-frappe-green: #a6d189;
+    --ctp-macchiato-green: #a6da95;
+    --ctp-mocha-green: #a6e3a1;
+  
   /* Teal */
-	--ctp-latte-teal: #179299;
-	--ctp-frappe-teal: #81c8be;
-	--ctp-macchiato-teal: #8bd5ca;
-	--ctp-mocha-teal: #94e2d5;
-
+    --ctp-latte-teal: #179299;
+    --ctp-frappe-teal: #81c8be;
+    --ctp-macchiato-teal: #8bd5ca;
+    --ctp-mocha-teal: #94e2d5;
+  
   /* Sky */
   --ctp-latte-sky: #04a5e5;
-	--ctp-frappe-sky: #99d1db;
-	--ctp-macchiato-sky: #91d7e3;
-	--ctp-mocha-sky: #89dceb;
-
+    --ctp-frappe-sky: #99d1db;
+    --ctp-macchiato-sky: #91d7e3;
+    --ctp-mocha-sky: #89dceb;
+  
   /* Sapphire */
-	--ctp-latte-sapphire: #209fb5;
-	--ctp-frappe-sapphire: #85c1dc;
-	--ctp-macchiato-sapphire: #7dc4e4;
-	--ctp-mocha-sapphire: #74c7ec;
-
+    --ctp-latte-sapphire: #209fb5;
+    --ctp-frappe-sapphire: #85c1dc;
+    --ctp-macchiato-sapphire: #7dc4e4;
+    --ctp-mocha-sapphire: #74c7ec;
+  
   /* Blue */
-	--ctp-latte-blue: #1e66f5;
-	--ctp-frappe-blue: #8caaee;
-	--ctp-macchiato-blue: #8aadf4;
-	--ctp-mocha-blue: #89b4fa;
-
+    --ctp-latte-blue: #1e66f5;
+    --ctp-frappe-blue: #8caaee;
+    --ctp-macchiato-blue: #8aadf4;
+    --ctp-mocha-blue: #89b4fa;
+  
   /* Lavender */
-	--ctp-latte-lavender: #7287fd;
-	--ctp-frappe-lavender: #babbf1;
-	--ctp-macchiato-lavender: #b7bdf8;
-	--ctp-mocha-lavender: #b4befe;
-}
-
-/* [[ CUSTOM THEME VARIABLES ]] */
-
-.theme-dark {
+    --ctp-latte-lavender: #7287fd;
+    --ctp-frappe-lavender: #babbf1;
+    --ctp-macchiato-lavender: #b7bdf8;
+    --ctp-mocha-lavender: #b4befe;
+  }
+  
+  /* [[ CUSTOM THEME VARIABLES ]] */
+  
+  .theme-dark {
   --bg-overlay-color: 0 0 0;
   --bg-overlay-color-inverse: 255 255 255;
   --bg-overlay-opacity-1: 0.85;
@@ -314,9 +314,9 @@
   --background-modifier-hover: hsl(var(--primary-300-hsl)/calc(var(--modular-transparency) + 40%));
   --channel-icon: hsl(var(--primary-400-hsl)/1);
   --interactive-muted: hsl(var(--primary-230-hsl)/1)
-}
-
-.theme-light {
+  }
+  
+  .theme-light {
   --bg-overlay-color: 255 255 255;
   --bg-overlay-color-inverse: 0 0 0;
   --bg-overlay-opacity-1: 0.9;
@@ -361,13 +361,13 @@
   --background-modifier-hover: hsl(var(--primary-160-hsl)/calc(var(--modular-transparency) + 40%));
   --channel-icon: hsl(var(--primary-700-hsl)/1);
   --interactive-muted: hsl(var(--primary-600-hsl)/1)
-}
-
-/* [[ NO LIGHT IN DARK BY DABLULITE ]] */
-.footer-IubaaS {
+  }
+  
+  /* [[ NO LIGHT IN DARK BY DABLULITE ]] */
+  .footer-IubaaS {
   color: var(--header-primary);
-}
-.theme-dark .theme-light:not(.userProfileOuter-2tQwNf) {
+  }
+  .theme-dark .theme-light:not(.userProfileOuter-2tQwNf) {
   --guild-header-text-shadow: 0 1px 1px hsl(var(--black-500-hsl)/0.4);
   --elevation-stroke: 0 0 0 1px hsl(var(--primary-900-hsl)/0.15);
   --elevation-low: 0 1px 0 hsl(var(--primary-900-hsl)/0.2),0 1.5px 0 hsl(var(--primary-860-hsl)/0.05),0 2px 0 hsl(var(--primary-900-hsl)/0.05);
@@ -621,12 +621,13 @@
   --textbox-markdown-syntax: var(--primary-360);
   --user-profile-header-overflow-background: hsl(var(--primary-700-hsl)/0.5);
   --white: var(--white-500);
-}
-.theme-dark .theme-light .footerSeparator-3U8YsT {
+  }
+  .theme-dark .theme-light .footerSeparator-3U8YsT {
   -webkit-box-shadow: inset 0 1px 0 hsl(var(--primary-630-hsl)/.6);
   box-shadow: inset 0 1px 0 hsl(var(--primary-630-hsl)/.6);
-}
-.theme-dark .theme-light .rootWithShadow-2hdL2J {
+  }
+  .theme-dark .theme-light .rootWithShadow-2hdL2J {
   -webkit-box-shadow: var(--dark-elevation-border),var(--dark-elevation-high);
   box-shadow: var(--dark-elevation-border),var(--dark-elevation-high);
-}
+  }
+  
