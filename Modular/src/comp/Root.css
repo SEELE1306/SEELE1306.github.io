@@ -227,9 +227,6 @@
 
 .theme-dark {
 --background-primary-alt: hsl(var(--primary-600-hsl)/var(--modular-transparency)) !important;
---background-modifier-accent: hsl(var(--primary-700-hsl)/var(--modular-transparency));
---background-modifier-selected: hsl(var(--primary-700-hsl)/calc(var(--modular-transparency) + 20%));
---background-modifier-hover: hsl(var(--primary-700-hsl)/calc(var(--modular-transparency) + 40%));
 }
 :root {
 --status-danger: var(--brand-experiment);
