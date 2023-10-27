@@ -176,3 +176,42 @@
 --green-560: var(--brand-experiment-560);
 --green-600: var(--brand-experiment-600);
 }
+:root, .theme-dark, .theme-light {
+/* Radial Status */
+--rs-offline-color: #636b75;
+--rs-spacer-color: transparent;
+--rs-show-platformindicators: none;
+--rs-small-size: 0.85;
+--rs-small-roundness: 50%;
+--rs-small-thickness: 3px;
+--rs-medium-size: 0.85;
+--rs-medium-roundness: 50%;
+--rs-medium-thickness: 5px;
+--rs-large-size: 0.85;
+--rs-large-roundness: 50%;
+--rs-large-thickness: 5px;
+/* Chat bubbles requirements */
+--background-message-hover: none;
+--background-mentioned: none;
+--background-mentioned-hover: none;
+--background-message-highlight: none;
+--background-message-automod: none;
+--background-message-automod-hover: none;
+--info-warning-foreground: none;
+/* Scrollbars */
+--scrollbar-auto-thumb: var(--brand-experiment);
+--scrollbar-auto-track: color-mix(in srgb, var(--brand-experiment) 25%, transparent);
+--scrollbar-thin-thumb: var(--brand-experiment);
+--scrollbar-thin-track: transparent;
+
+--profile-role-pill-background: none;
+--font-primary: var(--font-main), var(--font-fallback);
+--font-display: var(--font-main), var(--font-fallback);
+--font-header: var(--font-main), var(--font-fallback);
+--font-fallback: "gg sans";
+--text-link: var(--text-normal);
+--modular-major-version: "v2";
+--modular-intermediate-version: "0";
+--modular-small-version: "0-TESTING";
+--mention-background: var(--brand-experiment-30a);
+}
