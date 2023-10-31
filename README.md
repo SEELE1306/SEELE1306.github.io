@@ -1,2 +1,2 @@
 # SEELE1306.github.io
-Mostly for CSS snippets
+A repository to push changes for the Modular theme.
